@@ -983,7 +983,7 @@ generateBrokenPCMatrix<- function(numOfElements, grade){
 #' @param matrix - PC matrix
 #' @return inconsistency
 #' @export ----
-koczkodaj <- function(matrix){
+koczkodaj <- function(matrix, alfa=0, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajForTriad", matrix)
   sortMatrix <- triadsAndIdxs[order(triadsAndIdxs[,4],decreasing = TRUE),]
   if(is.null(dim(sortMatrix))){
@@ -1003,16 +1003,27 @@ koczkodajForTriad <- function(triad) {
 }
 
 #### metohod !!!
-grzybowskiATI <- function(matrix){
-  triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajIdxForTriad", matrix)
+grzybowskiATI <- function(matrix, alfa=0, beta=0){
+  triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajForTriad", matrix)
   chopV(avg(triadsAndIdxs[,4]))
 }
 
 
 #### method !!!
-grzybowskiALTI2 <- function(matrix){
+grzybowskiALTI1 <- function(matrix, alfa=0, beta=0){
+  triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("grzybowskiLTI1ForTriad", matrix)
+  v = chopV(avg(triadsAndIdxs[,4]))
+  v
+}
+
+grzybowskiLTI1ForTriad <- function(triad) {
+  abs(log((triad[1]*triad[2])/triad[3]))
+}
+
+grzybowskiALTI2 <- function(matrix, alfa=0, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("grzybowskiLTI2ForTriad", matrix)
-  chopV(avg(triadsAndIdxs[,4]))
+  v = chopV(avg(triadsAndIdxs[,4]))
+  v
 }
 
 grzybowskiLTI2ForTriad <- function(triad) {
@@ -1021,7 +1032,7 @@ grzybowskiLTI2ForTriad <- function(triad) {
 
 
 #### method !!!
-kazibudzkiCMLTI2 <- function(matrix){
+kazibudzkiCMLTI2 <- function(matrix, alfa=0, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("kazibudzkiCMLTI2ForTriad", matrix)
   chopV(avg(triadsAndIdxs[,4])/(1+max(triadsAndIdxs[,4])))
 }
@@ -1045,7 +1056,6 @@ pelaeLamataForTriad <- function(triad) {
 #### method !!!
 kulakowskiSzybowskiIa <- function(matrix, alfa, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajForTriad", matrix)
-  #I1triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajIdxForTriad", matrix)
   chopV(alfa*max(triadsAndIdxs[,4]) + (1-alfa)*avg(triadsAndIdxs[,4]))
 }
 
@@ -1053,7 +1063,6 @@ kulakowskiSzybowskiIa <- function(matrix, alfa, beta=0){
 #### method !!!
 kulakowskiSzybowskiIab <- function(matrix, alfa, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajForTriad", matrix)
-  #I1triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajIdxForTriad", matrix)
   chopV(alfa*max(triadsAndIdxs[,4]) + beta*avg(triadsAndIdxs[,4]) + (1-alfa-beta)*(sqrt(sum(triadsAndIdxs[,4]**2)))/length(triadsAndIdxs[,4]) )
 }
 
@@ -1136,19 +1145,114 @@ monteCarlo <- function(methodName, numOfElements, gradeOfIncomplete, numOfAttemp
   incompleteIdx
 }
 
-#' @title
-#' @description 
-#' @param  - 
-#' @return 
-s<- function(){
+
+# monte carlo dla wielu metod, ale na tych samych macierzach
+monteCarloOnTheSameMatrix <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0) {
+  vectorOfIdsx <- integer(numOfAttempts)
+  idxs = integer(10)
+  for( i in 1:numOfAttempts ) {
+    idxs <- idxs + exploreMatrixOnTheSameMatrix(numOfElements, gradeOfIncomplete, numOfAttemptsForOneMatrix, alfa, beta)
+  }
   
+  incompleteIdx <- idxs/numOfAttempts
+  incompleteIdx
+}
+
+exploreMatrixOnTheSameMatrix <- function(numOfElements, gradeOfIncomplete, numOfAttempts, alfa=0, beta=0) {
+  matrix <- generateDistributedPCMatrix(numOfElements)
+  methods <- c(koczkodaj, grzybowskiATI, grzybowskiALTI1, grzybowskiALTI2, kazibudzkiCMLTI2, pelaeLamata, kulakowskiSzybowskiIa, kulakowskiSzybowskiIa, kulakowskiSzybowskiIab, kulakowskiSzybowskiIab)
+  realIdx <- integer(10)
+  
+  for(i in 1:10) {
+    realIdx[i] <- runMethod(i, matrix, alfa, beta)
+    #realIdx[i] <- methods[i](matrix, alfa, beta)
+  }
+
+  brokenIdx = integer(10)
+  idxs <- integer(10)
+  
+  for( i in 1:numOfAttempts ) {
+    brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+    for(i in 1:10) {
+      brokenIdx[i] <- brokenIdx[i] + runMethod(i, brokenMatrix, alfa, beta)
+    }
+  }
+  
+  for(i in 1:10) {
+    brokenIdx[i] <- brokenIdx[i]/numOfAttempts
+    idxs[i] <- abs((realIdx[i] - brokenIdx[i])/realIdx[i]*100)
+  }
+  
+  idxs
+}
+
+runMethod <- function(i, matrix, alfa, beta){
+  switch(i,
+         "1"={
+           koczkodaj(matrix, alfa, beta)
+         },
+         "2"={
+           grzybowskiATI(matrix, alfa, beta)
+         },
+         "3"={
+           grzybowskiALTI1(matrix, alfa, beta)
+         },
+         "4"={
+           grzybowskiALTI2(matrix, alfa, beta)
+         },
+         "5"={
+           kazibudzkiCMLTI2(matrix, alfa, beta)
+         },
+         "6"={
+           pelaeLamata(matrix, alfa, beta)
+         },
+         "7"={
+           kulakowskiSzybowskiIa(matrix, 0.3, 0.7)
+         },
+         "8"={
+           kulakowskiSzybowskiIa(matrix, 0.8, 0.2)
+         },
+         "9"={
+           kulakowskiSzybowskiIab(matrix, 0.3, 0.4)
+         },
+         "10"={
+           kulakowskiSzybowskiIab(matrix, 0.1, 0.3)
+         }
+  )
+}
+
+test <- function() {
+  b=15;
+  numOfMatrices=100;
+  numOfAttempts=100;
+  for(n in c(4,5,6,7,8,10,15,20,50)){
+    print("=====================================")
+    print(n)
+    print(monteCarlo(koczkodaj,n,b,numOfMatrices,numOfAttempts))
+    print(monteCarlo(grzybowskiATI,n,b,numOfMatrices,numOfAttempts))
+    print(monteCarlo(grzybowskiALTI1,n,b,numOfMatrices,numOfAttempts))
+    print(monteCarlo(grzybowskiALTI2,n,b,numOfMatrices,numOfAttempts))
+    print(monteCarlo(kazibudzkiCMLTI2,n,b,numOfMatrices,numOfAttempts))
+    print(monteCarlo(pelaeLamata,n,b,numOfMatrices,numOfAttempts))
+  }
 }
 
 
-#' @title
-#' @description 
-#' @param  - 
-#' @return 
-a<- function(){
-  
+testOnTheSameMatrix <- function(b, numOfMatrices, numOfAttempts) {
+  # for(n in c(4,5,6,7,8,10,15,20,50)){
+  for(n in c(20,50)){
+    print("=====================================")
+    print(n)
+    print(monteCarloOnTheSameMatrix(n, b, 100, 100, 0.4, 0.6))
+  }
 }
+
+test2OnTheSameMatrix <- function(n, numOfMatrices, numOfAttempts) {
+  # for(n in c(4,5,6,7,8,10,15,20,50)){
+  for(b in c(4,5,8,10,20)){
+    print("=====================================")
+    print(b)
+    print(monteCarloOnTheSameMatrix(n, b, 100, 100, 0.4, 0.6))
+  }
+}
+
