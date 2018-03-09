@@ -1,0 +1,476 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass elsarticle
+\begin_preamble
+% specify here the journal
+\journal{Example: Nuclear Physics B}
+
+% use this if you need line numbers
+%\usepackage{lineno}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout BeginFrontmatter
+
+\end_layout
+
+\begin_layout Title
+Inconsistency of incomplete pairwise comparisons matrices
+\end_layout
+
+\begin_layout Author
+Dawid Talaga
+\end_layout
+
+\begin_layout Email
+talagadawid@gmail.com
+\end_layout
+
+\begin_layout Address
+AGH University of Science and Technology, Kraków, Poland
+\end_layout
+
+\begin_layout Abstract
+TODO: Abstract, should normally be not longer than 200 words.
+\end_layout
+
+\begin_layout Keywords
+pairwise comparisons 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ inconsistency 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ incomplete matrices
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ AHP
+\end_layout
+
+\begin_layout EndFrontmatter
+
+\end_layout
+
+\begin_layout Section
+Wstęp
+\end_layout
+
+\begin_layout Section
+Porównywanie parami i niespójność
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a_{ik}=a_{ij}a_{jk}\,\,\,\,\,\,\forall_{i,j,k}\label{eq:consistent}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Współczynniki niespójności
+\end_layout
+
+\begin_layout Standard
+W ciągu długiej historii metody porównywania parami powstało wiele metod
+ obliczania niespójności.
+ Wiele z nich opiera się wprost na definicji spójności (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+), niektóre korzystają z wartości własnych macierzy, jeszcze inne bazują
+ na założeniu, że dla spójnej macierzy zachodzi 
+\begin_inset Formula $a_{ij}=\frac{w_{i}}{w_{j}}$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $w$
+\end_inset
+
+ to wektor wag dla macierzy 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+W niniejszej pracy przedstawiono dziesięć popularnych współczynników niespójnośc
+i, które można relatywnie łatwo zmodyfikować w taki sposób, aby działały
+ dla niepełnych macierzy.
+ Wiele z tych współczynników zostało opisanych i przebadanych numerycznie
+ w pracy 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brunelli2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Koczkaodaj index
+\end_layout
+
+\begin_layout Standard
+Jeden z najpopularniejszych współczynników niespójności został zaproponowany
+ przez Koczkodaja 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KOCZKODAJ199379"
+
+\end_inset
+
+.
+ Bazuje on wprost na definicji spójności (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+).
+ Wartość współczynnika niespójności dla trójki liczb, które są od siebie
+ zależne (nazwana triadą) została określona jako
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_{ij}}\mid a_{ik}-a_{ij}a_{jk}\mid,\frac{1}{a_{jk}}\mid a_{jk}-\frac{a_{ik}}{a_{ij}}\mid\}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Wzór ten został uproszczony przez Duszak i Koczkodaj 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DUSZAK1994273"
+
+\end_inset
+
+ do postaci 
+\begin_inset Formula 
+\begin{equation}
+K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\alpha\gamma}{\beta}\mid\},\,\,\,\,\,\,gdzie\,\alpha=a_{ij},\beta=a_{ik},\gamma=a_{jk}\label{eq:k_abg}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a następnie uogólniony 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DUSZAK1994273"
+
+\end_inset
+
+ dla macierzy 
+\begin_inset Formula $n>2$
+\end_inset
+
+.
+ Ostatecznie osiągnięto postać
+\begin_inset Formula 
+\begin{equation}
+K=max\{K(\alpha,\beta,\gamma)|1\leq i<j<k\leq n\}\label{eq:K}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Warto zauważyć, że współczynnik nie tylko znajduje największą niespójność,
+ ale także wskazuje miejsce, w którym ona występuje.
+\end_layout
+
+\begin_layout Subsection
+Grzybowski index
+\end_layout
+
+\begin_layout Standard
+Bazując na współczynniku Koczkodaja, Grzybowski wprowadził nowy współczynnik
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "GRZYBOWSKI2016197"
+
+\end_inset
+
+.
+ Zrezygnował z szukania najbardziej niespójnej triady, na rzecz uśrednienia
+ wartości wszystkich współczynników niespójności.
+ Nowy współczynnik (oznaczony jako G) został zdefiniowany jako 
+\begin_inset Formula $G=Mean(K(\alpha,\beta,\gamma),$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $Mean$
+\end_inset
+
+ oznacza średnią arytmetyczną wszystkich triad.
+ Zatem współczynnik zostaje zapisany w postaci
+\begin_inset Formula 
+\begin{equation}
+G=\frac{1}{n}\sum_{i=1}^{n}K_{i}(\alpha,\beta,\gamma),
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kazibudzki indices
+\end_layout
+
+\begin_layout Standard
+Bazując na współczynniku Koczkodaja oraz spostrzeżeniu, że 
+\begin_inset Formula $ln(\frac{\alpha\gamma}{\beta})=-ln(\frac{\beta}{\alpha\gamma}),$
+\end_inset
+
+Kazibudzki wprowadził kilka dodatkowych współczynników niespójności 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "article"
+
+\end_inset
+
+.
+ Zamiast wzoru na niespójność triady 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:k_abg"
+
+\end_inset
+
+, zaproponował dwa nowe wzory:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+LTI(\alpha,\beta\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+LTI*(\alpha,\beta\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).\label{eq:lti*}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+W oparciu o powyższe równania, Kazibudzki zaproponował nowe współczynniki
+ niespójności.
+ Najprostsze wykorzystują średnią geometryczną triad.
+ Zatem usyskał wzory
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+MLTI(LTI)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI_{i}(\alpha,\beta\gamma)\right],
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+MLTI(LTI*)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI*_{i}(\alpha,\beta\gamma)\right].
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Po przeprowadzeniu kolejnych badań 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DBLP:journals/corr/Kazibudzki17"
+
+\end_inset
+
+, Kazibudzki wprowadził kolejny współczynnik niespójności, znów oparty na
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lti*"
+
+\end_inset
+
+.
+ Został zdefniowany jako 
+\begin_inset Formula $CM(LTI*)=\frac{MEAN[LTI*(\alpha,\beta,\gamma)]}{1+MAX[LTI*(\alpha,\beta,\gamma)]}$
+\end_inset
+
+.
+ Ostatecznie wzór na współczynnik niespójności zapisyjemy w postaci
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Współczynniki niespójności dla niepełnych macierzy
+\end_layout
+
+\begin_layout Section
+Dyskusja
+\end_layout
+
+\begin_layout Section
+Podsumowanie
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/kazibudzki2016a"
+options "elsarticle-num"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
