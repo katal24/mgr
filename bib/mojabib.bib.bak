@@ -34,23 +34,6 @@ and Fedrizzi, Michele},
   Booktitle                = {Journal of Applied Mathematics and Computational Mechanics}
 }
 
-@Article{DBLP:journals/corr/Kazibudzki17,
-  Title                    = {The quality of priority ratios estimation in relation to a selected
- prioritization procedure and consistency measure for a Pairwise Comparison
- Matrix},
-  Author                   = {Paul Thaddeus Kazibudzki},
-  Journal                  = {CoRR},
-  Year                     = {2017},
-  Volume                   = {abs/1704.01944},
-
-  Archiveprefix            = {arXiv},
-  Bibsource                = {dblp computer science bibliography, https://dblp.org},
-  Biburl                   = {https://dblp.org/rec/bib/journals/corr/Kazibudzki17},
-  Eprint                   = {1704.01944},
-  Timestamp                = {Wed, 07 Jun 2017 14:40:04 +0200},
-  Url                      = {http://arxiv.org/abs/1704.01944}
-}
-
 @Article{DBLP:journals/corr/Kulakowski17,
   Title                    = {Inconsistency in the ordinal pairwise comparisons method with and
  without ties},
@@ -66,18 +49,4 @@ and Fedrizzi, Michele},
   Timestamp                = {Wed, 07 Jun 2017 14:40:07 +0200},
   Url                      = {http://arxiv.org/abs/1702.01126}
 }
-
-@Inbook{Golden1989,
-author="Golden, Bruce L. and Wang, Qiwen",
-editor="Golden, Bruce L. and Wasil, Edward A. and Harker, Patrick T.",
-title="An Alternate Measure of Consistency",
-bookTitle="The Analytic Hierarchy Process: Applications and Studies",
-year="1989",
-publisher="Springer Berlin Heidelberg",
-address="Berlin, Heidelberg",
-pages="68--81",
-isbn="978-3-642-50244-6",
-}
-%doi="10.1007/978-3-642-50244-6_5"
-
 

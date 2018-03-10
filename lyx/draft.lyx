@@ -167,6 +167,15 @@ a_{ik}=a_{ij}a_{jk}\,\,\,\,\,\,\forall_{i,j,k}\label{eq:consistent}
 \end_inset
 
 
+\begin_inset Formula 
+\begin{equation}
+a_{ij}=\frac{w_{i}}{w_{j}}\label{eq:consistent2}
+\end{equation}
+
+\end_inset
+
+dać info, że w może być wyliczane poprzez wartości własne lub średnie geometrycz
+ne
 \end_layout
 
 \begin_layout Section
@@ -248,10 +257,6 @@ K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Wzór ten został uproszczony przez Duszak i Koczkodaj 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -267,10 +272,6 @@ K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\al
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 a następnie uogólniony 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -291,10 +292,6 @@ K=max\{K(\alpha,\beta,\gamma)|1\leq i<j<k\leq n\}\label{eq:K}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 Warto zauważyć, że współczynnik nie tylko znajduje największą niespójność,
  ale także wskazuje miejsce, w którym ona występuje.
 \end_layout
@@ -327,7 +324,7 @@ key "GRZYBOWSKI2016197"
  Zatem współczynnik zostaje zapisany w postaci
 \begin_inset Formula 
 \begin{equation}
-G=\frac{1}{n}\sum_{i=1}^{n}K_{i}(\alpha,\beta,\gamma),
+G=\frac{1}{n}\sum_{i=1}^{n}K_{i}(\alpha,\beta,\gamma),\label{eq:g}
 \end{equation}
 
 \end_inset
@@ -441,12 +438,368 @@ reference "eq:lti*"
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}
+CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}.
 \end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Index of deteminants
+\end_layout
+
+\begin_layout Standard
+Index wprowadzony przez Pelaez i Lamata 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "PELAEZ20031839"
+
+\end_inset
+
+ również bazuje na koncepcji triad.
+ Autorzy zauważyli, że na podstawie triad można zbudować macierze 
+\begin_inset Formula $PCM$
+\end_inset
+
+, a ich wyznacznik jest ściśle związany ze spójnością macierzy.
+\end_layout
+
+\begin_layout Standard
+Dla dowolnej triady 
+\begin_inset Formula $(a_{ik},a_{ij},a_{jk})$
+\end_inset
+
+ można zbudować macierz postaci 
+\begin_inset Formula 
+\begin{equation}
+T_{ijk}=\begin{array}{ccc}
+1 & a_{ij} & a_{ik}\\
+\frac{1}{a_{ij}} & 1 & a_{jk}\\
+\frac{1}{a_{ik}} & \frac{1}{a_{jk}} & 1
+\end{array},\,\,\,\,\,\,gdzie\,i<j<k.
+\end{equation}
+
+\end_inset
+
+Wyznacznik takiej macierzy wynosi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+det(A)=\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2.
+\end{equation}
+
+\end_inset
+
+Jeśli macierz jest spójna, wtedy 
+\begin_inset Formula $det(A)=0,$
+\end_inset
+
+ w przeciwnym razie 
+\begin_inset Formula $det(A)>0$
+\end_inset
+
+.Bazując na powyższych rozważaniach, autorzy wprowadzili współczynnik niespójnośc
+i, który można zapisać w postaci
+\begin_inset Formula 
+\begin{equation}
+CI*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kułakowski and Szybowski indices
+\end_layout
+
+\begin_layout Standard
+Kułakowski i Szybowski zaproponowali dwa kolejne współczynniki niespójności
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KULAKOWSKI20141132"
+
+\end_inset
+
+, również oparte na triadach.
+ Wykorzystują one fakt, że ilość triad, jakie można znaleźć w macierzy wynosi
+ 
+\begin_inset Formula $\binom{n}{3}=\frac{n!}{(n-3)!3!}=\frac{n(n-1)(n-2)}{6}$
+\end_inset
+
+.
+ Wprowadzony współczynnik jest postaci
+\begin_inset Formula 
+\begin{equation}
+I_{1}=\frac{6\sum_{t\in T}K(t)}{n(n-1)(n-2)},\label{eq:I1}
+\end{equation}
+
+\end_inset
+
+gdzie 
+\begin_inset Formula $K(t)$
+\end_inset
+
+ to współcznnik Koczkodaja dla triady 
+\begin_inset Formula $t=(\alpha,\beta,\gamma)$
+\end_inset
+
+ ze zbioru wszystkich triad 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ Drugi współczynnik niespójności jest podobny
+\begin_inset Formula 
+\begin{equation}
+I_{2}=\frac{6\sqrt{\sum_{t\in T}K^{2}(t)}}{n(n-1)(n-2)}.\label{eq:I2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Współczynniki można łączyć ze sobą, tworząc nowe współczynniki niespójności.
+ W taki Kułakowski i Szykowski zaproponowali dwa kolejne współczynniki.
+ Pierwszy bazuje na 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:K"
+
+\end_inset
+
+ oraz 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:I1"
+
+\end_inset
+
+ i pozwala wybierać jaki wpływ na wynik ma mieć największa znaleziona niespójnoś
+ć, a jaki średnia niespójność wszystkich triad.
+ Współczynnik niespójności wygląda więc następująco 
+\begin_inset Formula 
+\begin{equation}
+I_{\alpha}=\alpha K+(1-\alpha)I_{1}.
+\end{equation}
+
+\end_inset
+
+Drugi rozszerza pierwszy o 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:I2"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+I_{\alpha,\beta}=\alpha K+\beta I_{1}+(1-\alpha-\beta)I_{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Geometric consistency index
+\end_layout
+
+\begin_layout Standard
+Jeden z indeksów, który opiera się na założeniu 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent2"
+
+\end_inset
+
+.
+ Wektor wag w tym przypadku powinien być obliczony metodą średnich geometrycznyc
+h [referencja!].
+ Współczynnik niespójności został zaproponowany przez Craforda i Williamsa
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "CRAWFORD1985387"
+
+\end_inset
+
+, a następnie udoskonalony przez Aguaròn and Moreno-Jimènez 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "AGUARON2003137"
+
+\end_inset
+
+.
+ Koszystając z założenia tworzymy macierz
+\begin_inset Formula 
+\begin{equation}
+E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{i}}{w_{j}}\right],\,\,\,\,\,\,i,j=1,...,n.
+\end{equation}
+
+\end_inset
+
+Współczynnik niespójności obliczamy w następujący sposób
+\begin_inset Formula 
+\begin{equation}
+GCI=\frac{2}{(n-1)(n-2)}\sum_{i=1}^{n}\sum_{j=i+1}^{n}ln^{2}e_{ij}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Harmonic consistency index
+\end_layout
+
+\begin_layout Standard
+Indeks wprowadzony przez Stein i Mizzi i prezentuje zupełnie nową metodę
+ liczenia niespójności 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "STEIN2007488"
+
+\end_inset
+
+.
+ Na początku wymaga utworzenia pomocniczego wektora 
+\begin_inset Formula $s=(s_{1},...,s_{n})^{T},$
+\end_inset
+
+gdzie 
+\begin_inset Formula $n$
+\end_inset
+
+ to wymiar macierzy 
+\begin_inset Formula $A$
+\end_inset
+
+, dla której policzony zostanie współczynnik.
+ Każdy element wektora to suma wartości w jedej kolumnie macierzy 
+\begin_inset Formula $A$
+\end_inset
+
+, a więc
+\begin_inset Formula 
+\begin{equation}
+s_{j}=\sum_{i=1}^{n}a_{ji}\,\,\,\,\,\,\forall j.
+\end{equation}
+
+\end_inset
+
+Autorzy indeksu udowodnili, że jeśli macierz 
+\begin_inset Formula $A$
+\end_inset
+
+ jest spójna, to 
+\begin_inset Formula $\sum_{j=1}^{n}s_{j}^{-1}=1$
+\end_inset
+
+.
+ Wzór na średnią harmoniczną wygląda następująco 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "book"
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{equation}
+HM=\frac{n}{\sum_{j=1}^{n}\frac{1}{s_{j}}}.\label{eq:hm'}
+\end{equation}
+
+\end_inset
+
+Ostateczny wzór na współczynnik niespójności został otrzymany poprzez normalizac
+ję 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hm'"
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+HCI=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cavallo-D’Apuzzo
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
+Golden-Wang index
+\end_layout
+
+\begin_layout Standard
+Ten współczynnik niespójności został wprowadzony przez Goldena i Wanga.
+ Zakłada, że wektor wag został wyliczony na podstawie metody średnich geometrycz
+nych [referencja!], a następnie został znormalizowany.
+ W ten sposób orzymano wektor 
+\begin_inset Formula $g*=[g{}_{1,}^{*},...,g_{n}^{*}],$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $n$
+\end_inset
+
+ to wymiar badanej macierzy 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Następnym krokiem jest normalizacja każdej kolumny macierzy 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Po normalizacji suma elementów każdej kolumny macierzy 
+\begin_inset Formula $A$
+\end_inset
+
+ wynosi 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Powstałą w ten sposób macierz oznaczmy symbolem 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+.
+ Współczynnik niespójności zdefiniowano w następujący sposób
+\begin_inset Formula 
+\begin{equation}
+GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}g_{j}^{*}\mid.
+\end{equation}
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Section
@@ -464,7 +817,7 @@ Podsumowanie
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/kazibudzki2016a"
+bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/pelaez_lemata_2003,/home/dawid/Pulpit/magisterka/bib/kulakowski_szybowski_2014,/home/dawid/Pulpit/magisterka/bib/crawfore_wiliams_2985_geometric,/home/dawid/Pulpit/magisterka/bib/aruaron_moreno_2003,/home/dawid/Pulpit/magisterka/bib/stain_mizii_2007,/home/dawid/Pulpit/magisterka/bib/brunelli_introduction_2015"
 options "elsarticle-num"
 
 \end_inset
