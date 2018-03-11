@@ -756,7 +756,14 @@ Golden-Wang index
 \end_layout
 
 \begin_layout Standard
-Ten współczynnik niespójności został wprowadzony przez Goldena i Wanga.
+Ten współczynnik niespójności został wprowadzony przez Goldena i Wanga 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Golden1989"
+
+\end_inset
+
+.
  Zakłada, że wektor wag został wyliczony na podstawie metody średnich geometrycz
 nych [referencja!], a następnie został znormalizowany.
  W ten sposób orzymano wektor 
@@ -799,7 +806,23 @@ GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}g_{j}^{*}\mid.
 
 \end_inset
 
- 
+
+\end_layout
+
+\begin_layout Subsection
+SOlo Hamalainen
+\end_layout
+
+\begin_layout Standard
+TODO
+\end_layout
+
+\begin_layout Subsection
+WU i XU
+\end_layout
+
+\begin_layout Standard
+TODO
 \end_layout
 
 \begin_layout Section
