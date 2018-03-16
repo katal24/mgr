@@ -154,8 +154,16 @@ sep
 Wstęp
 \end_layout
 
+\begin_layout Standard
+TODO: Opis metody PC
+\end_layout
+
 \begin_layout Section
-Porównywanie parami i niespójność
+Problem niespójności
+\end_layout
+
+\begin_layout Standard
+TODO: Opis o co chodzi z niespójnością
 \end_layout
 
 \begin_layout Standard
@@ -174,8 +182,7 @@ a_{ij}=\frac{w_{i}}{w_{j}}\label{eq:consistent2}
 
 \end_inset
 
-dać info, że w może być wyliczane poprzez wartości własne lub średnie geometrycz
-ne
+Może być wyliczane poprzez wartości własne lub średnie geometryczne
 \end_layout
 
 \begin_layout Section
@@ -193,11 +200,14 @@ reference "eq:consistent"
 \end_inset
 
 ), niektóre korzystają z wartości własnych macierzy, jeszcze inne bazują
- na założeniu, że dla spójnej macierzy zachodzi 
-\begin_inset Formula $a_{ij}=\frac{w_{i}}{w_{j}}$
+ na założeniu, że dla spójnej macierzy zachodzi (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent2"
+
 \end_inset
 
-, gdzie 
+), gdzie 
 \begin_inset Formula $w$
 \end_inset
 
@@ -658,7 +668,7 @@ GCI=\frac{2}{(n-1)(n-2)}\sum_{i=1}^{n}\sum_{j=i+1}^{n}ln^{2}e_{ij}.
 
 \end_inset
 
-
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -744,14 +754,6 @@ HCI=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
 \end_layout
 
 \begin_layout Subsection
-Cavallo-D’Apuzzo
-\end_layout
-
-\begin_layout Standard
-TODO
-\end_layout
-
-\begin_layout Subsection
 Golden-Wang index
 \end_layout
 
@@ -810,19 +812,117 @@ GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}g_{j}^{*}\mid.
 \end_layout
 
 \begin_layout Subsection
-SOlo Hamalainen
+Salo and Hamalainen index
 \end_layout
 
 \begin_layout Standard
-TODO
+Indeks wprowadzony przez Salo i Hamalainena 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SALO1995458,article"
+
+\end_inset
+
+ wykorzystuje definicję niespójności 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+, wymaga jednak utworzenia macierzy pomocniczej, w której każdy element
+ to najmniejsza i największa rozbieżność od spójności w oparciu o wzór 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+.
+ Indeks bierze pod uwagę wszystkie triady:
+\begin_inset Formula 
+\begin{equation}
+R=(r_{ij})_{nxn}=\left(\begin{array}{ccc}
+[\underline{r}_{11},\overline{r}_{11}] & \ldots & [\underline{r}_{1n},\overline{r}_{1n}]\\
+\vdots & \ddots & \vdots\\{}
+[\underline{r}_{n1},\overline{r}_{n1}] & \ldots & [\underline{r}_{nn},\overline{r}_{nn}]
+\end{array}\right),
+\end{equation}
+
+\end_inset
+
+ gdzie 
+\begin_inset Formula $\underline{r_{ij}}=min\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\overline{r_{ij}}=max\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\} $
+\end_inset
+
+, a 
+\begin_inset Formula $n$
+\end_inset
+
+ to wymiar badanej macierzy.
+ Numeryczny przykład został przedstawiony w 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "book"
+
+\end_inset
+
+.
+ Bazując na powstałej macierzy 
+\begin_inset Formula $R$
+\end_inset
+
+, autorzy zaproponowali następujący współczynnik niespojności:
+\begin_inset Formula 
+\begin{equation}
+CM=\frac{2}{n(n-1)}\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\frac{\overline{r}_{ij}-\underline{r}_{ij}}{\left(1+\overline{r}_{ij}\right)\left(1+\underline{r}_{ij}\right)}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Subsection
+Cavallo and D’Apuzzo index
+\end_layout
+
+\begin_layout Plain Layout
+TODO: Kolejny indeks wykorzystujący triady został zaproponowany przez Cavallo-D’
+Apuzzo.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{a_{ik}}{a_{ij}a_{jk}},\frac{a_{ij}a_{jk}}{a_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
-WU i XU
+Relative error
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 TODO
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -840,7 +940,7 @@ Podsumowanie
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/pelaez_lemata_2003,/home/dawid/Pulpit/magisterka/bib/kulakowski_szybowski_2014,/home/dawid/Pulpit/magisterka/bib/crawfore_wiliams_2985_geometric,/home/dawid/Pulpit/magisterka/bib/aruaron_moreno_2003,/home/dawid/Pulpit/magisterka/bib/stain_mizii_2007,/home/dawid/Pulpit/magisterka/bib/brunelli_introduction_2015"
+bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/pelaez_lemata_2003,/home/dawid/Pulpit/magisterka/bib/kulakowski_szybowski_2014,/home/dawid/Pulpit/magisterka/bib/crawfore_wiliams_2985_geometric,/home/dawid/Pulpit/magisterka/bib/aruaron_moreno_2003,/home/dawid/Pulpit/magisterka/bib/stain_mizii_2007,/home/dawid/Pulpit/magisterka/bib/brunelli_introduction_2015,/home/dawid/Pulpit/magisterka/bib/solo_hamalainen_95,/home/dawid/Pulpit/magisterka/bib/salo_hamalainen_97,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2009,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2010"
 options "elsarticle-num"
 
 \end_inset
