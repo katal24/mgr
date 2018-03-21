@@ -901,6 +901,15 @@ generatePCMatrixFromPV <- function(priorityVector){
   recreatePCMatrix(matrix)
 }
 
+generateMatrixE <- function(matrix, priorityVector){
+  rDim = dim(matrix)[1]
+  cDim = rDim
+  for(r in 1:rDim)
+    for(c in 1:cDim)
+      matrix[r,c] <- matrix[r,c]*(priorityVector[c]/priorityVector[r])
+  
+  matrix
+}
 
 #' @title Generate Priority Vector and PCMatrix 
 #' @description 
@@ -929,7 +938,7 @@ distributePCMatrix<- function(matrix){
   #    matrix[r,c] <- runif(1, min = 0.5, max = 1.5) * matrix[r,c]
   
   diag(matrix) <- 1
-  recreatePCMatrix(matrix)
+  matrix <- recreatePCMatrix(matrix)
   matrix
 }
 
@@ -940,7 +949,8 @@ distributePCMatrix<- function(matrix){
 #' @return 
 generateDistributedPCMatrix<- function(numOfElements){
   matrix <- generatePCMatrix(numOfElements)
-  distributePCMatrix(matrix)
+  matrix <- distributePCMatrix(matrix)
+  matrix
 }
 
 
@@ -1003,30 +1013,30 @@ koczkodajForTriad <- function(triad) {
 }
 
 #### metohod !!!
-grzybowskiATI <- function(matrix, alfa=0, beta=0){
+grzybowski <- function(matrix, alfa=0, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajForTriad", matrix)
   chopV(avg(triadsAndIdxs[,4]))
 }
 
 
 #### method !!!
-grzybowskiALTI1 <- function(matrix, alfa=0, beta=0){
+kazibudzkiLTI1 <- function(matrix, alfa=0, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("grzybowskiLTI1ForTriad", matrix)
   v = chopV(avg(triadsAndIdxs[,4]))
   v
 }
 
-grzybowskiLTI1ForTriad <- function(triad) {
+kazibudzkiLTI1ForTriad <- function(triad) {
   abs(log((triad[1]*triad[2])/triad[3]))
 }
 
-grzybowskiALTI2 <- function(matrix, alfa=0, beta=0){
+kazibudzkiLTI2 <- function(matrix, alfa=0, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("grzybowskiLTI2ForTriad", matrix)
   v = chopV(avg(triadsAndIdxs[,4]))
   v
 }
 
-grzybowskiLTI2ForTriad <- function(triad) {
+kazibudzkiLTI2ForTriad <- function(triad) {
   log((triad[1]*triad[2])/triad[3])**2
 }
 
@@ -1065,6 +1075,73 @@ kulakowskiSzybowskiIab <- function(matrix, alfa, beta=0){
   triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajForTriad", matrix)
   chopV(alfa*max(triadsAndIdxs[,4]) + beta*avg(triadsAndIdxs[,4]) + (1-alfa-beta)*(sqrt(sum(triadsAndIdxs[,4]**2)))/length(triadsAndIdxs[,4]) )
 }
+
+#### method !!!
+kulakowskiSzybowski2 <- function(matrix, alfa=0, beta=0){
+  triadsAndIdxs <- uniqueTriadsTuplesAndIdxForInComplete("koczkodajForTriad", matrix)
+  chopV((sqrt(sum(triadsAndIdxs[,4]**2)))/length(triadsAndIdxs[,4]))
+}
+
+#### method !!!
+geometric <- function(matrix, alfa=0, beta=0){
+  dim =dim(matrix)[1]
+  w <- geometricRankForIncomplete(matrix);
+  e <- matrix(nrow = dim, ncol = dim)
+  
+  for(i in 1:dim){
+    for(j in 1:dim){
+      e[i,j] = matrix[i,j]*(w[j]/w[i])
+    }
+  }
+  
+  sum = 0
+  
+  for(i in 1:(dim-1)){
+    for(j in (i+1):dim){
+      if(e[i,j]!=0){
+        sum = sum + log(e[i,j])^2
+      }
+    }
+  }
+  
+  chopV(2/((dim-1)*(dim-2))*sum)
+}
+
+geometricRankForIncomplete <- function(matrix){
+  apply(matrix, 1, function(row){
+    prod(row[row!=0])^(1/length(row[row!=0]))
+  })
+}
+
+#### method !!!
+harmonic <- function(matrix){
+  n <- dim(matrix)[1]
+  #filled <- length(matrix[matrix!=0])
+  #n <- (filled/(n^2))*n
+  s <- sumValuesInColumns(matrix)
+  sReverse <- 1/s
+  hm <- n/(sum(sReverse))
+  hm
+  hci <- ((hm - n)*(n+1))/(n*(n-1))
+  hci
+}
+
+sumValuesInColumns <- function(matrix){
+  apply(matrix, 2, function(col){
+    col[col==0]=1
+    sum(col)
+  })
+}
+
+#### method !!!
+saaty <- function(matrix){
+  matrix[matrix==0] = 1
+  matrix <- apply(matrix, 2, as.numeric)
+  n <- nrow(matrix)
+  alpha <- principalEigenValueSym(matrix)
+  chopV((alpha - n)/(n-1))
+}
+
 
 
 generateTriadsForTuples <- function(matrix, tuples) {
@@ -1192,13 +1269,13 @@ runMethod <- function(i, matrix, alfa, beta){
            koczkodaj(matrix, alfa, beta)
          },
          "2"={
-           grzybowskiATI(matrix, alfa, beta)
+           grzybowski(matrix, alfa, beta)
          },
          "3"={
-           grzybowskiALTI1(matrix, alfa, beta)
+           kazibudzkiLTI1(matrix, alfa, beta)
          },
          "4"={
-           grzybowskiALTI2(matrix, alfa, beta)
+           kazibudzkiLTI2(matrix, alfa, beta)
          },
          "5"={
            kazibudzkiCMLTI2(matrix, alfa, beta)

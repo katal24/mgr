@@ -1,0 +1,1031 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass elsarticle
+\begin_preamble
+% specify here the journal
+\journal{Example: Nuclear Physics B}
+
+% use this if you need line numbers
+%\usepackage{lineno}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-std
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command bibtex
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 0
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle headings
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout BeginFrontmatter
+
+\end_layout
+
+\begin_layout Title
+Inconsistency of incomplete pairwise comparisons matrices
+\end_layout
+
+\begin_layout Author
+Dawid Talaga
+\end_layout
+
+\begin_layout Email
+talagadawid@gmail.com
+\end_layout
+
+\begin_layout Address
+AGH University of Science and Technology, Kraków, Poland
+\end_layout
+
+\begin_layout Abstract
+TODO: Abstract, should normally be not longer than 200 words.
+\end_layout
+
+\begin_layout Keywords
+pairwise comparisons 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ inconsistency 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ incomplete matrices
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+sep
+\end_layout
+
+\end_inset
+
+ AHP
+\end_layout
+
+\begin_layout EndFrontmatter
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+TODO: Opis metody PC
+\end_layout
+
+\begin_layout Section
+Inconsistency problem
+\end_layout
+
+\begin_layout Standard
+TODO: Opis o co chodzi z niespójnością
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a_{ik}=a_{ij}a_{jk}\,\,\,\,\,\,\forall_{i,j,k}\label{eq:consistent}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+a_{ij}=\frac{w_{i}}{w_{j}}\label{eq:consistent2}
+\end{equation}
+
+\end_inset
+
+triad
+\begin_inset CommandInset label
+LatexCommand label
+name "triad"
+
+\end_inset
+
+ - definicja
+\end_layout
+
+\begin_layout Standard
+Może być wyliczane poprzez wartości własne lub średnie geometryczne
+\end_layout
+
+\begin_layout Section
+Inconsistency indices
+\end_layout
+
+\begin_layout Standard
+In the long history of PC method, a lot of methods have been developed to
+ calculate inconsistencies.
+ Many of them are based directly on the definition of consistency (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+), some methods use the eigenvalues of the matrix, others are based on the
+ assumption that each fully consistent matrix fulfills the condition (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent2"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+This section presents twelve common inconsistency indices, which can be
+ relatively easily modified in such a way that they work for incomplete
+ matrices.
+ Many of these coefficients have been described and tested numerically in
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brunelli2013"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+saaty idx, potem geometric index,
+\end_layout
+
+\begin_layout Standard
+indices -> indexes
+\end_layout
+
+\begin_layout Standard
+rozdział 3 - umotywować dokłądny przegląd indeksów
+\end_layout
+
+\begin_layout Standard
+intrduction: 1.
+ narracyjna historia o rozwoju indeksów (ramond lull, kondorse, teoria społeczne
+go wybory - kenetal, amartay sen) - kilka zdań o historii + kilka zdań o
+ tym po co ten artykuł jest.
+ ma być tekstowe - bez wzorów
+\end_layout
+
+\begin_layout Standard
+sekcja 2: Premilinaries: opis PC (alternatywy, porównania) i niespójności
+ - 
+\end_layout
+
+\begin_layout Standard
+sekcja 3: inconsistency indexes: jeżeli mamy dużo niespójności, to dobrze
+ jest ją zmierzyć - bo mogą być niewiarygodne - było wiele pomysłów.
+ saaty, geometric index, reszta
+\end_layout
+
+\begin_layout Standard
+sekcja 4: które da się dostosował łatwo i metoda 
+\end_layout
+
+\begin_layout Standard
+sekcja 5 - moja lub discussuin: discussion: analiza wyników
+\end_layout
+
+\begin_layout Standard
+conclision: udało się pokazać, że index ...
+ jest ok
+\end_layout
+
+\begin_layout Subsection
+Koczkodaj index
+\end_layout
+
+\begin_layout Standard
+One of the most popular inconsistency indices was proposed by Koczkodaj
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KOCZKODAJ199379"
+
+\end_inset
+
+.
+ It is based directly on the definition of consistency (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+).
+ The value of the inconsistency index for one triad (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "triad"
+
+\end_inset
+
+) was defined as:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_{ij}}\mid a_{ik}-a_{ij}a_{jk}\mid,\frac{1}{a_{jk}}\mid a_{jk}-\frac{a_{ik}}{a_{ij}}\mid\}.
+\end{equation}
+
+\end_inset
+
+This formula has been simplified by Duszak and Koczkodaj 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DUSZAK1994273"
+
+\end_inset
+
+ and is given as: 
+\begin_inset Formula 
+\begin{equation}
+K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\alpha\gamma}{\beta}\mid\},\,\,\,\,\,\,gdzie\,\alpha=a_{ij},\beta=a_{ik},\gamma=a_{jk}\label{eq:k_abg}
+\end{equation}
+
+\end_inset
+
+Then it was genaralized 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DUSZAK1994273"
+
+\end_inset
+
+ for 
+\begin_inset Formula $n>2$
+\end_inset
+
+.
+ Finally, the inconsistency index has the following form:
+\begin_inset Formula 
+\begin{equation}
+K=max\{K(\alpha,\beta,\gamma)|1\leq i<j<k\leq n\}\label{eq:K}
+\end{equation}
+
+\end_inset
+
+It is worth noting that not only does the coefficient find the greatest
+ inconsistency but also indicates the place in which it occurs.
+\end_layout
+
+\begin_layout Subsection
+Grzybowski index
+\end_layout
+
+\begin_layout Standard
+Based on the Koczkodaj index, Grzybowski introduced a new one 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "GRZYBOWSKI2016197"
+
+\end_inset
+
+.
+ He resigned from looking for the most inconsistent triad, in favor of averaging
+ the values of all inconsistencies.
+ The new inconsistency index has been defined as 
+\begin_inset Formula $G=Mean(K(\alpha,\beta,\gamma),$
+\end_inset
+
+ where 
+\begin_inset Formula $Mean$
+\end_inset
+
+ means the arithmetic average of all triads.
+ Thus, the index could be formulated as follows:
+\begin_inset Formula 
+\begin{equation}
+G=\frac{1}{n}\sum_{i=1}^{n}K_{i}(\alpha,\beta,\gamma).\label{eq:g}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kazibudzki indices
+\end_layout
+
+\begin_layout Standard
+Based on the Koczkodaj inconsistency index and observation that 
+\begin_inset Formula $ln(\frac{\alpha\gamma}{\beta})=-ln(\frac{\beta}{\alpha\gamma}),$
+\end_inset
+
+ Kazibudzki proposed several additional inconsistency indices 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "article"
+
+\end_inset
+
+.
+ Instead of the formula for inconsistency of the triad (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:k_abg"
+
+\end_inset
+
+), he introduced two new formulas:
+\begin_inset Formula 
+\begin{equation}
+LTI(\alpha,\beta\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+LTI*(\alpha,\beta\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).\label{eq:lti*}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Based on the above equations, Kazibudzki proposed new indices.
+ The simplest ones use the geometric mean of the triads.
+ Thus, new indices could be written in the form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+MLTI(LTI)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI_{i}(\alpha,\beta\gamma)\right],
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+MLTI(LTI*)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI*_{i}(\alpha,\beta\gamma)\right].
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+After further research 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "DBLP:journals/corr/Kazibudzki17"
+
+\end_inset
+
+, Kazibudzki introduces another inconsistency index, again based on (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lti*"
+
+\end_inset
+
+).
+ It was defined as 
+\begin_inset Formula $CM(LTI*)=\frac{MEAN[LTI*(\alpha,\beta,\gamma)]}{1+MAX[LTI*(\alpha,\beta,\gamma)]}$
+\end_inset
+
+.
+ Hence,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Index of determinants
+\end_layout
+
+\begin_layout Standard
+This index was proposed by Pelaez and Lamata 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "PELAEZ20031839"
+
+\end_inset
+
+ and is also based on the concept of triad.
+ The authors noticed that 
+\begin_inset Formula $PCM$
+\end_inset
+
+ matrices can be construct on the basis of triads.
+ Their determinant is closely related to the consistency of the matrix.
+\end_layout
+
+\begin_layout Standard
+For every triad 
+\begin_inset Formula $(a_{ik},a_{ij},a_{jk})$
+\end_inset
+
+ one can build a matrix in the form: 
+\begin_inset Formula 
+\begin{equation}
+T_{ijk}=\left(\begin{array}{ccc}
+1 & a_{ij} & a_{ik}\\
+\frac{1}{a_{ij}} & 1 & a_{jk}\\
+\frac{1}{a_{ik}} & \frac{1}{a_{jk}} & 1
+\end{array}\right),\,\,\,\,\,\,gdzie\,i<j<k.
+\end{equation}
+
+\end_inset
+
+The determinant of this matrix is:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+det(A)=\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2.
+\end{equation}
+
+\end_inset
+
+If the matrix is fully consistent, then 
+\begin_inset Formula $det(A)=0,$
+\end_inset
+
+ else 
+\begin_inset Formula $det(A)>0$
+\end_inset
+
+.
+ Based on the above considerations, the authors introduced the new inconsistency
+ index that can be formulated as follows:
+\begin_inset Formula 
+\begin{equation}
+CI*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2\right).
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Kułakowski and Szybowski indices
+\end_layout
+
+\begin_layout Standard
+Kułakowski and Szybowski proposed two further inconsictency indices 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "KULAKOWSKI20141132"
+
+\end_inset
+
+, which are also based on triads.
+ They use the fact that the number of triads that can be found in a 
+\begin_inset Formula $PCM$
+\end_inset
+
+ matrix is 
+\begin_inset Formula $\binom{n}{3}=\frac{n!}{(n-3)!3!}=\frac{n(n-1)(n-2)}{6}$
+\end_inset
+
+.
+ The index is formulated as follows:
+\begin_inset Formula 
+\begin{equation}
+I_{1}=\frac{6\sum_{t\in T}K(t)}{n(n-1)(n-2)},\label{eq:I1}
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $K(t)$
+\end_inset
+
+ is the Koczkodaj index for triad 
+\begin_inset Formula $t=(\alpha,\beta,\gamma)$
+\end_inset
+
+ of the set of all triads 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The second inconsistency index is similar:
+\begin_inset Formula 
+\begin{equation}
+I_{2}=\frac{6\sqrt{\sum_{t\in T}K^{2}(t)}}{n(n-1)(n-2)}.\label{eq:I2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Indices can be combined with each other to create new coefficients.
+ In this way Kułakowski and Szybowski proposed two new indices.
+ The first one is based on (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:K"
+
+\end_inset
+
+) and (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:I1"
+
+\end_inset
+
+).
+ This index allows to choose what effect on the result should the greatest
+ inconsistency found have and what the average inconsistency of all triads.
+ The new inconsistency index looks as follows:
+\begin_inset Formula 
+\begin{equation}
+I_{\alpha}=\alpha K+(1-\alpha)I_{1},
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $0\leq\alpha\leq1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+The second index expands the first one by (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:I2"
+
+\end_inset
+
+): 
+\begin_inset Formula 
+\begin{equation}
+I_{\alpha,\beta}=\alpha K+\beta I_{1}+(1-\alpha-\beta)I_{2}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Geometric consistency index
+\end_layout
+
+\begin_layout Standard
+One of the indices which are based on the assumption (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent2"
+
+\end_inset
+
+) was proposed by Craford and Williams 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "CRAWFORD1985387"
+
+\end_inset
+
+ and then refined by Aguaròn and Moreno-Jimènez 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "AGUARON2003137"
+
+\end_inset
+
+.
+ In this case the priority vector should be calculated using the geometric
+ mean method.
+ Consider (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent2"
+
+\end_inset
+
+) one can create a matrix:
+\begin_inset Formula 
+\begin{equation}
+E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{j}}{w_{i}}\right],\,\,\,\,\,\,i,j=1,...,n.
+\end{equation}
+
+\end_inset
+
+The inconsistency index is calculated as follows:
+\begin_inset Formula 
+\begin{equation}
+GCI=\frac{2}{(n-1)(n-2)}\sum_{i=1}^{n}\sum_{j=i+1}^{n}ln^{2}e_{ij}.
+\end{equation}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+Harmonic consistency index
+\end_layout
+
+\begin_layout Standard
+Index introduced by Stein and Mizzi and it presents a completely new method
+ of inconsistency counting 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "STEIN2007488"
+
+\end_inset
+
+.
+ At the beginning it requires the creation of an auxiliary vector 
+\begin_inset Formula $s=(s_{1},...,s_{n})^{T},$
+\end_inset
+
+ where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the dimension of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+, for which the index will be calculated.
+ Each element of the vector 
+\begin_inset Formula $s$
+\end_inset
+
+ is the sum of values in one column of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ Hence,
+\begin_inset Formula 
+\begin{equation}
+s_{j}=\sum_{i=1}^{n}a_{ji}\,\,\,\,\,\,\forall j.
+\end{equation}
+
+\end_inset
+
+The authors proved that if the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is consistent, then 
+\begin_inset Formula $\sum_{j=1}^{n}s_{j}^{-1}=1$
+\end_inset
+
+.
+ The formula for the mean harmonic looks as follows 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "book"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+HM=\frac{n}{\sum_{j=1}^{n}\frac{1}{s_{j}}}.\label{eq:hm'}
+\end{equation}
+
+\end_inset
+
+The final formula for inconsistency index was obtained by normalizing the
+ above equation (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:hm'"
+
+\end_inset
+
+):
+\begin_inset Formula 
+\begin{equation}
+HCI=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Golden and Wang index
+\end_layout
+
+\begin_layout Standard
+This index was introduced by Golden and Wang 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Golden1989"
+
+\end_inset
+
+.
+ It assumes that the priority vector was calculated using the geometric
+ mean method, then normalized to add up to 1.
+ In this way vector 
+\begin_inset Formula $g*=[g{}_{1,}^{*},...,g_{n}^{*}]$
+\end_inset
+
+ was obtained, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is the dimension of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ The next step is to normalize each column of the matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ After this, the sum of the elements of each column in matrix 
+\begin_inset Formula $A$
+\end_inset
+
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ The obtained matrix is marked with the symbol 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+.
+ The inconsistency index is defined as follows:
+\begin_inset Formula 
+\begin{equation}
+GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}g_{j}^{*}\mid.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Salo and Hamalainen index
+\end_layout
+
+\begin_layout Standard
+The index proposed by Salo and Hamalainen 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SALO1995458,article"
+
+\end_inset
+
+ uses the definition of inconsistency (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+), however it requires the creation of an auxiliary matrix, in which each
+ element is the smallest and largest discrepancy from consistency based
+ on formula (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent"
+
+\end_inset
+
+).
+ The index takes all triads into account:
+\begin_inset Formula 
+\begin{equation}
+R=(r_{ij})_{nxn}=\left(\begin{array}{ccc}
+[\underline{r}_{11},\overline{r}_{11}] & \ldots & [\underline{r}_{1n},\overline{r}_{1n}]\\
+\vdots & \ddots & \vdots\\{}
+[\underline{r}_{n1},\overline{r}_{n1}] & \ldots & [\underline{r}_{nn},\overline{r}_{nn}]
+\end{array}\right),
+\end{equation}
+
+\end_inset
+
+where 
+\begin_inset Formula $\underline{r_{ij}}=min\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $\overline{r_{ij}}=max\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\} $
+\end_inset
+
+ and 
+\begin_inset Formula $n$
+\end_inset
+
+ is the dimension of the tested matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ A numerical example was presented in 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "book"
+
+\end_inset
+
+.
+ Based on the resulting matrix 
+\begin_inset Formula $R$
+\end_inset
+
+, the authors proposed the following inconsistency index:
+\begin_inset Formula 
+\begin{equation}
+CM=\frac{2}{n(n-1)}\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\frac{\overline{r}_{ij}-\underline{r}_{ij}}{\left(1+\overline{r}_{ij}\right)\left(1+\underline{r}_{ij}\right)}.
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Comment
+status open
+
+\begin_layout Subsection
+Cavallo and D’Apuzzo index
+\end_layout
+
+\begin_layout Plain Layout
+TODO: Kolejny indeks wykorzystujący triady został zaproponowany przez Cavallo-D’
+Apuzzo.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{equation}
+I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{a_{ik}}{a_{ij}a_{jk}},\frac{a_{ij}a_{jk}}{a_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Relative error
+\end_layout
+
+\begin_layout Plain Layout
+TODO
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Inconsistency of incomplete pairwise comparisons matrices
+\end_layout
+
+\begin_layout Section
+Verification of indices for incomplete matrices
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset bibtex
+LatexCommand bibtex
+bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/pelaez_lemata_2003,/home/dawid/Pulpit/magisterka/bib/kulakowski_szybowski_2014,/home/dawid/Pulpit/magisterka/bib/crawfore_wiliams_2985_geometric,/home/dawid/Pulpit/magisterka/bib/aruaron_moreno_2003,/home/dawid/Pulpit/magisterka/bib/stain_mizii_2007,/home/dawid/Pulpit/magisterka/bib/brunelli_introduction_2015,/home/dawid/Pulpit/magisterka/bib/solo_hamalainen_95,/home/dawid/Pulpit/magisterka/bib/salo_hamalainen_97,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2009,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2010"
+options "elsarticle-num"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
