@@ -1062,6 +1062,19 @@ pelaeLamataForTriad <- function(triad) {
   triad[3]/(triad[1]*triad[2]) + (triad[1]*triad[2])/triad[3] - 2 
 }
 
+#### method !!!
+pelaeLamata2 <- function(matrix, alfa=0, beta=0){
+  n <- dim(matrix)[1]
+  sum <- 0
+  for(i in 1:(n-2))
+    for(j in (i+1):(n-1))
+      for(k in (j+1):n){
+       sum <- sum + (matrix[i,k]/(matrix[i,j]*matrix[j,k]) + (matrix[i,j]*matrix[j,k])/matrix[i,k] -2)
+      }
+  sum <- sum / choose(n,3)
+  chopV(sum)
+}
+
 
 #### method !!!
 kulakowskiSzybowskiIa <- function(matrix, alfa, beta=0){
@@ -1114,7 +1127,7 @@ geometricRankForIncomplete <- function(matrix){
 }
 
 #### method !!!
-harmonic <- function(matrix){
+harmonic <- function(matrix, alfa=0, beta=0){
   n <- dim(matrix)[1]
   #filled <- length(matrix[matrix!=0])
   #n <- (filled/(n^2))*n
@@ -1134,7 +1147,7 @@ sumValuesInColumns <- function(matrix){
 }
 
 #### method !!!
-saaty <- function(matrix){
+saaty <- function(matrix, alfa=0, beta=0){
   matrix[matrix==0] = 1
   matrix <- apply(matrix, 2, as.numeric)
   n <- nrow(matrix)
@@ -1143,6 +1156,110 @@ saaty <- function(matrix){
 }
 
 
+#### method !!!
+goldenWang <- function(matrix, alfa=0, beta=0){
+  n <- dim(matrix)[1]
+  g <- normalizeVector(geometricRankForIncomplete(matrix))
+  a <- normalizeColumnsInMatrix(matrix)
+  sum = 0
+  for(i in 1:n){
+    for(j in 1:n){
+      sum = sum + abs(a[i,j]-g[i])
+    }
+  }
+  gw <- 1/n*sum
+  gw
+}
+
+normalizeVector <- function(vector){
+  vector/sum(vector)
+}
+
+normalizeColumnsInMatrix <- function(matrix){
+  apply(matrix, 2, function(col){
+    normalizeVector(col)
+  })
+}
+
+
+#### method !!!
+saloHamalainen <- function(matrix, alfa=0, beta=0){
+  matrix[matrix==0] = 1
+  n <- dim(matrix)[1]
+  sum <- 0
+  
+  rMin <- matrix(nrow = n, ncol = n, data = 0)
+  rMax <- matrix(nrow = n, ncol = n, data = 0)
+  
+  for(i in 1:n){
+    for(j in 1:n){
+      c <- rep(0,n)
+      for(k in 1:n){
+        c[k] = matrix[i,k]*matrix[k,j]
+      }
+      rMin[i,j] = min(c)
+      rMax[i,j] = max(c)
+    }
+  }
+  
+  for(i in 1:(n-1)){
+    for(j in (i+1):n){
+      sum <- sum + (rMax[i,j]-rMin[i,j])/((1+rMax[i,j])*(1+rMin[i,j]))
+    }
+  }
+  
+  cm <- 2/(n*(n-1))*sum
+  chopV(cm)
+}
+
+#### method !!!
+cavalloDapuzzo <- function(matrix, alfa=0, beta=0){
+  n <- dim(matrix)[1]
+  sum <- 1
+  licz <- 0
+  for(i in 1:(n-2))
+    for(j in (i+1):(n-1))
+      for(k in (j+1):n){
+        if(matrix[i,k]!=0 && (matrix[i,j]*matrix[j,k])!=0){
+          licz = licz+1
+          sum <- sum * max(matrix[i,k]/(matrix[i,j]*matrix[j,k]), (matrix[i,j]*matrix[j,k])/matrix[i,k])
+        }
+      }
+  sum <- sum ^ (1/licz)
+  chopV(sum)
+}
+
+
+#### method !!!
+relativeError <- function(matrix, alfa=0, beta=0){
+  matrix[matrix==0] = 1
+  n <- dim(matrix)[1]
+  matrix <- log(matrix)
+ # matrix[matrix==-Inf]=-100000 
+  w <- apply(matrix, 1, function(row){avg(row)})
+  C <- matrix(nrow = n, ncol = n, data = 0)
+  E <- matrix(nrow = n, ncol = n, data = 0)
+  
+  n <- dim(matrix)[1]
+  for(i in 1:n)
+    for(j in 1:n){
+      C[i,j] = w[i] - w[j]
+      E[i,j] = matrix[i,j] - C[i,j]
+    }
+
+  sumE = 0;
+  sumA = 0;
+  
+  for(i in 1:(n-1)){
+    for(j in (i+1):n){
+      sumE <- sumE + (E[i,j])^2
+      sumA <- sumA + (matrix[i,j])^2
+    }
+  }
+  
+  chopV(sumE/sumA)
+  
+}
 
 generateTriadsForTuples <- function(matrix, tuples) {
   triads <- apply(tuples, 2, function(x) makeATriad(matrix=matrix,tuple=x))
@@ -1181,6 +1298,12 @@ uniqueTriadsTuplesAndIdxForInComplete <- function(methodName, matrix){
 
 # count average of vector
 avg <- function(vector){
+  w <- sum(vector)/length(vector)
+  w
+}
+
+avgPositive <- function(vector){
+  vector <- vector[vector!=-Inf]
   sum(vector)/length(vector)
 }
 
