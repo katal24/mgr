@@ -6,11 +6,28 @@
 #' @return inconsistency of the matrix
 #' @export
 saaty <- function(matrix){
-  matrix[matrix==0] = 1
-  matrix <- apply(matrix, 2, as.numeric)
   n <- nrow(matrix)
-  alpha <- principalEigenValueSym(matrix)
+  if( 0 %in% matrix ){
+    matrix <- createHarkerMatrix(matrix)
+  }
+  alpha <- principalEigenValue(matrix)
   chopV((alpha - n)/(n-1))
+}
+
+testHarker <- function(dim, grade, attempts) {
+  result <- double(attempts)
+  
+  for(i in 1:attempts){
+    result[i] <- saaty(breakPCMatrix(generatePCMatrix(dim), grade))
+    #if(result[i] == -100){
+    #  return("niespójność!")
+    #}
+  }
+  
+  howManyError <- sum(result<0)
+  howManyError*100/attempts
+  #howManyError
+  result
 }
 
 
@@ -20,7 +37,7 @@ saaty <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 geometric <- function(matrix){
-  dim =dim(matrix)[1]
+  dim =nrow(matrix)
   w <- geometricRankForIncomplete(matrix);
   e <- matrix(nrow = dim, ncol = dim)
   
@@ -55,17 +72,6 @@ koczkodaj <- function(matrix){
 }
 
 
-#' @title Grzybowski matrix inconsistency
-#' @description Counts the value of inconsistency for the matrix
-#' @param matrix - PC matrix (could be incomplete)
-#' @return inconsistency of the matrix
-#' @export
-grzybowski <- function(matrix){
-  triadsAndIdxs <- countIndexesForTriads("koczkodajForTriad", matrix)
-  chopV(mean(triadsAndIdxs))
-}
-
-
 #' @title Kazibudzki matrix inconsistency (LTI1)
 #' @description Counts the value of inconsistency for the matrix
 #' @param matrix - PC matrix (could be incomplete)
@@ -94,7 +100,7 @@ kazibudzkiLTI2 <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 kazibudzkiCMLTI2 <- function(matrix){
-  triadsAndIdxs <- countIndexesForTriads("kazibudzkiCMLTI2ForTriad", matrix)
+  triadsAndIdxs <- countIndexesForTriads("kazibudzkiLTI2ForTriad", matrix)
   chopV(mean(triadsAndIdxs)/(1+max(triadsAndIdxs)))
 }
 
@@ -116,7 +122,8 @@ pelaeLamata <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 kulakowskiSzybowski <- function(matrix){
-  grzybowski(matrix)
+  triadsAndIdxs <- countIndexesForTriads("koczkodajForTriad", matrix)
+  chopV(mean(triadsAndIdxs))
 }
 
 
@@ -147,9 +154,9 @@ kulakowskiSzybowskiIa <- function(matrix, alfa, beta=0){
 #' @param matrix - PC matrix (could be incomplete)
 #' @return inconsistency of the matrix
 #' @export
-kulakowskiSzybowskiIab <- function(matrix, alfa, beta=0){
+kulakowskiSzybowskiIab <- function(matrix, alfa, beta){
   triadsAndIdxs <- countIndexesForTriads("koczkodajForTriad", matrix)
-  chopV(alfa*max(triadsAndIdxs) + beta*mean(triadsAndIdxs) + (1-alfa-beta)*(sqrt(sum(triadsAndIdxs**2)))/length(triadsAndIdxs) )
+  chopV(alfa*max(triadsAndIdxs) + beta*mean(triadsAndIdxs) + (1-alfa-beta)*(sqrt(sum(triadsAndIdxs**2)))/length(triadsAndIdxs))
 }
 
 
@@ -159,9 +166,7 @@ kulakowskiSzybowskiIab <- function(matrix, alfa, beta=0){
 #' @return inconsistency of the matrix
 #' @export
 harmonic <- function(matrix){
-  n <- dim(matrix)[1]
-  #filled <- length(matrix[matrix!=0])
-  #n <- (filled/(n^2))*n
+  n <- nrow(matrix)
   s <- sumValuesInColumns(matrix)
   sReverse <- 1/s
   hm <- n/(sum(sReverse))
@@ -177,7 +182,8 @@ harmonic <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 goldenWang <- function(matrix){
-  n <- dim(matrix)[1]
+  n <- nrow(matrix)
+  matrix[matrix==0] = 1
   g <- normalizeVector(geometricRankForIncomplete(matrix))
   a <- normalizeColumnsInMatrix(matrix)
   sum = 0
@@ -187,7 +193,7 @@ goldenWang <- function(matrix){
     }
   }
   gw <- 1/n*sum
-  gw
+  chopV(gw)
 }
 
 
@@ -197,8 +203,7 @@ goldenWang <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 saloHamalainen <- function(matrix){
-  matrix[matrix==0] = 1
-  n <- dim(matrix)[1]
+  n <- nrow(matrix)
   sum <- 0
   
   rMin <- matrix(nrow = n, ncol = n, data = 0)
@@ -232,14 +237,14 @@ saloHamalainen <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 cavalloDapuzzo <- function(matrix){
-  n <- dim(matrix)[1]
+  n <- nrow(matrix)
   sum <- 1
   licz <- 0
   for(i in 1:(n-2))
     for(j in (i+1):(n-1))
       for(k in (j+1):n){
         if(matrix[i,k]!=0 && (matrix[i,j]*matrix[j,k])!=0){
-          licz = licz+1
+          licz <- licz+1
           sum <- sum * max(matrix[i,k]/(matrix[i,j]*matrix[j,k]), (matrix[i,j]*matrix[j,k])/matrix[i,k])
         }
       }
@@ -254,15 +259,14 @@ cavalloDapuzzo <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 relativeError <- function(matrix){
-  matrix[matrix==0] = 1
-  n <- dim(matrix)[1]
-  matrix <- log(matrix)
+#  matrix[matrix==0] = 1
+  n <- nrow(matrix)
+ # matrix <- log(matrix)  - ostatnia zmiana
  # matrix[matrix==-Inf]=-100000 
   w <- apply(matrix, 1, function(row){mean(row)})
   C <- matrix(nrow = n, ncol = n, data = 0)
   E <- matrix(nrow = n, ncol = n, data = 0)
   
-  n <- dim(matrix)[1]
   for(i in 1:n)
     for(j in 1:n){
       C[i,j] = w[i] - w[j]
@@ -280,12 +284,11 @@ relativeError <- function(matrix){
   }
   
   chopV(sumE/sumA)
-  
 }
 
 
 
-########################### Methods for incomlete matrices #########################
+########################### Methods for triads #########################
 
 #' @title Koczkodaj innconsistency for one triad 
 #' @description Returns the Koczkodaj triad inconsistency
@@ -314,15 +317,6 @@ kazibudzkiLTI2ForTriad <- function(triad) {
 }
 
 
-#' @title kazibudzki (CMLTI2) innconsistency for one triad 
-#' @description Returns the Kazibudzki (LTI2) triad inconsistency
-#' @param triad - vector of 3 elements
-#' @return the Kazibudzki (LTI2)  triad inconsistency
-kazibudzkiCMLTI2ForTriad <- function(triad) {
-  log((triad[1]*triad[2])/triad[3])**2
-}
-
-
 #' @title Index of determinants for one triad 
 #' @description Returns Index of determinants for one triad 
 #' @param triad - vector of 3 elements
@@ -340,10 +334,10 @@ pelaeLamataForTriad <- function(triad) {
 #' @param value - numeric value
 #' @return 0 if the number is close to zero else value
 chopV <- function(value){
-  if(value>0.000001){
-    value
+  if(value>0.000001 || value < -0.000001){
+    return(value)
   } else{
-    0
+    return(0)
   }
 }
 
@@ -369,13 +363,28 @@ geometricRank <- function(matrix){
 }
 
 
+#' @title Create Harker matrix
+#' @description Takes incompletePC matrix and sets on diagonal the number of zeros (incremented by 1)
+#' @param incompleteMatrix - incomplete PC matrix
+#' @return Harker matrix
+createHarkerMatrix <- function(incompleteMatrix){
+  
+  nonZerosElements <- apply(incompleteMatrix, 1, function(row){
+    sum(row==0) + 1
+  })
+  
+  diag(incompleteMatrix) <- nonZerosElements
+  incompleteMatrix
+}
+
+
 #' @title Recipropal matrix
 #' @description Recreates recipropal matrix of the basis of upper-triagle of matrix
 #' @param matrix - PC matrix
 #' @return recipropal PC matrix
 recreatePCMatrix <- function(matrix){
-  for(r in 1:dim(matrix)[1]-1)
-    for(c in (r+1):dim(matrix)[1])
+  for(r in 1:nrow(matrix)-1)
+    for(c in (r+1):nrow(matrix))
       matrix[c,r] <- 1/matrix[r,c]
     
     diag(matrix) <- 1
@@ -422,7 +431,7 @@ generatePCMatrix<- function(numOfElements){
 #' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
 #' @return disturbed PC matrix
 disturbPCMatrix<- function(matrix, scale){
-  dim = dim(matrix)[1]
+  dim = nrow(matrix)
   
   for(r in 1:dim-1)
     for(c in (r+1):dim)
@@ -443,6 +452,17 @@ generateDisturbedPCMatrix<- function(numOfElements, scale){
 }
 
 
+#' @title Generate broken PC Matrix
+#' @description 
+#' @param numOfElements -
+#' @param grade - level of incompleteness [%]
+#' @return 
+generateBrokenPCMatrix<- function(numOfElements, scale, grade){
+  matrix <- generateDisturbedPCMatrix(numOfElements, scale)
+  breakPCMatrix(matrix, grade)
+}
+
+
 #' @title Breaks PC Matrix
 #' @description Breaks PC Matrix to obtain reciprocal, incomplete matrix
 #' @param  matrix - PC matrix
@@ -450,7 +470,7 @@ generateDisturbedPCMatrix<- function(numOfElements, scale){
 #' @return incomplete PC matrix
 breakPCMatrix<- function(matrix, grade){
   
-  dim <- dim(matrix)[1]
+  dim <- nrow(matrix)
   numOfEmptyElements <- grade*0.01*(dim*(dim-1))
   
   while(numOfEmptyElements > 1){
@@ -484,7 +504,6 @@ geometricRankForIncomplete <- function(matrix){
 #' @return vector of sum
 sumValuesInColumns <- function(matrix){
   apply(matrix, 2, function(col){
-    col[col==0]=1
     sum(col)
   })
 }
@@ -528,7 +547,7 @@ makeATriad <- function(matrix, tuple){
 #' @param matrix - PC matrix
 #' @return triads
 generateTriads <- function(matrix) {
-  dim <- dim(matrix)[1]
+  dim <- nrow(matrix)
   tuples <- combn(dim ,3)
   triads <- apply(tuples, 2, function(x) makeATriad(matrix=matrix, tuple=x))
   numOfTriads <- dim(triads)[2]
@@ -574,7 +593,7 @@ countIndexesForTriads <- function(methodName, matrix){
 #' @return average value of the relative error between the full matrix and indomplete matrix
 test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0){
   
-  results <- matrix(nrow=31, ncol=17, data=0)
+  results <- matrix(nrow=31, ncol=16, data=0)
   counter <- 1
   
   for(i in seq(1.1, 4, 0.1)){
@@ -583,7 +602,7 @@ test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsF
     counter <- counter+1
   }
   
-  for(i in 1:17){
+  for(i in 1:16){
     results[31, i] = sum(results[,i])/30
   }
   
@@ -604,7 +623,7 @@ test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsF
 exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttempts, alfa=0, beta=0) {
 
   matrix <- generateDisturbedPCMatrix(numOfElements, scale)
-  
+  dim <- ncol(matrix)
   if(alfa==0 && beta==0){
     realIdx <- methodName(matrix)
   } else {
@@ -614,7 +633,11 @@ exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, n
   vectorOfIdsx <- integer(numOfAttempts)
   
   for( i in 1:numOfAttempts ) {
-    brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+    brokenMatrix <- matrix(nrow = dim, ncol = dim, data = 0)
+    
+    while( !(0 %in% (matrix %^% (n-1))) ){
+      brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+    }
 
     if(alfa==0 && beta==0){
       idx <- methodName(brokenMatrix)
@@ -664,7 +687,7 @@ monteCarlo <- function(methodName, scale, numOfElements, gradeOfIncomplete, numO
 #' @param beta - a parameter for kulakowskiSzybowskiIab method
 #' @return average value of the relative error between the full matrix and indomplete matrix
 monteCarloOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0) {
-  numOfMethods <- 17
+  numOfMethods <- 16
   vectorOfIdsx <- integer(numOfAttempts)
   idxs = integer(numOfMethods)
   
@@ -687,16 +710,16 @@ monteCarloOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete, n
 #' @param beta - a parameter for kulakowskiSzybowskiIab method
 #' @return average value of the relative error between the full matrix and indomplete matrix for each method
 exploreMatrixOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete, numOfAttempts, alfa=0, beta=0) {
-  numOfMethods <- 17;
+  numOfMethods <- 16;
   
   realIdx <- integer(numOfMethods)
-  brokenIdx = integer(numOfMethods)
+  brokenIdx <- integer(numOfMethods)
   differences <- integer(numOfMethods)
   
   matrix <- generateDisturbedPCMatrix(numOfElements, scale)
   
   # oblicza prawidłowe wartości wsp. niesp.
-  for(i in 1:numOfMethods) {
+  for( i in 1:numOfMethods ) {
     realIdx[i] <- runMethod(i, matrix, alfa, beta)
   }
 
@@ -709,7 +732,7 @@ exploreMatrixOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete
   }
   
   
-  for(k in 1:numOfMethods) {
+  for( k in 1:numOfMethods ) {
     brokenIdx[k] <- brokenIdx[k]/numOfAttempts
     differences[k] <- brokenIdx[k]/realIdx[k]*100
   }
@@ -725,56 +748,53 @@ exploreMatrixOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete
 #' @param beta - a parameter for kulakowskiSzybowskiIab method
 #' @return the inconsistency index
 runMethod <- function(nr, matrix, alfa=0, beta=0){
-  switch(i,
+  switch(nr,
          "1"={
            koczkodaj(matrix)
          },
          "2"={
-           grzybowski(matrix)
-         },
-         "3"={
            kazibudzkiLTI1(matrix)
          },
-         "4"={
+         "3"={
            kazibudzkiLTI2(matrix)
          },
-         "5"={
+         "4"={
            kazibudzkiCMLTI2(matrix)
          },
-         "6"={
+         "5"={
            pelaeLamata(matrix)
          },
-         "7"={
+         "6"={
            kulakowskiSzybowski(matrix)
          },
-         "8"={
+         "7"={
            kulakowskiSzybowski2(matrix)
          },
-         "9"={
+         "8"={
            kulakowskiSzybowskiIa(matrix, alfa)
          },
-         "10"={
+         "9"={
            kulakowskiSzybowskiIab(matrix, alfa, beta)
          },
-         "11"={
+         "10"={
            geometric(matrix)
          },
-         "12"={
+         "11"={
            harmonic(matrix)
          },
-         "13"={
+         "12"={
            goldenWang(matrix)
          },
-         "14"={
+         "13"={
            saloHamalainen(matrix)
          },
-         "15"={
+         "14"={
            cavalloDapuzzo(matrix)
          },
-         "16"={
+         "15"={
            relativeError(matrix)
          },
-         "17"={
+         "16"={
            saaty(matrix)
          }
   )
@@ -790,7 +810,7 @@ runMethod <- function(nr, matrix, alfa=0, beta=0){
 
 #### method !!!
 #pelaeLamata2 <- function(matrix){
-#  n <- dim(matrix)[1]
+#  n <- nrow(matrix)
 #  sum <- 0
 #  for(i in 1:(n-2))
 #    for(j in (i+1):(n-1))
@@ -800,3 +820,16 @@ runMethod <- function(nr, matrix, alfa=0, beta=0){
 #  sum <- sum / choose(n,3)
 #  chopV(sum)
 #}
+
+
+
+#' @title Grzybowski matrix inconsistency
+#' @description Counts the value of inconsistency for the matrix
+#' @param matrix - PC matrix (could be incomplete)
+#' @return inconsistency of the matrix
+#' @export
+#grzybowski <- function(matrix){
+# triadsAndIdxs <- countIndexesForTriads("koczkodajForTriad", matrix)
+#  chopV(mean(triadsAndIdxs))
+#}
+
