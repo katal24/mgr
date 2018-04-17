@@ -14,22 +14,6 @@ saaty <- function(matrix){
   chopV((alpha - n)/(n-1))
 }
 
-testHarker <- function(dim, grade, attempts) {
-  result <- double(attempts)
-  
-  for(i in 1:attempts){
-    result[i] <- saaty(breakPCMatrix(generatePCMatrix(dim), grade))
-    #if(result[i] == -100){
-    #  return("niespójność!")
-    #}
-  }
-  
-  howManyError <- sum(result<0)
-  howManyError*100/attempts
-  #howManyError
-  result
-}
-
 
 #' @title Geometric consistency index (GCI)
 #' @description Counts the value of inconsistency for the matrix
@@ -238,18 +222,19 @@ saloHamalainen <- function(matrix){
 #' @export
 cavalloDapuzzo <- function(matrix){
   n <- nrow(matrix)
-  sum <- 1
+  prod <- 1
   licz <- 0
   for(i in 1:(n-2))
     for(j in (i+1):(n-1))
       for(k in (j+1):n){
         if(matrix[i,k]!=0 && (matrix[i,j]*matrix[j,k])!=0){
           licz <- licz+1
-          sum <- sum * max(matrix[i,k]/(matrix[i,j]*matrix[j,k]), (matrix[i,j]*matrix[j,k])/matrix[i,k])
+          prod <- prod * max( matrix[i,k]/(matrix[i,j]*matrix[j,k]), (matrix[i,j]*matrix[j,k])/matrix[i,k] )
         }
       }
-  sum <- sum ^ (1/licz)
-  chopV(sum)
+  
+  prod <- prod ^ (1/licz)
+  chopV(prod)
 }
 
 
@@ -750,86 +735,52 @@ exploreMatrixOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete
 runMethod <- function(nr, matrix, alfa=0, beta=0){
   switch(nr,
          "1"={
-           koczkodaj(matrix)
+           saaty(matrix)
          },
          "2"={
-           kazibudzkiLTI1(matrix)
-         },
-         "3"={
-           kazibudzkiLTI2(matrix)
-         },
-         "4"={
-           kazibudzkiCMLTI2(matrix)
-         },
-         "5"={
-           pelaeLamata(matrix)
-         },
-         "6"={
-           kulakowskiSzybowski(matrix)
-         },
-         "7"={
-           kulakowskiSzybowski2(matrix)
-         },
-         "8"={
-           kulakowskiSzybowskiIa(matrix, alfa)
-         },
-         "9"={
-           kulakowskiSzybowskiIab(matrix, alfa, beta)
-         },
-         "10"={
            geometric(matrix)
          },
+         "3"={
+           koczkodaj(matrix)
+         },
+         "4"={
+           kazibudzkiLTI1(matrix)
+         },
+         "5"={
+           kazibudzkiLTI2(matrix)
+         },
+         "6"={
+           kazibudzkiCMLTI2(matrix)
+         },
+         "7"={
+           pelaeLamata(matrix)
+         },
+         "8"={
+           kulakowskiSzybowski(matrix)
+         },
+         "9"={
+           kulakowskiSzybowski2(matrix)
+         },
+         "10"={
+           kulakowskiSzybowskiIa(matrix, alfa)
+         },
          "11"={
-           harmonic(matrix)
+           kulakowskiSzybowskiIab(matrix, alfa, beta)
          },
          "12"={
-           goldenWang(matrix)
+           harmonic(matrix)
          },
          "13"={
-           saloHamalainen(matrix)
+           goldenWang(matrix)
          },
          "14"={
-           cavalloDapuzzo(matrix)
+           saloHamalainen(matrix)
          },
          "15"={
-           relativeError(matrix)
+           cavalloDapuzzo(matrix)
          },
          "16"={
-           saaty(matrix)
+           relativeError(matrix)
          }
   )
 }
-
-
-
-########## Temp functions ##########
-
-#### Anonymous function syntax
-#(function(x) x * 10)(10)
-
-
-#### method !!!
-#pelaeLamata2 <- function(matrix){
-#  n <- nrow(matrix)
-#  sum <- 0
-#  for(i in 1:(n-2))
-#    for(j in (i+1):(n-1))
-#      for(k in (j+1):n){
-#        sum <- sum + (matrix[i,k]/(matrix[i,j]*matrix[j,k]) + (matrix[i,j]*matrix[j,k])/matrix[i,k] -2)
-#      }
-#  sum <- sum / choose(n,3)
-#  chopV(sum)
-#}
-
-
-
-#' @title Grzybowski matrix inconsistency
-#' @description Counts the value of inconsistency for the matrix
-#' @param matrix - PC matrix (could be incomplete)
-#' @return inconsistency of the matrix
-#' @export
-#grzybowski <- function(matrix){
-# triadsAndIdxs <- countIndexesForTriads("koczkodajForTriad", matrix)
-#  chopV(mean(triadsAndIdxs))
-#}
-
