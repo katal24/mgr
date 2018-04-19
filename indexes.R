@@ -62,7 +62,10 @@ koczkodaj <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 kazibudzkiLTI1 <- function(matrix){
-  triadsAndIdxs <- countIndexesForTriads("grzybowskiLTI1ForTriad", matrix)
+  triadsAndIdxs <- countIndexesForTriads("kazibudzkiLTI1ForTriad", matrix)
+  if(length(triadsAndIdxs)==0 || is.null(triadsAndIdxs)){
+    print(triadsAndIdxs)
+  }
   chopV(mean(triadsAndIdxs))
 }
 
@@ -73,7 +76,7 @@ kazibudzkiLTI1 <- function(matrix){
 #' @return inconsistency of the matrix
 #' @export
 kazibudzkiLTI2 <- function(matrix){
-  triadsAndIdxs <- countIndexesForTriads("grzybowskiLTI2ForTriad", matrix)
+  triadsAndIdxs <- countIndexesForTriads("kazibudzkiLTI2ForTriad", matrix)
   chopV(mean(triadsAndIdxs))
 }
 
@@ -267,8 +270,8 @@ relativeError <- function(matrix){
       sumA <- sumA + (matrix[i,j])^2
     }
   }
-  
-  chopV(sumE/sumA)
+  re <- sumE/sumA
+  chopV(re)
 }
 
 
@@ -558,7 +561,9 @@ generateTriads <- function(matrix) {
 #' @return vector of inconsistency indexes for triads
 countIndexesForTriads <- function(methodName, matrix){
   triads <- generateTriads(matrix)
-  
+  if(is.null(dim(triads)) && length(triads) == 3){
+    triads <- matrix(triads, 3, 1)
+  }
   triadIdxs <- apply(triads, 2, methodName)
   triadIdxs
 }
@@ -566,6 +571,36 @@ countIndexesForTriads <- function(methodName, matrix){
 
 
 ######################### TESTS - Monte Carlo ###########################
+
+runTests <- function() {
+  result <- 0
+#  dim <- c(4,6,8,10,15)
+#  for(i in dim){
+#    print("TEST")
+#    print("n = ")
+#    print(i)
+#    result <- test(numOfElements = i, numOfAttempts = 100, gradeOfIncomplete = 15, numOfAttemptsForOneMatrix = 100, alfa = 0.4, beta = 0.3)
+#    print(result)
+#  }
+  #gradeOfIncomplete <- c(4,7,14,25,50)
+  gradeOfIncomplete <- c(25)
+  for(i in gradeOfIncomplete){
+    print("TEST")
+    print("incomplete = ")
+    print(i)
+    result <- test(numOfElements = 8, numOfAttempts = 100, gradeOfIncomplete = i, numOfAttemptsForOneMatrix = 100, alfa = 0.4, beta = 0.3)
+    print(result)
+  }
+  
+  dim <- c(15)
+  for(i in dim){
+    print("TEST")
+    print("n = ")
+    print(i)
+    result <- test(numOfElements = i, numOfAttempts = 100, gradeOfIncomplete = 15, numOfAttemptsForOneMatrix = 100, alfa = 0.4, beta = 0.3)
+    print(result)
+  }
+}
 
 #' @title Explore the incomplete PC matrixes for every method and scale <1.1, 1.2, ... , 4.0>
 #' @description Examines what is the relative error between the full matrixes and indomplete matrixes.
@@ -606,7 +641,7 @@ test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsF
 #' @param beta - a parameter for kulakowskiSzybowskiIab method
 #' @return average value of the relative error between the full matrix and indomplete matrix
 exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttempts, alfa=0, beta=0) {
-
+  print("!!!!!!!!!!!!!!!!!!!!!!!!!")
   matrix <- generateDisturbedPCMatrix(numOfElements, scale)
   dim <- ncol(matrix)
   if(alfa==0 && beta==0){
@@ -619,9 +654,11 @@ exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, n
   
   for( i in 1:numOfAttempts ) {
     brokenMatrix <- matrix(nrow = dim, ncol = dim, data = 0)
+    numOfTriads <- length(generateTriads(brokenMatrix))/3
     
-    while( !(0 %in% (matrix %^% (n-1))) ){
+    while( !(0 %in% (matrix %^% (n-1))) && numOfTriads>0){
       brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+      numOfTriads <- length(generateTriads(brokenMatrix))/3
     }
 
     if(alfa==0 && beta==0){
@@ -710,7 +747,16 @@ exploreMatrixOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete
 
   # dekompletuje macierz i oblicza wszystkie współczynniki niespójności. Powtarza się to numOfAttemps razy
   for( i in 1:numOfAttempts ) {
+  #  brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+    
     brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+    numOfTriads <- length(generateTriads(brokenMatrix))/3
+    
+    while( (0 %in% (matrix %^% (n-1))) || numOfTriads==0){
+      brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+      numOfTriads <- length(generateTriads(brokenMatrix))/3
+    }
+    
     for(j in 1:numOfMethods) {
       brokenIdx[j] <- brokenIdx[j] + abs(realIdx[j] - runMethod(j, brokenMatrix, alfa, beta))
     }
