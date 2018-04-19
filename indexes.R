@@ -574,16 +574,16 @@ countIndexesForTriads <- function(methodName, matrix){
 
 runTests <- function() {
   result <- 0
-#  dim <- c(4,6,8,10,15)
-#  for(i in dim){
-#    print("TEST")
-#    print("n = ")
-#    print(i)
-#    result <- test(numOfElements = i, numOfAttempts = 100, gradeOfIncomplete = 15, numOfAttemptsForOneMatrix = 100, alfa = 0.4, beta = 0.3)
-#    print(result)
-#  }
-  #gradeOfIncomplete <- c(4,7,14,25,50)
-  gradeOfIncomplete <- c(25)
+  dim <- c(4,6,8,10,15)
+  for(i in dim){
+    print("TEST")
+    print("n = ")
+    print(i)
+    result <- test(numOfElements = i, numOfAttempts = 100, gradeOfIncomplete = 15, numOfAttemptsForOneMatrix = 100, alfa = 0.4, beta = 0.3)
+    print(result)
+  }
+ 
+  gradeOfIncomplete <- c(4,7,14,25,50)
   for(i in gradeOfIncomplete){
     print("TEST")
     print("incomplete = ")
@@ -592,14 +592,6 @@ runTests <- function() {
     print(result)
   }
   
-  dim <- c(15)
-  for(i in dim){
-    print("TEST")
-    print("n = ")
-    print(i)
-    result <- test(numOfElements = i, numOfAttempts = 100, gradeOfIncomplete = 15, numOfAttemptsForOneMatrix = 100, alfa = 0.4, beta = 0.3)
-    print(result)
-  }
 }
 
 #' @title Explore the incomplete PC matrixes for every method and scale <1.1, 1.2, ... , 4.0>
@@ -618,7 +610,7 @@ test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsF
   
   for(i in seq(1.1, 4, 0.1)){
     print(counter)
-    results[counter,] <- monteCarloOnTheSameMatrix(numOfElements, i, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0)
+    results[counter,] <- monteCarloOnTheSameMatrix(numOfElements, i, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa, beta)
     counter <- counter+1
   }
   
@@ -627,74 +619,6 @@ test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsF
   }
   
   results
-}
-
-
-#' @title Explore the incomplete PC matrix
-#' @description Examines what is the relative error between the full matrix and indomplete matrix
-#' @param methodName - a name of the method which is tested
-#' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
-#' @param numOfElements - dimension of tested matrix
-#' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
-#' @param numOfAttempts - number of test cases
-#' @param alfa - a parameter for kulakowskiSzybowskiIa method
-#' @param beta - a parameter for kulakowskiSzybowskiIab method
-#' @return average value of the relative error between the full matrix and indomplete matrix
-exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttempts, alfa=0, beta=0) {
-  print("!!!!!!!!!!!!!!!!!!!!!!!!!")
-  matrix <- generateDisturbedPCMatrix(numOfElements, scale)
-  dim <- ncol(matrix)
-  if(alfa==0 && beta==0){
-    realIdx <- methodName(matrix)
-  } else {
-    realIdx <- methodName(matrix, alfa, beta)
-  }
-  
-  vectorOfIdsx <- integer(numOfAttempts)
-  
-  for( i in 1:numOfAttempts ) {
-    brokenMatrix <- matrix(nrow = dim, ncol = dim, data = 0)
-    numOfTriads <- length(generateTriads(brokenMatrix))/3
-    
-    while( !(0 %in% (matrix %^% (n-1))) && numOfTriads>0){
-      brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
-      numOfTriads <- length(generateTriads(brokenMatrix))/3
-    }
-
-    if(alfa==0 && beta==0){
-      idx <- methodName(brokenMatrix)
-    } else {
-      idx <- methodName(brokenMatrix, alfa, beta)
-    }
-    
-    vectorOfIdsx[i] <- abs(realIdx - idx)
-  }
-  
-  incompleteIdx <- mean(vectorOfIdsx)
-  
-  abs(incompleteIdx/realIdx*100)
-}
-
-
-#' @title Explore the incomplete PC matrixes for one method
-#' @description Examines what is the relative error between the full matrix and indomplete matrix
-#' @param methodName - name of the method which is tested
-#' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
-#' @param numOfElements - dimension of tested matrix
-#' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
-#' @param numOfAttempts - number of tested matrixes
-#' @param numOfAttemptsForOneMatrix - number of test cases for each matrix
-#' @param alfa - a parameter for kulakowskiSzybowskiIa method
-#' @param beta - a parameter for kulakowskiSzybowskiIab method
-#' @return average value of the relative error between the full matrix and indomplete matrix for one method
-monteCarlo <- function(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0) {
-  vectorOfIdsx <- integer(numOfAttempts)
-  for( i in 1:numOfAttempts ) {
-    vectorOfIdsx[i] <- exploreMatrix(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttemptsForOneMatrix, alfa, beta)
-  }
-  
-  incompleteIdx <- mean(vectorOfIdsx)
-  incompleteIdx
 }
 
 
@@ -829,4 +753,74 @@ runMethod <- function(nr, matrix, alfa=0, beta=0){
            relativeError(matrix)
          }
   )
+}
+
+
+
+
+#' @title Explore the incomplete PC matrix
+#' @description Examines what is the relative error between the full matrix and indomplete matrix
+#' @param methodName - a name of the method which is tested
+#' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
+#' @param numOfElements - dimension of tested matrix
+#' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
+#' @param numOfAttempts - number of test cases
+#' @param alfa - a parameter for kulakowskiSzybowskiIa method
+#' @param beta - a parameter for kulakowskiSzybowskiIab method
+#' @return average value of the relative error between the full matrix and indomplete matrix
+exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttempts, alfa=0, beta=0) {
+  print("!!!!!!!!!!!!!!!!!!!!!!!!!")
+  matrix <- generateDisturbedPCMatrix(numOfElements, scale)
+  dim <- ncol(matrix)
+  if(alfa==0 && beta==0){
+    realIdx <- methodName(matrix)
+  } else {
+    realIdx <- methodName(matrix, alfa, beta)
+  }
+  
+  vectorOfIdsx <- integer(numOfAttempts)
+  
+  for( i in 1:numOfAttempts ) {
+    brokenMatrix <- matrix(nrow = dim, ncol = dim, data = 0)
+    numOfTriads <- length(generateTriads(brokenMatrix))/3
+    
+    while( (0 %in% (matrix %^% (n-1))) || numOfTriads==0){
+      brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
+      numOfTriads <- length(generateTriads(brokenMatrix))/3
+    }
+    
+    if(alfa==0 && beta==0){
+      idx <- methodName(brokenMatrix)
+    } else {
+      idx <- methodName(brokenMatrix, alfa, beta)
+    }
+    
+    vectorOfIdsx[i] <- abs(realIdx - idx)
+  }
+  
+  incompleteIdx <- mean(vectorOfIdsx)
+  
+  abs(incompleteIdx/realIdx*100)
+}
+
+
+#' @title Explore the incomplete PC matrixes for one method
+#' @description Examines what is the relative error between the full matrix and indomplete matrix
+#' @param methodName - name of the method which is tested
+#' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
+#' @param numOfElements - dimension of tested matrix
+#' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
+#' @param numOfAttempts - number of tested matrixes
+#' @param numOfAttemptsForOneMatrix - number of test cases for each matrix
+#' @param alfa - a parameter for kulakowskiSzybowskiIa method
+#' @param beta - a parameter for kulakowskiSzybowskiIab method
+#' @return average value of the relative error between the full matrix and indomplete matrix for one method
+monteCarlo <- function(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0) {
+  vectorOfIdsx <- integer(numOfAttempts)
+  for( i in 1:numOfAttempts ) {
+    vectorOfIdsx[i] <- exploreMatrix(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttemptsForOneMatrix, alfa, beta)
+  }
+  
+  incompleteIdx <- mean(vectorOfIdsx)
+  incompleteIdx
 }
