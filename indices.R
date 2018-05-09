@@ -722,12 +722,20 @@ exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, n
 
 #tests
 tests <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0){
+  results <- matrix(nrow=31, ncol=17, data=0)
+  counter <- 1
+  
   for(i in seq(1.1, 4, 0.1)){
-    print(i)
-    print(4)
-    print(monteCarloOnTheSameMatrix(numOfElements, i, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0))
-    print("=====================")
+    print(counter)
+    results[counter,] <- monteCarloOnTheSameMatrix(numOfElements, i, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa=0, beta=0)
+    counter <- counter+1
   }
+  
+  for(i in 1:17){
+    results[31, i] = sum(results[,i])/30
+  }
+  
+  results
 }
 
 # Wykonuje exploreMatrixKoczkodaj x (numOfAttempts) razy i z tego bierze średnią

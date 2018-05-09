@@ -877,7 +877,7 @@ key "Golden1989"
  The inconsistency index is defined as follows:
 \begin_inset Formula 
 \begin{equation}
-GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}g_{j}^{*}\mid.
+GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}-g_{i}^{*}\mid.
 \end{equation}
 
 \end_inset

@@ -573,7 +573,6 @@ countIndexesForTriads <- function(methodName, matrix){
 ######################### TESTS - Monte Carlo ###########################
 
 runTests <- function() {
-  library(expm)
   result <- 0
   dim <- c(4,6,8,10,15)
   for(i in dim){
@@ -677,7 +676,7 @@ exploreMatrixOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete
     brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
     numOfTriads <- length(generateTriads(brokenMatrix))/3
     
-    while( (0 %in% (matrix %^% (numOfElements-1))) || numOfTriads==0){
+    while( (0 %in% (matrix %^% (n-1))) || numOfTriads==0){
       brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
       numOfTriads <- length(generateTriads(brokenMatrix))/3
     }
@@ -785,7 +784,7 @@ exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, n
     brokenMatrix <- matrix(nrow = dim, ncol = dim, data = 0)
     numOfTriads <- length(generateTriads(brokenMatrix))/3
     
-    while( (0 %in% (matrix %^% (dim-1))) || numOfTriads==0){
+    while( (0 %in% (matrix %^% (n-1))) || numOfTriads==0){
       brokenMatrix <- breakPCMatrix(matrix, gradeOfIncomplete)
       numOfTriads <- length(generateTriads(brokenMatrix))/3
     }
