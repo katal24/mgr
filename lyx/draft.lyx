@@ -155,38 +155,26 @@ Wstęp
 \end_layout
 
 \begin_layout Standard
-TODO: Opis metody PC
+TODO: narracyjna historia o rozwoju indeksów (ramond lull, kondorse, teoria
+ społecznego wybory - kenetal, amartay sen) - kilka zdań o historii + kilka
+ zdań o tym po co ten artykuł jest.
+ ma być tekstowe - bez wzorów
 \end_layout
 
 \begin_layout Section
-Problem niespójności
+Preliminaries
+\end_layout
+
+\begin_layout Subsection
+Metoda porównywania parami
 \end_layout
 
 \begin_layout Standard
-TODO: Opis o co chodzi z niespójnością
+TODO: Opis PC (alternatywy, porównania)
 \end_layout
 
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-a_{ik}=a_{ij}a_{jk}\,\,\,\,\,\,\forall_{i,j,k}\label{eq:consistent}
-\end{equation}
-
-\end_inset
-
-
-\begin_inset Formula 
-\begin{equation}
-a_{ij}=\frac{w_{i}}{w_{j}}\label{eq:consistent2}
-\end{equation}
-
-\end_inset
-
-Może być wyliczane poprzez wartości własne lub średnie geometryczne
-\end_layout
-
-\begin_layout Section
-Współczynniki niespójności
+\begin_layout Subsection
+Niespójność
 \end_layout
 
 \begin_layout Standard
@@ -219,9 +207,38 @@ reference "eq:consistent2"
 \end_layout
 
 \begin_layout Standard
-W niniejszej pracy przedstawiono dziesięć popularnych współczynników niespójnośc
-i, które można relatywnie łatwo zmodyfikować w taki sposób, aby działały
- dla niepełnych macierzy.
+TODO: Opis o co chodzi z niespójnością
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+a_{ik}=a_{ij}a_{jk}\,\,\,\,\,\,\forall_{i,j,k}\label{eq:consistent}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+a_{ij}=\frac{w_{i}}{w_{j}}\label{eq:consistent2}
+\end{equation}
+
+\end_inset
+
+Może być wyliczane poprzez wartości własne lub średnie geometryczne
+\end_layout
+
+\begin_layout Section
+Współczynniki niespójności
+\end_layout
+
+\begin_layout Standard
+W niniejszej pracy przedstawiono szesnaście popularnych współczynników niespójno
+ści.
+ Ich dokładny opis, łącznie z podaniem wzórów, które je opisują jest konieczny,
+ aby w kolejnym roku zmodyfikować w taki sposób, aby działały również dla
+ niepełnych macierzy.
  Wiele z tych współczynników zostało opisanych i przebadanych numerycznie
  w pracy 
 \begin_inset CommandInset citation
@@ -231,6 +248,92 @@ key "Brunelli2013"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsection
+Saaty index
+\end_layout
+
+\begin_layout Standard
+To jeden z najbardziej podstawowych i popularnych współczynników.
+ Wprowadzony prze Saaty'ego 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SAATY1977234"
+
+\end_inset
+
+.
+ W celu wyznaczenia niespójności, należy wykorzystać wartość własną macierzy.
+ Autor wykorzystał zależność, największa wartośc własna macierzy jest równa
+ jej wymiarowi wtedy i tylko wtedy, gdy dana macierz jest całkowicie spójna.
+ Na tym założeniu oparł swoje rozważania i zaproponował wzór:
+\begin_inset Formula 
+\begin{equation}
+CI(A)=\frac{\lambda_{max}-n}{n-1},
+\end{equation}
+
+\end_inset
+
+gdzie 
+\begin_inset Formula $\lambda_{max}$
+\end_inset
+
+to największa wartość własna badanej macierzy, a 
+\begin_inset Formula $n$
+\end_inset
+
+ to jej wymiar.
+\end_layout
+
+\begin_layout Subsection
+Geometric consistency index
+\end_layout
+
+\begin_layout Standard
+Jeden z indeksów, który opiera się na założeniu 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent2"
+
+\end_inset
+
+.
+ Wektor wag w tym przypadku powinien być obliczony metodą średnich geometrycznyc
+h [referencja!].
+ Współczynnik niespójności został zaproponowany przez Craforda i Williamsa
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "CRAWFORD1985387"
+
+\end_inset
+
+, a następnie udoskonalony przez Aguaròn and Moreno-Jimènez 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "AGUARON2003137"
+
+\end_inset
+
+.
+ Koszystając z założenia tworzymy macierz
+\begin_inset Formula 
+\begin{equation}
+E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{i}}{w_{j}}\right],\,\,\,\,\,\,i,j=1,...,n.
+\end{equation}
+
+\end_inset
+
+Współczynnik niespójności obliczamy w następujący sposób
+\begin_inset Formula 
+\begin{equation}
+GCI=\frac{2}{(n-1)(n-2)}\sum_{i=1}^{n}\sum_{j=i+1}^{n}ln^{2}e_{ij}.\label{eq:GCI}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -307,43 +410,7 @@ Warto zauważyć, że współczynnik nie tylko znajduje największą niespójno�
 \end_layout
 
 \begin_layout Subsection
-Grzybowski index
-\end_layout
-
-\begin_layout Standard
-Bazując na współczynniku Koczkodaja, Grzybowski wprowadził nowy współczynnik
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "GRZYBOWSKI2016197"
-
-\end_inset
-
-.
- Zrezygnował z szukania najbardziej niespójnej triady, na rzecz uśrednienia
- wartości wszystkich współczynników niespójności.
- Nowy współczynnik (oznaczony jako G) został zdefiniowany jako 
-\begin_inset Formula $G=Mean(K(\alpha,\beta,\gamma),$
-\end_inset
-
- gdzie 
-\begin_inset Formula $Mean$
-\end_inset
-
- oznacza średnią arytmetyczną wszystkich triad.
- Zatem współczynnik zostaje zapisany w postaci
-\begin_inset Formula 
-\begin{equation}
-G=\frac{1}{n}\sum_{i=1}^{n}K_{i}(\alpha,\beta,\gamma),\label{eq:g}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection
-Kazibudzki indices
+Kazibudzki indexes
 \end_layout
 
 \begin_layout Standard
@@ -525,7 +592,7 @@ CI*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk
 \end_layout
 
 \begin_layout Subsection
-Kułakowski and Szybowski indices
+Kułakowski and Szybowski indexes
 \end_layout
 
 \begin_layout Standard
@@ -540,11 +607,18 @@ key "KULAKOWSKI20141132"
 , również oparte na triadach.
  Wykorzystują one fakt, że ilość triad, jakie można znaleźć w macierzy wynosi
  
-\begin_inset Formula $\binom{n}{3}=\frac{n!}{(n-3)!3!}=\frac{n(n-1)(n-2)}{6}$
+\begin_inset Formula 
+\begin{equation}
+\binom{n}{3}=\frac{n!}{(n-3)!3!}=\frac{n(n-1)(n-2)}{6}.\label{eq:KulSzynPo3}
+\end{equation}
+
 \end_inset
 
-.
- Wprowadzony współczynnik jest postaci
+Autorzy zrezygnowali z szukania najbardziej niespójnej triady, na rzecz
+ uśrednienia wartości wszystkich współczynników niespójności.
+ Wprowadzony współczynnik można rozumieć jako średnią arytmetyczną wszystkich
+ triad.
+ Jest on postaci
 \begin_inset Formula 
 \begin{equation}
 I_{1}=\frac{6\sum_{t\in T}K(t)}{n(n-1)(n-2)},\label{eq:I1}
@@ -622,56 +696,6 @@ I_{\alpha,\beta}=\alpha K+\beta I_{1}+(1-\alpha-\beta)I_{2}.
 \end_layout
 
 \begin_layout Subsection
-Geometric consistency index
-\end_layout
-
-\begin_layout Standard
-Jeden z indeksów, który opiera się na założeniu 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:consistent2"
-
-\end_inset
-
-.
- Wektor wag w tym przypadku powinien być obliczony metodą średnich geometrycznyc
-h [referencja!].
- Współczynnik niespójności został zaproponowany przez Craforda i Williamsa
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "CRAWFORD1985387"
-
-\end_inset
-
-, a następnie udoskonalony przez Aguaròn and Moreno-Jimènez 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "AGUARON2003137"
-
-\end_inset
-
-.
- Koszystając z założenia tworzymy macierz
-\begin_inset Formula 
-\begin{equation}
-E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{i}}{w_{j}}\right],\,\,\,\,\,\,i,j=1,...,n.
-\end{equation}
-
-\end_inset
-
-Współczynnik niespójności obliczamy w następujący sposób
-\begin_inset Formula 
-\begin{equation}
-GCI=\frac{2}{(n-1)(n-2)}\sum_{i=1}^{n}\sum_{j=i+1}^{n}ln^{2}e_{ij}.
-\end{equation}
-
-\end_inset
-
- 
-\end_layout
-
-\begin_layout Subsection
 Harmonic consistency index
 \end_layout
 
@@ -735,14 +759,14 @@ HM=\frac{n}{\sum_{j=1}^{n}\frac{1}{s_{j}}}.\label{eq:hm'}
 \end_inset
 
 Ostateczny wzór na współczynnik niespójności został otrzymany poprzez normalizac
-ję 
+ję (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:hm'"
 
 \end_inset
 
-
+)
 \begin_inset Formula 
 \begin{equation}
 HCI=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
@@ -754,7 +778,7 @@ HCI=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
 \end_layout
 
 \begin_layout Subsection
-Golden-Wang index
+Golden and Wang index
 \end_layout
 
 \begin_layout Standard
@@ -823,22 +847,22 @@ key "SALO1995458,article"
 
 \end_inset
 
- wykorzystuje definicję niespójności 
+ wykorzystuje definicję niespójności (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent"
 
 \end_inset
 
-, wymaga jednak utworzenia macierzy pomocniczej, w której każdy element
- to najmniejsza i największa rozbieżność od spójności w oparciu o wzór 
+), wymaga jednak utworzenia macierzy pomocniczej, w której każdy element
+ to najmniejsza i największa rozbieżność od spójności w oparciu o wzór (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent"
 
 \end_inset
 
-.
+).
  Indeks bierze pod uwagę wszystkie triady:
 \begin_inset Formula 
 \begin{equation}
@@ -887,24 +911,37 @@ CM=\frac{2}{n(n-1)}\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\frac{\overline{r}_{ij}-\unde
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Note Comment
-status open
-
 \begin_layout Subsection
 Cavallo and D’Apuzzo index
 \end_layout
 
-\begin_layout Plain Layout
-TODO: Kolejny indeks wykorzystujący triady został zaproponowany przez Cavallo-D’
-Apuzzo.
- 
-\end_layout
+\begin_layout Standard
+Autorzy Cavallo and D'Apuzzo oparli swój index na triadach, poprowadzili
+ jednak badania nową ścieżką, uogólniając je dla liniowych, uporządkowanych
+ grup abelowych 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "INT:INT20329,DBLP:journals/ijis/CavalloD10"
 
-\begin_layout Plain Layout
+\end_inset
+
+.
+ Dzięki temu indeks może być stosowany również z innymi relacjami 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Brunelli2013"
+
+\end_inset
+
+.
+ Współczynnik dla relacji 
+\begin_inset Formula $max$
+\end_inset
+
+ można przedstawić w postaci wzoru:
 \begin_inset Formula 
 \begin{equation}
-I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{a_{ik}}{a_{ij}a_{jk}},\frac{a_{ij}a_{jk}}{a_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}
+I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{a_{ik}}{a_{ij}a_{jk}},\frac{a_{ij}a_{jk}}{a_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}.\label{eq:CavDAp}
 \end{equation}
 
 \end_inset
@@ -916,9 +953,50 @@ I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \fr
 Relative error
 \end_layout
 
-\begin_layout Plain Layout
-TODO
+\begin_layout Standard
+Ten współczynnik niespójności, zaproponowany przez Barzailiego 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "doi:10.1002/(SICI)1099-1360(199805)7:3<123::AID-MCDA181>3.0.CO;2-8"
+
+\end_inset
+
+, wymaga obliczenia wektora wag metodą obliczenia średniej arytmetycznej
+ dla każdego wiersza oraz utworzenia dwóch dodatkowych macierzy.
+ Zatem wektor wag wynosi 
+\begin_inset Formula $w_{i}=\frac{1}{n}\sum_{j=1}^{n}a_{ij},$
+\end_inset
+
+ gdzie 
+\begin_inset Formula $n$
+\end_inset
+
+ to wymiar macierzy.
+ Dwie pomocnicze macierze zostają obliczone według wzorów:
+\begin_inset Formula 
+\begin{equation}
+C=\left(c_{ij}\right)=\left(w_{i}-w_{j}\right)
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+E=\left(e_{ij}\right)=\left(a_{ij}-c_{ij}\right)
+\end{equation}
+
+\end_inset
+
+
 \end_layout
+
+\begin_layout Standard
+Ostatecznie wzór na współczynnik niespójności może zostać zapisany w postaci:
+\begin_inset Formula 
+\begin{equation}
+RE(A)=\frac{\sum_{ij}e_{ij}^{2}}{\sum_{ij}a_{ij}^{2}}.
+\end{equation}
 
 \end_inset
 
@@ -927,6 +1005,226 @@ TODO
 
 \begin_layout Section
 Współczynniki niespójności dla niepełnych macierzy
+\end_layout
+
+\begin_layout Standard
+Nie istnieją współczynniki niespójnośći przeznaczone dla macierzy niepełnych.
+ Współczynniki z rozdziału (3) można jednak zastosować w takich przypadkach.
+ Zazwyczaj wymaga to lekkiej modyfikacji definicji współczynnika lub wykonania
+ obliczeń tylko dla wybranych danych.
+ Poniżej zostały zaprezentowane sposoby, w jaki sposób prezentowane współczynnik
+i zostały dostosowane, aby potrafiły radzić sobie z macierzami niepełnymi.
+\end_layout
+
+\begin_layout Standard
+We wszystkich metodach na początku przyjęte zostaje założenie, że w puste
+ miejsca w macierzy wpisana zostaje wartość 0.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Saaty
+\begin_inset space ~
+\end_inset
+
+index:
+\series default
+ Wejściowa macierz zostaje zmodyfikowana w wykorzystaniem metody zaproponowanej
+ przez Harkera 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "HARKER1987353"
+
+\end_inset
+
+.
+ Oznacza to, że na przekątnej macierzy umieszczone zostają wartości 
+\begin_inset Formula $c+1$
+\end_inset
+
+, gdzie 
+\begin_inset Formula $c$
+\end_inset
+
+ to ilość niezerowych elementów w danym wierszu.
+ Dla tak uzupełnionej macierzy może zostać policzona wartość współczynnika.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Geometric
+\begin_inset space ~
+\end_inset
+
+consistency
+\begin_inset space ~
+\end_inset
+
+index: 
+\series default
+Przy wyliczaniu wektora wag metodą średnich geomemetrych pominięte zostają
+ wartości równe 0.
+ Dodatkowo we wzorze (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:GCI"
+
+\end_inset
+
+) użyte zostają tylko te elementy 
+\begin_inset Formula $e_{ij}$
+\end_inset
+
+, które są różne od 0.
+ Spowodowane jest to faktem, że dziedziną funkcji logarytmicznej jest zbiór
+ 
+\begin_inset Formula $R^{+}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Koczkodaj_index,
+\begin_inset space ~
+\end_inset
+
+Kazibudzki_indexes,
+\begin_inset space ~
+\end_inset
+
+Index_of_determinants: 
+\series default
+Pod uwagę wzięte zostają tylko te triady, które nie zawierają wartości zerowych.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Kułakowski
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+Szybowski
+\begin_inset space ~
+\end_inset
+
+indexes: 
+\series default
+Pod uwagę wzięte zostają tylko te triady, które nie zawierają wartości zerowych.
+ Dodatkowo ilość triad nie jest już liczona według wzoru (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:KulSzynPo3"
+
+\end_inset
+
+), lecz określona wprost poprzez zliczenie ilości znalezionych triad.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Harmonic
+\begin_inset space ~
+\end_inset
+
+consistency
+\begin_inset space ~
+\end_inset
+
+index: 
+\series default
+Brak modyfikacji.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Golden
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+Wang
+\begin_inset space ~
+\end_inset
+
+index: 
+\series default
+Przy wyliczaniu wektora wag metodą średnich geomemetrych pominięte zostają
+ wartości równe 0.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Salo
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+Hamalainen: 
+\series default
+Brak modyfikacji.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Cavallo
+\begin_inset space ~
+\end_inset
+
+and
+\begin_inset space ~
+\end_inset
+
+D'Appuzo: 
+\series default
+W czasie wyliczania iloczynu (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:CavDAp"
+
+\end_inset
+
+) pominięte zostają elementy równe 0.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+
+\series bold
+Relative
+\begin_inset space ~
+\end_inset
+
+index: 
+\series default
+Brak modyfikacji.
 \end_layout
 
 \begin_layout Section
@@ -940,7 +1238,7 @@ Podsumowanie
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/pelaez_lemata_2003,/home/dawid/Pulpit/magisterka/bib/kulakowski_szybowski_2014,/home/dawid/Pulpit/magisterka/bib/crawfore_wiliams_2985_geometric,/home/dawid/Pulpit/magisterka/bib/aruaron_moreno_2003,/home/dawid/Pulpit/magisterka/bib/stain_mizii_2007,/home/dawid/Pulpit/magisterka/bib/brunelli_introduction_2015,/home/dawid/Pulpit/magisterka/bib/solo_hamalainen_95,/home/dawid/Pulpit/magisterka/bib/salo_hamalainen_97,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2009,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2010"
+bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/pelaez_lemata_2003,/home/dawid/Pulpit/magisterka/bib/kulakowski_szybowski_2014,/home/dawid/Pulpit/magisterka/bib/crawfore_wiliams_2985_geometric,/home/dawid/Pulpit/magisterka/bib/aruaron_moreno_2003,/home/dawid/Pulpit/magisterka/bib/stain_mizii_2007,/home/dawid/Pulpit/magisterka/bib/brunelli_introduction_2015,/home/dawid/Pulpit/magisterka/bib/solo_hamalainen_95,/home/dawid/Pulpit/magisterka/bib/salo_hamalainen_97,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2009,/home/dawid/Pulpit/magisterka/bib/relative_error,/home/dawid/Pulpit/magisterka/bib/saaty,/home/dawid/Pulpit/magisterka/bib/cavallo_2010,/home/dawid/Pulpit/magisterka/bib/harker"
 options "elsarticle-num"
 
 \end_inset
