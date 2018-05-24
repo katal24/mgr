@@ -1156,15 +1156,31 @@ reference "eq:GCI"
 \labelwidthstring 00.00.0000
 
 \series bold
-Koczkodaj_index,
+Koczkodaj
 \begin_inset space ~
 \end_inset
 
-Kazibudzki_indexes,
+index,
 \begin_inset space ~
 \end_inset
 
-Index_of_determinants: 
+Kazibudzki
+\begin_inset space ~
+\end_inset
+
+indexes,
+\begin_inset space ~
+\end_inset
+
+Index
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+determinants: 
 \series default
 Pod uwagę wzięte zostają tylko te triady, które nie zawierają wartości zerowych.
 \end_layout
