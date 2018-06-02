@@ -15,7 +15,7 @@
 theorems-std
 \end_modules
 \maintain_unincluded_children false
-\language polish
+\language american
 \language_package default
 \inputencoding auto
 \fontencoding global
@@ -66,7 +66,7 @@ theorems-std
 \tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
-\quotes_language polish
+\quotes_language english
 \papercolumns 1
 \papersides 2
 \paperpagestyle headings
@@ -155,42 +155,60 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Ludzie od wieków podejmują decyzję.
- Niektóre z nich są bardzo proste i przychodzą z łatwością, inne jednak,
- te bardziej skomplikowane, wymagają głębszej analizy.
- Dzieje się tak wtedy, gdy porównywanych obiektów jest wiele, są rozbudowane,
- a kryterium wyboru ciężko jest jednoznacznie zmierzyć.
- Na szczęście rozwój matematyki przyniósł ciekawe narzęcie - The Pairwise
- Comparisons (PC) Method.
- Pierwszym przypdakiem użycia metody (jeszcze w bardzo prostej wersji) jest
- system elekcyjny opisany przez Ramonda Llulla 
+People have made decisions for ages.
+ Some of them are very simple and come easily but others, more complicated,
+ require deeper analysis.
+ It happens when there are many compared objects, which are complex and
+ the selection criterion is hard to measure clearly.
+ Fortunately, the development of mathematics brought an interesting tool
+ - 
+\emph on
+The Pairwise Comparisons (PC) Method
+\emph default
+.
+ The first case of using the method (in a very simple version) is the election
+ system described by 
+\emph on
+Ramond Llull 
+\emph default
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Colomer2013"
 
 \end_inset
 
- już w XIII wieku.
- Jego zasady polegały na tym, że kandydatów porównywano każdy z każdym,
- a zwyciężał ten, który wygrał w największej liczbie bezpośrednich porównań.
- Kolejny powrót do metody to dopiero wiek osiemnasty i system głosowania
- zaproponowany przez Condorcet i Borda 
+ in the thirteenth century.
+ Its rules were based on the fact that the candidates were pairwise compared
+ with each other and the winner was the one who won in the largest number
+ of direct comparisons.
+ The method was reinvented in the eighteenth century by Condorcet and Bord
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kulakowski2016"
 
 \end_inset
 
-.
- W XX wieku metoda znalazła zastosowanie w teorii społecznego wyboru (social
- choice), której głównymi przedstawicielami byli nobliści Keneth Arrow 
+ as they proposed it in their voting system.
+ In the twentieth century, the method found the application in the theory
+ of social choice, the main representatives of which were the Nobel prize
+ winners 
+\emph on
+Keneth Arrow
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "10.2307/1828886"
 
 \end_inset
 
- i Amartya Sen 
+ and 
+\emph on
+Amartya Sen
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "RePEc:ecm:emetrp:v:45:y:1977:i:1:p:53-89"
@@ -198,8 +216,16 @@ key "RePEc:ecm:emetrp:v:45:y:1977:i:1:p:53-89"
 \end_inset
 
 .
- Na obecny kształt metody wpływ miały zmiany wprowadzone przez Fechnera
- [Fechner 1966] , a następnie udoskonalone prze Thrustone 
+ The current shape of the method was influenced by the changes introduced
+ by 
+\emph on
+Fechner
+\emph default
+ [Fechner 1966] and then refined by 
+\emph on
+Thrustone 
+\emph default
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Thurstone1994"
@@ -207,40 +233,56 @@ key "Thurstone1994"
 \end_inset
 
 .
- Przełomowm momentem stało się jednak wprowadzenie do metody The Analytic
- Hierarchy Process (AHP) przez Saaty'ego 
+ However, the breakthrough was the introduction to the method 
+\emph on
+The Analytic Hierarchy Process (AHP) 
+\emph default
+by 
+\emph on
+Saaty 
+\emph default
+
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Saaty2008"
 
 \end_inset
 
-, które pozwoliło na porównywanie o wiele bardziej skomplikowanych obiektów
- i tworzenie struktury hierarchicznej.
+, which allowed to compare many more complex objects and create a hierarchical
+ structure.
 \end_layout
 
 \begin_layout Standard
-The PC method opiera się na założeniu, że nie warto porównywać od razu wszystkic
-h obiektów.
- Lepiej jest porównać je parami, a następnie wyniki zebrać razem.
- Takie porównania parami są dla człowieka dużo bardziej intuicyjne i naturalne.
- Skąd jednak mieć pewność, że jego oceny są spójne? Albo co zrobić w przypadku,
- gdy pewnych porównań zabraknie? Czy warto wtedy zajmować się w ogóle metodą
- porównywania parami?
+The 
+\emph on
+PC
+\emph default
+ method is based on the assumption that it is not worth comparing all objects
+ at the same time.
+ It is better to compare them in pairs and then gather the results together.
+ Such pairwise comparisons are much more intuitive and natural for a human
+ being.
+ How can one be sure that these judgments are consistent? Or what to do
+ if some comparisons are missing? In such a case, is it worth taking the
+ 
+\emph on
+PC
+\emph default
+ method at all?
 \end_layout
 
 \begin_layout Standard
-Odpowiedzią na pierwsze pytanie jest wprowadzone do metody pojęcie niespójności
- i wiele sposobów liczenia tego parametru.
- Celem tej pracy jest udzielenie odpowiedzi na dwa kolejne pytania.
- A więc zbadanie, czy dostępne metody określania niespójności dają wiarygodne
- rezultaty wtedy, kiedy z jakiegoś powodu brakuje części informacji.
- Zadaniem niniejszej pracy jest sprawdzenie, który sposób liczenia niespójności
- jest w takim przypadku najlepszy i czy w ogóle ma to sens.
- Aby tego dokonać, wykonano szereg testów na różnych znanych współczynnikach
- niespójności, uwzględniając wiele różnych parametrów: rozmiar macierzy,
- ilość brakujących danych, wielkość niespójności.
- Rezultaty badań zostały zamieszczone poniżej.
+The answer to the first question is the concept of inconsistency introduced
+ into the method.
+ This paper tries to answer the next two questions - meaning to examine
+ whether available methods for determining inconsistencies give reliable
+ results when a part of the comparisons are missing.
+ The main aim of this paper is to check which method of calculating the
+ inconsistency is the best in this case.
+ I order to do it, a series of tests was carried out on various known inconsiste
+ncy indexes, taking into account many different parameters: the matrix size,
+ the amount of missing data, a level of inconsistency.
+ The results of the research are included below.
 \end_layout
 
 \begin_layout Section
@@ -248,74 +290,89 @@ Preliminaries
 \end_layout
 
 \begin_layout Subsection
-Metoda porównywania parami
+The Pairwise Comparisons Method
 \end_layout
 
 \begin_layout Standard
-Metoda służy do wyboru najlepszej alternatywy z pośród zbioru alternatyw.
- Cel ten zostaje osiągnięty jednak poprzez porównanie parami wszystkich
- alternatyw.
- Każdej parze przypisywana jest wartość numeryczna, która nie tylko określa,
- która alternatywa jest preferowana, ale informuje również o wadze tej preferenc
-ji.
- W ten sposób skończony zbiór alternatyw 
+The 
+\emph on
+PC
+\emph default
+ method is used to choose the best alternative from a set of concepts.
+ However, this goal is achieved by comparing in pairs.
+ A numerical value is assigned to each pair.
+ It not only determines which alternative is preferred but also informs
+ about the intensity of this preference.
+ In this way, the finite set of concepts 
 \begin_inset Formula $C=\left\{ c_{1,},\ldots,c_{n}\right\} $
 \end_inset
 
- zostaje przekształcony w PC macierz 
+ is transformed into a 
+\emph on
+PC 
+\emph default
+matrix 
 \begin_inset Formula $M=\left(m_{ij}\right),$
 \end_inset
 
- gdzie 
+ where 
 \begin_inset Formula $m_{i,j}\in R$
 \end_inset
 
- i 
+ and 
 \begin_inset Formula $i,j\in\left\{ 1,\ldots,n\right\} $
 \end_inset
 
 .
- Warto zauważyć, że martości 
+ It is worth noting that the values 
 \begin_inset Formula $m_{ij}$
 \end_inset
 
- i 
+ and 
 \begin_inset Formula $m_{ji}$
 \end_inset
 
- reprezentują tę samą parę.
- Należy się zatem spodziewać, że wartość 
+ represent the same pair.
+ Therefore, one should expect that 
 \begin_inset Formula $m_{ji}=\frac{1}{m_{ij}}$
 \end_inset
 
 .
- Jeżeli 
+ If 
 \begin_inset Formula $\forall i,j\in\left\{ 1,\ldots,n\right\} :m_{ij}=\frac{1}{m_{ji}}$
 \end_inset
 
-, to macierz nazywamy odwracalną (reciprocal).
- PC macierz jest podstawą obliczeń metody.
- Jest wykorzystywana w funkcji 
+, the matrix is called a 
+\emph on
+reciprocal
+\emph default
+.
+ The 
+\emph on
+PC
+\emph default
+ matrix is the basis for calculating the method.
+ It is used in a function 
 \begin_inset Formula $\mu:C\rightarrow R$
 \end_inset
 
-, która każdej alternatywie ze zbioru 
+ that assigns a positive real number to each alternative in the set 
 \begin_inset Formula $C$
 \end_inset
 
- przypisuje dodatnią liczbę rzeczywistą.
- Utworzony w ten sposób wektor 
+.
+ The vector 
 \begin_inset Formula $\mu=\left[\mu\left(c_{1}\right),\ldots,\mu\left(c_{n}\right)\right]$
 \end_inset
 
-, nazywany jest wektorem wag (see Fig.1).
- Informuje on o tym, która alternatywa zwyciężyła.
- 
+ formed in this way is called the weight vector (see Fig.1).
+ It informs which alternative has won.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Graphics
 	filename /home/dawid/Pulpit/magisterka/fig11.png
+	scale 140
 
 \end_inset
 
@@ -323,12 +380,12 @@ ji.
 \end_layout
 
 \begin_layout Standard
-Istnieje wiele sposobów obliczania wektora 
+There are many ways to calculate the vector 
 \begin_inset Formula $\mu$
 \end_inset
 
-, wśród popularnych znajdują się metoda wykorzystująca wektory własne macierzy,
- czy metoda oparta na średnich geometrycznych 
+, among the popular ones are the method using the matrix's eigenvalues or
+ the method based on geometric means 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "SAATY1998121"
@@ -339,24 +396,28 @@ key "SAATY1998121"
 \end_layout
 
 \begin_layout Subsection
-Niespójność
+Inconsistency
 \end_layout
 
 \begin_layout Standard
-Ważnym parmetrem określającym macierz 
+The second important parameter describing the matrix 
 \begin_inset Formula $M$
 \end_inset
 
- jest spójność.
- Macierz jest spójna jeżeli dla każdych 
+ is 
+\emph on
+consistency
+\emph default
+.
+ The matrix is consistent if for each 
 \begin_inset Formula $i,j,k,$
 \end_inset
 
- gdzie 
+ where 
 \begin_inset Formula $1\leq i,j,k\leq n$
 \end_inset
 
- zachodzi:
+ occurs:
 \end_layout
 
 \begin_layout Standard
@@ -371,7 +432,9 @@ m_{ik}=m_{ij}m_{jk}\,\,\,\,\,\,\forall_{i,j,k}.\label{eq:consistent}
 \end_layout
 
 \begin_layout Standard
-Trójka liczb, która powinna spełniać to założenie nazywana jest triadą
+Three numbers that should meet this assumption are called a 
+\emph on
+triad
 \begin_inset CommandInset label
 LatexCommand label
 name "triad"
@@ -382,20 +445,19 @@ name "triad"
 \end_layout
 
 \begin_layout Standard
-Warto zauważyć, że jeżeli macierz jest spójna, to po obliczeniu wektora
- wag 
+If the matrix is consistent and the weight vector 
 \begin_inset Formula $\mu$
 \end_inset
 
-, spełniony jest również warunek, że dla każdych 
+ is computed, then for each variables 
 \begin_inset Formula $i,j$
 \end_inset
 
- gdzie 
+, where 
 \begin_inset Formula $1\leq i,j\leq n$
 \end_inset
 
- zachodzi:
+ meets the equation:
 \end_layout
 
 \begin_layout Standard
@@ -410,22 +472,27 @@ a_{ij}=\frac{\mu_{i}}{\mu_{j}}\label{eq:consistent2}
 \end_layout
 
 \begin_layout Standard
-W praktyce rzadko zdarza się, żeby macierz 
+In practice, it is very rare for a matrix 
 \begin_inset Formula $M$
 \end_inset
 
- była całkowicie spójna.
- Dlatego w ciągu długiej historii metody porównywania parami, powstało wiele
- metod obliczania niespójności.
- Część z nich opiera się wprost na definicji spójności (
+ to be completely consistent.
+
+\lang english
+ In the long history of the 
+\emph on
+PC
+\emph default
+ method, many methods have been developed to calculate inconsistencies.
+ Many of them are based directly on the definition of consistency (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent"
 
 \end_inset
 
-), niektóre korzystają z wartości własnych macierzy, jeszcze inne bazują
- na wspomnianym już warunku (
+), some methods use the eigenvalues of the matrix, others are based on the
+ assumption that each fully consistent matrix fulfills the condition (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent2"
@@ -436,17 +503,22 @@ reference "eq:consistent2"
 \end_layout
 
 \begin_layout Section
-Współczynniki niespójności
+
+\lang english
+Inconsistency indexes
 \end_layout
 
 \begin_layout Standard
-W niniejszej pracy przedstawiono szesnaście popularnych współczynników niespójno
-ści.
- Ich dokładny opis, łącznie z podaniem wzorów, które je opisują jest konieczny,
- aby w kolejnym kroku zmodyfikować je w taki sposób, aby działały również
- dla niepełnych macierzy.
- Wiele z tych współczynników zostało opisanych i przebadanych numerycznie
- w pracy 
+
+\lang english
+This section presents sixteen common inconsistency indexes
+\lang american
+.
+ Their detailed description, including the formulas, is necessary to modify
+ them in the next step so that they can also work for incomplete matrices.
+ 
+\lang english
+Many of them have been described and tested numerically in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brunelli2013"
@@ -454,7 +526,13 @@ key "Brunelli2013"
 \end_inset
 
 .
- We wszystkich metodach zakłada się, że macierz jest odwracalna (reciprocal).
+
+\lang american
+ In all methods, it is assumed that the 
+\emph on
+PC 
+\emph default
+matrix is reciprocal.
 \end_layout
 
 \begin_layout Subsection
@@ -462,8 +540,12 @@ Saaty index
 \end_layout
 
 \begin_layout Standard
-To jeden z najbardziej podstawowych i popularnych współczynników.
- Wprowadzony prze Saaty'ego 
+This is one of the most important and popular indexes and was introduced
+ by 
+\emph on
+Saaty
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "SAATY1977234"
@@ -471,10 +553,12 @@ key "SAATY1977234"
 \end_inset
 
 .
- W celu wyznaczenia niespójności, należy wykorzystać wartość własną macierzy.
- Autor wykorzystał zależność, największa wartośc własna macierzy jest równa
- jej wymiarowi wtedy i tylko wtedy, gdy dana macierz jest całkowicie spójna.
- Na tym założeniu oparł swoje rozważania i zaproponował wzór:
+ In order to determine inconsistency, the matrix's eigenvalue should be
+ computed.
+ The author used the dependence that the largest eigenvalue of the matrix
+ is equal to its dimension if and only if the given matrix is completely
+ consistent.
+ On this assumption, he based his thoughts and proposed the formula:
 \begin_inset Formula 
 \begin{equation}
 CI(A)=\frac{\lambda_{max}-n}{n-1},
@@ -482,15 +566,19 @@ CI(A)=\frac{\lambda_{max}-n}{n-1},
 
 \end_inset
 
-gdzie 
+where 
 \begin_inset Formula $\lambda_{max}$
 \end_inset
 
-to największa wartość własna badanej macierzy, a 
+ is the principal eigenvalue of the 
+\emph on
+PC 
+\emph default
+matrix and 
 \begin_inset Formula $n$
 \end_inset
 
- to jej wymiar.
+ is its dimension.
 \end_layout
 
 \begin_layout Subsection
@@ -498,17 +586,23 @@ Geometric consistency index
 \end_layout
 
 \begin_layout Standard
-Jeden z indeksów, który opiera się na założeniu 
+
+\lang english
+This index on the assumption (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent2"
 
 \end_inset
 
-.
- Wektor wag w tym przypadku powinien być obliczony metodą średnich geometrycznyc
-h [referencja!].
- Współczynnik niespójności został zaproponowany przez Craforda i Williamsa
+) was proposed by 
+\emph on
+Craford
+\emph default
+ and 
+\emph on
+Williams
+\emph default
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -516,7 +610,7 @@ key "CRAWFORD1985387"
 
 \end_inset
 
-, a następnie udoskonalony przez Aguaròn and Moreno-Jimènez 
+ and then refined by Aguaròn and Moreno-Jimènez 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "AGUARON2003137"
@@ -524,15 +618,24 @@ key "AGUARON2003137"
 \end_inset
 
 .
- Koszystając z założenia tworzymy macierz
+ In this case the priority vector should be calculated using the geometric
+ mean method.
+ Consider (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:consistent2"
+
+\end_inset
+
+) one can create a matrix:
 \begin_inset Formula 
 \begin{equation}
-E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{i}}{w_{j}}\right],\,\,\,\,\,\,i,j=1,...,n.
+E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{j}}{w_{i}}\right],\,\,\,\,\,\,i,j=1,...,n.
 \end{equation}
 
 \end_inset
 
-Współczynnik niespójności obliczamy w następujący sposób
+The inconsistency index is calculated as follows:
 \begin_inset Formula 
 \begin{equation}
 GCI=\frac{2}{(n-1)(n-2)}\sum_{i=1}^{n}\sum_{j=i+1}^{n}ln^{2}e_{ij}.\label{eq:GCI}
@@ -555,8 +658,13 @@ name "sub:Koczkodaj-index"
 \end_layout
 
 \begin_layout Standard
-Jeden z najpopularniejszych współczynników niespójności został zaproponowany
- przez Koczkodaja 
+
+\lang english
+One of the most popular inconsistency indexes was proposed by 
+\emph on
+Koczkodaj
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "KOCZKODAJ199379"
@@ -564,7 +672,7 @@ key "KOCZKODAJ199379"
 \end_inset
 
 .
- Bazuje on wprost na definicji spójności (
+ It is based directly on the definition of consistency (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent"
@@ -572,11 +680,19 @@ reference "eq:consistent"
 \end_inset
 
 ).
- Wartość współczynnika niespójności dla trójki liczb, które są od siebie
- zależne (nazwana triadą) została określona jako
+ The value of the inconsistency index for one triad (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "triad"
+
+\end_inset
+
+) was defined as:
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \begin{equation}
 K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_{ij}}\mid a_{ik}-a_{ij}a_{jk}\mid,\frac{1}{a_{jk}}\mid a_{jk}-\frac{a_{ik}}{a_{ij}}\mid\}.
@@ -584,14 +700,22 @@ K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_
 
 \end_inset
 
-Wzór ten został uproszczony przez Duszak i Koczkodaj 
+This formula has been simplified by 
+\emph on
+Duszak
+\emph default
+ and 
+\emph on
+Koczkodaj
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "DUSZAK1994273"
 
 \end_inset
 
- do postaci 
+ and is given as: 
 \begin_inset Formula 
 \begin{equation}
 K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\alpha\gamma}{\beta}\mid\},\,\,\,\,\,\,gdzie\,\alpha=a_{ij},\beta=a_{ik},\gamma=a_{jk}\label{eq:k_abg}
@@ -599,19 +723,19 @@ K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\al
 
 \end_inset
 
-a następnie uogólniony 
+Then it was genaralized 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "DUSZAK1994273"
 
 \end_inset
 
- dla macierzy 
+ for 
 \begin_inset Formula $n>2$
 \end_inset
 
 .
- Ostatecznie osiągnięto postać
+ Finally, the inconsistency index has the following form:
 \begin_inset Formula 
 \begin{equation}
 K=max\{K(\alpha,\beta,\gamma)|1\leq i<j<k\leq n\}\label{eq:K}
@@ -619,8 +743,8 @@ K=max\{K(\alpha,\beta,\gamma)|1\leq i<j<k\leq n\}\label{eq:K}
 
 \end_inset
 
-Warto zauważyć, że współczynnik nie tylko znajduje największą niespójność,
- ale także wskazuje miejsce, w którym ona występuje.
+It is worth noting that not only does the coefficient find the greatest
+ inconsistency but also indicates the place in which it occurs.
 \end_layout
 
 \begin_layout Subsection
@@ -628,11 +752,17 @@ Kazibudzki indexes
 \end_layout
 
 \begin_layout Standard
-Bazując na współczynniku Koczkodaja oraz spostrzeżeniu, że 
+
+\lang english
+Based on the Koczkodaj inconsistency index and observation that 
 \begin_inset Formula $ln(\frac{\alpha\gamma}{\beta})=-ln(\frac{\beta}{\alpha\gamma}),$
 \end_inset
 
-Kazibudzki wprowadził kilka dodatkowych współczynników niespójności 
+ 
+\emph on
+Kazibudzki
+\emph default
+ proposed several additional inconsistency indexes 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "article"
@@ -640,17 +770,14 @@ key "article"
 \end_inset
 
 .
- Zamiast wzoru na niespójność triady 
+ Instead of the formula for inconsistency of the triad (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:k_abg"
 
 \end_inset
 
-, zaproponował dwa nowe wzory:
-\end_layout
-
-\begin_layout Standard
+), he introduced two new formulas:
 \begin_inset Formula 
 \begin{equation}
 LTI(\alpha,\beta\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
@@ -662,6 +789,8 @@ LTI(\alpha,\beta\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \begin{equation}
 LTI*(\alpha,\beta\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).\label{eq:lti*}
@@ -673,13 +802,20 @@ LTI*(\alpha,\beta\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).\label{eq:lti*}
 \end_layout
 
 \begin_layout Standard
-W oparciu o powyższe równania, Kazibudzki zaproponował nowe współczynniki
- niespójności.
- Najprostsze wykorzystują średnią geometryczną triad.
- Zatem usyskał wzory
+
+\lang english
+Based on the above equations, 
+\emph on
+Kazibudzki
+\emph default
+ proposed new indexes.
+ The simplest ones use the geometric mean of the triads.
+ Thus, new indexes could be written in the form:
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \begin{equation}
 MLTI(LTI)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI_{i}(\alpha,\beta\gamma)\right],
@@ -691,6 +827,8 @@ MLTI(LTI)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI_{i}(\alpha,\beta\gamma)\right],
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \begin{equation}
 MLTI(LTI*)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI*_{i}(\alpha,\beta\gamma)\right].
@@ -702,31 +840,38 @@ MLTI(LTI*)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI*_{i}(\alpha,\beta\gamma)\right].
 \end_layout
 
 \begin_layout Standard
-Po przeprowadzeniu kolejnych badań 
+
+\lang english
+After further research 
+\emph on
+Kazibudzki
+\emph default
+ introduces another inconsistency index 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "DBLP:journals/corr/Kazibudzki17"
 
 \end_inset
 
-, Kazibudzki wprowadził kolejny współczynnik niespójności, znów oparty na
- 
+, again based on (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:lti*"
 
 \end_inset
 
-.
- Został zdefniowany jako 
+).
+ It was defined as 
 \begin_inset Formula $CM(LTI*)=\frac{MEAN[LTI*(\alpha,\beta,\gamma)]}{1+MAX[LTI*(\alpha,\beta,\gamma)]}$
 \end_inset
 
 .
- Ostatecznie wzór na współczynnik niespójności zapisyjemy w postaci
+ Hence,
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \begin{equation}
 CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}.
@@ -738,46 +883,61 @@ CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{
 \end_layout
 
 \begin_layout Subsection
-Index of deteminants
+Index of determinants
 \end_layout
 
 \begin_layout Standard
-Index wprowadzony przez Pelaez i Lamata 
+
+\lang english
+This index was proposed by 
+\emph on
+Pelaez
+\emph default
+ and 
+\emph on
+Lamata
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "PELAEZ20031839"
 
 \end_inset
 
- również bazuje na koncepcji triad.
- Autorzy zauważyli, że na podstawie triad można zbudować macierze 
+ and is also based on the concept of triad.
+ The authors noticed that 
 \begin_inset Formula $PCM$
 \end_inset
 
-, a ich wyznacznik jest ściśle związany ze spójnością macierzy.
+ matrices can be construct on the basis of triads.
+ Their determinant is closely related to the consistency of the matrix.
 \end_layout
 
 \begin_layout Standard
-Dla dowolnej triady 
+
+\lang english
+For every triad 
 \begin_inset Formula $(a_{ik},a_{ij},a_{jk})$
 \end_inset
 
- można zbudować macierz postaci 
+ one can build a matrix in the form: 
 \begin_inset Formula 
 \begin{equation}
-T_{ijk}=\begin{array}{ccc}
+T_{ijk}=\left(\begin{array}{ccc}
 1 & a_{ij} & a_{ik}\\
 \frac{1}{a_{ij}} & 1 & a_{jk}\\
 \frac{1}{a_{ik}} & \frac{1}{a_{jk}} & 1
-\end{array},\,\,\,\,\,\,gdzie\,i<j<k.
+\end{array}\right),\,\,\,\,\,\,gdzie\,i<j<k.
 \end{equation}
 
 \end_inset
 
-Wyznacznik takiej macierzy wynosi
+The determinant of this matrix is:
 \end_layout
 
 \begin_layout Standard
+
+\lang english
 \begin_inset Formula 
 \begin{equation}
 det(A)=\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2.
@@ -785,16 +945,17 @@ det(A)=\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2.
 
 \end_inset
 
-Jeśli macierz jest spójna, wtedy 
+If the matrix is fully consistent, then 
 \begin_inset Formula $det(A)=0,$
 \end_inset
 
- w przeciwnym razie 
+ else 
 \begin_inset Formula $det(A)>0$
 \end_inset
 
-.Bazując na powyższych rozważaniach, autorzy wprowadzili współczynnik niespójnośc
-i, który można zapisać w postaci
+.
+ Based on the above considerations, the authors introduced the new inconsistency
+ index that can be formulated as follows:
 \begin_inset Formula 
 \begin{equation}
 CI*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2\right).
@@ -817,17 +978,28 @@ name "sub:Kułakowski-and-Szybowski"
 \end_layout
 
 \begin_layout Standard
-Kułakowski i Szybowski zaproponowali dwa kolejne współczynniki niespójności
- 
+
+\emph on
+\lang english
+Kułakowski
+\emph default
+ and 
+\emph on
+Szybowski
+\emph default
+ proposed two further inconsistency indexes 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "KULAKOWSKI20141132"
 
 \end_inset
 
-, również oparte na triadach.
- Wykorzystują one fakt, że ilość triad, jakie można znaleźć w macierzy wynosi
- 
+, which are also based on triads.
+ They use the fact that the number of triads that can be found in a 
+\begin_inset Formula $PCM$
+\end_inset
+
+ matrix is 
 \begin_inset Formula 
 \begin{equation}
 \binom{n}{3}=\frac{n!}{(n-3)!3!}=\frac{n(n-1)(n-2)}{6}.\label{eq:KulSzynPo3}
@@ -835,11 +1007,7 @@ key "KULAKOWSKI20141132"
 
 \end_inset
 
-Autorzy zrezygnowali z szukania najbardziej niespójnej triady, na rzecz
- uśrednienia wartości wszystkich współczynników niespójności.
- Wprowadzony współczynnik można rozumieć jako średnią arytmetyczną wszystkich
- triad.
- Jest on postaci
+The index is formulated as follows:
 \begin_inset Formula 
 \begin{equation}
 I_{1}=\frac{6\sum_{t\in T}K(t)}{n(n-1)(n-2)},\label{eq:I1}
@@ -847,20 +1015,30 @@ I_{1}=\frac{6\sum_{t\in T}K(t)}{n(n-1)(n-2)},\label{eq:I1}
 
 \end_inset
 
-gdzie 
+where 
 \begin_inset Formula $K(t)$
 \end_inset
 
- to współcznnik Koczkodaja dla triady 
+ is the 
+\emph on
+Koczkodaj
+\emph default
+ index for triad 
 \begin_inset Formula $t=(\alpha,\beta,\gamma)$
 \end_inset
 
- ze zbioru wszystkich triad 
+ of the set of all triads 
 \begin_inset Formula $T$
 \end_inset
 
 .
- Drugi współczynnik niespójności jest podobny
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The second inconsistency index is similar:
 \begin_inset Formula 
 \begin{equation}
 I_{2}=\frac{6\sqrt{\sum_{t\in T}K^{2}(t)}}{n(n-1)(n-2)}.\label{eq:I2}
@@ -872,33 +1050,67 @@ I_{2}=\frac{6\sqrt{\sum_{t\in T}K^{2}(t)}}{n(n-1)(n-2)}.\label{eq:I2}
 \end_layout
 
 \begin_layout Standard
-Współczynniki można łączyć ze sobą, tworząc nowe współczynniki niespójności.
- W taki Kułakowski i Szykowski zaproponowali dwa kolejne współczynniki.
- Pierwszy bazuje na 
+
+\lang english
+indexes can be combined with each other to create new coefficients.
+ In this way 
+\emph on
+Kułakowski
+\emph default
+ and 
+\emph on
+Szybowski
+\emph default
+ proposed two new indexes.
+ The first one is based on (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:K"
 
 \end_inset
 
- oraz 
+) and (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:I1"
 
 \end_inset
 
- i pozwala wybierać jaki wpływ na wynik ma mieć największa znaleziona niespójnoś
-ć, a jaki średnia niespójność wszystkich triad.
- Współczynnik niespójności wygląda więc następująco 
+).
+ This index allows to choose what effect on the result should the greatest
+ inconsistency found have and what the average inconsistency of all triads.
+ The new inconsistency index looks as follows:
+\lang american
+
 \begin_inset Formula 
 \begin{equation}
-I_{\alpha}=\alpha K+(1-\alpha)I_{1}.\label{eq:Ia}
+I_{\alpha}=\alpha K+(1-\alpha)I_{1},\label{eq:Ia}
 \end{equation}
 
 \end_inset
 
-Drugi rozszerza pierwszy o 
+
+\lang english
+where 
+\begin_inset Formula $0\leq\alpha\leq1.$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+The second index expands the first one by (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:I2"
+
+\end_inset
+
+):
+\lang american
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:I2"
@@ -921,8 +1133,17 @@ Harmonic consistency index
 \end_layout
 
 \begin_layout Standard
-Indeks wprowadzony przez Stein i Mizzi i prezentuje zupełnie nową metodę
- liczenia niespójności 
+
+\lang english
+Index introduced by 
+\emph on
+Stein
+\emph default
+ and 
+\emph on
+Mizzi
+\emph default
+ and it presents a completely new method of inconsistency counting 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "STEIN2007488"
@@ -930,24 +1151,29 @@ key "STEIN2007488"
 \end_inset
 
 .
- Na początku wymaga utworzenia pomocniczego wektora 
+ At the beginning it requires the creation of an auxiliary vector 
 \begin_inset Formula $s=(s_{1},...,s_{n})^{T},$
 \end_inset
 
-gdzie 
+ where 
 \begin_inset Formula $n$
 \end_inset
 
- to wymiar macierzy 
+ is the dimension of the matrix 
 \begin_inset Formula $A$
 \end_inset
 
-, dla której policzony zostanie współczynnik.
- Każdy element wektora to suma wartości w jedej kolumnie macierzy 
+, for which the index will be calculated.
+ Each element of the vector 
+\begin_inset Formula $s$
+\end_inset
+
+ is the sum of values in one column of the matrix 
 \begin_inset Formula $A$
 \end_inset
 
-, a więc
+.
+ Hence,
 \begin_inset Formula 
 \begin{equation}
 s_{j}=\sum_{i=1}^{n}a_{ji}\,\,\,\,\,\,\forall j.
@@ -955,23 +1181,23 @@ s_{j}=\sum_{i=1}^{n}a_{ji}\,\,\,\,\,\,\forall j.
 
 \end_inset
 
-Autorzy indeksu udowodnili, że jeśli macierz 
+The authors proved that if the matrix 
 \begin_inset Formula $A$
 \end_inset
 
- jest spójna, to 
+ is consistent, then 
 \begin_inset Formula $\sum_{j=1}^{n}s_{j}^{-1}=1$
 \end_inset
 
 .
- Wzór na średnią harmoniczną wygląda następująco 
+ The formula for the mean harmonic looks as follows 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "book"
 
 \end_inset
 
- 
+: 
 \begin_inset Formula 
 \begin{equation}
 HM=\frac{n}{\sum_{j=1}^{n}\frac{1}{s_{j}}}.\label{eq:hm'}
@@ -979,15 +1205,15 @@ HM=\frac{n}{\sum_{j=1}^{n}\frac{1}{s_{j}}}.\label{eq:hm'}
 
 \end_inset
 
-Ostateczny wzór na współczynnik niespójności został otrzymany poprzez normalizac
-ję (
+The final formula for inconsistency index was obtained by normalizing the
+ above equation (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:hm'"
 
 \end_inset
 
-)
+):
 \begin_inset Formula 
 \begin{equation}
 HCI=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
@@ -1003,7 +1229,17 @@ Golden and Wang index
 \end_layout
 
 \begin_layout Standard
-Ten współczynnik niespójności został wprowadzony przez Goldena i Wanga 
+
+\lang english
+This index was introduced by 
+\emph on
+Golden
+\emph default
+ and 
+\emph on
+Wang
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Golden1989"
@@ -1011,44 +1247,44 @@ key "Golden1989"
 \end_inset
 
 .
- Zakłada, że wektor wag został wyliczony na podstawie metody średnich geometrycz
-nych [referencja!], a następnie został znormalizowany.
- W ten sposób orzymano wektor 
-\begin_inset Formula $g*=[g{}_{1,}^{*},...,g_{n}^{*}],$
+ It assumes that the priority vector was calculated using the geometric
+ mean method, then normalized to add up to 1.
+ In this way vector 
+\begin_inset Formula $g*=[g{}_{1,}^{*},...,g_{n}^{*}]$
 \end_inset
 
- gdzie 
+ was obtained, where 
 \begin_inset Formula $n$
 \end_inset
 
- to wymiar badanej macierzy 
+ is the dimension of the matrix 
 \begin_inset Formula $A$
 \end_inset
 
 .
- Następnym krokiem jest normalizacja każdej kolumny macierzy 
+ The next step is to normalize each column of the matrix 
 \begin_inset Formula $A$
 \end_inset
 
 .
- Po normalizacji suma elementów każdej kolumny macierzy 
+ After this, the sum of the elements of each column in matrix 
 \begin_inset Formula $A$
 \end_inset
 
- wynosi 
+ is 
 \begin_inset Formula $1$
 \end_inset
 
 .
- Powstałą w ten sposób macierz oznaczmy symbolem 
+ The obtained matrix is marked with the symbol 
 \begin_inset Formula $A^{*}$
 \end_inset
 
 .
- Współczynnik niespójności zdefiniowano w następujący sposób
+ The inconsistency index is defined as follows:
 \begin_inset Formula 
 \begin{equation}
-GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}g_{j}^{*}\mid.
+GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}-g_{i}^{*}\mid.
 \end{equation}
 
 \end_inset
@@ -1061,22 +1297,33 @@ Salo and Hamalainen index
 \end_layout
 
 \begin_layout Standard
-Indeks wprowadzony przez Salo i Hamalainena 
+
+\lang english
+The index proposed by 
+\emph on
+Salo
+\emph default
+ and 
+\emph on
+Hamalainen
+\emph default
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "SALO1995458,article"
 
 \end_inset
 
- wykorzystuje definicję niespójności (
+ uses the definition of inconsistency (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent"
 
 \end_inset
 
-), wymaga jednak utworzenia macierzy pomocniczej, w której każdy element
- to najmniejsza i największa rozbieżność od spójności w oparciu o wzór (
+), however it requires the creation of an auxiliary matrix, in which each
+ element is the smallest and largest discrepancy from consistency based
+ on formula (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:consistent"
@@ -1084,7 +1331,7 @@ reference "eq:consistent"
 \end_inset
 
 ).
- Indeks bierze pod uwagę wszystkie triady:
+ The index takes all triads into account:
 \begin_inset Formula 
 \begin{equation}
 R=(r_{ij})_{nxn}=\left(\begin{array}{ccc}
@@ -1096,7 +1343,7 @@ R=(r_{ij})_{nxn}=\left(\begin{array}{ccc}
 
 \end_inset
 
- gdzie 
+where 
 \begin_inset Formula $\underline{r_{ij}}=min\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\} $
 \end_inset
 
@@ -1104,12 +1351,16 @@ R=(r_{ij})_{nxn}=\left(\begin{array}{ccc}
 \begin_inset Formula $\overline{r_{ij}}=max\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\} $
 \end_inset
 
-, a 
+ and 
 \begin_inset Formula $n$
 \end_inset
 
- to wymiar badanej macierzy.
- Numeryczny przykład został przedstawiony w 
+ is the dimension of the tested matrix 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ A numerical example was presented in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "book"
@@ -1117,11 +1368,11 @@ key "book"
 \end_inset
 
 .
- Bazując na powstałej macierzy 
+ Based on the resulting matrix 
 \begin_inset Formula $R$
 \end_inset
 
-, autorzy zaproponowali następujący współczynnik niespojności:
+, the authors proposed the following inconsistency index:
 \begin_inset Formula 
 \begin{equation}
 CM=\frac{2}{n(n-1)}\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\frac{\overline{r}_{ij}-\underline{r}_{ij}}{\left(1+\overline{r}_{ij}\right)\left(1+\underline{r}_{ij}\right)}.
@@ -1144,9 +1395,11 @@ name "sub:Cavallo-and-D’Apuzzo"
 \end_layout
 
 \begin_layout Standard
-Autorzy Cavallo and D'Apuzzo oparli swój index na triadach, poprowadzili
- jednak badania nową ścieżką, uogólniając je dla liniowych, uporządkowanych
- grup abelowych 
+
+\lang english
+The authors Cavallo and D'Apuzzo based their index on triads but they conducted
+ studies on a new path, generalizing them for linear, ordered abelian groups
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "INT:INT20329,DBLP:journals/ijis/CavalloD10"
@@ -1154,7 +1407,7 @@ key "INT:INT20329,DBLP:journals/ijis/CavalloD10"
 \end_inset
 
 .
- Dzięki temu indeks może być stosowany również z innymi relacjami 
+ Thanks to this, the index can be used also with other relations 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brunelli2013"
@@ -1162,11 +1415,11 @@ key "Brunelli2013"
 \end_inset
 
 .
- Współczynnik dla relacji 
+ Index for relation 
 \begin_inset Formula $max$
 \end_inset
 
- można przedstawić w postaci wzoru:
+ can be presented in the form of a formula:
 \begin_inset Formula 
 \begin{equation}
 I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{a_{ik}}{a_{ij}a_{jk}},\frac{a_{ij}a_{jk}}{a_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}.\label{eq:CavDAp}
@@ -1182,25 +1435,25 @@ Relative error
 \end_layout
 
 \begin_layout Standard
-Ten współczynnik niespójności, zaproponowany przez Barzailiego 
+This index, proposed by Barzaili 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "doi:10.1002/(SICI)1099-1360(199805)7:3<123::AID-MCDA181>3.0.CO;2-8"
 
 \end_inset
 
-, wymaga obliczenia wektora wag metodą obliczenia średniej arytmetycznej
- dla każdego wiersza oraz utworzenia dwóch dodatkowych macierzy.
- Zatem wektor wag wynosi 
+, requires calculation of the weight vector using the arithmetic mean method
+ for each row and creation of two additional matrices.
+ Thus, the weight vector is 
 \begin_inset Formula $w_{i}=\frac{1}{n}\sum_{j=1}^{n}a_{ij},$
 \end_inset
 
- gdzie 
+ where 
 \begin_inset Formula $n$
 \end_inset
 
- to wymiar macierzy.
- Dwie pomocnicze macierze zostają obliczone według wzorów:
+ is the dimension of the matrix.
+ The two auxiliary matrices are calculated according to the formulas:
 \begin_inset Formula 
 \begin{equation}
 C=\left(c_{ij}\right)=\left(w_{i}-w_{j}\right)
@@ -1220,7 +1473,7 @@ E=\left(e_{ij}\right)=\left(a_{ij}-c_{ij}\right)
 \end_layout
 
 \begin_layout Standard
-Ostatecznie wzór na współczynnik niespójności może zostać zapisany w postaci:
+Ultimately, the formula for the Relative error is following:
 \begin_inset Formula 
 \begin{equation}
 RE(A)=\frac{\sum_{ij}e_{ij}^{2}}{\sum_{ij}a_{ij}^{2}}.
@@ -1232,21 +1485,20 @@ RE(A)=\frac{\sum_{ij}e_{ij}^{2}}{\sum_{ij}a_{ij}^{2}}.
 \end_layout
 
 \begin_layout Section
-Współczynniki niespójności dla niepełnych macierzy
+
+\lang english
+Inconsistency indexes
+\lang american
+ for incomplete matrices
 \end_layout
 
 \begin_layout Standard
-Nie istnieją współczynniki niespójności przeznaczone dla macierzy niepełnych.
- Współczynniki z rozdziału (3) można jednak zastosować w takich przypadkach.
- Zazwyczaj wymaga to lekkiej modyfikacji definicji współczynnika lub wykonania
- obliczeń tylko dla wybranych danych.
- Poniżej zostały zaprezentowane sposoby, w jaki prezentowane współczynniki
- zostały dostosowane, aby potrafiły radzić sobie z macierzami niepełnymi.
-\end_layout
-
-\begin_layout Standard
-We wszystkich metodach na początku przyjęte zostaje założenie, że w puste
- miejsca w macierzy wpisana zostaje wartość 0.
+There are no inconsistency indexes for incomplete matrices.
+ Those presented in chapter (3) could be use in such cases.
+ It requires usually a slight modification of the index definition or calculatio
+n only for selected data.
+ Below the ways in which the examined indexes have been adjusted to be able
+ to deal with incomplete matrices are presented.
 \end_layout
 
 \begin_layout Labeling
@@ -1259,8 +1511,7 @@ Saaty
 
 index:
 \series default
- Wejściowa macierz zostaje zmodyfikowana w wykorzystaniem metody zaproponowanej
- przez Harkera 
+ The input matrix is modified using the method proposed by Harker 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "HARKER1987353"
@@ -1268,16 +1519,15 @@ key "HARKER1987353"
 \end_inset
 
 .
- Oznacza to, że na przekątnej macierzy umieszczone zostają wartości 
+ It means that values 
 \begin_inset Formula $c+1$
 \end_inset
 
-, gdzie 
+, where 
 \begin_inset Formula $c$
 \end_inset
 
- to ilość niezerowych elementów w danym wierszu.
- Dla tak uzupełnionej macierzy może zostać policzona wartość współczynnika.
+ is the number of non-empty elements in a given row, are places on the diagonal.
 \end_layout
 
 \begin_layout Labeling
@@ -1294,22 +1544,22 @@ consistency
 
 index: 
 \series default
-Przy wyliczaniu wektora wag metodą średnich geomemetrych pominięte zostają
- wartości równe 0.
- Dodatkowo we wzorze (
+During calculating the weight vector by the geometric mean, empty values
+ are omitted.
+ Additionally, in the formula (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:GCI"
 
 \end_inset
 
-) użyte zostają tylko te elementy 
+) only non-empty elements 
 \begin_inset Formula $e_{ij}$
 \end_inset
 
-, które są różne od 0.
- Spowodowane jest to faktem, że dziedziną funkcji logarytmicznej jest zbiór
- 
+ are used.
+ The reason for this exclusion is that the domain of the logarithmic function
+ is 
 \begin_inset Formula $R^{+}$
 \end_inset
 
@@ -1346,7 +1596,7 @@ of
 
 determinants: 
 \series default
-Pod uwagę wzięte zostają tylko te triady, które nie zawierają wartości zerowych.
+Only those triads which do not contain empty values are taken into account.
 \end_layout
 
 \begin_layout Labeling
@@ -1367,15 +1617,16 @@ Szybowski
 
 indexes: 
 \series default
-Pod uwagę wzięte zostają tylko te triady, które nie zawierają wartości zerowych.
- Dodatkowo ilość triad nie jest już liczona według wzoru (
+Only those triads which do not contain empty values are taken into account.
+ In addition, the number of triads is no longer calculated according to
+ the formula (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:KulSzynPo3"
 
 \end_inset
 
-), lecz określona wprost poprzez zliczenie ilości znalezionych triad.
+) but determined directly by counting the number of triads.
 \end_layout
 
 \begin_layout Labeling
@@ -1392,7 +1643,7 @@ consistency
 
 index: 
 \series default
-Brak modyfikacji.
+No modification.
 \end_layout
 
 \begin_layout Labeling
@@ -1413,8 +1664,8 @@ Wang
 
 index: 
 \series default
-Przy wyliczaniu wektora wag metodą średnich geomemetrych pominięte zostają
- wartości równe 0.
+During calculating the weight vector by the geometric mean empty values
+ are omitted.
 \end_layout
 
 \begin_layout Labeling
@@ -1431,7 +1682,7 @@ and
 
 Hamalainen: 
 \series default
-Brak modyfikacji.
+No modification.
 \end_layout
 
 \begin_layout Labeling
@@ -1448,14 +1699,14 @@ and
 
 D'Appuzo: 
 \series default
-W czasie wyliczania iloczynu (
+During calculating the product (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:CavDAp"
 
 \end_inset
 
-) pominięte zostają elementy równe 0.
+) empty values are omitted.
 \end_layout
 
 \begin_layout Labeling
@@ -1468,56 +1719,55 @@ Relative
 
 index: 
 \series default
-Brak modyfikacji.
+No modification.
 \end_layout
 
 \begin_layout Section
-Dyskusja
+Discussion
 \end_layout
 
 \begin_layout Standard
-Zaprezentowane współczynniki niespójności zostały poddane testom.
- Ich celem było wybranie tych współczynników, które będą dawały wiarygodne
- wyniki dla macierzy niepełnych.
- Postanowiono zatem, że miarą jakości wspłczynników będzie błąd względny
- (wyrażony w procentach), który bierze pod uwagę wartość współczynnika dla
- pełnej, niespójnej macierzy oraz wartość współczynnika dla tej samej macierzy
- po częściowym zdekompletowaniu.
- Dla pewności, że wyniki są poprawne, badania wszystkich współczynników
- zostały przeprowadzone na tych samych macierzach.
- Wzięto pod uwagę różne rozmiary macierzy, stopień zdekompletowania i poziom
- niespójności.
- Następnie, w celu łatwego porównania współczynniów i wyboru najlepszych,
- uśredniono wyniki, wykorzystując średnią arytmetyczną.
- Przy budowaniu kolejnych kroków rozwiązania problemu, wykorzystano algorytmy
- pojawiącje się w artykule 
+The presented inconsistency indexes have been tested.
+ Their aim was to select those indexes which will give reliable results
+ for incomplete matrices.
+ Therefore, it was decided that the measure of the indexes' quality would
+ be a relative error (expressed as a percentage), which took into account
+ the value of the index for a full, inconsistent matrix and the value of
+ the index for the same matrix after partial decomposition.
+ To be sure that the results were fair, all indexes were tested on the same
+ set of matrices.
+ The different sizes of the matrices, the levels of incompleteness and the
+ levels of inconsistency were taken into account.
+ Then, in order to compare the indexes easily and to select the best ones,
+ the results were averaged using the arithmetic mean.
+ While building the algorithm to solve the problem 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "DBLP:journals/corr/Kazibudzki17"
 
 \end_inset
 
-.
+ was used.
 \end_layout
 
 \begin_layout Paragraph
-Algorytm badań współczyników niespójności:
+The algorithm of test of inconsistency indexes:
 \end_layout
 
 \begin_layout Enumerate
-Wygeneruj losowy wektor 
-\begin_inset Formula $n$
-\end_inset
-
- liczb 
+Randomly generate a vector 
 \begin_inset Formula $w=[w_{1},...,w_{n}]$
 \end_inset
 
- i powiązaną z nim spójną macierz porównywania parami 
-\begin_inset Formula $PCM=\left[m_{ij}\right],$
+ and a consistent 
+\emph on
+PCM 
+\emph default
+matrix associated with it 
+\begin_inset Formula $PCM=\left(m_{ij}\right),$
 \end_inset
 
- gdzie 
+ where 
 \begin_inset Formula $m_{ij}=\frac{w_{i}}{w_{j}}$
 \end_inset
 
@@ -1525,12 +1775,12 @@ Wygeneruj losowy wektor
 \end_layout
 
 \begin_layout Enumerate
-Zaburz macierz poprzez przemnożenie jej elementów (z wyłączeniem przekątnej)
- przez wartość 
+Disrupt the matrix by multiplying its elements (excluding the diagonal)
+ by the value of 
 \begin_inset Formula $d$
 \end_inset
 
-, losowo wybieraną z przedziału 
+, randomly selected from the range 
 \begin_inset Formula $\left(\frac{1}{x},x\right).$
 \end_inset
 
@@ -1538,15 +1788,15 @@ Zaburz macierz poprzez przemnożenie jej elementów (z wyłączeniem przekątnej
 \end_layout
 
 \begin_layout Enumerate
-Zastąp wartości 
+Replace values 
 \begin_inset Formula $m_{ij}$
 \end_inset
 
-, gdzie 
+, where 
 \begin_inset Formula $i<j$
 \end_inset
 
- wartościami 
+ by values 
 \begin_inset Formula $m_{ji}$
 \end_inset
 
@@ -1554,13 +1804,12 @@ Zastąp wartości
 \end_layout
 
 \begin_layout Enumerate
-Oblicz wartości współczynników niespójności wszystkimi metodami dla utworzonej
- macierzy.
+Calculate values of index with all methods for the created matrix.
 \end_layout
 
 \begin_layout Enumerate
-Zdekompletuj macierz, usuwając niektóre z wartości porównań.
- Stopień niekompletności ma wynieść 
+Remove some values from the matrix by removing some of values.
+ The level of incompleteness should be 
 \begin_inset Formula $g\%$
 \end_inset
 
@@ -1568,46 +1817,46 @@ Zdekompletuj macierz, usuwając niektóre z wartości porównań.
 \end_layout
 
 \begin_layout Enumerate
-Oblicz wartości współczynników niespójności wszystkimi metodami dla zdekompletow
-anej macierzy.
+Calculate the values of inconsistencies by all methods for the decomposed
+ matrix.
 \end_layout
 
 \begin_layout Enumerate
-Oblicz błąd względny dla każdego indeksu.
+Calculate the relative error for each index.
 \end_layout
 
 \begin_layout Enumerate
-Powtórz kroki od 1 do 10 
+Repeat steps 1 to 10 
 \begin_inset Formula $X_{1}$
 \end_inset
 
- razy.
+ times.
 \end_layout
 
 \begin_layout Enumerate
-Oblicz średni błąd względny dla każdego współczynnika niespójności dla macierzy
+Calculate the average relative error for each inconsistency index for the
  
 \begin_inset Formula $PCM$
 \end_inset
 
-.
+ matrix.
 \end_layout
 
 \begin_layout Enumerate
-Powtórz kroki od 1 do 10 
+Repeat steps 1 to 10 
 \begin_inset Formula $X_{2}$
 \end_inset
 
- razy.
+ times.
 \end_layout
 
 \begin_layout Enumerate
-Oblicz średni błąd względny dla każdego współczynnika poprzez uśrednienie
- wartości otrzymanych w kroku 9.
+Calculate the average relative error for each index by averaging the values
+ obtained in step 9.
 \end_layout
 
 \begin_layout Standard
-Powyższy algorytm został przeprowadzony dla wartości 
+The above algorithm was carried out for values 
 \begin_inset Formula $X_{1}=100$
 \end_inset
 
@@ -1616,57 +1865,60 @@ Powyższy algorytm został przeprowadzony dla wartości
 \end_inset
 
 .
- Został uruchomiony dla wartości 
+ Tests were started for values 
 \begin_inset Formula $d$
 \end_inset
 
- z przedziału 
+ in the range 
 \begin_inset Formula $\left(1.1,1.2,...,4\right)$
 \end_inset
 
-, a wyniki następnie uśredniono.
- Oznacz to, że średni błąd względny jednego współczynnika obliczono na podstawie
- 
+ and then the results were averaged.
+ It means that the average relative error of one index was calculated on
+ the basis of 
 \begin_inset Formula $4000$
 \end_inset
 
- macierzy, z których każdą zdekompletowano losowo 
+ matrices, each of which decomposed randomly 
 \begin_inset Formula $100$
 \end_inset
 
- razy, co łącznie daje 
+ times.
+ It gave together 
 \begin_inset Formula $400000$
 \end_inset
 
- spradzeń jak dobry jest dany współczynnik.
+ tests how good the index was.
+ 
 \end_layout
 
 \begin_layout Standard
-Dodatkowo przeprowadzono testy dla różnych rozmiarów macierzy.
- Wyniki podzielono na dwie części:
+In addition, tests were carried out for various sizes of matrices.
+ The results are divided into two parts:
 \end_layout
 
 \begin_layout Enumerate
-Stały stopień niekompletności, różny rozmiar macierzy.
+A constant degree of incompleteness, different size of the matrix.
 \end_layout
 
 \begin_layout Enumerate
-Różny stopień niekompletności, stały rozmiar macerzy.
+Different degrees of incompleteness, constant size of the matrix.
 \end_layout
 
 \begin_layout Standard
-Celem takiego podziału jest zwrócenie uwagi na to, jak zachowują się współczynni
-ki niespójności wraz ze zmianą rozmiaru lub stopnia niekompletności.
- Wyniki badań przedstawiono poniżej.
+The aim of such a division is to pay attention to how the inconsistency
+ indexes behave when the size of the matrix and the degree of incompleteness
+ are changing.
+ The results of the research are presented below.
 \end_layout
 
 \begin_layout Subsection*
-Wyniki: Błąd względny współczynników niespójności dla niepłnych macierzy
- o stopniu niekompletności 
+Relative error of inconsistency indexes for incomplete matrices with constant
+ degrees of incompleteness 
 \begin_inset Formula $g=15\%$
 \end_inset
 
- i różym rozmiarze macierzy.
+ and variable matrix size.
 \end_layout
 
 \begin_layout Standard
@@ -1685,7 +1937,7 @@ Wyniki: Błąd względny współczynników niespójności dla niepłnych macierz
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nazwa współczynnika
+Index
 \end_layout
 
 \end_inset
@@ -1695,6 +1947,8 @@ Nazwa współczynnika
 
 \begin_layout Plain Layout
 
+\emph on
+n
 \family roman
 \series medium
 \shape up
@@ -1706,7 +1960,7 @@ Nazwa współczynnika
 \uwave off
 \noun off
 \color none
-n=4
+=4
 \end_layout
 
 \end_inset
@@ -1716,6 +1970,8 @@ n=4
 
 \begin_layout Plain Layout
 
+\emph on
+n
 \family roman
 \series medium
 \shape up
@@ -1727,7 +1983,7 @@ n=4
 \uwave off
 \noun off
 \color none
-n=7
+=7
 \end_layout
 
 \end_inset
@@ -1737,6 +1993,8 @@ n=7
 
 \begin_layout Plain Layout
 
+\emph on
+n
 \family roman
 \series medium
 \shape up
@@ -1748,7 +2006,7 @@ n=7
 \uwave off
 \noun off
 \color none
-n=8
+=8
 \end_layout
 
 \end_inset
@@ -1758,6 +2016,8 @@ n=8
 
 \begin_layout Plain Layout
 
+\emph on
+n
 \family roman
 \series medium
 \shape up
@@ -1769,7 +2029,7 @@ n=8
 \uwave off
 \noun off
 \color none
-n=10
+=10
 \end_layout
 
 \end_inset
@@ -1779,6 +2039,8 @@ n=10
 
 \begin_layout Plain Layout
 
+\emph on
+n
 \family roman
 \series medium
 \shape up
@@ -1790,7 +2052,7 @@ n=10
 \uwave off
 \noun off
 \color none
-n=15
+=15
 \end_layout
 
 \end_inset
@@ -1811,7 +2073,7 @@ n=15
 \uwave off
 \noun off
 \color none
-średnia
+mean
 \end_layout
 
 \end_inset
@@ -4169,8 +4431,8 @@ relativeError
 \end_layout
 
 \begin_layout Subsection*
-Wyniki: Błąd względny współczynników niespójności dla niepełnych macierzy
- o różnym stopniu niekompletności stałym rozmiarze macierzy 
+Relative error of inconsistency indexes for incomplete matrices with varying
+ degrees of incompleteness and constant matrix size 
 \begin_inset Formula $n=8$
 \end_inset
 
@@ -4193,7 +4455,7 @@ Wyniki: Błąd względny współczynników niespójności dla niepełnych macier
 \begin_inset Text
 
 \begin_layout Plain Layout
-Nazwa współczynnika
+Index
 \end_layout
 
 \end_inset
@@ -4203,6 +4465,8 @@ Nazwa współczynnika
 
 \begin_layout Plain Layout
 
+\emph on
+g
 \family roman
 \series medium
 \shape up
@@ -4214,7 +4478,7 @@ Nazwa współczynnika
 \uwave off
 \noun off
 \color none
-g=4%
+=4%
 \end_layout
 
 \end_inset
@@ -4224,6 +4488,8 @@ g=4%
 
 \begin_layout Plain Layout
 
+\emph on
+g
 \family roman
 \series medium
 \shape up
@@ -4235,7 +4501,7 @@ g=4%
 \uwave off
 \noun off
 \color none
-g=7%
+=7%
 \end_layout
 
 \end_inset
@@ -4245,6 +4511,8 @@ g=7%
 
 \begin_layout Plain Layout
 
+\emph on
+g
 \family roman
 \series medium
 \shape up
@@ -4256,7 +4524,7 @@ g=7%
 \uwave off
 \noun off
 \color none
-g=14%
+=14%
 \end_layout
 
 \end_inset
@@ -4266,6 +4534,8 @@ g=14%
 
 \begin_layout Plain Layout
 
+\emph on
+g
 \family roman
 \series medium
 \shape up
@@ -4277,7 +4547,7 @@ g=14%
 \uwave off
 \noun off
 \color none
-g=25%
+=25%
 \end_layout
 
 \end_inset
@@ -4287,6 +4557,8 @@ g=25%
 
 \begin_layout Plain Layout
 
+\emph on
+g
 \family roman
 \series medium
 \shape up
@@ -4298,7 +4570,7 @@ g=25%
 \uwave off
 \noun off
 \color none
-g=50%
+=50%
 \end_layout
 
 \end_inset
@@ -4319,7 +4591,7 @@ g=50%
 \uwave off
 \noun off
 \color none
-średnia
+mean
 \end_layout
 
 \end_inset
@@ -6677,37 +6949,44 @@ relativeError
 \end_layout
 
 \begin_layout Subsection*
-Analizując powyższe wyniki, można wysnuć kilka wniosków.
+Analyzing the above results, one can draw several conclusions.
 \end_layout
 
 \begin_layout Standard
-Zpewnością udało się pokazać, że błąd wzrasta wraz ze stopniem niekompletności,
- co nie powinno byc dużym zaskoczeniem.
- Jednocześnie maleje wraz ze zwrostem rozmiaru macierzy.
- Najważniejsze pytanie dotyczyło jednak tego, które współczyniki dobrze
- poradzą sobie z niekompletnymi macierzami.
- Najlepszy okazał się Współczynnik Koczkodaja (
+Certainly, the tests managed to show that the error increases with a growth
+ of the level of incompleteness, which should not be a big surprise.
+ At the same time, it decreases when the size of the matrix increases.
+ However, the most important question was about which indexes cope well
+ with incomplete matrices.
+ The Koczkodaj index (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Koczkodaj-index"
 
 \end_inset
 
-).
- Zwycięża w 9 z 10 testów, a jego średni błąd w obu przypadkach okazuje
- się najlepszy (poniżej 
+) won in 9 out of 10 tests and its average error in both cases turn out
+ to be the lowest (below 
 \begin_inset Formula $5\%$
 \end_inset
 
 ).
- Kolejne miejsca zajmują dwa współczyniki Kułakowskiego i Szybowskiego (
+ The next places are occupied by two indexes introduced by Kułakowski and
+ Szybowski (
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "sub:Kułakowski-and-Szybowski"
+reference "eq:Ia"
 
 \end_inset
 
-) oraz Współczynnik Cavallo i D'Apuzzo (
+, 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:Iab"
+
+\end_inset
+
+) and Cavallo and D'Apuzzo index (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sub:Cavallo-and-D’Apuzzo"
@@ -6715,88 +6994,83 @@ reference "sub:Cavallo-and-D’Apuzzo"
 \end_inset
 
 ).
- Warto zauważyć, że wszystkie te współczynniki opierają się na triadach.
- 
+ It is worth noting that all of these indexes are based on triads.
 \end_layout
 
 \begin_layout Standard
-Może pojawić się pytanie, co sprawia, że Współczynnik Koczkodaja daje tak
- dobre wyniki i czy warto go stosować.
- Warto wrócić do definicji tego współczynika (
+A question about what makes the Koczkodaj index giving such good results
+ and whether is it worth using, may arise.
+ One should return to the definition of this index (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:K"
 
 \end_inset
 
-) i zauważyć, że jest on równy wartości najbardziej niespójnej triady.
- Jeśli więc stopień niekompletności macierzy jest niewielki, istnieje duża
- szansa, że po zdekompletowaniu macierzy i ponownym policzeniu niespójności,
- wartość współczynnika w ogóle się nie zmieni.
- Ulegnie ona zmianie jedynie wtedy, kiedy zostanie usunięty element wchodzący
- w skład najbardziej niespójnej triady.
- A więc w wielu przypadkach badanie macierzy pełnej i po zdekompletowaniu
- daje dokładnie te same rezutaty (błąd wynosi 
+) and notice that it is equal to the value of the most inconsistency triad.
+ Therefore, if the level of incompleteness is low, there is a good chance
+ that after deletion some values from the matrix and recalculating the index
+ the value of it will not change at all.
+ It will only change if the element included in the most inconsistent triad
+ is removed.
+ However, in many cases, the examination of the full matrix and th matrix
+ after incompletion give exactly the same results (the error is 
 \begin_inset Formula $0\%$
 \end_inset
 
 ).
- Jest to jedyny tego rodzaju współczynnik spośród zaprezentowanych w tym
- artykule.
- 
+ This is the only index of this kind among those presented in the paper.
 \end_layout
 
 \begin_layout Standard
-W przypadku korzystania ze Współczynnika Koczkodaja, może pojawić się jednak
- obawa, że usunięty element należał do najbardziej niespójnej triady.
- Ciężko przewidzieć wtedy, jaki błąd będzie zawierał wspołczynnik macierzy
- niepełnej.
- Wydaje się, że z pomocą przychodzą współczynniki zaproponowane przez Kułakowski
-ego i Szybowskiego, na które należy zwrócić szczególną uwagę.
- Pierwszy z nich (
+If one uses the Koczkodaj index, one may be worried that the removed comparison
+ belonged to the most inconsistent triad.
+ In such a case, it is difficult to predict what error will be contained
+ in the index of the incomplete matrix.
+ It seems that one should pay particular attention to the indexes proposed
+ by Kułakowski and Szybowski.
+ First of them (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:I1"
 
 \end_inset
 
-) uśrednia niespójności triad.
- A więc jest bezpieczny i daje dałkiem dobre rezultaty (w obu testach zajął
- 6.
- miejsce i osiagnął błąd poniżej 
+) averages the inconsistencies of the triads.
+ Therefore, it is safe and gives good results (in both tests it took the
+ sixth place and achieved an error below 
 \begin_inset Formula $8\%$
 \end_inset
 
-.
- Z tej perspektywy bardzo ciekawe okazuje się inny współczynnik zaproponowany
- przez tych samch autorów (
+).
+ From this perspective, another index suggested by the same authors (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:Ia"
 
 \end_inset
 
-), który w testach zajął 3.
- miejsce.
- Posiadaja parametr 
+) turns out to be very interesting.
+ In the tests it took the third place.
+ It has the parameter 
 \begin_inset Formula $\alpha$
 \end_inset
 
- pozwalający określać jaki wpływ na wynik ma największa niespójność triad
+ allowing to determine the effect of the greatest inconsistency of the triad
  
 \begin_inset Formula $\left(\alpha\right)$
 \end_inset
 
-, a jaki średnia 
+, and the average 
 \begin_inset Formula $\left(1-\alpha\right)$
 \end_inset
 
 .
- W przeprowadzonych badaniach parametr 
+ In the tests carried out, the parameter 
 \begin_inset Formula $\alpha$
 \end_inset
 
- wynosił 
+ was 
 \begin_inset Formula $0.4$
 \end_inset
 
@@ -6804,7 +7078,7 @@ reference "eq:Ia"
 \end_layout
 
 \begin_layout Section
-Podsumowanie
+Summary
 \end_layout
 
 \begin_layout Standard

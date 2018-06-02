@@ -1,0 +1,52 @@
+\chapter{The Pairwise Comparisons method}
+\label{sec:pcMethod}
+  \section{The PC matrix}
+	\label{subsec:macierzPC}
+	
+	The \textit{PC method} is used to choose the best alternative from a set of concepts. However, this goal is achieved by comparing in pairs. A numerical value is assigned to each pair. It not only determines which alternative is preferred but also informs about the intensity of this preference. In this way, the finite set of concepts $C=\left\{ c_{1},\ldots,c_{n}\right\} $ is transformed into a \textit{PC matrix} $M=\left(m_{ij}\right)$, where $m_{i,j}\in R$ and $i,j\in\left\{ 1,\ldots,n\right\}$. The \textit{PC matrix} for $n$ concepts is following:
+$$
+M = 
+\left(
+\begin{array}{lllll}
+	1 & m_{12} & \dots & m_{1n}\\
+	m_{21} & 1 & \dots & m_{2n}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	m_{n1} & m_{n2} & \dots & 1\\ 	
+\end{array}
+\right)
+$$
+
+	It is worth noting that the values $m_{ij}$ and $m_{ji}$ represent the same pair. Therefore, one should expect that $m_{ji}=\frac{1}{m_{ij}}$. If
+	\begin{equation} 
+		\forall i,j\in\left\{ 1,\ldots,n\right\} :m_{ij}=\frac{1}{m_{ji}},
+	\end{equation}
+		the matrix is called a \textit{reciprocal}.
+
+  \section{The weight vector}
+	\label{subsec:wektorWag}
+	
+	The PC matrix is the basis for calculating the method. It is used in a function $\mu:C\rightarrow R$ that assigns a positive real number to each alternative in the set $C$. The vector $$\mu=\left[\mu\left(c_{1}\right),\ldots,\mu\left(c_{n}\right)\right]$$ formed in this way is called \textit{the weight vector} or \textit{the priority vector} (see Rys. 2.1).It informs which alternative has won.
+
+\begin{figure}[h]
+\centerline{\includegraphics[scale=2.5]{fig1.png}}
+\caption{Diagram of calculating \textit{the weitgh vector}}
+\label{fig:fig1}
+\end{figure}
+
+There are many ways to calculate the vector $\mu$, among the popular ones are the method using the matrix's eigenvalues or the method based on geometric means (Saaty et al., 1998).
+
+
+
+\section{Inconsistency}
+\label{subsec:inconsistency}
+The second important parameter describing the \textit{PC matrix} is \textit{consistency}. The matrix is consistent if 
+	\begin{equation} 
+		\forall i,j,k \in\left\{ 1,\ldots,n\right\} :m_{ik}=m_{ij}m_{jk}.
+	\end{equation}
+Three numbers that should meet this assumption are called a \textit{triad}.
+
+If the matrix is consistent and the weight vector $\mu$ is computed, then for each variables $i,j$, where $1\leq i,j\leq n$ meets the equation: 
+	\begin{equation} 
+		{ij}=\frac{\mu_{i}}{\mu_{j}}.
+ 	\end{equation}
+In practice, it is very rare for a matrix M to be completely consistent. In the long history of the PC method, many methods have been developed to calculate inconsistencies. Many of them are based directly on the definition of consistency ([eq:consistent]), some methods use the eigenvalues of the matrix, others are based on the assumption that each fully consistent matrix fulfills the condition ([eq:consistent2]).

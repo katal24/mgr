@@ -249,8 +249,8 @@ Inconsistency indexes
 \end_layout
 
 \begin_layout Standard
-In the long history of PC method, a lot of methods have been developed to
- calculate inconsistencies.
+In the long history of the PC method, a lot of methods have been developed
+ to calculate inconsistencies.
  Many of them are based directly on the definition of consistency (
 \begin_inset CommandInset ref
 LatexCommand ref
