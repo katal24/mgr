@@ -137,7 +137,7 @@ Supervisor: & {\itshape \@supervisor}\\
 
 \vspace*{15cm} \vfill
 \begin{flushright} 
-\begin{minipage}[!h]{10cm}
+\begin{minipage}[!ht]{10cm}
 {\Large\itshape \@acknowledgements}
 \end{minipage}
 \end{flushright}

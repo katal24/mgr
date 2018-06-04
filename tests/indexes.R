@@ -416,7 +416,9 @@ generatePCMatrix<- function(numOfElements){
 #' @title Disturbs the PC matrix
 #' @description Disturbs the PC matrix in order to obtain inconsistency
 #' @param matrix - PC matrix
-#' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
+#' @param scale - extend of disorders. This parametr is the upper limit 
+#' of the interval that is used to scale the elements. The lower limit 
+#' is defined as 1 / scale
 #' @return disturbed PC matrix
 disturbPCMatrix<- function(matrix, scale){
   dim = nrow(matrix)
@@ -610,7 +612,8 @@ test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsF
   
   for(i in seq(1.1, 4, 0.1)){
     print(counter)
-    results[counter,] <- monteCarloOnTheSameMatrix(numOfElements, i, gradeOfIncomplete, numOfAttempts, numOfAttemptsForOneMatrix, alfa, beta)
+    results[counter,] <- monteCarloOnTheSameMatrix(numOfElements, i, gradeOfIncomplete, numOfAttempts, 
+                                                   numOfAttemptsForOneMatrix, alfa, beta)
     counter <- counter+1
   }
   
@@ -761,17 +764,18 @@ runMethod <- function(nr, matrix, alfa=0, beta=0){
 #' @title Explore the incomplete PC matrix
 #' @description Examines what is the relative error between the full matrix and indomplete matrix
 #' @param methodName - a name of the method which is tested
-#' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
+#' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used 
+#' to scale the elements. The lower limit is defined as 1 / scale
 #' @param numOfElements - dimension of tested matrix
 #' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
 #' @param numOfAttempts - number of test cases
-#' @param alfa - a parameter for kulakowskiSzybowskiIa method
+#' @param alfa - a parameter for kulakowskiSzybowskiIa and kulakowskiSzybowskiIab method
 #' @param beta - a parameter for kulakowskiSzybowskiIab method
 #' @return average value of the relative error between the full matrix and indomplete matrix
 exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, numOfAttempts, alfa=0, beta=0) {
-  print("!!!!!!!!!!!!!!!!!!!!!!!!!")
+
   matrix <- generateDisturbedPCMatrix(numOfElements, scale)
-  dim <- ncol(matrix)
+  n <- ncol(matrix)
   if(alfa==0 && beta==0){
     realIdx <- methodName(matrix)
   } else {
@@ -781,7 +785,7 @@ exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, n
   vectorOfIdsx <- integer(numOfAttempts)
   
   for( i in 1:numOfAttempts ) {
-    brokenMatrix <- matrix(nrow = dim, ncol = dim, data = 0)
+    brokenMatrix <- matrix(nrow = n, ncol = n, data = 0)
     numOfTriads <- length(generateTriads(brokenMatrix))/3
     
     while( (0 %in% (matrix %^% (n-1))) || numOfTriads==0){

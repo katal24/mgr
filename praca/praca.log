@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6600) (preloaded format=pdflatex 2018.5.28)  2 JUN 2018 13:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  4 JUN 2018 16:09
 entering extended mode
 **/home/dawid/Pulpit/magisterka/praca/praca.tex
 (/home/dawid/Pulpit/magisterka/praca/praca.tex
@@ -1286,19 +1286,19 @@ LaTeX Warning: Unused global option(s):
 (praca.aux)
 \openout1 = `praca.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
-LaTeX Font Info:    ... okay on input line 101.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 101.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 100.
  (/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -1460,12 +1460,12 @@ Dictionary: translator-basic-dictionary, Language: English
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ) ABD: EveryShipout initializing macros
 \c@lstlisting=\count345
-LaTeX Font Info:    Try loading font information for U+msa on input line 101.
+LaTeX Font Info:    Try loading font information for U+msa on input line 100.
 
 (/home/dawid/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 101.
+LaTeX Font Info:    Try loading font information for U+msb on input line 100.
 
 (/home/dawid/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1473,33 +1473,33 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <agh.jpg, id=4, 146.4672pt x 284.7438pt>
 File: agh.jpg Graphic file (type jpg)
 <use agh.jpg>
-Package pdftex.def Info: agh.jpg  used on input line 103.
+Package pdftex.def Info: agh.jpg  used on input line 101.
 (pdftex.def)             Requested size: 87.88098pt x 170.8476pt.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 103.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 101.
 
 (/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/phv/bx/sc' in size <12> not available
-(Font)              Font shape `T1/phv/b/sc' tried instead on input line 103.
+(Font)              Font shape `T1/phv/b/sc' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 103.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 103.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 103.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
  [1
 
 {/home/dawid/.miktex/texmfs/data/pdftex/config/pdftex.map} <./agh.jpg>]
-Underfull \hbox (badness 1552) in paragraph at lines 103--103
+Underfull \hbox (badness 1552) in paragraph at lines 101--101
 \T1/ptm/m/it/12 ograniczenia wolno±ci albo pozbawienia wolno±ci do lat 3. Tej s
 amej karze podlega,
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 103--103
+Underfull \hbox (badness 1400) in paragraph at lines 101--101
 \T1/ptm/m/it/12 ponosi odpowiedzialno±¢ dyscyplinarn¡ przed komisj¡ dyscyplinar
 n¡ albo przed s¡dem
  []
@@ -1508,7 +1508,7 @@ n¡ albo przed s¡dem
 
 ]
 
-/home/dawid/Pulpit/magisterka/praca/praca.tex:103: Package inputenc Error: Unic
+/home/dawid/Pulpit/magisterka/praca/praca.tex:101: Package inputenc Error: Unic
 ode character Ì¨ (U+328)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1523,9 +1523,9 @@ You may provide a definition with
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 113.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 112.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 113.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 112.
 
 No file praca.toc.
 \tf@toc=\write4
@@ -1548,7 +1548,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7])
-Underfull \hbox (badness 1400) in paragraph at lines 22--118
+Underfull \hbox (badness 1400) in paragraph at lines 22--117
 \T1/ptm/m/n/10.95 Ostatni rozdziaª to podsumowanie wykonanej pracy, wyci¡gni¦te
  wnioski i pomysªy na dalsze
  []
@@ -1565,9 +1565,6 @@ Package pdftex.def Info: fig1.png  used on input line 31.
 (pdftex.def)             Requested size: 339.66812pt x 110.21144pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1655,7 +1652,7 @@ Overfull \hbox (47.4783pt too wide) in paragraph at lines 215--215
  []
 
 [16])
-Underfull \hbox (badness 1728) in paragraph at lines 219--120
+Underfull \hbox (badness 1728) in paragraph at lines 219--119
 []\T1/ptm/m/n/10.95 Zaproponowane sposoby modyfikcaji wspªczynników pozwalaj¡ n
 a u»ycie ich do macierzy
  []
@@ -1669,25 +1666,193 @@ a u»ycie ich do macierzy
 
 ]
 Chapter 4.
-
-Underfull \hbox (badness 10000) in paragraph at lines 33--35
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 34--36
 
  []
 
-[19]) [20] (praca.aux (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux)
-(rozdzial4.aux))
+<images/rstudio.png, id=84, 1122.1925pt x 711.65875pt>
+File: images/rstudio.png Graphic file (type png)
+<use images/rstudio.png>
+Package pdftex.def Info: images/rstudio.png  used on input line 55.
+(pdftex.def)             Requested size: 455.24411pt x 288.69801pt.
+
+Underfull \hbox (badness 1152) in paragraph at lines 50--59
+[]\T1/ptm/m/n/10.95 Testy wspóªczynników zostaªy napisane w j¦zyku R, który ide
+alnie nadaje si¦ do oblicze«
+ []
+
+
+Underfull \hbox (badness 1360) in paragraph at lines 50--59
+\T1/ptm/m/n/10.95 RStudio wspomaga prac¦ programisty poprzez kolorowanie skªadn
+i, wbudowan¡ konsole, ªatwe
+ []
+
+
+Underfull \hbox (badness 1418) in paragraph at lines 69--72
+\T1/ptm/m/n/10.95 peªnymi, jak równie» niepeªnymi. Nie uwzgl¦deniono bª¦dnych m
+acierzy, a wi¦c takich, które
+ []
+
+[20]
+<images/kod1.png, id=88, 515.9275pt x 222.8325pt>
+File: images/kod1.png Graphic file (type png)
+<use images/kod1.png>
+Package pdftex.def Info: images/kod1.png  used on input line 74.
+(pdftex.def)             Requested size: 386.94467pt x 167.12396pt.
+<images/kod2.png, id=89, 517.935pt x 159.59625pt>
+File: images/kod2.png Graphic file (type png)
+<use images/kod2.png>
+Package pdftex.def Info: images/kod2.png  used on input line 80.
+(pdftex.def)             Requested size: 388.45029pt x 119.69687pt.
+<images/kod3.png, id=90, 516.93124pt x 154.5775pt>
+File: images/kod3.png Graphic file (type png)
+<use images/kod3.png>
+Package pdftex.def Info: images/kod3.png  used on input line 86.
+(pdftex.def)             Requested size: 387.69748pt x 115.93282pt.
+<images/kod4.png, id=91, 517.935pt x 519.9425pt>
+File: images/kod4.png Graphic file (type png)
+<use images/kod4.png>
+Package pdftex.def Info: images/kod4.png  used on input line 92.
+(pdftex.def)             Requested size: 388.45029pt x 389.95592pt.
+<images/kod5.png, id=92, 612.2875pt x 205.76875pt>
+File: images/kod5.png Graphic file (type png)
+<use images/kod5.png>
+Package pdftex.def Info: images/kod5.png  used on input line 99.
+(pdftex.def)             Requested size: 459.21451pt x 154.32617pt.
+
+Underfull \hbox (badness 1939) in paragraph at lines 100--100
+[]\T1/ptm/b/n/10 Fig. 4.6. |\T1/ptm/m/n/10 Implemetnacja metody \T1/ptm/m/it/10
+ countIndexesForTriads\T1/ptm/m/n/10 , która oblicza warto±¢
+ []
+
+<images/kod11.png, id=93, 467.7475pt x 123.46124pt>
+File: images/kod11.png Graphic file (type png)
+<use images/kod11.png>
+Package pdftex.def Info: images/kod11.png  used on input line 109.
+(pdftex.def)             Requested size: 350.80975pt x 92.59569pt.
+<images/kod12.png, id=94, 515.9275pt x 280.04625pt>
+File: images/kod12.png Graphic file (type png)
+<use images/kod12.png>
+Package pdftex.def Info: images/kod12.png  used on input line 115.
+(pdftex.def)             Requested size: 386.94467pt x 210.03415pt.
+<images/kod13.png, id=95, 624.3325pt x 382.42876pt>
+File: images/kod13.png Graphic file (type png)
+<use images/kod13.png>
+Package pdftex.def Info: images/kod13.png  used on input line 121.
+(pdftex.def)             Requested size: 455.75894pt x 279.17065pt.
+
+Underfull \hbox (badness 3229) in paragraph at lines 122--122
+[]\T1/ptm/b/n/10 Fig. 4.9. |\T1/ptm/m/n/10 Implemetnacja funkcji \T1/ptm/m/it/1
+0 breakPCMatrix\T1/ptm/m/n/10 , która dekompletuje macierz
+ []
+
+[21 <./images/rstudio.png>]
+<images/kod21.png, id=99, 786.94pt x 730.73pt>
+File: images/kod21.png Graphic file (type png)
+<use images/kod21.png>
+Package pdftex.def Info: images/kod21.png  used on input line 129.
+(pdftex.def)             Requested size: 456.42552pt x 423.8237pt.
+<images/kod22.png, id=100, 766.865pt x 440.64626pt>
+File: images/kod22.png Graphic file (type png)
+<use images/kod22.png>
+Package pdftex.def Info: images/kod22.png  used on input line 137.
+(pdftex.def)             Requested size: 444.78201pt x 255.575pt.
+
+Underfull \hbox (badness 2285) in paragraph at lines 138--138
+[]\T1/ptm/b/n/10 Fig. 4.11. |\T1/ptm/m/n/10 Implemetnacja funkcji \T1/ptm/m/it/
+10 test\T1/ptm/m/n/10 , która testuje wszystkie wspóªczynniki,
+ []
+
+<images/kod31.png, id=101, 670.505pt x 862.22125pt>
+File: images/kod31.png Graphic file (type png)
+<use images/kod31.png>
+Package pdftex.def Info: images/kod31.png  used on input line 148.
+(pdftex.def)             Requested size: 388.89317pt x 500.08867pt.
+<images/kod32.png, id=102, 495.8525pt x 418.56375pt>
+File: images/kod32.png Graphic file (type png)
+<use images/kod32.png>
+Package pdftex.def Info: images/kod32.png  used on input line 154.
+(pdftex.def)             Requested size: 287.59465pt x 242.76714pt.
+<images/kod33.png, id=103, 525.965pt x 634.37pt>
+File: images/kod33.png Graphic file (type png)
+<use images/kod33.png>
+Package pdftex.def Info: images/kod33.png  used on input line 160.
+(pdftex.def)             Requested size: 305.0599pt x 367.93484pt.
+) [22 <./images/kod1.png> <./images/kod2.png>] [23 <./images/kod3.png> <./image
+s/kod4.png>] [24 <./images/kod5.png> <./images/kod11.png> <./images/kod12.png>]
+[25 <./images/kod13.png>] [26 <./images/kod21.png>] [27 <./images/kod22.png>]
+[28 <./images/kod31.png>] [29 <./images/kod32.png> <./images/kod33.png>]
+\openout2 = `rozdzial5.aux'.
+
+
+(rozdzial5.tex [30
+
+
+
+]
+Chapter 5.
+
+Overfull \hbox (3.41142pt too wide) in paragraph at lines 66--100
+ [] 
+ []
+
+
+Underfull \vbox (badness 2012) has occurred while \output is active []
+
+ [31]
+Underfull \hbox (badness 5446) in paragraph at lines 109--110
+\T1/ptm/m/n/10.95 te±cie, niezale»nie od rozmiaru. Dla macierzy, które nie s¡ b
+ardzo maªe, daje naprawd¦
+ []
+
+
+Underfull \vbox (badness 5548) has occurred while \output is active []
+
+ [32]
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+[]\T1/ptm/m/n/10.95 Zdecydowanie najlepszymi wspóªczynnikami okazaªy si¦ \T1/pt
+m/m/it/10.95 Koczkodaj index \T1/ptm/m/n/10.95 i
+ []
+
+
+Underfull \hbox (badness 2253) in paragraph at lines 116--117
+\T1/ptm/m/it/10.95 harmonic\T1/ptm/m/n/10.95 , \T1/ptm/m/it/10.95 relativeError
+\T1/ptm/m/n/10.95 , \T1/ptm/m/it/10.95 saloHamalainen\T1/ptm/m/n/10.95 , \T1/pt
+m/m/it/10.95 geometric\T1/ptm/m/n/10.95 . Reztaty uzyskane przez te wspóªczynni
+ki
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 121--122
+[]\T1/ptm/m/n/10.95 Wszystkie testy dla ró»nych rozmiarów macierzy i poziomów n
+iekompletno±ci wykonano z
+ []
+
+[34]) [35]
+\openout2 = `rozdzial6.aux'.
+
+ (rozdzial6.tex [36
+
+
+
+]
+Chapter 6.
+) [37] (praca.aux (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux)
+(rozdzial4.aux) (rozdzial5.aux) (rozdzial6.aux))
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 30704 strings out of 494894
- 594684 string characters out of 3178732
- 641099 words of memory out of 3000000
- 33808 multiletter control sequences out of 15000+200000
- 600275 words of font info for 90 fonts, out of 3000000 for 9000
+ 30808 strings out of 494894
+ 596534 string characters out of 3178733
+ 664100 words of memory out of 3000000
+ 33885 multiletter control sequences out of 15000+200000
+ 603383 words of font info for 104 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 55i,12n,65p,1947b,529s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,65p,1947b,584s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/dawid/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/dawid/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/dawid/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/dawid/.m
@@ -1704,9 +1869,9 @@ pe1/urw/helvetic/uhvro8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/ur
 w/times/utmb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/ut
 mr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on praca.pdf (20 pages, 301361 bytes).
+Output written on praca.pdf (37 pages, 1205838 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
+ 205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

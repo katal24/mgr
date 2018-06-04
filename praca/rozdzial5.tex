@@ -1,0 +1,132 @@
+\chapter{Results and discussion}
+\label{sec:results}
+\section{Results}
+The results of the tests are presented below.
+
+\subsection{Testy uwzględniające różne rozmiary macierzy}
+\begin{table}[ht]
+\begin{center}
+\caption{Relative error of inconsistency indexes for incomplete matrices with constant degrees of incompleteness $g=15\%$ and variable matrix size.}
+\label{tab:results1}
+\begin{tabular}{|c||l|l|l|l|l|c||c|}
+\hline Index & n = 4 & n = 7 & n = 8 & n = 10 & n = 15 & mean & rank \\ \hline \hline
+saaty & 33,41 & 19,82 & 18,78 & 19,16 & 17,37 & 21,71 & 10 \\ \hline
+geometric & 616,68 & 124,73 & 77,94 & 68,62 & 39,13 & 185,42 & 13 \\ \hline
+koczkodaj & \textbf{13,86} & \textbf{3,69} & \textbf{2,14} & \textbf{1,62} & \textbf{0,80} & \textbf{4,42} & \textbf{1} \\ \hline
+kazibudzkiLTI1 & 24,80 & 10,21 & 6,62 & 4,97 & 2,73 & 9,87 & 6 \\ \hline
+kazibudzkiLTI2 & 42,31 & 17,93 & 11,88 & 9,03 & 5,03 & 17,24 & 8 \\ \hline
+kazibudzkiCMLTI2 & 35,40 & 17,07 & 13,26 & 11,20 & 6,81 & 16,75 & 7 \\ \hline
+pelaeLamata & 44,65 & 19,90 & 13,46 & 10,36 & 5,84 & 18,84 & 9 \\ \hline
+kulakSzyb & 20,34 & 7,68 & 4,88 & 3,63 & 1,96 & 7,70 & 5 \\ \hline
+kulakSzyb2 & 44,61 & 26,05 & 27,12 & 29,64 & 28,46 & 31,18 & 11 \\ \hline
+kulakSzybIa & 16,47 & 5,18 & 3,09 & 2,27 & 1,16 & 5,63 & 3 \\ \hline
+kulakSzybIab & 17,40 & 4,89 & 2,81 & 2,04 & 1,01 & 5,63 & 2 \\ \hline
+harmonic & 9 573,02 & 1 577,49 & 1 127,33 & 1 066,35 & 866,00 & 2 842,04 & 15 \\ \hline
+goldenWang & 115,92 & 54,37 & 43,90 & 43,16 & 36,26 & 58,72 & 12 \\ \hline
+saloHamalainen & 381,57 & 205,06 & 176,11 & 160,06 & 136,55 & 211,87 & 14 \\ \hline
+cavalloDapuzzo & 16,94 & 6,85 & 4,46 & 3,36 & 1,87 & 6,70 & 4 \\ \hline
+relativeError & 1 792,64 & 226 313,60 & 746,21 & 100,87 & 20,42 & 45 794,75 & 16 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Testy uwzględniające różne poziomy niekompletności}
+\begin{table}[ht]
+\begin{center}
+\caption{Relative error of inconsistency indexes for incomplete matrices with varying degrees of incompleteness and constant matrix size $n=8$.}
+\label{tab:results1}
+\begin{tabular}{|c||l|l|l|l|l|c||c|}
+\hline Index & $g=4\%$ & $g=7\%$ & $g=14\%$ & $g=25\%$ & $g=50\%$ & mean & rank \\ \hline \hline
+saaty & 4,71 & 9,40 & 18,78 & 32,89 & 65,56 & 26,27 & 10 \\ \hline
+geometric & 23,60 & 48,44 & 86,61 & 135,68 & 207,99 & 100,46  & 13 \\ \hline
+koczkodaj & \textbf{0,48} & \textbf{0,99} & \textbf{2,17} & \textbf{4,52} & 16,41 & 4,92 & 2 \\ \hline
+kazibudzkiLTI1 & 2,90 & 4,31 & 6,64 & 10,05 & 23,09 & 9,40 & 6 \\ \hline
+kazibudzkiLTI2 & 5,12 & 7,71 & 11,91 & 18,08 & 40,77 & 16,72 & 7 \\ \hline
+kazibudzkiCMLTI2 & 5,16 & 8,05 & 13,34 & 22,03 & 61,16 & 21,95 & 9 \\ \hline
+pelaeLamata & 5,73 & 8,72 & 13,52 & 20,54 & 45,64 & 18,83 & 8 \\ \hline
+kulakSzyb & 2,17 & 3,18 & 4,91 & 7,43 & 17,30 & 7,00 & 5 \\ \hline
+kulakSzyb2 & 5,90 & 12,22 & 27,12 & 56,71 & 202,27 & 60,84 & 12 \\ \hline
+kulakSzybIa & 1,20 & 1,88 & 3,12 & 5,13 & 13,97 & 5,06 & 3 \\ \hline
+kulakSzybIab & 1,00 & 1,65 & 2,84 & 4,74 & \textbf{12,97} & \textbf{4,64} & \textbf{1} \\ \hline
+harmonic & 291,74 & 544,60 & 1 152,26 & 1 962,25 & 3 995,58 & 1 589,29 & 16 \\ \hline
+goldenWang & 14,23 & 25,23 & 46,18 & 68,83 & 98,24 & 50,54 & 11 \\ \hline
+saloHamalainen & 88,40 & 137,70 & 180,17 & 182,54 & 148,74 & 147,51 & 14 \\ \hline
+cavalloDapuzzo & 1,95 & 2,91 & 4,46 & 6,81 & 16,11 & 6,45 & 4 \\ \hline
+relativeError & 18,99 & 20,81 & 206,74 & 68,98 & 1 056,96 & 274,50 & 15 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\subsection{Testy uwzględniające różne rozmiary niespójności}
+Spośrod przebadanych wspłczynników poniżej zaprezentowano te, które dały najlepsze rezultaty. Kompletne wyniki testów zostały zamieszczone w Appendix.
+\begin{table}[!ht]
+\begin{center}
+\caption{Relative error of inconsistency indexes for incomplete matrices with varying degrees of inconsistency, constant matrix size $n=8$ and constant level of incompleteness $g=15\%$.}
+\label{tab:results1}
+\begin{tabular}{|c||c|c|c|c|c|c|}
+\hline $d$ & koczkodaj & kazibudzkiLTI1 & kulakSzyb & kulakSzybIa & kulakSzybIab & cavalloDapuzzo  \\ \hline \hline
+1.1 & 4.09 & 6.38 & 6.13 & 4.52 & 4.35 & \textbf{0.49} \\ \hline
+1.2 & 3.68 & 6.45 & 5.98 & 4.26 & 4.06 & \textbf{0.96} \\ \hline
+1.3 & 3.58 & 6.55 & 5.87 & 4.16 & 3.96 & \textbf{1.37} \\ \hline
+1.4 & 3.55 & 6.62 & 5.77 & 4.12 & 3.91 & \textbf{1.80} \\ \hline
+1.5 & 3.19 & 6.35 & 5.42 & 3.80 & 3.59 & \textbf{2.02} \\ \hline
+1.6 & 3.26 & 6.57 & 5.46 & 3.84 & 3.64 & \textbf{2.39} \\ \hline
+1.7 & 3.03 & 6.59 & 5.35 & 3.71 & 3.48 & \textbf{2.81} \\ \hline
+1.8 & \textbf{2.47} & 6.45 & 5.13 & 3.31 & 3.04 & 3.07 \\ \hline
+1.9 & \textbf{2.47} & 6.65 & 5.26 & 3.35 & 3.06 & 3.34 \\ \hline
+2.0 & \textbf{2.20} & 6.66 & 5.13 & 3.16 & 2.85 & 3.64 \\ \hline
+2.1 & \textbf{2.38} & 6.51 & 4.93 & 3.21 & 2.93 & 3.83 \\ \hline
+2.2 & \textbf{2.16} & 6.52 & 4.81 & 3.04 & 2.76 & 4.09 \\ \hline
+2.3 & \textbf{2.14} & 6.66 & 4.89 & 3.07 & 2.80 & 4.25 \\ \hline
+2.4 & \textbf{2.00} & 6.67 & 4.85 & 2.98 & 2.67 & 4.49 \\ \hline
+2.5 & \textbf{1.96} & 6.59 & 4.73 & 2.91 & 2.63 & 4.71 \\ \hline
+2.6 & \textbf{1.73} & 6.62 & 4.72 & 2.81 & 2.48 & 4.87 \\ \hline
+2.7 & \textbf{1.94} & 6.79 & 4.73 & 2.96 & 2.67 & 5.14 \\ \hline
+2.8 & \textbf{1.75} & 6.67 & 4.64 & 2.78 & 2.47 & 5.24 \\ \hline
+2.9 & \textbf{1.56} & 6.67 & 4.54 & 2.68 & 2.38 & 5.60 \\ \hline
+3.0 & \textbf{1.82} & 6.71 & 4.68 & 2.84 & 2.51 & 5.56 \\ \hline
+3.1 & \textbf{1.47} & 6.69 & 4.48 & 2.62 & 2.30 & 5.74 \\ \hline
+3.2 & \textbf{1.46} & 6.52 & 4.40 & 2.59 & 2.28 & 5.75 \\ \hline
+3.3 & \textbf{1.48} & 6.85 & 4.57 & 2.65 & 2.35 & 6.14 \\ \hline
+3.4 & \textbf{1.38} & 6.60 & 4.30 & 2.53 & 2.23 & 6.15 \\ \hline
+3.5 & \textbf{1.17} & 6.60 & 4.25 & 2.40 & 2.10 & 6.50 \\ \hline
+3.6 & \textbf{1.25} & 6.73 & 4.39 & 2.50 & 2.18 & 6.65 \\ \hline
+3.7 & \textbf{1.18} & 6.83 & 4.41 & 2.48 & 2.19 & 6.77 \\ \hline
+3.8 & \textbf{1.24} & 6.59 & 4.17 & 2.40 & 2.09 & 6.68 \\ \hline
+3.9 & \textbf{1.28} & 6.73 & 4.25 & 2.47 & 2.19 & 6.79 \\ \hline
+4.0 & \textbf{1.11} & 6.52 & 4.17 & 2.35 & 2.06 & 6.79 \\ \hline \hline
+mean & \textbf{2.13} & 6.61 & 4.88 & 3.08 & 2.81 & 4.45 \\ \hline 
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{Discussion}
+Analyzing the above results, one can draw several conclusions.
+
+\subsection{Testy uwzględniające różne rozmiary macierzy}
+Wraz ze wzrotem rozmiaru macierzy, maleje badany błąd względny. Biorąc pod uwagę najlepsze współczynniki, dla małych macierzy (rozmiar 4), błąd względny wynosi minimum kilkananaście procent, a więc stosunkowo dużo. Szybko jednak spada, kiedy macierz rośnie. Dla wymiaru 7 istnieją współczynniki, które dają rezultaty w okolicy od 3-5\%, co jest już wynikiem dobrym. Przy macierzach o znacznych rozmiarach (ponad 10 alternatyw) błąd wynosi zaledwie około 1-2\%, co zdecydowanie jest wartością akceptowalną. 
+
+Zdecydowanie najlepszym współczynnikiem okazał się \textit{Koczkodaj index}. Wygrywa w każdym teście, niezależnie od rozmiaru. Dla macierzy, które nie są bardzo małe, daje naprawdę satysfakcjonujące rezultaty. Dobre wartości izyskano także dla współczyników \textit{kulakowskiSzybowskiIab}, \textit{kulakowskiSzybowskiIa} oraz \textit{cavalloDapuzzo} i wydaje się, że są one wiarygodne. Zdecydowanie należy odrzucić współczynniki \textit{relativeError}, \textit{harmonic}, \textit{saloHamalainen}, \textit{geometric}, \textit{goldenWang}. Reztaty uzyskane przez te współczynniki pokazują, że wynik badanej niespójności dla macierzy niepełnej może bardzo odbiegać od prawdziwej wartości.
+
+Warto jednak pamiętać, że przedstawione wyniki dotyczą macierzy o poziomie niekompletności równym 15\%. Oznacza to, że dla macierzy o rozmiarze $n=10$, brakuje 7 porównań. Dla innych poziomów niekompletności, wyniki będą inne. Wpływ poziomu niekompletności na badany błąd względny pokazują kolejne testy.
+
+\subsection{Testy uwzględniające różne poziomy niekompletności}
+Wraz ze wzrotem poziomu niekompletności, rośnie badany błąd względny. Biorąc pod uwagę najlepsze współczynniki, dla niewielkich niekompletności (4\%), błąd względny wynosi zaledwie około 1-2\%, co zdecydowanie jest wartością akceptowalną. Powoli jednak wzrasta, kiedy macierz rośnie. Dla niekompletności $g=14\%$, istnieją współczynniki, które dają rezultaty w okolicy od 2-3\%, co również jest dobrym wynikiem. Przy macierzach o znacznych rozmiarach ($g=50\%$) błąd wynosi kilkanaście procent.
+
+Zdecydowanie najlepszymi współczynnikami okazały się \textit{Koczkodaj index} i \textit{kulakowskiSzybowskiIab}. Pierwszy wygrywa w większości testów i daje naprawdę satysfakcjonujące rezultaty. Wraz ze wzrtostem niekompletności stosunkowo coraz lepsze wyniki uzyskuje ten drugi współczynnik. W ostatnim teście uzyskuje już sporą przewagę nad resztą, co powoduje, że wartość jego średnia okazuje się najniższa. Dobre wartości izyskano także dla współczyników \textit{kulakowskiSzybowskiIa} oraz \textit{cavalloDapuzzo} i wydaje się, że są one wiarygodne. Zdecydowanie należy odrzucić współczynniki \textit{harmonic}, \textit{relativeError}, \textit{saloHamalainen}, \textit{geometric}. Reztaty uzyskane przez te współczynniki pokazują, że wynik badanej niespójności dla macierzy niepełnej może bardzo odbiegać od prawdziwej wartości.
+
+Warto jednak pamiętać, że przedstawione wyniki dotyczą macierzy o rozmiarze równym 8. Przy tym poziomie niespójności, ale dla innych rozmiarów, wyniki będą inne. Wpływ rozmiaru macierzy na badany błąd względny pokazują wcześniejsze testy.
+
+\subsection{Testy uwzględniające różne rozmiary niespójności}
+Wszystkie testy dla różnych rozmiarów macierzy i poziomów niekompletności wykonano z uwzględnieniem różnego poziomu niespójności. Poziom tej niespójności jest proporcjonalny do wartości $d$ zawartej w tabeli 5.3. W tej tabeli pokazano szczegółowe wyniki, których średnie są już częścią tabeli 5.1. Warto jednak szczegółowo przyjrzeć się wynikom. Pokazują one, że jakość współczynników jest także zależna od niespójności badanej macierzy.
+
+Najniższe wartości błędu względnego średnio uzyskał współczynnik \textit{Koczkodaj index}, co zostało już wcześniej podkreślone. Należy zauważyć, że uzyskuje on najlepsze rezultaty dopiero od pewnego momentu, kiedy poziom niespójności w macierzy zaczyna rosnąć. Wcześniej, dla małych niespójności najlepszym współczynnikiem okazuje się \textit{Cavallo and DApuzzo index}. To ciekawa prawidłowość, która wskazuje, że wybór współczynnika do badania niespójności macierzy niepełnych warto także uzależnić od wielkośći przewidywanej niespójności.
+
+Co warte podkreślenia, prawidłowość ta powtarza się w każdym z przeprowadzonych testów. Przy małej niespójności, niezależnie od rozmiaru macierzy oraz stopnia niekompletności, najlepszy okazuje się \textit{Cavallo and DApuzzo index}. Potwierdzają to wyniki zawarte w Appendix.
+
+\subsection{Dyskusja ogólna}
+Certainly, the tests managed to show that the error increases with a growth of the level of incompleteness. At the same time, it decreases when the size of the matrix increases. However, the most important question was about which indexes cope well with incomplete matrices. The Koczkodaj index ([sub:Koczkodaj-index]) won in 9 out of 10 tests and its average error in both cases turn out to be the lowest (below $5\%$). The next places are occupied by two indexes introduced by Kułakowski and Szybowski ([eq:Ia], [eq:Iab]) and Cavallo and D'Apuzzo index ([sub:Cavallo-and-D’Apuzzo]). It is worth noting that all of these indexes are based on triads.
+
+A question about what makes the Koczkodaj index giving such good results and whether is it worth using, may arise. One should return to the definition of this index ([eq:K]) and notice that it is equal to the value of the most inconsistency triad. Therefore, if the level of incompleteness is low, there is a good chance that after deletion some values from the matrix and recalculating the index the value of it will not change at all. It will only change if the element included in the most inconsistent triad is removed. However, in many cases, the examination of the full matrix and th matrix after incompletion give exactly the same results (the error is $0\%$). This is the only index of this kind among those presented in the paper.
+
+If one uses the Koczkodaj index, one may be worried that the removed comparison belonged to the most inconsistent triad. In such a case, it is difficult to predict what error will be contained in the index of the incomplete matrix. It seems that one should pay particular attention to the indexes proposed by Kułakowski and Szybowski. First of them ([eq:I1]) averages the inconsistencies of the triads. Therefore, it is safe and gives good results (in both tests it took the sixth place and achieved an error below $8\%$). From this perspective, another index suggested by the same authors ([eq:Ia]) turns out to be very interesting. In the tests it took the third place. It has the parameter $\alpha$ allowing to determine the effect of the greatest inconsistency of the triad $\left(\alpha\right)$, and the average $\left(1-\alpha\right)$. In the tests carried out, the parameter $\alpha$ was $0.4$.
