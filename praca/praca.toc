@@ -29,7 +29,7 @@
 \contentsline {subsection}{\numberline {4.2.1}Development environment}{20}
 \contentsline {subsection}{\numberline {4.2.2}Implementation of tests inconsistency indexes}{20}
 \contentsline {subsubsection}{Implementacja wsp\IeC {\'o}\IeC {\l }czynnik\IeC {\'o}w niesp\IeC {\'o}jno\IeC {\'s}ci}{21}
-\contentsline {subsubsection}{Implementacja test\IeC {\'o}w}{21}
+\contentsline {subsubsection}{Implementacja test\IeC {\'o}w}{22}
 \contentsline {subsection}{\numberline {4.2.3}Documentation}{22}
 \contentsline {chapter}{\numberline {5}Results and discussion}{31}
 \contentsline {section}{\numberline {5.1}Results}{31}
