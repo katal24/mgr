@@ -1,0 +1,201 @@
+\chapter{Niespójność}
+\label{sec:niespojnosc}
+\section{Problemy związane z metodami porównań parami}
+\label{subsec:pyoblemu}
+
+Głównym problemem metody porównań parami jest niespójność danych. To najczęstszy zarzut, jaki można usłyszeć ze strony krytyków. Być może to także jeden z powodów, dla których AHP i HRE nie zdobyły jeszcze tak dużej popularności. Mimo, iż metoda opiera się na obliczeniach matematycznych i~jest potwierdzona dowodami oraz twierdzeniami, zawiera jednak jeden \textit{słabszy} element - czynnik ludzki. Człowiek współtworzy przecież obliczenia tej metody poprzez dostarczanie wyników porównań, bez których pozostałe składniki nie mają sensu. Dlaczego tak trudno jest dostarczyć spójne dane wejściowe i czy eksperci, którzy proszeni są o dokonanie porównań nie mogliby się tego po prostu nauczyć?
+
+Oczywiście ludzie, którzy znają zasady działania metody potrafią tak dobrać wartości macierzy PC, aby była ona spójna. Jeśli jednak widzimy tylko sparowane alternatywy i mamy przypisać im, zgodnie z naszymi odczuciami, preferencje, okazuje się to już o wiele trudniejsze. Czasem zdarzają się sytuacje, w których ciężko jest przypisać konkretne liczby do stosunku, jaki posiadamy do przedstawionych alternatyw lub określić \textit{stopień preferowania}. Skale ocen spośród których wybieramy ocenę jest umowna, a~konkretne wartości mogą zostać różnie, subiektywnie odczytane przez poszczególne osoby.
+	
+Zastanówmy się kiedy macierz jest niespójna. Aby łatwiej zrozumieć na czym polega problem, przedstawię dwa proste przykłady. Pierwszy z nich okaże się niespójny nawet bez zwracania uwagi na konkretne wartości.
+
+\begin{example}Sporządzamy ranking zabawek, aby wybrać ulubiony przedmiot dziecka. Przedstawiamy mu piłkę i rower, a dziecko wybiera piłkę. Następnie pokazujemy rower i hulajnogę, wybór pada na rower. Ostatnie porównanie to hulajnoga i piłka, tym razem dziecko wskazuje na hulajnogę. \end{example}
+\\*
+Nie trzeba znać się na matematyce, aby szybko zorientować się, że ranking w tej sytuacji nie ma sensu, ponieważ w teorii, jeśli obiekt $A$ jest lepszy od $B$, zaś $B$ lepszy od $C$, to oczekujemy, że obiekt $A$~jest zdecydowanie bardziej preferowany niż $C$. W praktyce czasami okazuje się inaczej. W tej sytuacji dane są niespójne.
+
+\begin{example}Porównujemy obiekt $A$ z obiektem $B$ i przypisujemy rezultat $2$. Następnie zestawiamy $B$ i $C$, tutaj również wybieramy wartość $2$. A więc, mówiąc potocznie, obiekt $A$ jest dwa razy lepszy od $B$, który z kolei $2$ razy lepszy od $C$. Jakiego rezultatu oczekujemy więc w porównaniu obiektów $A$ i $C$?\end{example}
+\\*
+Po chwili namysłu dochodzimy do wniosku, że obiekt $A$ w stosunku do obiektu $C$ powinien przyjąć wartość $4$. Właśnie wtedy nasze dane będą całkowicie spójne.
+
+Drugi z przedstawionych przykładów prowadzi nas do wniosku, na którym opiera się teoria spójności danych w metodzie porównań parami:
+\begin{equation}  \label{eq:1} m_{ik} = m_{ij}m_{jk} \quad \quad \quad \quad \forall_{i,j,k} \end{equation}
+
+W praktyce okazuje się, że bardzo rzadko otrzymujemy idealnie spójną macierz, dlatego do metod porównań parami wprowadzony został współczynnik niespójności. Informuje on o stopniu niespójności danych i na jego podstawie możemy zdecydować, czy warto wykonywać obliczenia na danej macierzy PC, czy może należy poprosić o ponowne wykonanie porównań. Na przestrzeni lat powstało wiele sposobów obliczania współczynnika niespójności, w mojej pracy przedstawię dwa z nich.
+
+\section{Współczynnik Saaty’ego}
+\label{subsec:saaty}
+
+Aby wyznaczyć współczynnik Saaty’ego należy ponownie wykorzystać maksymalną wartość własną macierzy. To właśnie w oparciu o ten parametr Saaty przedstawił swoje rozważania~\cite{A10}. Wykorzystał fakt, że największa wartość własna każdej macierzy jest równa jej wymiarowi wtedy i tylko wtedy, kiedy dana macierz jest spójna. Na tej podstawie zaproponował współczynnik niespójności (ang. \textit{Consistency Index}). Dla macierzy o wymiarze \textit{n} wyraża się wzorem:
+
+	$$CI(A) =  \frac{ \lambda_{max} - n}{n-1} \quad $$
+
+W najprostszej wersji obliczania współczynnika niespójności możemy w tym miejscu zakończyć nasze rozważania. Przyjmuje się, że jeżeli wyznaczona wartość CI jest mniejsza niż $0.1$, to macierz jest spójna, w~przeciwnym wypadku należy poprawić wartości porównań. 
+	
+\begin{example}
+$$M = 
+\left(
+\begin{array}{1111}
+	1 & 2 & 8 \\
+	\frac{1}{2} & 1 & \frac{3}{4} \\
+	\frac{1}{8} & \frac{4}{3} & 1 	
+\end{array}
+\right)$$
+\\*
+Wyznaczamy największą wartość własną: $\lambda_{max} = 3.319518$,
+a następnie współczynnik: $$CI(M) = \frac{3.319518 - 3}{3 -1} = 0.159759. $$
+\\*
+Otrzymany rezultat informuje nas, że macierz $M$ nie jest spójna.
+\end{example}
+
+Nieco bardziej dokładny sposób obliczania niespójności zaproponowany przez Saaty’ego zestawia wartość $CI$ z współczynnikiem zależnym od wymiaru macierzy. Pozwala to na bardziej szczegółowe określenie wielkości niespójności danych. W tym przypadku należy wykorzystać tabelę (\ref{tab:ri})
+\begin{table}[ht!]
+\begin{center}
+
+
+\caption{Wartości $RI_{n}$}
+\label{tab:ri}
+\begin{tabular}{|c|c|c|c|c|c|}
+\cline{1-6} \multicolumn{1}{|l|}{$n$}
+& 3 &
+4 &
+5 &
+6 &
+7 \\\hline
+$RI_n$ & 0.5247 & 0.8816 & 1.1086 & 1.2479 & 1.3417\\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+i wyznaczyć współczynnik nazywany \textit{Consistency Ratio} (CR) według wzoru:
+$$CR(A) = \frac{CI(A)}{RI_{n}}$$
+\\*
+W przypadku naszej macierzy $M$ wynosi on: $\frac{0.159759}{0.5247} = 0.3044768.$ W tej metodzie również przyjmuje się, że warunkiem spójności jest spełnienie nierówności: $CR \leq 0.1$, więc klasyfikujemy macierz $M$ jako niespójną.
+
+\section{Metoda odległościowa - Koczkodaj}
+\label{subsec:koczkodaj}
+Jedną z głównych wad współczynnika Saaty’ego jest fakt, że wartości własne są wielkościami charakteryzującymi całą macierz, nie pozwalają więc określić, które elementy powodują wystąpienie niespójności. Rozwiązaniem tego problemu jest wprowadzona przez Koczkodaja~\cite{A11} metoda odległościowa, którą krótko przedstawię. Nieco bardziej rozbudowany opis, napisany przyjaznym językiem, można znaleźć w~\cite{A12}.
+\\*
+Zacznijmy od rozważenia macierzy o wymiarach $3\times3$:
+$$A = 
+\left(
+\begin{array}{111}
+	1 & a & b \\
+	\frac{1}{a} & 1 & c \\
+	\frac{1}{b} & \frac{1}{c} & 1 	
+\end{array}
+\right)$$
+Odwołując się do \ref{eq:1} możemy wnioskować, że $b = ac$.
+Nasza macierz będzie spójna, jeśli spełniony zostanie ten warunek.
+
+W celu zmierzenia ewentualnej niespójności, ponownie wykorzystując \ref{eq:1}, możemy stworzyć trzy wektory, w których jedna wartość zostanie wyliczona jako kombinacja dwóch pozostałych. Otrzymujemy więc wektory: $(\frac{b}{c}, b, c)$, $(a, ac, c)$ i $(a, b, \frac{b}{a})$. Następnie sprawdzamy odległość każdego z~tych wektorów od danego w przykładzie wektora $(a b c)$. Wybieramy ten, którego wartość odległości jest najniższa. Uzyskany rezultat to współczynnik niespójności. Zapis formalny przedstawionego algorytmu wygląda następująco:
+	$$CM(a,b,c) = min \{ \frac{1}{a}|a - \frac{b}{c}|, \frac{1}{b}|b - ac|,\frac{1}{c}|c - \frac{b}{a}|\}$$
+
+Teraz możemy przejść do macierzy o większych wymiarach. Okazuje się, że wystarczy wyszukać wszystkie trójki liczb, które powinny być od siebie zależne. Trójki te zostały nazwane \textit{triadami}. Aby wyznaczyć współczynnik niespójności macierzy wystarczy wybrać triad, dla którego wyliczona wartość jest największa:
+	$$CM(A) = max\{\quadmin\{|1-\frac{b}{ac}|,|1-\frac{ac}{b}|}\} \quad \quad  \forall_{ triady \quad (a,b,c) \quad macierzy\quad A} $$
+Przyjmuje się, że macierz jest spójna, jeżeli $CM(A) \leq \frac{1}{3}$.
+
+Warto zauważyć, że metoda odległościowa pozwana nie tylko zbadać niespójność, ale także wskazuje miejsce, które ma na nią największy wpływ. Dlatego można poprawić wprowadzone do macierzy PC wartości w jednym, konkretnym miejscu i przez to zmniejszyć współczynnik niespójności.
+
+
+
+\section{Biblioteka PairwiseComparisons - niespójność}
+\label{subsec:fun4}
+
+\textbf{Funkcje z biblioteki PairwiseComparisons pomocne w powyższych obliczeniach:}
+\\
+\begin{spacing}{1.1}
+\noindent{\Large Współczynnik Saaty'ego} \\ \begin{spacing}{0.5}  \end{spacing}
+
+\textbf{Nazwa}\\ \emph{saatyIdx} \\ \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Opis}\\ Oblicza współczynnik niespójności macierzy w podstawowej wersji zaproponowanej przez Saaty'ego.\\  \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Argumenty} \\
+matrix -- PC matrix \\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Zwracana wartość}\\ Wartość współczynnika Saaty'ego. \\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Dodatkowe informacje} \\ W bibliotece dostępna jest również symboliczna wersja tej funkcji.\emph{saatyIdxSym}
+
+
+\\~\\ 
+\begin{spacing}{1.2}
+\noindent{\Large Współcznnik niespójności Koczkodaja dla triady} \\ \begin{spacing}{0.5}  \end{spacing}
+
+\textbf{Nazwa}\\  \emph{koczkodajTriadIdx} \\ \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Opis}\\ Oblicza współczynnik niespójności dla triady metodą Koczkodaja\\  \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Argumenty} \\
+triad -- wektor trzech liczb \\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Zwracana wartość}\\ Współczynnik Koczkodaja \\ \begin{spacing}{0.3}  \end{spacing}\\
+
+
+\newpage
+\begin{spacing}{1.2}
+\noindent{\Large Najbardziej niespójny triad macierzy} \\ \begin{spacing}{0.5}  \end{spacing}
+
+\textbf{Nazwa}\\  \emph{koczkodajTheWorstTriad} \\ \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Opis}\\ Znajduje triad, którego wartość współczynnika niespójności Koczkodaja jest największa.\\  \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Argumenty} \\
+matrix -- PC matrix \\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Zwracana wartość}\\ Triad o największym współczynniku niespójności. \\ \begin{spacing}{0.3}  \end{spacing}\\
+
+
+\\~\\
+\begin{spacing}{1.2}
+\noindent{\Large Najbardziej niespójne triady macierzy} \\ \begin{spacing}{0.5}  \end{spacing}
+
+\textbf{Nazwa}\\  \emph{koczkodajTheWorstTriads} \\ \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Opis}\\ Znajduje triady, których wartości współczynnika niespójności Koczkodaja są największe.\\  \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Argumenty} \\
+matrix -- PC matrix \\ 
+n -- ilość poczukiwanych triad	\\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Zwracana wartość}\\ Triady o największym współczynniku niespójności. \\ \begin{spacing}{0.3}  \end{spacing}\\
+
+\\~\\
+\begin{spacing}{1.2}
+\noindent{\Large Współczynnik niespójności Koczkodaja} \\ \begin{spacing}{0.5}  \end{spacing}
+
+\textbf{Nazwa}\\ \emph{koczkodajIdx} \\ \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Opis}\\ Oblicza współczynnik niespójności macierzy w podstawowej wersji zaproponowanej przez Koczkodaja.\\  \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Argumenty} \\
+matrix -- PC matrix \\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Zwracana wartość}\\ Wartość współczynnika Koczkodaja. \\ \begin{spacing}{0.3}  \end{spacing}
+
+
+\newpage
+\begin{spacing}{1.2}
+\noindent{\Large Spójny triad} \\ \begin{spacing}{0.5}  \end{spacing}
+
+\textbf{Nazwa}\\  \emph{koczkodajConsistentTriad} \\ \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Opis}\\ Na podstawie przekazanej trójki liczb, znajduje triad , którego wartość współczynnika niespójności jest najmniejsza.\\  \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Argumenty} \\
+triad -- wektor trzech liczb \\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Zwracana wartość}\\ Triad o najmniejszym współczynniku niespójności. \\ \begin{spacing}{0.3}  \end{spacing}\\
+
+
+\\~\\
+\begin{spacing}{1.2}
+\noindent{\Large Poprawiona macierz } \\ \begin{spacing}{0.5}  \end{spacing}
+
+\textbf{Nazwa}\\  \emph{koczkodajImprovedMatrixStep} \\ \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Opis}\\ Znajduje miejsce (triad), w którym macierz jest najbardziej niespójna, a następnie poprawia wartości w tych miejsach, w taki sposób, aby współczynnik niespójności zmniejszył nię \\  \begin{spacing}{0.3}  \end{spacing}
+ 
+\textbf{Argumenty} \\
+matrix -- PC matrix \\ \begin{spacing}{0.3}  \end{spacing}
+
+\textbf{Zwracana wartość}\\ Macierz o mniejszym współczynniku niespójności. \\ \begin{spacing}{0.3}  \end{spacing}\\

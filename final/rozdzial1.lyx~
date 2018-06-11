@@ -1,0 +1,281 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+chapter{Wprowadzenie}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:wprowadzenie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Metoda porÃ³wnaÅ parami
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:metodaPorowan"
+
+\end_inset
+
+ Ludzie od wiekÃ³w podejmujÄ decyzje. NiektÃ³re z nich sÄ proste i przychodzÄ z ÅatwoÅciÄ, inne jednak, te bardziej skomplikowane, wymagajÄ gÅÄbszej analizy. Jednym z przykÅadÃ³w jest handel wymienny (barter), ktÃ³ry opiera siÄ na zamianie okreÅlonych towarÃ³w. SkÄd jednak mieÄ pewnoÅÄ, Å¼e przedmioty majÄ podobnÄ wartoÅÄ lub w jaki sposÃ³b oszacowaÄ koszt okreÅlonego towaru? Z takimi problemami musieli mierzyÄ siÄ nasi pradziadowie. Na szczÄÅcie rozwÃ³j matematyki przyniÃ³sÅ nam ciekawe narzÄdzie, metodÄ porÃ³wnaÅ parami (ang. The Pairwise Comparisons (PC) method), ktÃ³ra w prosty sposÃ³b pomaga w udzieleniu odpowiedzi na powyÅ¼sze pytania. Pierwszym udokumentowanym przypadkiem uÅ¼ycia metody jest binarny system elekcyjny opisany przez Rajmunda Llula (kat. Ramon Llull) juÅ¼ w
+\begin_inset space ~
+
+\end_inset
+
+XIII wieku. Znaczny rozwÃ³j metody przypada jednak na wiek XIX i XX i wiÄÅ¼e siÄ z dziaÅalnoÅciÄ Fechnera
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "A5"
+
+\end_inset
+
+ i
+\begin_inset space ~
+
+\end_inset
+
+Thrustone
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "A6"
+
+\end_inset
+
+. PrzeÅomowym momentem staÅo siÄ wprowadzenie w 1980 roku 
+\shape italic
+The Analytic Hierarchy Process (AHP)
+\shape default
+
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "A7"
+
+\end_inset
+
+, dokonane przez Saatyâego, ktÃ³re pozwoliÅo na porÃ³wnywanie coraz to bardziej skomplikowanych obiektÃ³w, poprzez tworzenie z nich rozbudowanej hierarchii. Kolejnym krokiem naprzÃ³d staÅo siÄ stworzenie przez doktora KuÅakowskiego 
+\shape italic
+Heuristic Rating Estimation (HRE)
+\shape default
+
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "A2"
+
+\end_inset
+
+, ktÃ³re pokazuje nowy kierunek metody oraz nieodkryte dotÄd moÅ¼liwoÅci.
+\end_layout
+
+\begin_layout Standard
+Metoda PC opiera siÄ na zaÅoÅ¼eniu, Å¼e zamiast porÃ³wnywaÄ wszystkie alternatywy od razu, lepiej jest porÃ³wnaÄ je parami, a nastÄpnie zebraÄ wszystkie wyniki razem
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "A4"
+
+\end_inset
+
+. Takie podejÅcie znacznie uÅatwia wybÃ³r najlepszej alternatywy lub obiektu oraz daje bardziej wiarygodne rezultaty. Stwarza to rÃ³wnieÅ¼ moÅ¼liwoÅÄ zebrania wynikÃ³w od wielu osÃ³b, np. ekspertÃ³w w danej dziedzinie, poÅÄczenia ich ocen, porÃ³wnania poszczegÃ³lnych wartoÅci i w koÅcu udzielenia odpowiedzi na pytanie: KtÃ³ra alternatywa (wedÅug okreÅlonego kryterium) jest naprawdÄ najlepsza?
+\end_layout
+
+\begin_layout Section
+Cele pracy
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:celePracy"
+
+\end_inset
+
+ Celem poniÅ¼szej pracy jest przedstawienie biblioteki 
+\shape italic
+PariwiseComparisons
+\shape default
+, ktÃ³ra powstaÅa w ramach pracy inÅ¼ynierskiej. Biblioteka implementuje 
+\begin_inset Formula $49$
+\end_inset
+
+ funkcji zwiÄzanych z metodÄ porÃ³wnaÅ parami, a jej funkcjonalnoÅÄ pokrywa siÄ z istniejÄcym juÅ¼ pakietem napisanym w Wolfram Language i dostÄpnym w
+\begin_inset space ~
+
+\end_inset
+
+Internecie
+\begin_inset space ~
+
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after ""
+key "A8"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Biblioteka zostaÅa stworzona z myÅlÄ, aby uÅatwiÄ tworzenie aplikacji wykorzystujÄcych metodÄ porÃ³wnaÅ parami oraz zachÄciÄ do poznawania jej moÅ¼liwoÅci. DziÄki tej pracy, programista, ktÃ³ry rozwija takÄ aplikacjÄ, nie bÄdzie musiaÅ skupiaÄ siÄ na szczegÃ³Åach implementacji i poÅwiÄcaÄ wielu godzin na zgÅÄbianie obliczeÅ matematycznych w danym jÄzyku. Celem tworzenia biblioteki byÅo zaimplementowanie funkcji zarÃ³wno tych najbardziej podstawowych, np. zwiÄzanych z tworzeniem macierzy porÃ³wnaÅ parami, jak rÃ³wnieÅ¼ tych bardziej skomplikowanych, potrafiÄcych obliczaÄ caÅe rankingi. Dlatego pakiet moÅ¼e staÄ siÄ pomocny nie tylko dla osÃ³b zajmujÄcych siÄ na co dzieÅ metodÄ porÃ³wnaÅ parami, ale takÅ¼e dla tych, ktÃ³rzy chcÄ skorzystaÄ tylko z jednej funkcjonalnoÅci metody, bez zagÅÄbiania siÄ w
+\begin_inset space ~
+
+\end_inset
+
+szczegÃ³Åy.
+\end_layout
+
+\begin_layout Standard
+Z powodu duÅ¼ej popularnoÅci jÄzyka Java i mnogoÅci aplikacji, ktÃ³re powstajÄ w tym jÄzyku, powstaÅa rÃ³wnieÅ¼ druga wersja biblioteki, skompresowana do pliku Jar (pariwiseComparisons.jar), gotowa do uÅ¼ycia w projektach pisanych w tym Javie.
+\end_layout
+
+\begin_layout Section
+ZawartoÅÄ i struktura pracy
+\end_layout
+
+\begin_layout Standard
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:zawartoscPracy"
+
+\end_inset
+
+ Na kolejnych kartach niniejszej pracy prezentujÄ elementy metody porÃ³wnaÅ parami oraz funkcje z
+\begin_inset space ~
+
+\end_inset
+
+biblioteki PariwiseComPairsons, ktÃ³re implementujÄ poszczegÃ³lne funkcjonalnoÅci. W treÅci zawarte sÄ rÃ³wnieÅ¼ podpowiedzi w jaki sposÃ³b uÅ¼yÄ pakietu w jÄzyku R oraz jak Åatwo wywoÅywaÄ funkcje z
+\begin_inset space ~
+
+\end_inset
+
+poziomu maszyny wirtualnej Javy.
+\end_layout
+
+\begin_layout Standard
+SzczegÃ³lnÄ uwagÄ naleÅ¼y zwrÃ³ciÄ na specyficznÄ strukturÄ pracy. GÅÃ³wna czÄÅÄ, prezentujÄca metodÄ porÃ³wnaÅ parami, zostaÅa podzielony na kilka mniejszych rozdziaÅÃ³w (2-5). W kaÅ¼dym z nich pierwszÄ czÄÅÄ stanowiÄ rozwaÅ¼ania teoretyczne, bazujÄce na pracy naukowcÃ³w i ich odkryciach. Druga czÄÅÄ to prezentacja funkcji biblioteki PairwiseComPairsons, ze szczegÃ³Åowym omÃ³wieniem najwaÅ¼niejszych z nich. Mam nadziejÄ, Å¼e taka budowa tej pracy pozwoli czytelnikowi poznaÄ podstawowe zagadnienia zwiÄzane z metodÄ porÃ³wnaÅ parami oraz zapoznaÄ siÄ z konkretnymi funkcjami przeznaczonymi do poszczegÃ³lnych zagadnieÅ. 
+\end_layout
+
+\end_body
+\end_document

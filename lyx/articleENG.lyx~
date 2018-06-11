@@ -88,6 +88,18 @@ Inconsistency of incomplete pairwise comparisons matrices
 \end_layout
 
 \begin_layout Author
+Konrad Kułakowski
+\end_layout
+
+\begin_layout Email
+kkulak@agh.edu.pl
+\end_layout
+
+\begin_layout Address
+AGH University of Science and Technology, Kraków, Poland
+\end_layout
+
+\begin_layout Author
 Dawid Talaga
 \end_layout
 
@@ -279,9 +291,9 @@ The answer to the first question is the concept of inconsistency introduced
  results when a part of the comparisons are missing.
  The main aim of this paper is to check which method of calculating the
  inconsistency is the best in this case.
- I order to do it, a series of tests was carried out on various known inconsiste
-ncy indexes, taking into account many different parameters: the matrix size,
- the amount of missing data, a level of inconsistency.
+ In order to do it, a series of tests was carried out on various known inconsist
+ency indexes, taking into account many different parameters: the matrix
+ size, the amount of missing data, a level of inconsistency.
  The results of the research are included below.
 \end_layout
 
@@ -319,7 +331,7 @@ matrix
 \begin_inset Formula $m_{i,j}\in R$
 \end_inset
 
- i 
+ and 
 \begin_inset Formula $i,j\in\left\{ 1,\ldots,n\right\} $
 \end_inset
 
@@ -365,14 +377,58 @@ PC
 \begin_inset Formula $\mu=\left[\mu\left(c_{1}\right),\ldots,\mu\left(c_{n}\right)\right]$
 \end_inset
 
- formed in this way is called the weight vector (see Fig.1).
+ formed in this way is called the weight vector (see Fig.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig-pc-method"
+
+\end_inset
+
+).
  It informs which alternative has won.
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Graphics
-	filename /home/dawid/Pulpit/magisterka/fig11.png
+	filename ../fig331.png
 	scale 140
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "fig-pc-method"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+The PC Method
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -477,8 +533,6 @@ In practice, it is very rare for a matrix
 \end_inset
 
  to be completely consistent.
-
-\lang english
  In the long history of the 
 \emph on
 PC
@@ -503,22 +557,14 @@ reference "eq:consistent2"
 \end_layout
 
 \begin_layout Section
-
-\lang english
 Inconsistency indexes
 \end_layout
 
 \begin_layout Standard
-
-\lang english
-This section presents sixteen common inconsistency indexes
-\lang american
-.
+This section presents sixteen common inconsistency indexes.
  Their detailed description, including the formulas, is necessary to modify
  them in the next step so that they can also work for incomplete matrices.
- 
-\lang english
-Many of them have been described and tested numerically in 
+ Many of them have been described and tested numerically in 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Brunelli2013"
@@ -526,8 +572,6 @@ key "Brunelli2013"
 \end_inset
 
 .
-
-\lang american
  In all methods, it is assumed that the 
 \emph on
 PC 
@@ -586,8 +630,6 @@ Geometric consistency index
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 This index on the assumption (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -658,8 +700,6 @@ name "sub:Koczkodaj-index"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 One of the most popular inconsistency indexes was proposed by 
 \emph on
 Koczkodaj
@@ -691,8 +731,6 @@ reference "triad"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Formula 
 \begin{equation}
 K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_{ij}}\mid a_{ik}-a_{ij}a_{jk}\mid,\frac{1}{a_{jk}}\mid a_{jk}-\frac{a_{ik}}{a_{ij}}\mid\}.
@@ -752,8 +790,6 @@ Kazibudzki indexes
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Based on the Koczkodaj inconsistency index and observation that 
 \begin_inset Formula $ln(\frac{\alpha\gamma}{\beta})=-ln(\frac{\beta}{\alpha\gamma}),$
 \end_inset
@@ -789,8 +825,6 @@ LTI(\alpha,\beta\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Formula 
 \begin{equation}
 LTI*(\alpha,\beta\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).\label{eq:lti*}
@@ -802,8 +836,6 @@ LTI*(\alpha,\beta\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).\label{eq:lti*}
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Based on the above equations, 
 \emph on
 Kazibudzki
@@ -814,8 +846,6 @@ Kazibudzki
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Formula 
 \begin{equation}
 MLTI(LTI)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI_{i}(\alpha,\beta\gamma)\right],
@@ -827,8 +857,6 @@ MLTI(LTI)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI_{i}(\alpha,\beta\gamma)\right],
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Formula 
 \begin{equation}
 MLTI(LTI*)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI*_{i}(\alpha,\beta\gamma)\right].
@@ -840,8 +868,6 @@ MLTI(LTI*)=\frac{1}{n}\sum_{i=1}^{n}\left[LTI*_{i}(\alpha,\beta\gamma)\right].
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 After further research 
 \emph on
 Kazibudzki
@@ -870,8 +896,6 @@ reference "eq:lti*"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Formula 
 \begin{equation}
 CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}.
@@ -887,8 +911,6 @@ Index of determinants
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 This index was proposed by 
 \emph on
 Pelaez
@@ -914,8 +936,6 @@ key "PELAEZ20031839"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 For every triad 
 \begin_inset Formula $(a_{ik},a_{ij},a_{jk})$
 \end_inset
@@ -936,8 +956,6 @@ The determinant of this matrix is:
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 \begin_inset Formula 
 \begin{equation}
 det(A)=\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2.
@@ -980,7 +998,6 @@ name "sub:Kułakowski-and-Szybowski"
 \begin_layout Standard
 
 \emph on
-\lang english
 Kułakowski
 \emph default
  and 
@@ -1036,8 +1053,6 @@ Koczkodaj
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The second inconsistency index is similar:
 \begin_inset Formula 
 \begin{equation}
@@ -1050,8 +1065,6 @@ I_{2}=\frac{6\sqrt{\sum_{t\in T}K^{2}(t)}}{n(n-1)(n-2)}.\label{eq:I2}
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 indexes can be combined with each other to create new coefficients.
  In this way 
 \emph on
@@ -1080,8 +1093,6 @@ reference "eq:I1"
  This index allows to choose what effect on the result should the greatest
  inconsistency found have and what the average inconsistency of all triads.
  The new inconsistency index looks as follows:
-\lang american
-
 \begin_inset Formula 
 \begin{equation}
 I_{\alpha}=\alpha K+(1-\alpha)I_{1},\label{eq:Ia}
@@ -1089,8 +1100,6 @@ I_{\alpha}=\alpha K+(1-\alpha)I_{1},\label{eq:Ia}
 
 \end_inset
 
-
-\lang english
 where 
 \begin_inset Formula $0\leq\alpha\leq1.$
 \end_inset
@@ -1099,8 +1108,6 @@ where
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The second index expands the first one by (
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1109,8 +1116,6 @@ reference "eq:I2"
 \end_inset
 
 ):
-\lang american
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:I2"
@@ -1133,8 +1138,6 @@ Harmonic consistency index
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 Index introduced by 
 \emph on
 Stein
@@ -1229,8 +1232,6 @@ Golden and Wang index
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 This index was introduced by 
 \emph on
 Golden
@@ -1297,8 +1298,6 @@ Salo and Hamalainen index
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The index proposed by 
 \emph on
 Salo
@@ -1395,8 +1394,6 @@ name "sub:Cavallo-and-D’Apuzzo"
 \end_layout
 
 \begin_layout Standard
-
-\lang english
 The authors Cavallo and D'Apuzzo based their index on triads but they conducted
  studies on a new path, generalizing them for linear, ordered abelian groups
  
@@ -1485,11 +1482,7 @@ RE(A)=\frac{\sum_{ij}e_{ij}^{2}}{\sum_{ij}a_{ij}^{2}}.
 \end_layout
 
 \begin_layout Section
-
-\lang english
-Inconsistency indexes
-\lang american
- for incomplete matrices
+Inconsistency indexes for incomplete matrices
 \end_layout
 
 \begin_layout Standard
@@ -1912,6 +1905,12 @@ The aim of such a division is to pay attention to how the inconsistency
  The results of the research are presented below.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
 \begin_layout Subsection*
 Relative error of inconsistency indexes for incomplete matrices with constant
  degrees of incompleteness 
@@ -1921,7 +1920,8 @@ Relative error of inconsistency indexes for incomplete matrices with constant
  and variable matrix size.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="7">
 <features rotate="0" tabularvalignment="middle">
@@ -1949,17 +1949,7 @@ Index
 
 \emph on
 n
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =4
 \end_layout
 
@@ -1972,17 +1962,7 @@ n
 
 \emph on
 n
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =7
 \end_layout
 
@@ -1995,17 +1975,7 @@ n
 
 \emph on
 n
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =8
 \end_layout
 
@@ -2018,17 +1988,7 @@ n
 
 \emph on
 n
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =10
 \end_layout
 
@@ -2041,17 +2001,7 @@ n
 
 \emph on
 n
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =15
 \end_layout
 
@@ -2061,18 +2011,6 @@ n
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 mean
 \end_layout
 
@@ -2084,18 +2022,6 @@ mean
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 saaty
 \end_layout
 
@@ -2105,18 +2031,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 33,41
 \end_layout
 
@@ -2126,18 +2040,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 19,82
 \end_layout
 
@@ -2147,18 +2049,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 18,78
 \end_layout
 
@@ -2168,18 +2058,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 19,16
 \end_layout
 
@@ -2189,18 +2067,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 17,37
 \end_layout
 
@@ -2210,18 +2076,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 21,71
 \end_layout
 
@@ -2233,18 +2087,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 geometric
 \end_layout
 
@@ -2254,18 +2096,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 616,68
 \end_layout
 
@@ -2275,18 +2105,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 124,73
 \end_layout
 
@@ -2296,18 +2114,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 77,94
 \end_layout
 
@@ -2317,18 +2123,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 68,62
 \end_layout
 
@@ -2338,18 +2132,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 39,13
 \end_layout
 
@@ -2359,18 +2141,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 185,42
 \end_layout
 
@@ -2382,18 +2152,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 koczkodaj
 \end_layout
 
@@ -2403,18 +2161,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 13,86
 \end_layout
 
@@ -2424,18 +2170,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 3,69
 \end_layout
 
@@ -2445,18 +2179,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,14
 \end_layout
 
@@ -2466,18 +2188,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,62
 \end_layout
 
@@ -2487,18 +2197,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 0,80
 \end_layout
 
@@ -2521,18 +2219,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kazibudzkiLTI1
 \end_layout
 
@@ -2542,18 +2228,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 24,80
 \end_layout
 
@@ -2563,18 +2237,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 10,21
 \end_layout
 
@@ -2584,18 +2246,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 6,62
 \end_layout
 
@@ -2605,18 +2255,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,97
 \end_layout
 
@@ -2626,18 +2264,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,73
 \end_layout
 
@@ -2647,18 +2273,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 9,87
 \end_layout
 
@@ -2670,18 +2284,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kazibudzkiLTI2
 \end_layout
 
@@ -2691,18 +2293,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 42,31
 \end_layout
 
@@ -2712,18 +2302,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 17,93
 \end_layout
 
@@ -2733,18 +2311,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 11,88
 \end_layout
 
@@ -2754,18 +2320,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 9,03
 \end_layout
 
@@ -2775,18 +2329,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,03
 \end_layout
 
@@ -2796,18 +2338,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 17,24
 \end_layout
 
@@ -2819,18 +2349,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kazibudzkiCMLTI2
 \end_layout
 
@@ -2840,18 +2358,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 35,40
 \end_layout
 
@@ -2861,18 +2367,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 17,07
 \end_layout
 
@@ -2882,18 +2376,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 13,26
 \end_layout
 
@@ -2903,18 +2385,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 11,20
 \end_layout
 
@@ -2924,18 +2394,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 6,81
 \end_layout
 
@@ -2945,18 +2403,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 16,75
 \end_layout
 
@@ -2968,18 +2414,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 pelaeLamata
 \end_layout
 
@@ -2989,18 +2423,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 44,65
 \end_layout
 
@@ -3010,18 +2432,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 19,90
 \end_layout
 
@@ -3031,18 +2441,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 13,46
 \end_layout
 
@@ -3052,18 +2450,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 10,36
 \end_layout
 
@@ -3073,18 +2459,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,84
 \end_layout
 
@@ -3094,18 +2468,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 18,84
 \end_layout
 
@@ -3117,18 +2479,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowski
 \end_layout
 
@@ -3138,18 +2488,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 20,34
 \end_layout
 
@@ -3159,18 +2497,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 7,68
 \end_layout
 
@@ -3180,18 +2506,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,88
 \end_layout
 
@@ -3201,18 +2515,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 3,63
 \end_layout
 
@@ -3222,18 +2524,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,96
 \end_layout
 
@@ -3243,18 +2533,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 7,70
 \end_layout
 
@@ -3266,18 +2544,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowski2
 \end_layout
 
@@ -3287,18 +2553,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 44,61
 \end_layout
 
@@ -3308,18 +2562,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 26,05
 \end_layout
 
@@ -3329,18 +2571,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 27,12
 \end_layout
 
@@ -3350,18 +2580,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 29,64
 \end_layout
 
@@ -3371,18 +2589,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 28,46
 \end_layout
 
@@ -3392,18 +2598,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 31,18
 \end_layout
 
@@ -3415,18 +2609,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowskiIa
 \end_layout
 
@@ -3436,18 +2618,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 16,47
 \end_layout
 
@@ -3457,18 +2627,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,18
 \end_layout
 
@@ -3478,18 +2636,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 3,09
 \end_layout
 
@@ -3499,18 +2645,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,27
 \end_layout
 
@@ -3520,18 +2654,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,16
 \end_layout
 
@@ -3554,18 +2676,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowskiIab
 \end_layout
 
@@ -3575,18 +2685,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 17,40
 \end_layout
 
@@ -3596,18 +2694,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,89
 \end_layout
 
@@ -3617,18 +2703,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,81
 \end_layout
 
@@ -3638,18 +2712,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,04
 \end_layout
 
@@ -3659,18 +2721,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,01
 \end_layout
 
@@ -3693,18 +2743,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 harmonic
 \end_layout
 
@@ -3714,18 +2752,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 9 573,02
 \end_layout
 
@@ -3735,18 +2761,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 577,49
 \end_layout
 
@@ -3756,18 +2770,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 127,33
 \end_layout
 
@@ -3777,18 +2779,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 066,35
 \end_layout
 
@@ -3798,18 +2788,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 866,00
 \end_layout
 
@@ -3819,18 +2797,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2 842,04
 \end_layout
 
@@ -3842,18 +2808,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 goldenWang
 \end_layout
 
@@ -3863,18 +2817,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 115,92
 \end_layout
 
@@ -3884,18 +2826,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 54,37
 \end_layout
 
@@ -3905,18 +2835,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 43,90
 \end_layout
 
@@ -3926,18 +2844,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 43,16
 \end_layout
 
@@ -3947,18 +2853,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 36,26
 \end_layout
 
@@ -3968,18 +2862,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 58,72
 \end_layout
 
@@ -3991,18 +2873,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 saloHamalainen
 \end_layout
 
@@ -4012,18 +2882,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 381,57
 \end_layout
 
@@ -4033,18 +2891,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 205,06
 \end_layout
 
@@ -4054,18 +2900,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 176,11
 \end_layout
 
@@ -4075,18 +2909,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 160,06
 \end_layout
 
@@ -4096,18 +2918,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 136,55
 \end_layout
 
@@ -4117,18 +2927,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 211,87
 \end_layout
 
@@ -4140,18 +2938,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 cavalloDapuzzo
 \end_layout
 
@@ -4161,18 +2947,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 16,94
 \end_layout
 
@@ -4182,18 +2956,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 6,85
 \end_layout
 
@@ -4203,18 +2965,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,46
 \end_layout
 
@@ -4224,18 +2974,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 3,36
 \end_layout
 
@@ -4245,18 +2983,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,87
 \end_layout
 
@@ -4279,18 +3005,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 relativeError
 \end_layout
 
@@ -4300,18 +3014,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 792,64
 \end_layout
 
@@ -4321,18 +3023,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 226 313,60
 \end_layout
 
@@ -4342,18 +3032,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 746,21
 \end_layout
 
@@ -4363,18 +3041,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 100,87
 \end_layout
 
@@ -4384,18 +3050,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 20,42
 \end_layout
 
@@ -4405,18 +3059,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 45 794,75
 \end_layout
 
@@ -4428,7 +3070,35 @@ relativeError
 \end_inset
 
 
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relative error for indexes (
+\begin_inset Formula $g=15\%$
+\end_inset
+
+ and variable matrix size)
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
 
 \begin_layout Subsection*
 Relative error of inconsistency indexes for incomplete matrices with varying
@@ -4439,7 +3109,8 @@ Relative error of inconsistency indexes for incomplete matrices with varying
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="17" columns="7">
 <features rotate="0" tabularvalignment="middle">
@@ -4467,17 +3138,7 @@ Index
 
 \emph on
 g
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =4%
 \end_layout
 
@@ -4490,17 +3151,7 @@ g
 
 \emph on
 g
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =7%
 \end_layout
 
@@ -4513,17 +3164,7 @@ g
 
 \emph on
 g
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =14%
 \end_layout
 
@@ -4536,17 +3177,7 @@ g
 
 \emph on
 g
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =25%
 \end_layout
 
@@ -4559,17 +3190,7 @@ g
 
 \emph on
 g
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
+\emph default
 =50%
 \end_layout
 
@@ -4579,18 +3200,6 @@ g
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 mean
 \end_layout
 
@@ -4602,18 +3211,6 @@ mean
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 saaty
 \end_layout
 
@@ -4623,18 +3220,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,71
 \end_layout
 
@@ -4644,18 +3229,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 9,40
 \end_layout
 
@@ -4665,18 +3238,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 18,78
 \end_layout
 
@@ -4686,18 +3247,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 32,89
 \end_layout
 
@@ -4707,18 +3256,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 65,56
 \end_layout
 
@@ -4728,18 +3265,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 26,27
 \end_layout
 
@@ -4751,18 +3276,6 @@ saaty
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 geometric
 \end_layout
 
@@ -4772,18 +3285,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 23,60
 \end_layout
 
@@ -4793,18 +3294,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 48,44
 \end_layout
 
@@ -4814,18 +3303,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 86,61
 \end_layout
 
@@ -4835,18 +3312,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 135,68
 \end_layout
 
@@ -4856,18 +3321,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 207,99
 \end_layout
 
@@ -4877,18 +3330,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 100,46
 \end_layout
 
@@ -4900,18 +3341,6 @@ geometric
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 koczkodaj
 \end_layout
 
@@ -4921,18 +3350,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 0,48
 \end_layout
 
@@ -4942,18 +3359,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 0,99
 \end_layout
 
@@ -4963,18 +3368,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,17
 \end_layout
 
@@ -4984,18 +3377,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,52
 \end_layout
 
@@ -5005,18 +3386,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 16,41
 \end_layout
 
@@ -5039,18 +3408,6 @@ koczkodaj
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kazibudzkiLTI1
 \end_layout
 
@@ -5060,18 +3417,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,90
 \end_layout
 
@@ -5081,18 +3426,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,31
 \end_layout
 
@@ -5102,18 +3435,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 6,64
 \end_layout
 
@@ -5123,18 +3444,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 10,05
 \end_layout
 
@@ -5144,18 +3453,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 23,09
 \end_layout
 
@@ -5165,18 +3462,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 9,40
 \end_layout
 
@@ -5188,18 +3473,6 @@ kazibudzkiLTI1
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kazibudzkiLTI2
 \end_layout
 
@@ -5209,18 +3482,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,12
 \end_layout
 
@@ -5230,18 +3491,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 7,71
 \end_layout
 
@@ -5251,18 +3500,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 11,91
 \end_layout
 
@@ -5272,18 +3509,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 18,08
 \end_layout
 
@@ -5293,18 +3518,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 40,77
 \end_layout
 
@@ -5314,18 +3527,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 16,72
 \end_layout
 
@@ -5337,18 +3538,6 @@ kazibudzkiLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kazibudzkiCMLTI2
 \end_layout
 
@@ -5358,18 +3547,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,16
 \end_layout
 
@@ -5379,18 +3556,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 8,05
 \end_layout
 
@@ -5400,18 +3565,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 13,34
 \end_layout
 
@@ -5421,18 +3574,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 22,03
 \end_layout
 
@@ -5442,18 +3583,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 61,16
 \end_layout
 
@@ -5463,18 +3592,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 21,95
 \end_layout
 
@@ -5486,18 +3603,6 @@ kazibudzkiCMLTI2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 pelaeLamata
 \end_layout
 
@@ -5507,18 +3612,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,73
 \end_layout
 
@@ -5528,18 +3621,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 8,72
 \end_layout
 
@@ -5549,18 +3630,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 13,52
 \end_layout
 
@@ -5570,18 +3639,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 20,54
 \end_layout
 
@@ -5591,18 +3648,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 45,64
 \end_layout
 
@@ -5612,18 +3657,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 18,83
 \end_layout
 
@@ -5635,18 +3668,6 @@ pelaeLamata
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowski
 \end_layout
 
@@ -5656,18 +3677,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,17
 \end_layout
 
@@ -5677,18 +3686,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 3,18
 \end_layout
 
@@ -5698,18 +3695,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,91
 \end_layout
 
@@ -5719,18 +3704,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 7,43
 \end_layout
 
@@ -5740,18 +3713,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 17,30
 \end_layout
 
@@ -5761,18 +3722,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 7,00
 \end_layout
 
@@ -5784,18 +3733,6 @@ kulakowskiSzybowski
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowski2
 \end_layout
 
@@ -5805,18 +3742,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,90
 \end_layout
 
@@ -5826,18 +3751,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 12,22
 \end_layout
 
@@ -5847,18 +3760,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 27,12
 \end_layout
 
@@ -5868,18 +3769,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 56,71
 \end_layout
 
@@ -5889,18 +3778,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 202,27
 \end_layout
 
@@ -5910,18 +3787,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 60,84
 \end_layout
 
@@ -5933,18 +3798,6 @@ kulakowskiSzybowski2
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowskiIa
 \end_layout
 
@@ -5954,18 +3807,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,20
 \end_layout
 
@@ -5975,18 +3816,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,88
 \end_layout
 
@@ -5996,18 +3825,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 3,12
 \end_layout
 
@@ -6017,18 +3834,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 5,13
 \end_layout
 
@@ -6038,18 +3843,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 13,97
 \end_layout
 
@@ -6072,18 +3865,6 @@ kulakowskiSzybowskiIa
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 kulakowskiSzybowskiIab
 \end_layout
 
@@ -6093,18 +3874,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,00
 \end_layout
 
@@ -6114,18 +3883,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,65
 \end_layout
 
@@ -6135,18 +3892,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,84
 \end_layout
 
@@ -6156,18 +3901,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,74
 \end_layout
 
@@ -6177,18 +3910,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 12,97
 \end_layout
 
@@ -6211,18 +3932,6 @@ kulakowskiSzybowskiIab
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 harmonic
 \end_layout
 
@@ -6232,18 +3941,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 291,74
 \end_layout
 
@@ -6253,18 +3950,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 544,60
 \end_layout
 
@@ -6274,18 +3959,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 152,26
 \end_layout
 
@@ -6295,18 +3968,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 962,25
 \end_layout
 
@@ -6316,18 +3977,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 3 995,58
 \end_layout
 
@@ -6337,18 +3986,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 589,29
 \end_layout
 
@@ -6360,18 +3997,6 @@ harmonic
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 goldenWang
 \end_layout
 
@@ -6381,18 +4006,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 14,23
 \end_layout
 
@@ -6402,18 +4015,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 25,23
 \end_layout
 
@@ -6423,18 +4024,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 46,18
 \end_layout
 
@@ -6444,18 +4033,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 68,83
 \end_layout
 
@@ -6465,18 +4042,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 98,24
 \end_layout
 
@@ -6486,18 +4051,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 50,54
 \end_layout
 
@@ -6509,18 +4062,6 @@ goldenWang
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 saloHamalainen
 \end_layout
 
@@ -6530,18 +4071,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 88,40
 \end_layout
 
@@ -6551,18 +4080,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 137,70
 \end_layout
 
@@ -6572,18 +4089,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 180,17
 \end_layout
 
@@ -6593,18 +4098,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 182,54
 \end_layout
 
@@ -6614,18 +4107,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 148,74
 \end_layout
 
@@ -6635,18 +4116,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 147,51
 \end_layout
 
@@ -6658,18 +4127,6 @@ saloHamalainen
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 cavalloDapuzzo
 \end_layout
 
@@ -6679,18 +4136,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1,95
 \end_layout
 
@@ -6700,18 +4145,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 2,91
 \end_layout
 
@@ -6721,18 +4154,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 4,46
 \end_layout
 
@@ -6742,18 +4163,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 6,81
 \end_layout
 
@@ -6763,18 +4172,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 16,11
 \end_layout
 
@@ -6797,18 +4194,6 @@ cavalloDapuzzo
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 relativeError
 \end_layout
 
@@ -6818,18 +4203,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 18,99
 \end_layout
 
@@ -6839,18 +4212,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 20,81
 \end_layout
 
@@ -6860,18 +4221,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 206,74
 \end_layout
 
@@ -6881,18 +4230,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 68,98
 \end_layout
 
@@ -6902,18 +4239,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 1 056,96
 \end_layout
 
@@ -6923,18 +4248,6 @@ relativeError
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
 274,50
 \end_layout
 
@@ -6942,6 +4255,29 @@ relativeError
 </cell>
 </row>
 </lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Relative error for indexes (variable level of incompleteness and matrix
+ size 
+\begin_inset Formula $n=8$
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 
@@ -7088,7 +4424,7 @@ TODO
 \begin_layout Standard
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
-bibfiles "/home/dawid/Pulpit/magisterka/bib/mojabib,/home/dawid/Pulpit/magisterka/bib/0895717793900598,/home/dawid/Pulpit/magisterka/bib/duszak_koczkodaj_1994,/home/dawid/Pulpit/magisterka/bib/grzybowski_2016,/home/dawid/Pulpit/magisterka/bib/pelaez_lemata_2003,/home/dawid/Pulpit/magisterka/bib/kulakowski_szybowski_2014,/home/dawid/Pulpit/magisterka/bib/crawfore_wiliams_2985_geometric,/home/dawid/Pulpit/magisterka/bib/aruaron_moreno_2003,/home/dawid/Pulpit/magisterka/bib/stain_mizii_2007,/home/dawid/Pulpit/magisterka/bib/brunelli_introduction_2015,/home/dawid/Pulpit/magisterka/bib/solo_hamalainen_95,/home/dawid/Pulpit/magisterka/bib/salo_hamalainen_97,/home/dawid/Pulpit/magisterka/bib/cavallo_apuzzo_2009,/home/dawid/Pulpit/magisterka/bib/relative_error,/home/dawid/Pulpit/magisterka/bib/saaty,/home/dawid/Pulpit/magisterka/bib/cavallo_2010,/home/dawid/Pulpit/magisterka/bib/harker,/home/dawid/Pulpit/magisterka/bib/llull,/home/dawid/Pulpit/magisterka/bib/thurstone,/home/dawid/Pulpit/magisterka/bib/saaty2008,/home/dawid/Pulpit/magisterka/bib/Fechner1966,/home/dawid/Pulpit/magisterka/bib/kulakowski_history,/home/dawid/Pulpit/magisterka/bib/Amartya,/home/dawid/Pulpit/magisterka/bib/kenethArrow,/home/dawid/Pulpit/magisterka/bib/eigenvescotvsOthers,/home/dawid/Pulpit/magisterka/bib/kulakowskiRys"
+bibfiles "/home/dawid/Pulpit/studia/article/bib/common"
 options "elsarticle-num"
 
 \end_inset
