@@ -1,5 +1,5 @@
 \documentclass[11pt]{aghdpl}
-\usepackage[english]{babel}
+\usepackage[english, polish]{babel}
 \usepackage[utf8]{inputenc}
 
 \usepackage{mathtools}
@@ -14,37 +14,36 @@
 \usepackage{setspace}
 \usepackage{url}
 \usepackage{enumitem}
-%\onehalfspacing
-\linespread{1.25}
+% \linespread{1.25}
 % --- < bibliografia > ---
 
-% \usepackage[
-% style=numeric,
-% sorting=none,
-% %
-% % Zastosuj styl wpisu bibliograficznego właściwy językowi publikacji.
-% language=autobib,
-% autolang=other,
-% % Zapisuj datę dostępu do strony WWW w formacie RRRR-MM-DD.
-% urldate=iso
-% % Nie dodawaj numerów stron, na których występuje cytowanie.
-% backref=false,
-% % Podawaj ISBN.
-% isbn=true,
-% % Nie podawaj URL-i, o ile nie jest to konieczne.
-% url=true,
-% % Ustawienia związane z polskimi normami dla bibliografii.
-% maxbibnames=3,
-% % Jeżeli używamy BibTeXa:
-% backend=bibtex
-% ]{biblatex}
+\usepackage[
+style=numeric,
+sorting=none,
+%
+% Zastosuj styl wpisu bibliograficznego właściwy językowi publikacji.
+language=autobib,
+autolang=other,
+% Zapisuj datę dostępu do strony WWW w formacie RRRR-MM-DD.
+urldate=iso
+% Nie dodawaj numerów stron, na których występuje cytowanie.
+backref=false,
+% Podawaj ISBN.
+isbn=true,
+% Nie podawaj URL-i, o ile nie jest to konieczne.
+url=true,
+% Ustawienia związane z polskimi normami dla bibliografii.
+maxbibnames=3,
+% Jeżeli używamy BibTeXa:
+backend=bibtex
+]{biblatex}
 
 \usepackage{csquotes}
 \newtheorem{example}{Przyklad}[section]
 % Ponieważ `csquotes` nie posiada polskiego stylu, można skorzystać z mocno zbliżonego stylu chorwackiego.
 \DeclareQuoteAlias{croatian}{polish}
 
-% \addbibresource{bibliografia.bib}
+
 
 % Użyj czcionki kroju Courier.
 \usepackage{courier}
@@ -52,6 +51,27 @@
 \usepackage{listings}
 \lstloadlanguages{TeX}
 
+\lstset{
+	literate={ą}{{\k{a}}}1
+           {ć}{{\'c}}1
+           {ę}{{\k{e}}}1
+           {ó}{{\'o}}1
+           {ń}{{\'n}}1
+           {ł}{{\l{}}}1
+           {ś}{{\'s}}1
+           {ź}{{\'z}}1
+           {ż}{{\.z}}1
+           {Ą}{{\k{A}}}1
+           {Ć}{{\'C}}1
+           {Ę}{{\k{E}}}1
+           {Ó}{{\'O}}1
+           {Ń}{{\'N}}1
+           {Ł}{{\L{}}}1
+           {Ś}{{\'S}}1
+           {Ź}{{\'Z}}1
+           {Ż}{{\.Z}}1,
+	basicstyle=\footnotesize\ttfamily,
+}
 
 \AtBeginDocument{
 	\renewcommand{\tablename}{Table}
@@ -80,13 +100,14 @@
 \shorttitlePL{Niespójności niekompletnych macierzy porównań parami}
 \shorttitleEN{Inconsistency of incomplete pairwise comparisons matrices}
 
-\thesistype{Praca dyplomowa magisterska}
-\supervisor{dr hab. Konrad Kułakowski}
+\thesistype{Master of Science Thesis}
+\supervisor{Konrad Kułakowski PhD}
 
-\degreeprogramme{Informatyka}
+\degreeprogramme{Computer Science}
 \date{2018}
-\department{Katedra Informatyki Stosowanej}
-\faculty{Wydział Elektrotechniki, Automatyki, \protect\\[-1mm] Informatyki i Inżynierii Biomedycznej}
+\department{Department of Applied Computer Science}
+
+\faculty{Faculty of Electrical Engineering, Automatics,\protect\\[-1mm] Computer Science and Biomedical Engineering}
 
 \acknowledgements{Serdecznie dziękuję Promotorowi Panu dr. hab. Konradowi Kułakowskiemu za zainteresowanie mnie tematem PC oraz życzliwe wsparcie.\\
 Dziękuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i studiować oraz bliskim mi osobom, które dodawały mi wiary w moje siły.}
@@ -95,8 +116,12 @@ Dziękuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i studiować 
 \brokenpenalty=10000\relax
 
 
+%---------------------------------------------------------------------------
+\setcounter{secnumdepth}{4}
+\brokenpenalty=10000\relax
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\addbibresource{bibliografia.bib}
+
 \begin{document}
 \titlepages
 
@@ -107,7 +132,7 @@ Dziękuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i studiować 
 	\renewcommand{\footrulewidth}{0pt}
 }
 
-\pagestyle{empty}
+% \pagestyle{empty}
 \setcounter{tocdepth}{1}
 \tableofcontents
 \clearpage
@@ -119,5 +144,6 @@ Dziękuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i studiować 
 \include{rozdzial5}
 \include{rozdzial6}
 
-% \printbibliography
+\printbibliography
+
 \end{document}

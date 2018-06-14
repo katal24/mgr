@@ -58,14 +58,15 @@
 
 
 \def\thesisheaders{
-\fancyfoot[LE,RO]{\small \@shortauthor\quad\textit{\@shorttitlePL}}
+\fancyfoot[LE,RO]{\small \@shortauthor\quad\textit{\@shorttitleEN}}
 }
 
 \def\thesistable{
 \begin{tabular}{p{45mm}l}
-Autor: & {\itshape \@author}\\[-1mm]
-Kierunek studi\'{o}w: & {\itshape \@degreeprogramme}\\[-1mm]
-Opiekun pracy: & {\itshape \@supervisor}\\
+Author: & {\itshape \@author}\\[-1mm]
+% Kierunek studi\'{o}w: & {\itshape \@degreeprogramme}\\[-1mm]
+Fielf od study: & {\itshape \@degreeprogramme}\\[-1mm]
+Thesis supervisor: & {\itshape \@supervisor}\\
 \end{tabular}
 }
 
@@ -96,7 +97,11 @@ Supervisor: & {\itshape \@supervisor}\\
 
 \vspace*{2mm}
 
-{\sffamily{\large{\bfseries{\scshape Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
+% {\sffamily{\large{\bfseries{\scshape Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
+
+{\sffamily{\large{\bfseries{\scshape AGH University
+of Science and Technology}}}
+
 
 \vspace*{1mm}
 

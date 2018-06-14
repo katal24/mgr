@@ -1,24 +1,24 @@
 \chapter{Inconsistency indexes}
 \label{sec:inconsistencyIndexes}
-\section{Inconsistency indexes for complete matrixes}
+\section{Inconsistency indexes for complete matrices}
 
-This subsection presents sixteen common inconsistency indexes. Their detailed description, including the formulas, is necessary to modify them in the next step so that they can also work for incomplete matrices. Many of them have been described and tested numerically in (Brunelli et al., 2013). In all methods, it is assumed that the \textit{PC matrix} is reciprocal.
+This subsection presents sixteen common inconsistency indexes. Their detailed description, including the formulas, is necessary to modify them in the next step so that they can also work for incomplete matrices. Many of them have been described and tested numerically in article \cite{Brunelli2013}. In all methods, it is assumed that the \textit{PC matrix} is reciprocal.
 
 
  \subsection{Saaty index}
 
-This is one of the most important and popular indexes and was introduced by \textit{Saaty} (Saaty, 1977). In order to determine inconsistency, the matrix's eigenvalue should be computed. The author used the dependence that the largest eigenvalue of the matrix is equal to its dimension if and only if the given matrix is completely consistent. On this assumption, he based his thoughts and proposed the formula:
+This is one of the most important and popular indexes and was introduced by \textit{Saaty} \cite{SAATY1977}. In order to determine inconsistency, the matrix's eigenvalues should be computed. The author used the dependence that the largest eigenvalue of the matrix is equal to its dimension if and only if the given matrix is completely consistent. On this assumption, he based his thoughts and proposed the formula:
 	\begin{equation} 
 		CI(A)=\frac{\lambda_{max}-n}{n-1},
 	 \end{equation}
  where $\lambda_{max}$
-  is the principal eigenvalue of the PC matrix and n
+  is the principal eigenvalue of the PC matrix and $n$
   is its dimension.
 
 
 \subsection{Geometric consistency index}
 
-This index on the assumption ([eq:consistent2]) was proposed by \textit{Craford} and \textit{Williams} (Crawford et al., 1985) and then refined by \textit{Aguaròn} and \textit{Moreno-Jimènez} (Aguaron et al., 2003). In this case the priority vector should be calculated using the geometric mean method. Consider ([eq:consistent2]) one can create a matrix:
+This index on the assumption ([eq:consistent2]) was proposed by \textit{Craford} and \textit{Williams} \cite{CRAWFORD1985} and then refined by \textit{Aguaròn} and \textit{Moreno-Jimènez} \cite{AGUARON2003}. In this case the priority vector should be calculated using the geometric mean method. Consider ([eq:consistent2]) one can create a matrix:
 	\begin{equation} 
 		E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{j}}{w_{i}}\right],\,\,\,\,\,\,i,j=1,...,n.
 	 \end{equation}
@@ -30,16 +30,16 @@ This index on the assumption ([eq:consistent2]) was proposed by \textit{Craford}
 
 \subsection{Koczkodaj index}
 
-One of the most popular inconsistency indexes was proposed by \textit{Koczkodaj} (Koczkodaj, 1993). It is based directly on the definition of consistency ([eq:consistent]). The value of the inconsistency index for one triad ([triad]) was defined as:
+One of the most popular inconsistency indexes was proposed by \textit{Koczkodaj} \cite{KOCZKODAJ1993}. It is based directly on the definition of consistency ([eq:consistent]). The value of the inconsistency index for one triad ([triad]) was defined as:
 	\begin{equation} 
 		K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_{ij}}\mid a_{ik}-a_{ij}a_{jk}\mid,\frac{1}{a_{jk}}\mid a_{jk}-\frac{a_{ik}}{a_{ij}}\mid\}.
 	 \end{equation}
 
- This formula has been simplified by Duszak and Koczkodaj (Duszak et al., 1994) and is given as:
+ This formula has been simplified by Duszak and Koczkodaj \cite{DUSZAK1994} and is given as:
  	\begin{equation} 
 		K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\alpha\gamma}{\beta}\mid\},\,\,\,\,\,\,where\,\alpha=a_{ij},\beta=a_{ik},\gamma=a_{jk}
 	 \end{equation}
- Then it was generalized (Duszak et al., 1994) for $n>2$. Finally, the inconsistency index has the following form:
+ Then it was generalized \cite{DUSZAK1994} for $n>2$. Finally, the inconsistency index has the following form:
  	\begin{equation} 
 		K=max\{K(\alpha,\beta,\gamma)|1\leq i<j<k\leq n\}.
 	 \end{equation}
@@ -48,7 +48,7 @@ One of the most popular inconsistency indexes was proposed by \textit{Koczkodaj}
 
 \subsection{Kazibudzki indexes}
 
-Based on the Koczkodaj inconsistency index and observation that $ln(\frac{\alpha\gamma}{\beta})=-ln(\frac{\beta}{\alpha\gamma})$, \textit{Kazibudzki} proposed several additional inconsistency indexes (Kazibudzki, 2016). Instead of the formula for inconsistency of the triad [eq:k-abg], he introduced two new formulas:
+Based on the Koczkodaj inconsistency index and observation that $ln(\frac{\alpha\gamma}{\beta})=-ln(\frac{\beta}{\alpha\gamma})$, \textit{Kazibudzki} proposed several additional inconsistency indexes \cite{Kazibudzki2016}. Instead of the formula for inconsistency of the triad [eq:k-abg], he introduced two new formulas:
 	\begin{equation} 
 		LTI(\alpha,\beta\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
 	 \end{equation}
@@ -64,7 +64,7 @@ Based on the above equations, \textit{Kazibudzki} proposed new indexes. The simp
 			 \end{equation}
  
 
-After further research \textit{Kazibudzki} introduces another inconsistency index (Kazibudzki, 2017), again based on ([eq:lti*]). It was defined as $CM(LTI*)=\frac{MEAN[LTI*(\alpha,\beta,\gamma)]}{1+MAX[LTI*(\alpha,\beta,\gamma)]}$. Hence,
+After further research \textit{Kazibudzki} introduces another inconsistency index \cite{Kazibudzki2017}, again based on ([eq:lti*]). It was defined as $CM(LTI*)=\frac{MEAN[LTI*(\alpha,\beta,\gamma)]}{1+MAX[LTI*(\alpha,\beta,\gamma)]}$. Hence,
 	\begin{equation} 
 		CM(LTI*)=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}.
 	 \end{equation}
@@ -72,7 +72,7 @@ After further research \textit{Kazibudzki} introduces another inconsistency inde
 
 \subsection{Index of determinants}
 
-This index was proposed by \textit{text}{Pelaez} and \textit{Lamata} (PelÃ¡ez et al., 2003) and is also based on the concept of triad. The authors noticed that \textit{PCM  matrices} can be construct on the basis of triads. Their determinant is closely related to the consistency of the matrix.
+This index was proposed by \textit{Pelaez} and \textit{Lamata} \cite{PELAEZ2003} and is also based on the concept of triad. The authors noticed that \textit{PCM  matrices} can be constructed on the basis of triads. Their determinant is closely related to the consistency of the matrix.
 
 For every triad $(a_{ik},a_{ij},a_{jk})$ one can build a matrix in the form: 
 	\begin{equation} 
@@ -94,7 +94,7 @@ For every triad $(a_{ik},a_{ij},a_{jk})$ one can build a matrix in the form:
 
 \subsection{Kułakowski and Szybowski indexes}
 
-\textit{Kułakowski} and \textit{Szybowski} proposed two further inconsistency indexes (Kulakowski et al., 2014), which are also based on triads. They use the fact that the number of triads that can be found in a \textit{PCM matrix} is 
+\textit{Kułakowski} and \textit{Szybowski} proposed two further inconsistency indexes \cite{KULAKOWSKI20141}, which are also based on triads. They use the fact that the number of triads that can be found in a \textit{PCM matrix} is:
 	\begin{equation} 
 		\binom{n}{3}=\frac{n!}{(n-3)!3!}=\frac{n(n-1)(n-2)}{6}.
 	 \end{equation}
@@ -109,7 +109,7 @@ The second inconsistency index is similar:
 		I_{2}=\frac{6\sqrt{\sum_{t\in T}K^{2}(t)}}{n(n-1)(n-2)}.
 	 \end{equation}
 
-Indexes can be combined with each other to create new coefficients. In this way \textit{Kułakowski} and \textit{Szybowski} proposed two new indexes. The first one is based on ([eq:K]) and ([eq:I1]). This index allows to choose what effect on the result should the greatest inconsistency found have and what the average inconsistency of all triads. The new inconsistency index looks as follows:
+Indexes can be combined with each other to create new coefficients. In this way \textit{Kułakowski} and \textit{Szybowski} proposed two new indexes. The first one is based on ([eq:K]) and ([eq:I1]). This index allows to choose which value should have more impact on the result: the greatest inconsistency found or the average inconsistency of all triads. The new inconsistency index looks as follows:
 	\begin{equation} 
 		I_{\alpha}=\alpha K+(1-\alpha)I_{1},
 	 \end{equation}
@@ -123,7 +123,7 @@ The second index expands the first one by ([eq:I2]):
 
 \subsection{Harmonic consistency index}
 
-Index introduced by \textit{Stein} and \textit{Mizzi} and it presents a completely new method of inconsistency counting (Stein et al., 2007). At the beginning it requires the creation of an auxiliary vector $s=(s_{1},...,s_{n})^{T}$, where $n$ is the dimension of the matrix $A$, for which the index will be calculated. Each element of the vector $s$ is the sum of values in one column of the matrix $A$. Hence, 
+This index was introduced by \textit{Stein} and \textit{Mizzi} and it presents a completely new method of inconsistency computing \cite{STEIN2007}. At the beginning it requires the creation of an auxiliary vector $s=(s_{1},...,s_{n})^{T}$, where $n$ is the dimension of the matrix $A$, for which the index will be calculated. Each element of the vector $s$ is the sum of values in one column of the matrix $A$. Hence, 
 	\begin{equation} 
 		s_{j}=\sum_{i=1}^{n}a_{ji}\,\,\,\,\,\,\forall j.
 	 \end{equation}
@@ -139,7 +139,7 @@ Index introduced by \textit{Stein} and \textit{Mizzi} and it presents a complete
 
 \subsection{Golden and Wang index}
 
-This index was introduced by \textit{Golden} and \textit{Wang} (Golden et al., 1989). It assumes that the priority vector was calculated using the geometric mean method, then normalized to add up to $1$. In this way vector$ g*=[g{}_{1,}^{*},...,g_{n}^{*}]$ was obtained, where $n$ is the dimension of the matrix $A$. The next step is to normalize each column of the matrix $A$. After this, the sum of the elements of each column in matrix $A$ is $1$. The obtained matrix is marked with the symbol $A^{*}$. The inconsistency index is defined as follows:
+This index was introduced by \textit{Golden} and \textit{Wang} \cite{Golden1989}. It assumes that the priority vector was calculated using the geometric mean method, then normalized to add up to $1$. In this way vector $g*=[g{}_{1,}^{*},...,g_{n}^{*}]$ was obtained, where $n$ is the dimension of the matrix $A$. The next step is to normalize each column of the matrix $A$. After this, the sum of the elements of each column in matrix $A$ is $1$. The obtained matrix is marked with the symbol $A^{*}$. The inconsistency index is defined as follows:
 	\begin{equation} 
 		GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}-g_{i}^{*}\mid.
 	 \end{equation}
@@ -147,7 +147,7 @@ This index was introduced by \textit{Golden} and \textit{Wang} (Golden et al., 1
 
 \subsection{Salo and Hamalainen index}
 
-The index proposed by \textit{Salo} and \textit{Hamalainen} (Salo et al., 1995; Kazibudzki, 2016) uses the definition of inconsistency ([eq:consistent]), however it requires the creation of an auxiliary matrix, in which each element is the smallest and largest discrepancy from consistency based on formula ([eq:consistent]). The index takes all triads into account:
+The index proposed by \textit{Salo} and \textit{Hamalainen} \cite{SALO1995} uses the definition of inconsistency ([eq:consistent]), however it requires the creation of an auxiliary matrix, in which each element contains the smallest and largest discrepancy from consistency based on the formula ([eq:consistent]). The index takes all triads into account:
 	\begin{equation} 
 		R=(r_{ij})_{nxn}=\left(\begin{array}{ccc}
 			[\underline{r}_{11},\overline{r}_{11}] & \ldots & [\underline{r}_{1n},\overline{r}_{1n}]\\
@@ -155,7 +155,7 @@ The index proposed by \textit{Salo} and \textit{Hamalainen} (Salo et al., 1995; 
 			[\underline{r}_{n1},\overline{r}_{n1}] & \ldots & [\underline{r}_{nn},\overline{r}_{nn}]
 		\end{array}\right),
 	\end{equation}
- where $\underline{r_{ij}}=min\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\}$ , $\overline{r_{ij}}=max\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\}$ and $n$ is the dimension of the tested matrix $A$. A numerical example was presented in (Brunelli, 2015). Based on the resulting matrix $R$, the authors proposed the following inconsistency index:
+ where $\underline{r_{ij}}=min\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\}$ , $\overline{r_{ij}}=max\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\}$ and $n$ is the dimension of the tested matrix $A$. A numerical example was presented in \cite{Brunelli2015}. Based on the resulting matrix $R$, the authors proposed the following inconsistency index:
  	\begin{equation} 
 		CM=\frac{2}{n(n-1)}\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\frac{\overline{r}_{ij}-\underline{r}_{ij}}{\left(1+\overline{r}_{ij}\right)\left(1+\underline{r}_{ij}\right)}.
 	 \end{equation}
@@ -163,7 +163,7 @@ The index proposed by \textit{Salo} and \textit{Hamalainen} (Salo et al., 1995; 
 
 \subsection{Cavallo and D’Apuzzo index}
 
-The authors \textit{Cavallo} and \textit{D'Apuzzo} based their index on triads but they conducted studies on a new path, generalizing them for linear, ordered abelian groups (Cavallo et al., 2009; Cavallo et al., 2010). Thanks to this, the index can be used also with other relations (Brunelli et al., 2013). Index for relation $max$ can be presented in the form of a formula:
+The authors \textit{Cavallo} and \textit{D'Apuzzo} based their index on triads but they conducted studies on a new path, generalizing them for linear, ordered abelian groups (\cite{Cavallo2009}, \cite{Cavallo2010}). Thanks to this, the index can be used also with other relations \cite{Brunelli2013}. Index for relation $max$ can be presented in the form of a formula:
 	\begin{equation} 
 		I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{a_{ik}}{a_{ij}a_{jk}},\frac{a_{ij}a_{jk}}{a_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}.
 	 \end{equation}
@@ -171,7 +171,7 @@ The authors \textit{Cavallo} and \textit{D'Apuzzo} based their index on triads b
 
 \subsection{Relative error}
 
-This index, proposed by \textit{Barzaili} (Jonathan, ??), requires calculation of the weight vector using the arithmetic mean method for each row and creation of two additional matrices. Thus, the weight vector is $$w_{i}=\frac{1}{n}\sum_{j=1}^{n}a_{ij},$$ where $n$ is the dimension of the matrix. The two auxiliary matrices are calculated according to the formulas:
+This index, proposed by \textit{Barzaili} \cite{Jonathan1998}, requires calculation of the weight vector using the arithmetic mean method for each row and creation of two additional matrices. Thus, the weight vector is $$w_{i}=\frac{1}{n}\sum_{j=1}^{n}a_{ij},$$ where $n$ is the dimension of the matrix. The two auxiliary matrices are calculated according to the formulas:
 $$C=\left(c_{ij}\right)=\left(w_{i}-w_{j}\right)$$
 $$E=\left(e_{ij}\right)=\left(a_{ij}-c_{ij}\right)$$
 
@@ -181,15 +181,15 @@ Ultimately, the formula for the \textit{Relative error} is following:
 	 \end{equation}
 
 
-\section{Inconsistency indexes for incomplete matrixes}
+\section{Inconsistency indexes for incomplete matrices}
 \label{sec:inconsistencyIndexesForIncompleteMatrices}
 
-There are no inconsistency indexes for incomplete matrices. However, Those presented in chapter (3) could be use in such cases. It requires usually a slight modification of the index definition or calculation only for selected data. Below the ways in which the examined indexes have been adjusted to be able to deal with incomplete matrices are presented.
+There are no inconsistency indexes for incomplete matrices. However, Those presented in chapter (3) could be used in such cases. It requires usually a slight modification of the index definition or calculation only for selected data. The ways in which the examined indexes have been adjusted to be able to deal with incomplete matrices are presented below.
 
 \begin{description}
 
 \item[Saaty index] \hfill \\ 
-	The input matrix is modified using the method proposed by \textit{Harker} (Harker, 1987). It means that values $c+1$,where $c$ is the number of non-empty elements in a given row, are places on the diagonal.
+	The input matrix is modified using the method proposed by \textit{Harker} \cite{HARKER1987}. It means that values $c+1$,where $c$ is the number of non-empty elements in a given row, are placed on the diagonal.
 
 \item[Geometric consistency index]: \hfill \\
 	During calculating the weight vector by the geometric mean, empty values are omitted. Additionally, in the formula ([eq:GCI]) only non-empty elements $e_{ij}$ are used. The reason for this exclusion is that the domain of the logarithmic function is $R^{+}$.
@@ -216,4 +216,4 @@ There are no inconsistency indexes for incomplete matrices. However, Those prese
   No modification.
 \end{description}
 
-Proposed methods of adjustments of indexes allow to apply their in incomplete matrixes. However, their do not guarantee the best results. It requires further experiments. The existing indexes can be modified in many different ways. In this paper one put emphasis on the fact that the adjustments were slight. The aim is to examine existing indexes, not to create a new index.s
+Proposed methods of adjustments of indexes allow to apply them in incomplete matrices. However, them do not guarantee the best results. It means that further experiments are required. The existing indexes can be modified in many different ways. In this paper one put emphasis on the fact that the adjustments were slight. The aim of this study is to examine existing indexes, not to create new indexes.

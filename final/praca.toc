@@ -1,4 +1,5 @@
-\babel@toc {english}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {polish}{}
 \contentsline {chapter}{\numberline {1}Introduction}{7}
 \contentsline {section}{\numberline {1.1}Pairwise Comparisons method}{7}
 \contentsline {section}{\numberline {1.2}The aim of the work}{8}
@@ -8,7 +9,7 @@
 \contentsline {section}{\numberline {2.2}Weight vector}{9}
 \contentsline {section}{\numberline {2.3}Inconsistency}{10}
 \contentsline {chapter}{\numberline {3}Inconsistency indexes}{11}
-\contentsline {section}{\numberline {3.1}Inconsistency indexes for complete matrixes}{11}
+\contentsline {section}{\numberline {3.1}Inconsistency indexes for complete matrices}{11}
 \contentsline {subsection}{\numberline {3.1.1}Saaty index}{11}
 \contentsline {subsection}{\numberline {3.1.2}Geometric consistency index}{11}
 \contentsline {subsection}{\numberline {3.1.3}Koczkodaj index}{12}
@@ -20,16 +21,16 @@
 \contentsline {subsection}{\numberline {3.1.9}Salo and Hamalainen index}{15}
 \contentsline {subsection}{\numberline {3.1.10}Cavallo and D\IeC {\textquoteright }Apuzzo index}{15}
 \contentsline {subsection}{\numberline {3.1.11}Relative error}{15}
-\contentsline {section}{\numberline {3.2}Inconsistency indexes for incomplete matrixes}{16}
+\contentsline {section}{\numberline {3.2}Inconsistency indexes for incomplete matrices}{16}
 \contentsline {chapter}{\numberline {4}Studies of inconsistency indexes for incomplete matrices}{19}
 \contentsline {section}{\numberline {4.1}Algorithm}{19}
 \contentsline {subsection}{\numberline {4.1.1}Steps of the algorithm}{19}
-\contentsline {subsection}{\numberline {4.1.2}Details of algorithm}{20}
+\contentsline {subsection}{\numberline {4.1.2}Details of the algorithm}{20}
 \contentsline {section}{\numberline {4.2}Implementation}{20}
 \contentsline {subsection}{\numberline {4.2.1}Development environment}{20}
-\contentsline {subsection}{\numberline {4.2.2}Implementation of tests of inconsistency indexes}{20}
-\contentsline {subsubsection}{Implementation of inconsistency indexes}{21}
-\contentsline {subsubsection}{Implementation of tests}{21}
+\contentsline {subsection}{\numberline {4.2.2}Implementation of tests of the inconsistency indexes}{20}
+\contentsline {subsubsection}{\numberline {4.2.2.1}Implementation of the inconsistency indexes}{21}
+\contentsline {subsubsection}{\numberline {4.2.2.2}Implementation of tests}{21}
 \contentsline {subsection}{\numberline {4.2.3}Documentation}{22}
 \contentsline {chapter}{\numberline {5}Results and discussion}{31}
 \contentsline {section}{\numberline {5.1}Results}{31}
@@ -40,5 +41,5 @@
 \contentsline {subsection}{\numberline {5.2.1}Tests taking into account different matrix sizes}{32}
 \contentsline {subsection}{\numberline {5.2.2}Tests taking into account different degrees of incompleteness}{33}
 \contentsline {subsection}{\numberline {5.2.3}Tests taking into account different levels of inconsistency}{33}
-\contentsline {subsection}{\numberline {5.2.4}General discussion}{33}
+\contentsline {subsection}{\numberline {5.2.4}General discussion}{34}
 \contentsline {chapter}{\numberline {6}Summary}{37}
