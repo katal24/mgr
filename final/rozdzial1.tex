@@ -1,6 +1,7 @@
 \chapter{Introduction}
 \label{cha:wprowadzenie}
 
+
 \section{Pairwise Comparisons method}
 \label{sec:metodaPorowan}
 People have made decisions for ages. Some of them are very simple and come easily but others, more complicated, require deeper analysis. It happens when there are many compared objects, which are complex and the selection criterion is hard to measure clearly. Fortunately, the development of mathematics brought an interesting tool - \textit{The Pairwise Comparisons (PC) Method}. The first case of using the method (in a very simple version) is the election system described by \textit{Ramond Llull} (Colomer, 2013) in the thirteenth century. Its rules were based on the fact that the candidates were pairwise compared with each other and the winner was the one who won in the largest number of direct comparisons. The method was reinvented in the eighteenth century by \textit{Condorcet} and \textit{Bord} (Kułakowski, 2016) as they proposed it in their voting system. In the twentieth century, the method found the application in the theory of social choice, the main representatives of which were the Nobel prize winners \textit{Keneth Arrow} (Arrow, 1950) and \textit{Amartya Sen} (Sen, 1977). The current shape of the method was influenced by the changes introduced by \textit{Fechner} [Fechner 1966] and then refined by {Thrustone} (Thurstone, 1994). However, the breakthrough was the introduction to the method \textit\textit{The Analytic Hierarchy Process (AHP)} by \textit{Saaty} (Saaty, 2008), which allowed to compare many more complex objects and create a hierarchical structure.The main aim of this paper is to check which method of calculating the inconsistency is the best in this case. I order to do it, a series of tests was carried out on various known inconsistency indexes, taking into account many different parameters: the matrix size, the amount of missing data, a level of inconsistency. The results of the research are included below.
@@ -12,16 +13,16 @@ The answer to the first question is the concept of inconsistency introduced into
 \section{The aim of the work}
 \label{sec:celePracy}
 The main aim of this paper is to check which method of calculating the inconsistency is the best when some comparisons are missing. I order to do it, a series of tests was carried out on various known inconsistency indexes, taking into account many different parameters: the matrix size, the amount of missing data, a level of inconsistency.
-Testy zostały zaimpementowane w języku R, który dobrze nadaje się do obliczeń numerycznych.
+The tests were implemented in R language, which properly fit into numerical calculations.
 
-Od początku pisania pracy nie było wiadome, jaki będzie rezultat prac. Rozważano, że któryś z istniejących współczynników niespójności okaże się odpowieni również dla macierzy niepełnych lub testy wykażą, że nie istnieje taka metoda obliczania niespójności.
+It was not know from the beginning what will be the result of this work. It was considered that one or more existing inconsistency indexes turn out appropriate also for incomplete matrixes or the tests show that the inconsistency can not be calculated by these methods. 
 The results of the research are included below.
 
 \section{Contents of the work}
 \label{sec:zawartoscPracy}
-Praca składa się z części teoretycznej oraz oraz opisu przeprowadzonych badań i ich wyników. Łącznie daje to 6 rodziałów.\\
-W drugim rodziale została zaprezentowana metoda porównywania parami oraz problem niespójności danych. Zrozumienie podstaw podstaw jest konieczne, aby przejść do kolejnych kroków.\\
-W trzecim rozdziale zaprezentowano kilkanaście dostępych metod liczenia współczynnika niespójności dla macierzy porównań parowych.\\
-W kolejnym rozdziale przedstawiono pomysły, dzięki którym możliwe jest przeprowadzenie testów. Są to modyfikacje istniejących współczynników niespójności, które pozwalają dostosować je do macierzy niepełnyc oraz algorytm wyznaczający jakość zmodyfikowanych współczynników. \\
-W piątym rozdziale zaprezentowano wyniki badań oraz omówiono otrzymane rezultaty.\\
-Ostatni rozdział to podsumowanie wykonanej pracy, wyciągnięte wnioski i pomysły na dalsze pogłębienie tematu.
+The work consists of the theoretical part and the description of conducted experiments and their results. It gives together six chapters.\\
+The Second section shows the Pairwise Comparisons method and the problem of inconsistency. Understanding the basics is necessary to go to further chapters.\\
+In the third section sixteen available methods for calculating the inconsistency for the PC matrixes are presented. \\
+The next chapter shows ideas which allows to perform tests. These are modifications of existing inconsistency indexes which enables  to adjust their to incomplete matrixes and the algorithm which tests the quality of modified indexes. \\
+The results of experiments are presented and discussed in the fifth section.\\
+The last chapter contains summary, conclusions and ideas for future researches.

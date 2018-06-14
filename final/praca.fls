@@ -1,6 +1,6 @@
-PWD /home/dawid/Pulpit/magisterka/praca
+PWD /home/dawid/Pulpit/magisterka/final
 INPUT /home/dawid/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt
-INPUT /home/dawid/Pulpit/magisterka/praca/praca.tex
+INPUT /home/dawid/Pulpit/magisterka/final/praca.tex
 OUTPUT praca.log
 INPUT aghdpl.cls
 INPUT aghdpl.cls

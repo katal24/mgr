@@ -6,7 +6,7 @@ The presented inconsistency indexes have been tested utilizing the Monte Carlo m
 
 \section{Algorithm}
 \subsection{Steps of the algorithm}
-\textbf{The algorithm of test of inconsistency indexes:}
+\textbf{Procedure steps:}
 \begin{enumerate}
 \item Randomly generate a vector $w=[w_{1},...,w_{n}]$ and a consistent \textit{PCM matrix} associated with it $PCM=\left(m_{ij}\right)$, where $m_{ij}=\frac{w_{i}}{w_{j}}$.
 \item Disrupt the matrix by multiplying its elements (excluding the diagonal) by the value of $d$, randomly selected from the range $\left(\frac{1}{x},x\right)$.
@@ -48,117 +48,115 @@ The aim of such a division is to pay attention to how the inconsistency indexes 
 \section{Implementation}
 
 \subsection{Development environment}
-Testy współczynników zostały napisane w języku R, który idealnie nadaje się do obliczeń numerycznych. Posiada on szereg funkcji, które wspierą działania na macierzach i wektorach. W~czasie implementacji wykorzystano integrated development environment (IDE) o nazwie RStudio. Narzędzie to pozwala na tworzenie własny pakietów, które zawierają nie tylko właściwy, ale również dokumentację, czy informacje o licencji i autorze. Utworzono pakiet o nazwie \textit{indexesForIncomplete}. Najważniejszą częścią pakietu jest plik indexes.R, który wykonuje obliczenia konieczne do zbadania współczynników. RStudio wspomaga pracę programisty poprzez kolorowanie składni, wbudowaną konsole, łatwe przeszukiwanie funkcji i dokumentacji oraz wiele innych. Program dostępny jest na wszystkie popularne systemy operacyjne. Aby korzystać z RStudio należy wcześniej zainstalować język~R.
+Tests of indexes have been developed in R language which is appropriate for nuimerical calculations. It contains dozens of functions which support operations on matrixes and vectors. Integrated development environment (IDE) called \testit{RStudio} has been used during implementation. This tool allows to create own packages which contains not only code but also documentation and information about licence and author. Package named \textit{indexesForIncomplete} has been created. The most important part of this package is file \textit{indexes.R} which performs calculations necessery to test indexes. \testit{RStudio} supports programmer's work by syntax highlighting, built-in console, easy documentation searching and many others. The program is available on common operating systems. Before using \testit{RStudio} one have to install \textIt{R} programming language.  
 % https://pbiecek.gitbooks.io/przewodnik/content/Programowanie/podstawy/jak_zainstalowac_R.html
 % https://cran.r-project.org/
 % https://www.rstudio.com/products/RStudio/
-\begin{figure}[ht]
+\begin{figure}[h]
 \centerline{\includegraphics[width=\textwidth]{images/rstudio.png}}
 \caption{Program \textit{RStudio}}
 \label{fig:rstudio}
 \end{figure}
 
 
-\subsection{Implementation of tests inconsistency indexes}
-Implementacja testów współczynników niespójnności to składała się z dwóch kroków:
+\subsection{Implementation of tests of inconsistency indexes}
+Implementation of tests inconsistency indexes consists of two steps:
 \begin{enumerate}
-  \item Implementacja funkcji, które obliczają współczynniki niespójności dla zadanej macierzy (pełnej lub niepełnej).
-  \item Implementacja testów, które zbadają współczynniki dla różnych macierzy i zbiorą wyniki tych testów.
+  \item Implementation of functions which calculates inconsistency indexes for given matrix (full or incomplete).
+  \item Implementation of tests which studies indexes for different matrixes and collects all results of these tests. 
 \end{enumerate}
 
-\subsubsection{Implementacja współczynników niespójności}
-Utworzono 16 funkcji, które obliczają współczynnik niespójnności metodami, które zostały opisane powyżej. Funkcje zostały napisane w taki sposób, że potrafią poradzić sobie zarówno z macierzami pełnymi, jak również niepełnymi. Nie uwzględeniono błędnych macierzy, a więc takich, które niespełniają założeń symetrycznej, spójnej PC macierzy. Każda funkcja posiada tylko jeden argument, którym jest PC macierz. Wyjątkiem są dwie funkcje implementujące współczynniki Koczkodaja i Szybowskiego, które dodatkowo przyjmują parametry $\alpha, \beta$. Wynikiem działania  funkcji jest wartość współczynnika niespójności.
-Każda funkcja została uzupełniona o komentarze, które informują m.in o nazwie współczynnika, któremu funkcja odpowiada, parametrach i zwracanej wartości. Pozwala to z łatwością czytać kod i wprowadzać do niego poprawki.
-Kilka przykładów funkcji zostało zaprezentowanych poniżej.
+\subsubsection{Implementation of inconsistency indexes}
+Sixteen functions which calculate inconsistency indexes using methods described in chapter 3. The functions have been wroten in such a way that allows handle both full and incomplete matrixes. One have not taken account of wrong matrixes, it means nonreciprocal or inconsistent PC matrixes. Each of these function has only one parameter - \textif{PC matrix}. Exceptions are two methods implementing Kulakowski and Szybowski index which additionally take parameters $\alpha, \beta$. The result of each function is value of inconsistency index. The functions have been extended by comments which informs about name of index related to given function, parameters and returned value. It allows to easily read and modify the code. Several examples of functions are presented below.
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod1.png}}
-\caption{Implemetnacja współczynnika \textit{Saaty'ego}}
+\caption{The implementation of \textit{Saaty} index}
 \label{fig:rstudio}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod2.png}}
-\caption{Implemetnacja współczynnika \textit{Koczkodaja}}
+\caption{The implementation of \textit{Koczkodaj} index}
 \label{fig:rstudio}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod3.png}}
-\caption{Implemetnacja współczynnika \textit{Kulakowskiego i Szybowskiego}}
+\caption{The implementation of \textit{Kulakowski and Szybowski} index}
 \label{fig:rstudio}
 \end{figure}
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod4.png}}
-\caption{Implemetnacja współczynnika \textit{Salo i Hamalainen}}
+\caption{The implementation of \textit{Salo and Hamalainen} index}
 \label{fig:rstudio}
 \end{figure}
-Warto zwrócić uwagę na funkcję, która zostaje wywołana wewnątrz funkcji przeznaczonych dla współczynników opartych na triadach. Generuje traidy z macierzy, a następnie oblicza niespójność dla każdej z nich. Sposób obliczenia niespójności dla triady jest jednak zależny od pierwszego argumentu funkcji, gdzie podawana jest nazwa funkcji, potrafiącej obliczyć niespójność triady konkretną metodą.
+It is worth drawing attention to function which is called within the functions intended for indexes based on triads. This function generates triads from a matrix and next returns inconsistency for each o them. However, the way to calculate inconsistency for one triad depends on first function parameter. It informs about function name that calculates inconsistency of a triad specified method.
 
-\begin{figure}[ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod5.png}}
-\caption{Implemetnacja metody \textit{countIndexesForTriads}, która oblicza wartość niespójności dla każdej triady zadanej macierzy}
+\caption{The implementation of method \textit{countIndexesForTriads}, which calculates inconsistency for each triad of a specified matrix}
 \label{fig:rstudio}
 \end{figure}
 
 
-\subsubsection{Implementacja testów}
-W drugim kroku otworzono funkcje, które pozwalają obliczyć jakość współczynników dla macierzy niepełnych. W tym procesie ważną rolę odgrywają funkcje generujące określone macierze. PC macierze generowane są w zależości od wymiaru, wielkości niespójności i stopnia niekompletności.
+\subsubsection{Implementation of tests}
+In the second step functions, which calculate the quality of the indexes for incomplete matrices, have been created. Functions, which generate specified matrixes, plays an important role. PC matrixes are created depending on size, the level of inconsistency and the degree of incompleteness.
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod11.png}}
-\caption{Implemetnacja funkcji \textit{generatePCMatrix}, która generuje PC macierz w zależności od rozmiaru}
+\caption{The implementation of function \textit{generatePCMatrix} which generates the PC matrix depending on matrix size}
 \label{fig:rstudio}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod12.png}}
-\caption{Implemetnacja funkcji \textit{disturbPCMatrix}, która zaburza macierz powodując niespójność w zależności od zadanej skali }
+\caption{The implementation of function \textit{disturbPCMatrix} which disturbs the PC matrix regarding inconsistency depending on given level of inconsistency}
 \label{fig:rstudio}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.73]{images/kod13.png}}
-\caption{Implemetnacja funkcji \textit{breakPCMatrix}, która dekompletuje macierz powodując niekompletność w zależności od zadanej skali}
+\caption{The implementation of function \textit{breakPCMatrix} which breaks up the PC matrix regarding incompleteness depending on given degree of incompleteness}
 \label{fig:rstudio}
 \end{figure}
 
-Ostatnia część funkcji dotyczy testowania jak duży błąd względny występuje dla współczynników niespójności po ich zdekompletowaniu. Najpierw utworzono funkcję, która testuje jeden współczynnik. Bierze pod uwagę rozmiar, wielkość niespójności, poziom niekompletności i ilość prób, które są przeprowadzane dla danej macierzy.
+The last part of functions relates testing how big relative error occurs for inconsistency indexes after deleting some values. To begin with functions, which test one index. They consider matrix size, the level of inconsistency, the degree of incompleteness and the number of attempts which are performed for given matrix.
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod21.png}}
-\caption{Implemetnacja funkcji \textit{exploreMatrix}, która testuje wybrany współczynik niespójności}
+\caption{The implementation of function \textit{exploreMatrix} which tests given inconsistency index}
 \label{fig:rstudio}
 \end{figure}
 
-Następnie zostały utworzone funkcje, które przeprowadzają testy dla wszystkich współczynników, opierając się na tych samych macierzach. Dzięki temu zbiór macierzy, na których operuję współczynniki są jest wspólny, zatem rezultaty są wiarygodne, a każdy współczynnik jest traktowany w ten sam sposób.
+Then functions, which perform tests for each indexes, has been developed basing on the same matrixes. In that the set of matrixes , on which indexes go, is common. Thus, results are reliable and each index is considered the same way.
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod22.png}}
-\caption{Implemetnacja funkcji \textit{test}, która testuje wszystkie współczynniki, uwzględniając zadany rozmiar macierzy i stopień niekompletności}
+\caption{The implementation of function \textit{test} which tests all indexes regarding given matrix size and the degree of incompleteness}
 \label{fig:rstudio}
 \end{figure}
 
 
 \subsection{Documentation}
-Komentarze kodu zostały wykorzystane do wygenerowania dokumentacji. W tym celu użyto pakietu \textit{roxygen2}. Pozwoliło to na łatwe przeglądanie funkcji przyjemne zapoznanie się z nimi.
-Przykładowe fragmenty dokumentacji przedstawione zostały poniżej.
+Comments in code have been used to generating documentation. the package \textit{roxygen2} has been made for this purpose. It has allowed to easy review code and know the functions./
+Exemplary portions of the documentation are presented below.
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod31.png}}
-\caption{Fragment dokumentacji: widok ogólny}
+\caption{The portion of the documentation: general view}
 \label{fig:rstudio}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod32.png}}
-\caption{Fragment dokumentacji: funkcja \textit{saaty}}
+\caption{The portion of the documentation: function \textit{saaty}}
 \label{fig:rstudio}
 \end{figure}
 
-\begin{figure}[!ht]
+\begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod33.png}}
-\caption{Fragment dokumentacji: funkcja \textit{exploreMatrix}}
+\caption{The portion of the documentation: function \textit{exploreMatrix}}
 \label{fig:rstudio}
 \end{figure}

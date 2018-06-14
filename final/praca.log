@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  11 JUN 2018 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  13 JUN 2018 19:01
 entering extended mode
-**/home/dawid/Pulpit/magisterka/praca/praca.tex
-(/home/dawid/Pulpit/magisterka/praca/praca.tex
+**/home/dawid/Pulpit/magisterka/final/praca.tex
+(/home/dawid/Pulpit/magisterka/final/praca.tex
 LaTeX2e <2018-04-01> patch level 4
 Babel <3.20> and hyphenation patterns for 0 language(s) loaded.
 (aghdpl.cls *** [aghdpl.cls] --- (MSz, GJN, PK) v3.1.0 <16.02.2016> ***
@@ -1508,7 +1508,7 @@ n¡ albo przed s¡dem
 
 ]
 
-/home/dawid/Pulpit/magisterka/praca/praca.tex:101: Package inputenc Error: Unic
+/home/dawid/Pulpit/magisterka/final/praca.tex:101: Package inputenc Error: Unic
 ode character Ì¨ (U+328)
 (inputenc)                not set up for use with LaTeX.
 
@@ -1548,11 +1548,6 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7])
-Underfull \hbox (badness 1400) in paragraph at lines 22--117
-\T1/ptm/m/n/10.95 Ostatni rozdziaª to podsumowanie wykonanej pracy, wyci¡gni¦te
- wnioski i pomysªy na dalsze
- []
-
 [8]
 \openout2 = `rozdzial2.aux'.
 
@@ -1651,13 +1646,7 @@ Overfull \hbox (47.4783pt too wide) in paragraph at lines 215--215
  [][] \T1/ptm/b/n/10.95 Relative index:
  []
 
-[16])
-Underfull \hbox (badness 1728) in paragraph at lines 219--119
-[]\T1/ptm/m/n/10.95 Zaproponowane sposoby modyfikcaji wspªczynników pozwalaj¡ n
-a u»ycie ich do macierzy
- []
-
-[17]
+[16]) [17]
 \openout2 = `rozdzial4.aux'.
 
  (rozdzial4.tex [18
@@ -1671,114 +1660,162 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
+rozdzial4.tex:51: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+rozdzial4.tex:51: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+rozdzial4.tex:51: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+rozdzial4.tex:51: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 <images/rstudio.png, id=84, 1122.1925pt x 711.65875pt>
 File: images/rstudio.png Graphic file (type png)
 <use images/rstudio.png>
 Package pdftex.def Info: images/rstudio.png  used on input line 56.
 (pdftex.def)             Requested size: 455.24411pt x 288.69801pt.
 
-Underfull \hbox (badness 1152) in paragraph at lines 51--60
-[]\T1/ptm/m/n/10.95 Testy wspóªczynników zostaªy napisane w j¦zyku R, który ide
-alnie nadaje si¦ do oblicze«
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 1360) in paragraph at lines 51--60
-\T1/ptm/m/n/10.95 RStudio wspomaga prac¦ programisty poprzez kolorowanie skªadn
-i, wbudowan¡ konsole, ªatwe
- []
-
-
-Underfull \hbox (badness 1418) in paragraph at lines 70--73
-\T1/ptm/m/n/10.95 peªnymi, jak równie» niepeªnymi. Nie uwzgl¦deniono bª¦dnych m
-acierzy, a wi¦c takich, które
- []
+rozdzial4.tex:70: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 [20]
 <images/kod1.png, id=88, 515.9275pt x 222.8325pt>
 File: images/kod1.png Graphic file (type png)
 <use images/kod1.png>
-Package pdftex.def Info: images/kod1.png  used on input line 75.
+Package pdftex.def Info: images/kod1.png  used on input line 73.
 (pdftex.def)             Requested size: 386.94467pt x 167.12396pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod2.png, id=89, 517.935pt x 159.59625pt>
 File: images/kod2.png Graphic file (type png)
 <use images/kod2.png>
-Package pdftex.def Info: images/kod2.png  used on input line 81.
+Package pdftex.def Info: images/kod2.png  used on input line 79.
 (pdftex.def)             Requested size: 388.45029pt x 119.69687pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod3.png, id=90, 516.93124pt x 154.5775pt>
 File: images/kod3.png Graphic file (type png)
 <use images/kod3.png>
-Package pdftex.def Info: images/kod3.png  used on input line 87.
+Package pdftex.def Info: images/kod3.png  used on input line 85.
 (pdftex.def)             Requested size: 387.69748pt x 115.93282pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod4.png, id=91, 517.935pt x 519.9425pt>
 File: images/kod4.png Graphic file (type png)
 <use images/kod4.png>
-Package pdftex.def Info: images/kod4.png  used on input line 93.
+Package pdftex.def Info: images/kod4.png  used on input line 91.
 (pdftex.def)             Requested size: 388.45029pt x 389.95592pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod5.png, id=92, 612.2875pt x 205.76875pt>
 File: images/kod5.png Graphic file (type png)
 <use images/kod5.png>
-Package pdftex.def Info: images/kod5.png  used on input line 100.
+Package pdftex.def Info: images/kod5.png  used on input line 98.
 (pdftex.def)             Requested size: 459.21451pt x 154.32617pt.
 
-Underfull \hbox (badness 1939) in paragraph at lines 101--101
-[]\T1/ptm/b/n/10 Fig. 4.6. |\T1/ptm/m/n/10 Implemetnacja metody \T1/ptm/m/it/10
- countIndexesForTriads\T1/ptm/m/n/10 , która oblicza warto±¢
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <images/kod11.png, id=93, 467.7475pt x 123.46124pt>
 File: images/kod11.png Graphic file (type png)
 <use images/kod11.png>
-Package pdftex.def Info: images/kod11.png  used on input line 110.
+Package pdftex.def Info: images/kod11.png  used on input line 108.
 (pdftex.def)             Requested size: 350.80975pt x 92.59569pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod12.png, id=94, 515.9275pt x 280.04625pt>
 File: images/kod12.png Graphic file (type png)
 <use images/kod12.png>
-Package pdftex.def Info: images/kod12.png  used on input line 116.
+Package pdftex.def Info: images/kod12.png  used on input line 114.
 (pdftex.def)             Requested size: 386.94467pt x 210.03415pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod13.png, id=95, 624.3325pt x 382.42876pt>
 File: images/kod13.png Graphic file (type png)
 <use images/kod13.png>
-Package pdftex.def Info: images/kod13.png  used on input line 122.
+Package pdftex.def Info: images/kod13.png  used on input line 120.
 (pdftex.def)             Requested size: 455.75894pt x 279.17065pt.
 
-Underfull \hbox (badness 3229) in paragraph at lines 123--123
-[]\T1/ptm/b/n/10 Fig. 4.9. |\T1/ptm/m/n/10 Implemetnacja funkcji \T1/ptm/m/it/1
-0 breakPCMatrix\T1/ptm/m/n/10 , która dekompletuje macierz
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/kod21.png, id=96, 786.94pt x 730.73pt>
+File: images/kod21.png Graphic file (type png)
+<use images/kod21.png>
+Package pdftex.def Info: images/kod21.png  used on input line 128.
+(pdftex.def)             Requested size: 456.42552pt x 423.8237pt.
+
+Underfull \hbox (badness 3000) in paragraph at lines 129--129
+[]\T1/ptm/b/n/10 Fig. 4.10. |\T1/ptm/m/n/10 The implementation of function \T1/
+ptm/m/it/10 exploreMatrix \T1/ptm/m/n/10 which tests given
  []
 
 [21 <./images/rstudio.png>]
-<images/kod21.png, id=99, 786.94pt x 730.73pt>
-File: images/kod21.png Graphic file (type png)
-<use images/kod21.png>
-Package pdftex.def Info: images/kod21.png  used on input line 130.
-(pdftex.def)             Requested size: 456.42552pt x 423.8237pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod22.png, id=100, 766.865pt x 440.64626pt>
 File: images/kod22.png Graphic file (type png)
 <use images/kod22.png>
-Package pdftex.def Info: images/kod22.png  used on input line 138.
+Package pdftex.def Info: images/kod22.png  used on input line 136.
 (pdftex.def)             Requested size: 444.78201pt x 255.575pt.
 
-Underfull \hbox (badness 2285) in paragraph at lines 139--139
-[]\T1/ptm/b/n/10 Fig. 4.11. |\T1/ptm/m/n/10 Implemetnacja funkcji \T1/ptm/m/it/
-10 test\T1/ptm/m/n/10 , która testuje wszystkie wspóªczynniki,
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 <images/kod31.png, id=101, 670.505pt x 862.22125pt>
 File: images/kod31.png Graphic file (type png)
 <use images/kod31.png>
-Package pdftex.def Info: images/kod31.png  used on input line 149.
+Package pdftex.def Info: images/kod31.png  used on input line 147.
 (pdftex.def)             Requested size: 388.89317pt x 500.08867pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod32.png, id=102, 495.8525pt x 418.56375pt>
 File: images/kod32.png Graphic file (type png)
 <use images/kod32.png>
-Package pdftex.def Info: images/kod32.png  used on input line 155.
+Package pdftex.def Info: images/kod32.png  used on input line 153.
 (pdftex.def)             Requested size: 287.59465pt x 242.76714pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 <images/kod33.png, id=103, 525.965pt x 634.37pt>
 File: images/kod33.png Graphic file (type png)
 <use images/kod33.png>
-Package pdftex.def Info: images/kod33.png  used on input line 161.
+Package pdftex.def Info: images/kod33.png  used on input line 159.
 (pdftex.def)             Requested size: 305.0599pt x 367.93484pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 ) [22 <./images/kod1.png> <./images/kod2.png>] [23 <./images/kod3.png> <./image
 s/kod4.png>] [24 <./images/kod5.png> <./images/kod11.png> <./images/kod12.png>]
 [25 <./images/kod13.png>] [26 <./images/kod21.png>] [27 <./images/kod22.png>]
@@ -1793,44 +1830,21 @@ s/kod4.png>] [24 <./images/kod5.png> <./images/kod11.png> <./images/kod12.png>]
 ]
 Chapter 5.
 
-Overfull \hbox (3.41142pt too wide) in paragraph at lines 66--100
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (9.22592pt too wide) in paragraph at lines 66--100
  [] 
  []
 
 
-Underfull \vbox (badness 2012) has occurred while \output is active []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
- [31]
-Underfull \hbox (badness 5446) in paragraph at lines 109--110
-\T1/ptm/m/n/10.95 te±cie, niezale»nie od rozmiaru. Dla macierzy, które nie s¡ b
-ardzo maªe, daje naprawd¦
- []
-
-
+[31]
 Underfull \vbox (badness 5548) has occurred while \output is active []
 
  [32]
-[33]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-[]\T1/ptm/m/n/10.95 Zdecydowanie najlepszymi wspóªczynnikami okazaªy si¦ \T1/pt
-m/m/it/10.95 Koczkodaj index \T1/ptm/m/n/10.95 i
- []
-
-
-Underfull \hbox (badness 2253) in paragraph at lines 116--117
-\T1/ptm/m/it/10.95 harmonic\T1/ptm/m/n/10.95 , \T1/ptm/m/it/10.95 relativeError
-\T1/ptm/m/n/10.95 , \T1/ptm/m/it/10.95 saloHamalainen\T1/ptm/m/n/10.95 , \T1/pt
-m/m/it/10.95 geometric\T1/ptm/m/n/10.95 . Reztaty uzyskane przez te wspóªczynni
-ki
- []
-
-
-Underfull \hbox (badness 1102) in paragraph at lines 121--122
-[]\T1/ptm/m/n/10.95 Wszystkie testy dla ró»nych rozmiarów macierzy i poziomów n
-iekompletno±ci wykonano z
- []
-
-[34]) [35]
+[33]) [34] [35]
 \openout2 = `rozdzial6.aux'.
 
  (rozdzial6.tex [36
@@ -1839,12 +1853,6 @@ iekompletno±ci wykonano z
 
 ]
 Chapter 6.
-
-Underfull \hbox (badness 2310) in paragraph at lines 8--9
-\T1/ptm/m/n/10.95 dadz¡ one nawet korzystniejsze rezultaty. Celem tej pracy byª
-o jednak zbadanie istniej¡cych
- []
-
 ) [37] (praca.aux (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux)
 (rozdzial4.aux) (rozdzial5.aux) (rozdzial6.aux))
 
@@ -1875,7 +1883,7 @@ pe1/urw/helvetic/uhvro8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/ur
 w/times/utmb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/ut
 mr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on praca.pdf (37 pages, 1209679 bytes).
+Output written on praca.pdf (37 pages, 1204587 bytes).
 PDF statistics:
  205 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
