@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  11 JUN 2018 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  14 JUN 2018 20:37
 entering extended mode
 **/home/dawid/Pulpit/magisterka/praca/praca.tex
 (/home/dawid/Pulpit/magisterka/praca/praca.tex
@@ -1190,6 +1190,22 @@ File: csquotes.cfg
 \c@example=\count323
 Package csquotes Info: Redefining alias 'polish' -> 'croatian'.
 
+/home/dawid/Pulpit/magisterka/praca/praca.tex:47: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+/home/dawid/Pulpit/magisterka/praca/praca.tex:47: LaTeX Error: Missing \begin{d
+ocument}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 (/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/courier.sty
 Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
 )
@@ -1470,7 +1486,12 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 100.
 (/home/dawid/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<agh.jpg, id=4, 146.4672pt x 284.7438pt>
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 101.
+ [1{/home/dawid/.miktex/texmfs/data/pdftex/config/pdftex.map}
+
+]
+<agh.jpg, id=12, 146.4672pt x 284.7438pt>
 File: agh.jpg Graphic file (type jpg)
 <use agh.jpg>
 Package pdftex.def Info: agh.jpg  used on input line 101.
@@ -1490,9 +1511,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <14.4> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 101.
- [1
-
-{/home/dawid/.miktex/texmfs/data/pdftex/config/pdftex.map} <./agh.jpg>]
+ [1 <./agh.jpg>]
 Underfull \hbox (badness 1552) in paragraph at lines 101--101
 \T1/ptm/m/it/12 ograniczenia wolno±ci albo pozbawienia wolno±ci do lat 3. Tej s
 amej karze podlega,
@@ -1522,8 +1541,6 @@ You may provide a definition with
 ] [2
 
 ]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 112.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 112.
 
@@ -1558,7 +1575,7 @@ Underfull \hbox (badness 1400) in paragraph at lines 22--117
 
  (rozdzial2.tex
 Chapter 2.
-<fig1.png, id=37, 175.857pt x 39.5076pt>
+<fig1.png, id=41, 175.857pt x 39.5076pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 31.
@@ -1671,7 +1688,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--37
 
  []
 
-<images/rstudio.png, id=84, 1122.1925pt x 711.65875pt>
+<images/rstudio.png, id=88, 1122.1925pt x 711.65875pt>
 File: images/rstudio.png Graphic file (type png)
 <use images/rstudio.png>
 Package pdftex.def Info: images/rstudio.png  used on input line 56.
@@ -1695,27 +1712,27 @@ acierzy, a wi¦c takich, które
  []
 
 [20]
-<images/kod1.png, id=88, 515.9275pt x 222.8325pt>
+<images/kod1.png, id=92, 515.9275pt x 222.8325pt>
 File: images/kod1.png Graphic file (type png)
 <use images/kod1.png>
 Package pdftex.def Info: images/kod1.png  used on input line 75.
 (pdftex.def)             Requested size: 386.94467pt x 167.12396pt.
-<images/kod2.png, id=89, 517.935pt x 159.59625pt>
+<images/kod2.png, id=93, 517.935pt x 159.59625pt>
 File: images/kod2.png Graphic file (type png)
 <use images/kod2.png>
 Package pdftex.def Info: images/kod2.png  used on input line 81.
 (pdftex.def)             Requested size: 388.45029pt x 119.69687pt.
-<images/kod3.png, id=90, 516.93124pt x 154.5775pt>
+<images/kod3.png, id=94, 516.93124pt x 154.5775pt>
 File: images/kod3.png Graphic file (type png)
 <use images/kod3.png>
 Package pdftex.def Info: images/kod3.png  used on input line 87.
 (pdftex.def)             Requested size: 387.69748pt x 115.93282pt.
-<images/kod4.png, id=91, 517.935pt x 519.9425pt>
+<images/kod4.png, id=95, 517.935pt x 519.9425pt>
 File: images/kod4.png Graphic file (type png)
 <use images/kod4.png>
 Package pdftex.def Info: images/kod4.png  used on input line 93.
 (pdftex.def)             Requested size: 388.45029pt x 389.95592pt.
-<images/kod5.png, id=92, 612.2875pt x 205.76875pt>
+<images/kod5.png, id=96, 612.2875pt x 205.76875pt>
 File: images/kod5.png Graphic file (type png)
 <use images/kod5.png>
 Package pdftex.def Info: images/kod5.png  used on input line 100.
@@ -1726,17 +1743,17 @@ Underfull \hbox (badness 1939) in paragraph at lines 101--101
  countIndexesForTriads\T1/ptm/m/n/10 , która oblicza warto±¢
  []
 
-<images/kod11.png, id=93, 467.7475pt x 123.46124pt>
+<images/kod11.png, id=97, 467.7475pt x 123.46124pt>
 File: images/kod11.png Graphic file (type png)
 <use images/kod11.png>
 Package pdftex.def Info: images/kod11.png  used on input line 110.
 (pdftex.def)             Requested size: 350.80975pt x 92.59569pt.
-<images/kod12.png, id=94, 515.9275pt x 280.04625pt>
+<images/kod12.png, id=98, 515.9275pt x 280.04625pt>
 File: images/kod12.png Graphic file (type png)
 <use images/kod12.png>
 Package pdftex.def Info: images/kod12.png  used on input line 116.
 (pdftex.def)             Requested size: 386.94467pt x 210.03415pt.
-<images/kod13.png, id=95, 624.3325pt x 382.42876pt>
+<images/kod13.png, id=99, 624.3325pt x 382.42876pt>
 File: images/kod13.png Graphic file (type png)
 <use images/kod13.png>
 Package pdftex.def Info: images/kod13.png  used on input line 122.
@@ -1748,12 +1765,12 @@ Underfull \hbox (badness 3229) in paragraph at lines 123--123
  []
 
 [21 <./images/rstudio.png>]
-<images/kod21.png, id=99, 786.94pt x 730.73pt>
+<images/kod21.png, id=103, 786.94pt x 730.73pt>
 File: images/kod21.png Graphic file (type png)
 <use images/kod21.png>
 Package pdftex.def Info: images/kod21.png  used on input line 130.
 (pdftex.def)             Requested size: 456.42552pt x 423.8237pt.
-<images/kod22.png, id=100, 766.865pt x 440.64626pt>
+<images/kod22.png, id=104, 766.865pt x 440.64626pt>
 File: images/kod22.png Graphic file (type png)
 <use images/kod22.png>
 Package pdftex.def Info: images/kod22.png  used on input line 138.
@@ -1764,17 +1781,17 @@ Underfull \hbox (badness 2285) in paragraph at lines 139--139
 10 test\T1/ptm/m/n/10 , która testuje wszystkie wspóªczynniki,
  []
 
-<images/kod31.png, id=101, 670.505pt x 862.22125pt>
+<images/kod31.png, id=105, 670.505pt x 862.22125pt>
 File: images/kod31.png Graphic file (type png)
 <use images/kod31.png>
 Package pdftex.def Info: images/kod31.png  used on input line 149.
 (pdftex.def)             Requested size: 388.89317pt x 500.08867pt.
-<images/kod32.png, id=102, 495.8525pt x 418.56375pt>
+<images/kod32.png, id=106, 495.8525pt x 418.56375pt>
 File: images/kod32.png Graphic file (type png)
 <use images/kod32.png>
 Package pdftex.def Info: images/kod32.png  used on input line 155.
 (pdftex.def)             Requested size: 287.59465pt x 242.76714pt.
-<images/kod33.png, id=103, 525.965pt x 634.37pt>
+<images/kod33.png, id=107, 525.965pt x 634.37pt>
 File: images/kod33.png Graphic file (type png)
 <use images/kod33.png>
 Package pdftex.def Info: images/kod33.png  used on input line 161.
@@ -1852,32 +1869,33 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 30808 strings out of 494894
- 596534 string characters out of 3178733
- 664100 words of memory out of 3000000
- 33885 multiletter control sequences out of 15000+200000
- 603383 words of font info for 104 fonts, out of 3000000 for 9000
+ 30811 strings out of 494894
+ 596572 string characters out of 3178733
+ 664116 words of memory out of 3000000
+ 33887 multiletter control sequences out of 15000+200000
+ 606731 words of font info for 106 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
  55i,12n,65p,1947b,584s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/home/dawid/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/dawid/
-.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/dawid/.
-miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/dawid/.m
-iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/dawid/.mik
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/dawid/.mikte
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/dawid/.miktex/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/dawid/.miktex/tex
-mfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/dawid/.miktex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/dawid/.miktex/texmfs/
-install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/dawid/.miktex/texmfs/in
-stall/fonts/type1/urw/helvetic/uhvb8a.pfb></home/dawid/.miktex/texmfs/install/f
-onts/type1/urw/helvetic/uhvr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/ty
-pe1/urw/helvetic/uhvro8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/ur
-w/times/utmb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/ut
-mr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-
-Output written on praca.pdf (37 pages, 1209679 bytes).
+{/home/dawid/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc} </home/dawid
+/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/ecrm1095.pk></home/dawi
+d/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/dawid
+/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/dawid/
+.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/dawid/.m
+iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/dawid/.mik
+tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/dawid/.mikte
+x/texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/dawid/.miktex/t
+exmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/dawid/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/dawid/.miktex/texmf
+s/install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/dawid/.miktex/texmfs/
+install/fonts/type1/urw/helvetic/uhvb8a.pfb></home/dawid/.miktex/texmfs/install
+/fonts/type1/urw/helvetic/uhvr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/
+type1/urw/helvetic/uhvro8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/
+urw/times/utmb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/
+utmr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pf
+b>
+Output written on praca.pdf (38 pages, 1213667 bytes).
 PDF statistics:
- 205 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

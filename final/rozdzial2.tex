@@ -3,7 +3,7 @@
   \section{PC matrix}
 	\label{subsec:macierzPC}
 	
-	The \textit{PC method} is used to choose the best alternative from a set of concepts. However, this goal is achieved by comparing in pairs. A numerical value is assigned to each pair. It not only determines which alternative is preferred but also informs about the weight of this preference. In this way, the finite set of concepts $C=\left\{ c_{1},\ldots,c_{n}\right\} $ is transformed into a \textit{PC matrix} $M=\left(m_{ij}\right)$, where $m_{i,j}\in R$ and $i,j\in\left\{ 1,\ldots,n\right\}$. The \textit{PC matrix} for $n$ concepts is following:
+	The \textit{PC method} is used to choose the best alternative from a set of concepts. However, this goal is achieved by comparing in pairs. A numerical value is assigned to each pair. It not only determines which alternative is preferred but also informs about the strength of this preference. In this way, the finite set of concepts $C=\left\{ c_{1},\ldots,c_{n}\right\} $ is transformed into a \textit{PC matrix} $M=\left(m_{ij}\right)$, where $m_{i,j}\in R$ and $i,j\in\left\{ 1,\ldots,n\right\}$. The \textit{PC matrix} for $n$ concepts is following:
 $$
 M = 
 \left(
@@ -25,7 +25,7 @@ $$
   \section{Weight vector}
 	\label{subsec:wektorWag}
 	
-	The PC matrix is the basis for calculating the method. It is used in a function $\mu:C\rightarrow R$ that assigns a positive real number to each alternative in the set $C$. The vector $$\mu=\left[\mu\left(c_{1}\right),\ldots,\mu\left(c_{n}\right)\right]$$ formed in this way is called \textit{the weight vector} or \textit{the priority vector} (see Fig. 2.1.). It informs which alternative has won.
+	The PC matrix is the basis for calculating the method. It is used in a function $\mu:C\rightarrow R$ that assigns a positive real number to each alternative in the set $C$. The vector $$\mu=\left[\mu\left(c_{1}\right),\ldots,\mu\left(c_{n}\right)\right]$$ formed in this way is called \textit{the weight vector} or \textit{the priority vector} (see Fig. 2.1.). It informs which alternative won.
 
 \begin{figure}[ht]
 \centerline{\includegraphics[scale=2.5]{fig1.png}}
@@ -47,4 +47,4 @@ If the matrix is consistent and the weight vector $\mu$ is computed, then for ea
 	\begin{equation} 
 		{ij}=\frac{\mu_{i}}{\mu_{j}}.
  	\end{equation}
-In practice, it is very rare for a matrix M to be completely consistent. In the long history of the PC method, many methods have been developed to calculate inconsistencies. Many of them are based directly on the definition of consistency ([eq:consistent]), some methods use the eigenvalues of the matrix, others are based on the assumption that each fully consistent matrix fulfills the condition ([eq:consistent2]).
+In practice, it is very rare for a matrix M to be completely consistent. In the long history of the PC method, many methods were developed to calculate inconsistencies. Many of them are based directly on the definition of consistency ([eq:consistent]), some methods use the eigenvalues of the matrix, others are based on the assumption that each fully consistent matrix fulfills the condition ([eq:consistent2]).

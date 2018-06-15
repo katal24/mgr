@@ -2,7 +2,7 @@
 \label{sec:inconsistencyIndexes}
 \section{Inconsistency indexes for complete matrices}
 
-This subsection presents sixteen common inconsistency indexes. Their detailed description, including the formulas, is necessary to modify them in the next step so that they can also work for incomplete matrices. Many of them have been described and tested numerically in article \cite{Brunelli2013}. In all methods, it is assumed that the \textit{PC matrix} is reciprocal.
+This subsection presents sixteen common inconsistency indexes. Their detailed description, including the formulas, is necessary to modify them in the next step so that they can also work for incomplete matrices. Many of them were described and tested numerically in article \cite{Brunelli2013}. In all methods, it is assumed that the \textit{PC matrix} is reciprocal.
 
 
  \subsection{Saaty index}
@@ -35,7 +35,7 @@ One of the most popular inconsistency indexes was proposed by \textit{Koczkodaj}
 		K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_{ij}}\mid a_{ik}-a_{ij}a_{jk}\mid,\frac{1}{a_{jk}}\mid a_{jk}-\frac{a_{ik}}{a_{ij}}\mid\}.
 	 \end{equation}
 
- This formula has been simplified by Duszak and Koczkodaj \cite{DUSZAK1994} and is given as:
+ This formula was simplified by Duszak and Koczkodaj \cite{DUSZAK1994} and is given as:
  	\begin{equation} 
 		K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\alpha\gamma}{\beta}\mid\},\,\,\,\,\,\,where\,\alpha=a_{ij},\beta=a_{ik},\gamma=a_{jk}
 	 \end{equation}
@@ -175,7 +175,7 @@ This index, proposed by \textit{Barzaili} \cite{Jonathan1998}, requires calculat
 $$C=\left(c_{ij}\right)=\left(w_{i}-w_{j}\right)$$
 $$E=\left(e_{ij}\right)=\left(a_{ij}-c_{ij}\right)$$
 
-Ultimately, the formula for the \textit{Relative error} is following:
+Ultimately, the formula for the \textit{Relative error} is the following:
 	\begin{equation} 
 		RE(A)=\frac{\sum_{ij}e_{ij}^{2}}{\sum_{ij}a_{ij}^{2}}.
 	 \end{equation}
@@ -184,12 +184,12 @@ Ultimately, the formula for the \textit{Relative error} is following:
 \section{Inconsistency indexes for incomplete matrices}
 \label{sec:inconsistencyIndexesForIncompleteMatrices}
 
-There are no inconsistency indexes for incomplete matrices. However, Those presented in chapter (3) could be used in such cases. It requires usually a slight modification of the index definition or calculation only for selected data. The ways in which the examined indexes have been adjusted to be able to deal with incomplete matrices are presented below.
+There are no inconsistency indexes for incomplete matrices. However, Those presented in chapter (3) could be used in such cases. It requires usually a slight modification of the index definition or calculation only for selected data. The ways in which the examined indexes were adjusted to be able to deal with incomplete matrices are presented below.
 
 \begin{description}
 
 \item[Saaty index] \hfill \\ 
-	The input matrix is modified using the method proposed by \textit{Harker} \cite{HARKER1987}. It means that values $c+1$,where $c$ is the number of non-empty elements in a given row, are placed on the diagonal.
+	The input matrix is modified using the method proposed by \textit{Harker} \cite{HARKER1987}. It means that values $c+1$, where $c$ is the number of non-empty elements in a given row, are placed on the diagonal.
 
 \item[Geometric consistency index]: \hfill \\
 	During calculating the weight vector by the geometric mean, empty values are omitted. Additionally, in the formula ([eq:GCI]) only non-empty elements $e_{ij}$ are used. The reason for this exclusion is that the domain of the logarithmic function is $R^{+}$.
@@ -216,4 +216,4 @@ There are no inconsistency indexes for incomplete matrices. However, Those prese
   No modification.
 \end{description}
 
-Proposed methods of adjustments of indexes allow to apply them in incomplete matrices. However, them do not guarantee the best results. It means that further experiments are required. The existing indexes can be modified in many different ways. In this paper one put emphasis on the fact that the adjustments were slight. The aim of this study is to examine existing indexes, not to create new indexes.
+Proposed methods of adjustments of indexes allow to apply them in incomplete matrices. However, they do not guarantee the best results. It means that further experiments are required. The existing indexes can be modified in many different ways. In this paper one put emphasis on the fact that the adjustments were slight. The aim of this study is to examine existing indexes, not to create new indexes.

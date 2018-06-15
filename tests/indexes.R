@@ -596,11 +596,11 @@ runTests <- function() {
   
 }
 
-#' @title Explore the incomplete PC matrixes for every method and scale <1.1, 1.2, ... , 4.0>
-#' @description Examines what is the relative error between the full matrixes and indomplete matrixes.
+#' @title Explore the incomplete PC matrices for every method and scale <1.1, 1.2, ... , 4.0>
+#' @description Examines what is the relative error between the full matrices and indomplete matrices.
 #' @param numOfElements - dimension of tested matrix
 #' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
-#' @param numOfAttempts - number of tested matrixes
+#' @param numOfAttempts - number of tested matrices
 #' @param numOfAttemptsForOneMatrix - number of test cases for each matrix
 #' @param alfa - a parameter for kulakowskiSzybowskiIa method
 #' @param beta - a parameter for kulakowskiSzybowskiIab method
@@ -625,12 +625,12 @@ test <- function(numOfElements, gradeOfIncomplete, numOfAttempts, numOfAttemptsF
 }
 
 
-#' @title Explore the incomplete PC matrixes
-#' @description Examines what is the relative error between the full matrixes and indomplete matrixes.
+#' @title Explore the incomplete PC matrices
+#' @description Examines what is the relative error between the full matrices and indomplete matrices.
 #' @param numOfElements - dimension of tested matrix
 #' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
 #' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
-#' @param numOfAttempts - number of tested matrixes
+#' @param numOfAttempts - number of tested matrices
 #' @param numOfAttemptsForOneMatrix - number of test cases for each matrix
 #' @param alfa - a parameter for kulakowskiSzybowskiIa method
 #' @param beta - a parameter for kulakowskiSzybowskiIab method
@@ -649,8 +649,8 @@ monteCarloOnTheSameMatrix <- function(numOfElements, scale, gradeOfIncomplete, n
 }
 
 
-#' @title Explore the incomplete PC matrixes
-#' @description Examines what is the relative error between the full matrixes and indomplete matrixes for each method
+#' @title Explore the incomplete PC matrices
+#' @description Examines what is the relative error between the full matrices and indomplete matrices for each method
 #' @param numOfElements - dimension of tested matrix
 #' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
 #' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
@@ -808,13 +808,13 @@ exploreMatrix <- function(methodName, scale, numOfElements, gradeOfIncomplete, n
 }
 
 
-#' @title Explore the incomplete PC matrixes for one method
+#' @title Explore the incomplete PC matrices for one method
 #' @description Examines what is the relative error between the full matrix and indomplete matrix
 #' @param methodName - name of the method which is tested
 #' @param scale - extend of disorders. This parametr is the upper limit of the interval that is used to scale the elements. The lower limit is defined as 1 / scale
 #' @param numOfElements - dimension of tested matrix
 #' @param gradeOfIncomplete -  percentage of the value to be removed (not applicable to the diagonal)
-#' @param numOfAttempts - number of tested matrixes
+#' @param numOfAttempts - number of tested matrices
 #' @param numOfAttemptsForOneMatrix - number of test cases for each matrix
 #' @param alfa - a parameter for kulakowskiSzybowskiIa method
 #' @param beta - a parameter for kulakowskiSzybowskiIab method

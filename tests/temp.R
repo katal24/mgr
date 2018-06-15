@@ -103,10 +103,10 @@ eigenValueRankSym <- function(matrix){
 
 #' @title AHP ranking using eigenvalue based method
 #' @description
-#' Computes milticriteria ranking using eigenvalue based method using criteria matrix and alternatives matrixes.
+#' Computes milticriteria ranking using eigenvalue based method using criteria matrix and alternatives matrices.
 #' This is basic three levels AHP.
 #' @param M - n x n criteria matrix
-#' @param ... - matrixes with the comparisons of alternatives with respect to the given criteria
+#' @param ... - matrices with the comparisons of alternatives with respect to the given criteria
 #' @return multicriteria ranking using eigenvalue based method
 #' @export ----
 ahp <- function(M, ...){
@@ -556,8 +556,8 @@ koczkodajImprovedMatrixStep <- function(matrix){
 #' @return aggregation matrix/vector
 #' @export
 AIJadd <- function(...){
-  matrixes <- list(...)
-  mean <- Reduce('+', matrixes)/length(matrixes)
+  matrices <- list(...)
+  mean <- Reduce('+', matrices)/length(matrices)
   mean
 }
 
@@ -568,21 +568,21 @@ AIJadd <- function(...){
 #' @return aggregation matrix/vector
 #' @export
 AIJgeom <- function(...){
-  matrixes <- list(...)
-  meanGeom <- Reduce('*', matrixes)^(1/length(matrixes))    # Reduce - wywoluje funkcje po kolei na elementach listy
+  matrices <- list(...)
+  meanGeom <- Reduce('*', matrices)^(1/length(matrices))    # Reduce - wywoluje funkcje po kolei na elementach listy
   meanGeom
 }
 
 #java
-AIJgeomFromVector<- function(matrixes){
-  matrixes1 <- getListOfMatrices(matrixes)
-  meanGeom <- Reduce('*', matrixes1)^(1/length(matrixes1))    # Reduce - wywoluje funkcje po kolei na elementach listy
+AIJgeomFromVector<- function(matrices){
+  matrices1 <- getListOfMatrices(matrices)
+  meanGeom <- Reduce('*', matrices1)^(1/length(matrices1))    # Reduce - wywoluje funkcje po kolei na elementach listy
   meanGeom
 }
 #java
-AIJaddFromVector<- function(matrixes){
-  matrixes1 <- getListOfMatrices(matrixes)
-  mean <- Reduce('+', matrixes1)/length(matrixes1)
+AIJaddFromVector<- function(matrices){
+  matrices1 <- getListOfMatrices(matrices)
+  mean <- Reduce('+', matrices1)/length(matrices1)
   mean
 }
 #java
