@@ -32,6 +32,7 @@ The presented inconsistency indexes were tested utilizing the Monte Carlo method
 
 
 \subsection{Details of the algorithm}
+\label{sec:details}
 The above algorithm was carried out for values $X_{1}=100$, $X_{2}=100$. Tests were started for values $d$ in range $\left(1.1,1.2,...,4\right)$ and then the results were averaged. It means that the average relative error of one index was calculated on the basis of 4000 matrices, each of which decomposed randomly 100 times. It gave together 400000 tests on how good the index was. 
 \\
 In addition, tests were carried out for various sizes of matrices.
@@ -71,19 +72,19 @@ Sixteen functions which calculate the inconsistency indexes using methods are de
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod1.png}}
-\caption{The implementation of Saaty} index
+\caption{The implementation of Saaty index}
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod2.png}}
-\caption{The implementation of Koczkodaj} index
+\caption{The implementation of Koczkodaj index}
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod3.png}}
-\caption{The implementation of \textit{Kulakowski and Szybowski} index}
+\caption{The implementation of Kulakowski and Szybowski index ($I_{\alpha}$)}
 \label{fig:rstudio}
 \end{figure}
 
@@ -92,11 +93,11 @@ Sixteen functions which calculate the inconsistency indexes using methods are de
 \caption{The implementation of Salo and Hamalainen index}
 \label{fig:rstudio}
 \end{figure}
-It is worth drawing attention to a function which is called within the functions intended for indexes based on triads. This function generates triads from a matrix and next returns inconsistency for each o them. However, the way to calculate inconsistency for one triad depends on first function parameter. It informs about function name that calculates inconsistency of a triad specified method.
+It is worth drawing attention to a function which is called within the functions intended for indexes based on triads. This function generates triads from a matrix and next returns inconsistency for each o them. The way to calculate inconsistency for one triad depends on a function passed as a parameter.
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod5.png}}
-\caption{The implementation of method \texttt{countIndexesForTriads}, which calculates inconsistency for each triad of a specified matrix}
+\caption{The implementation of the function \texttt{countIndexesForTriads} which calculates inconsistency for each triad of a specified matrix}
 \label{fig:rstudio}
 \end{figure}
 
@@ -106,19 +107,19 @@ In the second step, functions calculating the quality of the indexes for incompl
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod11.png}}
-\caption{The implementation of function \texttt{generatePCMatrix} which generates the PC matrix depending on matrix size}
+\caption{The implementation of the function \texttt{generatePCMatrix} which generates the PC matrix depending on matrix size}
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod12.png}}
-\caption{The implementation of function \texttt{disturbPCMatrix} which disturbs the PC matrix regarding inconsistency depending on given level of inconsistency}
+\caption{The implementation of the function \texttt{disturbPCMatrix} which disturbs the PC matrix regarding inconsistency depending on given level of inconsistency}
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.73]{images/kod13.png}}
-\caption{The implementation of function \texttt{breakPCMatrix} which breaks up the PC matrix regarding incompleteness depending on given degree of incompleteness}
+\caption{The implementation of the function \texttt{breakPCMatrix} which breaks up the PC matrix regarding incompleteness depending on given degree of incompleteness}
 \label{fig:rstudio}
 \end{figure}
 
@@ -126,7 +127,7 @@ The last part of the functions relates to testing how big relative error occurs 
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod21.png}}
-\caption{The implementation of function \texttt{exploreMatrix} which tests given inconsistency index}
+\caption{The implementation of the function \texttt{exploreMatrix} which tests given inconsistency index}
 \label{fig:rstudio}
 \end{figure}
 
@@ -134,7 +135,7 @@ Then functions, which perform tests for each index, were implemented based on th
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod22.png}}
-\caption{The implementation of function \texttt{test} which tests all indexes regarding given matrix size and the degree of incompleteness}
+\caption{The implementation of the function \texttt{test} which tests all indexes regarding given matrix size and the degree of incompleteness}
 \label{fig:rstudio}
 \end{figure}
 

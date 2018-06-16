@@ -4,67 +4,69 @@
 The tests were performed using Operating System \textit{Ubuntu 16.04 LTS} and IDE \textit{RStudio}. The results are presented in the following section.
 
 \subsection{Tests taking into account different matrix sizes}
+The results of the first part of the tests are presented in this subsection.
 \begin{table}[h]
 \begin{center}
 \caption{Relative error of the inconsistency indexes for incomplete matrices with constant degrees of incompleteness $g=15\%$ and variable matrix size.}
 \label{tab:results1}
-\begin{tabular}{|c||l|l|l|l|l|c||c|}
-\hline Index & n = 4 & n = 7 & n = 8 & n = 10 & n = 15 & mean & rank \\ \hline \hline
-saaty & 33,41 & 19,82 & 18,78 & 19,16 & 17,37 & 21,71 & 10 \\ \hline
-geometric & 616,68 & 124,73 & 77,94 & 68,62 & 39,13 & 185,42 & 13 \\ \hline
-koczkodaj & \textbf{13,86} & \textbf{3,69} & \textbf{2,14} & \textbf{1,62} & \textbf{0,80} & \textbf{4,42} & \textbf{1} \\ \hline
-kazibudzkiLTI1 & 24,80 & 10,21 & 6,62 & 4,97 & 2,73 & 9,87 & 6 \\ \hline
-kazibudzkiLTI2 & 42,31 & 17,93 & 11,88 & 9,03 & 5,03 & 17,24 & 8 \\ \hline
-kazibudzkiCMLTI2 & 35,40 & 17,07 & 13,26 & 11,20 & 6,81 & 16,75 & 7 \\ \hline
-pelaeLamata & 44,65 & 19,90 & 13,46 & 10,36 & 5,84 & 18,84 & 9 \\ \hline
-kulakSzyb & 20,34 & 7,68 & 4,88 & 3,63 & 1,96 & 7,70 & 5 \\ \hline
-kulakSzyb2 & 44,61 & 26,05 & 27,12 & 29,64 & 28,46 & 31,18 & 11 \\ \hline
-kulakSzybIa & 16,47 & 5,18 & 3,09 & 2,27 & 1,16 & 5,63 & 3 \\ \hline
-kulakSzybIab & 17,40 & 4,89 & 2,81 & 2,04 & 1,01 & 5,63 & 2 \\ \hline
-harmonic & 9 573,02 & 1 577,49 & 1 127,33 & 1 066,35 & 866,00 & 2 842,04 & 15 \\ \hline
-goldenWang & 115,92 & 54,37 & 43,90 & 43,16 & 36,26 & 58,72 & 12 \\ \hline
-saloHamalainen & 381,57 & 205,06 & 176,11 & 160,06 & 136,55 & 211,87 & 14 \\ \hline
-cavalloD`Apuzzo & 16,94 & 6,85 & 4,46 & 3,36 & 1,87 & 6,70 & 4 \\ \hline
-relativeError & 1 792,64 & 226 313,60 & 746,21 & 100,87 & 20,42 & 45 794,75 & 16 \\ \hline
+\begin{tabular}{|c||l|l|l|l|l||c|c|}
+\hline Index & $n = 4$ & $n = 7$ & $n = 8$ & $n = 10$ & $n = 15$ & Mean & Rank \\ \hline \hline
+$CI$ & 33.41 & 19.82 & 18.78 & 19.16 & 17.37 & 21.71 & 10 \\ \hline
+$GCI$ & 616.68 & 124.73 & 77.94 & 68.62 & 39.13 & 185.42 & 13 \\ \hline
+$K$ & \textbf{13.86} & \textbf{3.69} & \textbf{2.14} & \textbf{1.62} & \textbf{0.80} & \textbf{4.42} & \textbf{1} \\ \hline
+$MLTI$ & 24.80 & 10.21 & 6.62 & 4.97 & 2.73 & 9.87 & 6 \\ \hline
+$MLTI*$ & 42.31 & 17.93 & 11.88 & 9.03 & 5.03 & 17.24 & 8 \\ \hline
+$CMLTI*$ & 35.40 & 17.07 & 13.26 & 11.20 & 6.81 & 16.75 & 7 \\ \hline
+$PL$ & 44.65 & 19.90 & 13.46 & 10.36 & 5.84 & 18.84 & 9 \\ \hline
+$I_1$ & 20.34 & 7.68 & 4.88 & 3.63 & 1.96 & 7.70 & 5 \\ \hline
+$I_2$ & 44.61 & 26.05 & 27.12 & 29.64 & 28.46 & 31.18 & 11 \\ \hline
+$I_{\alpha}$ & 16.47 & 5.18 & 3.09 & 2.27 & 1.16 & 5.63 & 3 \\ \hline
+$I_{\alpha,\beta}$ & 17.40 & 4.89 & 2.81 & 2.04 & 1.01 & 5.63 & 2 \\ \hline
+$HCI$ & 9 573.02 & 1 577.49 & 1 127.33 & 1 066.35 & 866.00 & 2 842.04 & 15 \\ \hline
+$GW$ & 115.92 & 54.37 & 43.90 & 43.16 & 36.26 & 58.72 & 12 \\ \hline
+$CM$ & 381.57 & 205.06 & 176.11 & 160.06 & 136.55 & 211.87 & 14 \\ \hline
+$I_{CD}$ & 16.94 & 6.85 & 4.46 & 3.36 & 1.87 & 6.70 & 4 \\ \hline
+$RE$ & 1 792.64 & 226 313.60 & 746.21 & 100.87 & 20.42 & 45 794.75 & 16 \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
 
 \subsection{Tests taking into account different degrees of incompleteness}
+The results of the second part of the tests are presented in this subsection.
 \begin{table}[h]
 \begin{center}
 \caption{Relative error of the inconsistency indexes for incomplete matrices with various degrees of incompleteness and constant matrix size $n=8$.}
 \label{tab:results1}
-\begin{tabular}{|c||l|l|l|l|l|c||c|}
-\hline Index & $g=4\%$ & $g=7\%$ & $g=14\%$ & $g=25\%$ & $g=50\%$ & mean & rank \\ \hline \hline
-saaty & 4,71 & 9,40 & 18,78 & 32,89 & 65,56 & 26,27 & 10 \\ \hline
-geometric & 23,60 & 48,44 & 86,61 & 135,68 & 207,99 & 100,46  & 13 \\ \hline
-koczkodaj & \textbf{0,48} & \textbf{0,99} & \textbf{2,17} & \textbf{4,52} & 16,41 & 4,92 & 2 \\ \hline
-kazibudzkiLTI1 & 2,90 & 4,31 & 6,64 & 10,05 & 23,09 & 9,40 & 6 \\ \hline
-kazibudzkiLTI2 & 5,12 & 7,71 & 11,91 & 18,08 & 40,77 & 16,72 & 7 \\ \hline
-kazibudzkiCMLTI2 & 5,16 & 8,05 & 13,34 & 22,03 & 61,16 & 21,95 & 9 \\ \hline
-pelaeLamata & 5,73 & 8,72 & 13,52 & 20,54 & 45,64 & 18,83 & 8 \\ \hline
-kulakSzyb & 2,17 & 3,18 & 4,91 & 7,43 & 17,30 & 7,00 & 5 \\ \hline
-kulakSzyb2 & 5,90 & 12,22 & 27,12 & 56,71 & 202,27 & 60,84 & 12 \\ \hline
-kulakSzybIa & 1,20 & 1,88 & 3,12 & 5,13 & 13,97 & 5,06 & 3 \\ \hline
-kulakSzybIab & 1,00 & 1,65 & 2,84 & 4,74 & \textbf{12,97} & \textbf{4,64} & \textbf{1} \\ \hline
-harmonic & 291,74 & 544,60 & 1 152,26 & 1 962,25 & 3 995,58 & 1 589,29 & 16 \\ \hline
-goldenWang & 14,23 & 25,23 & 46,18 & 68,83 & 98,24 & 50,54 & 11 \\ \hline
-saloHamalainen & 88,40 & 137,70 & 180,17 & 182,54 & 148,74 & 147,51 & 14 \\ \hline
-cavalloD`Apuzzo & 1,95 & 2,91 & 4,46 & 6,81 & 16,11 & 6,45 & 4 \\ \hline
-relativeError & 18,99 & 20,81 & 206,74 & 68,98 & 1 056,96 & 274,50 & 15 \\ \hline
+\begin{tabular}{|c||lllll||l|c|}
+\hline Index & $g=4\%$ & $g=7\%$ & $g=14\%$ & $g=25\%$ & $g=50\%$ & Mean & Rank \\ \hline \hline
+$CI$ & 4.71 & 9.40 & 18.78 & 32.89 & 65.56 & 26.27 & 10 \\ \hline
+$GCI$ & 23.60 & 48.44 & 86.61 & 135.68 & 207.99 & 100.46  & 13 \\ \hline
+$K$ & \textbf{0.48} & \textbf{0.99} & \textbf{2.17} & \textbf{4.52} & 16.41 & 4.92 & 2 \\ \hline
+$MLTI$ & 2.90 & 4.31 & 6.64 & 10.05 & 23.09 & 9.40 & 6 \\ \hline
+$MLTI*$ & 5.12 & 7.71 & 11.91 & 18.08 & 40.77 & 16.72 & 7 \\ \hline
+$CMLTI*$ & 5.16 & 8.05 & 13.34 & 22.03 & 61.16 & 21.95 & 9 \\ \hline
+$PL$ & 5.73 & 8.72 & 13.52 & 20.54 & 45.64 & 18.83 & 8 \\ \hline
+$I_1$ & 2.17 & 3.18 & 4.91 & 7.43 & 17.30 & 7.00 & 5 \\ \hline
+$I_2$ & 5.90 & 12.22 & 27.12 & 56.71 & 202.27 & 60.84 & 12 \\ \hline
+$I_{\alpha}$ & 1.20 & 1.88 & 3.12 & 5.13 & 13.97 & 5.06 & 3 \\ \hline
+$I_{\alpha,\beta}$ & 1.00 & 1.65 & 2.84 & 4.74 & \textbf{12.97} & \textbf{4.64} & \textbf{1} \\ \hline
+$HCI$ & 291.74 & 544.60 & 1 152.26 & 1 962.25 & 3 995.58 & 1 589.29 & 16 \\ \hline
+$GW$ & 14.23 & 25.23 & 46.18 & 68.83 & 98.24 & 50.54 & 11 \\ \hline
+$CM$ & 88.40 & 137.70 & 180.17 & 182.54 & 148.74 & 147.51 & 14 \\ \hline
+$I_{CD}$ & 1.95 & 2.91 & 4.46 & 6.81 & 16.11 & 6.45 & 4 \\ \hline
+$RE$ & 18.99 & 20.81 & 206.74 & 68.98 & 1 056.96 & 274.50 & 15 \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
 
 \subsection{Tests taking into account different levels of inconsistency}
-The inconsistency indexes tests which gave the best results are presented below. The detailed results are placed in Appendix.
-\begin{table}[h]
+The inconsistency indexes tests which gave the best results are presented below. The detailed results are placed in the Appendix.
+\begin{table}[!]
 \begin{center}
 \caption{Relative error of the inconsistency indexes for incomplete matrices with various degrees of inconsistency, constant matrix size $n=8$ and constant level of incompleteness $g=15\%$.}
 \label{tab:results1}
-\begin{tabular}{|c||c|c|c|c|c|c|}
-\hline $d$ & koczkodaj & kazibudzkiLTI1 & kulakSzyb & kulakSzybIa & kulakSzybIab & cavalloD`Apuzzo  \\ \hline \hline
+\begin{tabular}{|c||lllll||l|c|}
+\hline $d$ & $K$ & $MLTI$ & $I_1$ & $I_{\alpha}$ & $I_{\alpha,\beta}$ & $I_{CD}$  \\ \hline \hline
 1.1 & 4.09 & 6.38 & 6.13 & 4.52 & 4.35 & \textbf{0.49} \\ \hline
 1.2 & 3.68 & 6.45 & 5.98 & 4.26 & 4.06 & \textbf{0.96} \\ \hline
 1.3 & 3.58 & 6.55 & 5.87 & 4.16 & 3.96 & \textbf{1.37} \\ \hline
@@ -95,7 +97,7 @@ The inconsistency indexes tests which gave the best results are presented below.
 3.8 & \textbf{1.24} & 6.59 & 4.17 & 2.40 & 2.09 & 6.68 \\ \hline
 3.9 & \textbf{1.28} & 6.73 & 4.25 & 2.47 & 2.19 & 6.79 \\ \hline
 4.0 & \textbf{1.11} & 6.52 & 4.17 & 2.35 & 2.06 & 6.79 \\ \hline \hline
-mean & \textbf{2.13} & 6.61 & 4.88 & 3.08 & 2.81 & 4.45 \\ \hline 
+Mean & \textbf{2.13} & 6.61 & 4.88 & 3.08 & 2.81 & 4.45 \\ \hline 
 \end{tabular}
 \end{center}
 \end{table}
@@ -105,30 +107,30 @@ mean & \textbf{2.13} & 6.61 & 4.88 & 3.08 & 2.81 & 4.45 \\ \hline
 Analyzing the above results, one can draw several conclusions.
 
 \subsection{Tests taking into account different matrix sizes}
-Along with growth of the matrix size, examined relative error decreases. Considering the best indexes, the relative error is between $13$ and $17$ percent for small matrices (size $4$) so it is relatively big. However, it decreases rapidly when the size of PC matrix increases. For the matrix of size $7$ there are indexes which give the results in range $3 - 5 \%$, what is an acceptable score. For PC matrices with a significant size (over $10$ concepts), the relative error is just about $1 - 2 \%$, what is a really good score.
+Along with growth of the matrix size, examined relative error decreases. Considering the best indexes, the relative error is between 13 and 17 percent for small matrices (size 4) so it is relatively big. However, it decreases rapidly when the size of PC matrix increases. For the matrix of size 7 there are indexes which give the results in range $3 - 5 \%$, what is an acceptable score. For PC matrices with a significant size (over 10 concepts), the relative error is just about $1 - 2 \%$, what is a really good score.
 
-Definitely, the best index found out is out \textit{Koczkodaj index}. It wins in each test regardless of the matrix size. It gives really satisfying results for matrices of size $7$ and more. Good results are obtained also through indexes \textit{kulakowskiSzybowskiIab}, \textit{kulakowskiSzybowskiIa} and \textit{cavalloD`Apuzzo}. It seems that these indexes are reliable. Absolutely one should reject indexes \textit{relativeError}, \textit{harmonic}, \textit{saloHamalainen}, \textit{geometric}, \textit{goldenWang} for incomplete matrices. Results obtained through these methods show that the score of examined inconsistency for incomplete matrices can differ significantly from the right values.
+Definitely, the best index found out is out the index proposed by Koczkodaj ($K$). It wins in each test regardless of the matrix size. It gives really satisfying results for matrices of size 7 and more. Good results are obtained also through the indexes $I_{\alpha,\beta}$, $I_{\alpha}$ and $I_{CD}$. It seems that these indexes are reliable. Absolutely one should reject the indexes $RE$, $HCI$, $CM$, $GCI$ and $GW$ for incomplete matrices. Results obtained through these methods show that the score of examined inconsistency for incomplete matrices can differ significantly from the right values.
 
-It is worth noticing that the presented results involve matrices with the degree of incompleteness equal to $15\%$. It means that $7$ comparisons are missing for matrices with size $n = 10$. The results will be different from presented in the table 5.1. for other degrees of incompleteness. The impact of the degree of incompleteness on tested relative error is shown in consecutive experiments.
+It is worth noticing that the presented results involve matrices with the degree of incompleteness equal to $15\%$. It means that 7 comparisons are missing for matrices with size $n = 10$. The results will be different from presented in the table 5.1 for other degrees of incompleteness. The impact of the degree of incompleteness on tested relative error is shown in consecutive experiments.
 
 \subsection{Tests taking into account different degrees of incompleteness}
-Along with growth of the degree of incompleteness, examined relative error grows. Considering the best indexes, the relative error amount to just about $1 - 2\%$ percent for degree of incompleteness (size $4$) so it is really satisfying. However, it increases slowly, when the degree of incompleteness decreases. For the degree of incompleteness $g=14\%$ indexes which give the results about $2 - 3 \%$ exist, what is a good score. The relative error is between $12$ and $18$ percent for significant matrices ($g=50\%$).
+Along with growth of the degree of incompleteness, examined relative error grows. Considering the best indexes, the relative error amount to just about $1 - 2\%$ percent for degree of incompleteness (size 4) so it is really satisfying. However, it increases slowly, when the degree of incompleteness decreases. For the degree of incompleteness $g=14\%$ indexes which give the results about $2 - 3 \%$ exist, what is a good score. The relative error is between 12 and 18 percent for significant matrices ($g=50\%$).
 
-Definitely, \textit{Koczkodaj index} and \textit{kulakowskiSzybowskiIab} came out the best indexes. The first one wins in most cases and gives really satisfying results. The second one improves along with the growth of the degree of incompleteness. It obtained a significant advantage over other methods in the last test, what caused that the average value turned out to be the lowest. 
-The good results were obtained also through indexes \textit{kulakowskiSzybowskiIa} and \textit{cavalloD`Apuzzo}. It seems that these indexes are reliable. Absolutely one should reject indexes \textit{harmonic}, \textit{relativeError}, \textit{saloHamalainen}, \textit{geometric}. Results obtained through these methods show that the score of examined inconsistency for incomplete matrices can differ significantly from the right values.
+Definitely, the indexes $K$ and $I_{\alpha,\beta}$ came out the best indexes. The first one wins in most cases and gives really satisfying results. The second one improves along with the growth of the degree of incompleteness. It obtained a significant advantage over other methods in the last test, what caused that the average value turned out to be the lowest. 
+The good results were obtained also through the indexes $I_{\alpha}$ and $I_{CD}$. It seems that these indexes are reliable. Absolutely one should reject the indexes $HCI$, $RE$, $CM$, $GCI$. Results obtained through these methods show that the score of examined inconsistency for incomplete matrices can differ significantly from the right values.
 
-It is worth noticing that the presented results involve matrices with the size $8\%$. The results will be different from presented in table 5.2. for other matrix sizes. The impact of the degree of incompleteness on tested relative error is shown in previous experiments.
+It is worth noticing that the presented results involve matrices with the size $8\%$. The results will be different from presented in the table 5.2 for other matrix sizes. The impact of the degree of incompleteness on tested relative error is shown in previous experiments.
 
 \subsection{Tests taking into account different levels of inconsistency}
-All tests for different matrix sizes and degrees of incompleteness was performed taking into account various levels of inconsistency. The scale of this incompleteness is proportional to the value $d$ included in the table 5.3. This table shows detailed results for which average values are presented in the table 5.1. It is worth taking a closer look at these scores. They point out that the quality of the inconsistency indexes is determined also by the level of inconsistency.
+All tests for different matrix sizes and degrees of incompleteness was performed taking into account various levels of inconsistency. The scale of this incompleteness is proportional to the value $d$ included in the table 5.3 This table shows detailed results for which average values are presented in the table 5.1 It is worth taking a closer look at these scores. They point out that the quality of the inconsistency indexes is determined also by the level of inconsistency.
 
-The lowest values of the relative error was obtained by \textit{Koczkodaj index}, what is discussed before. It should be noticed and emphasized that it gives the best results only from particular moment in which the level of inconsistency in matrix begins to grow. For small inconsistencies, the most satisfying index is \textit{Cavallo and D`Apuzzo index}. This is an interesting regularity which indicates that the choice of an inconsistency index for incomplete matrices should depend on the level of inconsistency. 
+The lowest values of the relative error was obtained by $K$, what is discussed before. It should be noticed and emphasized that it gives the best results only from particular moment in which the level of inconsistency in matrix begins to grow. For small inconsistencies, the most satisfying index is $I_{CD}$. This is an interesting regularity which indicates that the choice of an inconsistency index for incomplete matrices should depend on the level of inconsistency. 
 
-It is worth noticing that this regularity repeats in each of the performed tests. For small level of inconsistency, regardless of the matrix size and the degree od incompleteness, \textit{Cavallo and D`Apuzzo index} comes out to be the best. The results presented in Appendix confirm it.
+It is worth noticing that this regularity repeats in each of the performed tests. For small level of inconsistency, regardless of the matrix size and the degree od incompleteness, $I_{CD}$ comes out to be the best. The results presented in the Appendix confirm it.
 
 \subsection{General discussion}
-Certainly, the tests managed to show that the error increases with a growth of the level of incompleteness. At the same time, it decreases when the size of the matrix increases. However, the most important question was about which indexes cope well with incomplete matrices. The Koczkodaj index ([sub:Koczkodaj-index]) wins in 9 out of 10 tests and its average error in both cases turns out to be the lowest (below $5\%$). The next places are occupied by two indexes introduced by Kułakowski and Szybowski ([eq:Ia], [eq:Iab]) and Cavallo and D'Apuzzo index ([sub:Cavallo-and-D’Apuzzo]). It is worth noting that all of these indexes are based on triads.
+Certainly, the tests managed to show that the error increases with a growth of the level of incompleteness. At the same time, it decreases when the size of the matrix increases. However, the most important question was about which indexes cope well with incomplete matrices. The Koczkodaj index wins in 9 out of 10 tests and its average error in both cases turns out to be the lowest (below $5\%$). The next places are occupied by two indexes introduced by Kułakowski and Szybowski and Cavallo and D'Apuzzo index. It is worth noting that all of these indexes are based on triads.
 
-A question about what makes the Koczkodaj index giving such good results and whether it is worth using, may arise. One should return to the definition of this index ([eq:K]) and notice that it is equal to the value of the most inconsistency triad. Therefore, if the level of incompleteness is low, there is a good chance that after deletion of some values from the matrix and recalculation at the index the value of it will not change at all. It will only change if the element included in the most inconsistent triad is removed. However, in many cases, the examination of the full matrix and th matrix after removing some values give exactly the same results (the error is $0\%$). This is the only index of this kind among those presented in the paper.
+A question about what makes the Koczkodaj index giving such good results and whether it is worth using, may arise. One should return to the definition of this index~\ref{eq:K} and notice that it is equal to the value of the most inconsistency triad. Therefore, if the level of incompleteness is low, there is a good chance that after deletion of some values from the matrix and recalculation at the index the value of it will not change at all. It will only change if the element included in the most inconsistent triad is removed. However, in many cases, the examination of the full matrix and th matrix after removing some values give exactly the same results (the error is $0\%$). This is the only index of this kind among those presented in the paper.
 
-If one uses the Koczkodaj index, one may be worried that the removed comparison belonged to the most inconsistent triad. In such a case, it is difficult to predict what error will be contained in the index of the incomplete matrix. It seems that one should pay particular attention to the indexes proposed by Kułakowski and Szybowski. First of them ([eq:I1]) averages the inconsistencies of the triads. Therefore, it is safe and gives good results (in both tests it took the sixth place and achieved an error below $8\%$). From this perspective, another index suggested by the same authors ([eq:Ia]) turns out to be very interesting. In the tests it took the third place. It has the parameter $\alpha$ allowing to determine the effect of the greatest inconsistency of the triad $\left(\alpha\right)$ and the average $\left(1-\alpha\right)$. In the tests carried out, the parameter $\alpha$ was $0.4$.
+If one uses the Koczkodaj index, one may be worried that the removed comparison belonged to the most inconsistent triad. In such a case, it is difficult to predict what error will be contained in the index of the incomplete matrix. It seems that one should pay particular attention to the indexes proposed by Kułakowski and Szybowski. First of them ($I_1$) averages the inconsistencies of the triads. Therefore, it is safe and gives good results (in both tests it took the fifth place and achieved an error below $8\%$). From this perspective, another index suggested by the same authors ($I_\alpha$) turns out to be very interesting. In the tests it took the third place. It has the parameter $\alpha$ allowing to determine the effect of the greatest inconsistency of the triad $\left(\alpha\right)$ and the average $\left(1-\alpha\right)$. In the tests carried out, the parameter $\alpha$ was $0.4$.

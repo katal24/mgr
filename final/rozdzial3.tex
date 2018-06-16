@@ -9,7 +9,7 @@ This subsection presents sixteen common inconsistency indexes. Their detailed de
 
 This is one of the most important and popular indexes and was introduced by Saaty \cite{SAATY1977}. In order to determine inconsistency, the matrix's eigenvalues should be computed. The author used the dependence that the largest eigenvalue of the matrix is equal to its dimension if and only if the given matrix is completely consistent. On this assumption, he based his thoughts and proposed the formula:
 	\begin{equation} 
-		CI(A)=\frac{\lambda_{max}-n}{n-1},
+		CI(M)=\frac{\lambda_{max}-n}{n-1},
 	 \end{equation}
  where $\lambda_{max}$
   is the principal eigenvalue of the PC matrix and $n$
@@ -20,7 +20,7 @@ This is one of the most important and popular indexes and was introduced by Saat
 
 This index on the assumption ~\ref{eq:consistent2} was proposed by Craford and Williams \cite{CRAWFORD1985} and then refined by Aguaròn and Moreno-Jimènez \cite{AGUARON2003}. In this case the priority vector should be calculated using the geometric mean method. Consider~\ref{eq:consistent} one can create a matrix:
 	\begin{equation} 
-		E=\left[e_{ij}\mid e_{ij}=a_{ij}\frac{w_{j}}{w_{i}}\right],\,\,\,\,\,\,i,j=1,...,n.
+		E=\left[e_{ij}\mid e_{ij}=m_{ij}\frac{w_{j}}{w_{i}}\right],\,\,\,\,\,\,i,j=1,...,n.
 	 \end{equation}
  The inconsistency index is calculated as follows:
 	 \begin{equation} 
@@ -34,12 +34,12 @@ This index on the assumption ~\ref{eq:consistent2} was proposed by Craford and W
 One of the most popular inconsistency indexes was proposed by Koczkodaj \cite{KOCZKODAJ1993}. It is based directly on the definition of consistency~\ref{eq:consistent}. The value of the inconsistency index for one triad triad was defined as:
 	\begin{equation} 
 		\label{eq:K}
-		K_{i,j,k}=min\{\frac{1}{a_{ij}}\mid a_{ij}-\frac{a_{ik}}{a_{jk}}\mid,\frac{1}{a_{ij}}\mid a_{ik}-a_{ij}a_{jk}\mid,\frac{1}{a_{jk}}\mid a_{jk}-\frac{a_{ik}}{a_{ij}}\mid\}.
+		K_{i,j,k}=min\{\frac{1}{m_{ij}}\mid m_{ij}-\frac{m_{ik}}{m_{jk}}\mid,\frac{1}{m_{ij}}\mid m_{ik}-m_{ij}m_{jk}\mid,\frac{1}{m_{jk}}\mid m_{jk}-\frac{m_{ik}}{m_{ij}}\mid\}.
 	 \end{equation}
 
  This formula was simplified by Duszak and Koczkodaj \cite{DUSZAK1994} and is given as:
  	\begin{equation} 
-		K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\alpha\gamma}{\beta}\mid\},\,\,\,\,\,\,where\,\alpha=a_{ij},\beta=a_{ik},\gamma=a_{jk}
+		K(\alpha,\beta,\gamma)=min\{\mid1-\frac{\beta}{\alpha\gamma}\mid,\mid1-\frac{\alpha\gamma}{\beta}\mid\},\,\,\,\,\,\,where\,\alpha=m_{ij},\beta=m_{ik},\gamma=m_{jk}
 	 \end{equation}
  Then it was generalized \cite{DUSZAK1994} for $n>2$. Finally, the inconsistency index has the following form:
  	\begin{equation} 
@@ -77,21 +77,21 @@ After further research Kazibudzki introduces another inconsistency index \cite{K
 
 This index was proposed by Pelaez and Lamata \cite{PELAEZ2003} and is also based on the concept of triad. The authors noticed that PC  matrices can be constructed on the basis of triads. Their determinant is closely related to the consistency of the matrix.
 
-For every triad $(a_{ik},a_{ij},a_{jk})$ one can build a matrix in the form: 
+For every triad $(m_{ik},m_{ij},m_{jk})$ one can build a matrix in the form: 
 	\begin{equation} 
 		T_{ijk}=\left(\begin{array}{ccc}
-			1 & a_{ij} & a_{ik}\\
-			\frac{1}{a_{ij}} & 1 & a_{jk}\\
-			\frac{1}{a_{ik}} & \frac{1}{a_{jk}} & 1
+			1 & m_{ij} & m_{ik}\\
+			\frac{1}{m_{ij}} & 1 & m_{jk}\\
+			\frac{1}{m_{ik}} & \frac{1}{m_{jk}} & 1
 		\end{array}\right),\,\,\,\,\,\,where\,i<j<k.
 	\end{equation}
  The determinant of this matrix is:
 	\begin{equation} 
-		det(A)=\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2.
+		det(M)=\frac{m_{ik}}{m_{ij}m_{jk}}+\frac{m_{ij}m_{jk}}{m_{ik}}-2.
 	 \end{equation}
- If the matrix is fully consistent, then $det(A)=0$, else $det(A)>0$. Based on the above considerations, the authors introduced the new inconsistency index that can be formulated as follows:
+ If the matrix is fully consistent, then $det(M)=0$, else $det(M)>0$. Based on the above considerations, the authors introduced the new inconsistency index that can be formulated as follows:
  	\begin{equation} 
-		CI*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{a_{ik}}{a_{ij}a_{jk}}+\frac{a_{ij}a_{jk}}{a_{ik}}-2\right).
+		CI*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{m_{ik}}{m_{ij}m_{jk}}+\frac{m_{ij}m_{jk}}{m_{ik}}-2\right).
 	 \end{equation}
  
 
@@ -129,15 +129,16 @@ The second index expands the first one by~\ref{eq:I2}:
 
 \subsection{Harmonic consistency index ($HCI$)}
 
-This index was introduced by Stein and Mizzi and it presents a completely new method of inconsistency computing \cite{STEIN2007}. At the beginning it requires the creation of an auxiliary vector $s=(s_{1},...,s_{n})^{T}$, where $n$ is the dimension of the matrix $A$, for which the index will be calculated. Each element of the vector $s$ is the sum of values in one column of the matrix $A$. Hence, 
+This index was introduced by Stein and Mizzi and it presents a completely new method of inconsistency computing \cite{STEIN2007}. At the beginning it requires the creation of an auxiliary vector $s=(s_{1},...,s_{n})^{T}$, where $n$ is the dimension of the matrix $M$, for which the index will be calculated. Each element of the vector $s$ is the sum of values in one column of the matrix $M$. Hence, 
 	\begin{equation} 
-		s_{j}=\sum_{i=1}^{n}a_{ji}\,\,\,\,\,\,\forall j.
+		s_{j}=\sum_{i=1}^{n}m_{ji}\,\,\,\,\,\,\forall j.
 	 \end{equation}
- The authors proved that if the matrix $A$ is consistent, then $\sum_{j=1}^{n}s_{j}^{-1}=1$. The formula for the mean harmonic looks as follows (Brunelli, 2015):
- 	\begin{equation} 
+ The authors proved that if the matrix $M$ is consistent, then $\sum_{j=1}^{n}s_{j}^{-1}=1$. The formula for the mean harmonic looks as follows (Brunelli, 2015):
+	 \begin{equation} 
+		\label{eq:hm1}
 		HM=\frac{n}{\sum_{j=1}^{n}\frac{1}{s_{j}}}.
 	 \end{equation}
- The final formula for the inconsistency index was obtained by normalizing the above equation ([eq:hm']):
+ The final formula for the inconsistency index was obtained by normalizing the above equation~\ref{eq:hm1}:
  	\begin{equation} 
 		HCI=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
 	 \end{equation}
@@ -145,15 +146,15 @@ This index was introduced by Stein and Mizzi and it presents a completely new me
 
 \subsection{Golden and Wang index ($GW$)}
 
-This index was introduced by Golden and Wang \cite{Golden1989}. It assumes that the priority vector was calculated using the geometric mean method, then normalized to add up to $1$. In this way vector $g*=[g{}_{1,}^{*},...,g_{n}^{*}]$ was obtained, where $n$ is the dimension of the matrix $A$. The next step is to normalize each column of the matrix $A$. After this, the sum of the elements of each column in matrix $A$ is $1$. The obtained matrix is marked with the symbol $A^{*}$. The inconsistency index is defined as follows:
+This index was introduced by Golden and Wang \cite{Golden1989}. It assumes that the priority vector was calculated using the geometric mean method, then normalized to add up to $1$. In this way vector $g*=[g{}_{1,}^{*},...,g_{n}^{*}]$ was obtained, where $n$ is the dimension of the matrix $M$. The next step is to normalize each column of the matrix $M$. After this, the sum of the elements of each column in matrix $M$ is $1$. The obtained matrix is marked with the symbol $M^{*}$. The inconsistency index is defined as follows:
 	\begin{equation} 
-		GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid a_{ij}^{*}-g_{i}^{*}\mid.
+		GW=\frac{1}{n}\sum_{i=1}^{n}\sum_{j=1}^{n}\mid m_{ij}^{*}-g_{i}^{*}\mid.
 	 \end{equation}
  
 
 \subsection{Salo and Hamalainen index ($CM$)}
 
-The index proposed by Salo and Hamalainen \cite{SALO1995} uses the definition of inconsistency ([eq:consistent]), however it requires the creation of an auxiliary matrix, in which each element contains the smallest and largest discrepancy from consistency based on the formula~\ref{eq:consistent}. The index takes all triads into account:
+The index proposed by Salo and Hamalainen \cite{SALO1995} uses the definition of inconsistency~\ref{eq:consistent}. However, it requires the creation of an auxiliary matrix, in which each element contains the smallest and largest discrepancy from consistency based on the formula~\ref{eq:consistent}. The index takes all triads into account:
 	\begin{equation} 
 		R=(r_{ij})_{nxn}=\left(\begin{array}{ccc}
 			[\underline{r}_{11},\overline{r}_{11}] & \ldots & [\underline{r}_{1n},\overline{r}_{1n}]\\
@@ -161,7 +162,7 @@ The index proposed by Salo and Hamalainen \cite{SALO1995} uses the definition of
 			[\underline{r}_{n1},\overline{r}_{n1}] & \ldots & [\underline{r}_{nn},\overline{r}_{nn}]
 		\end{array}\right),
 	\end{equation}
- where $\underline{r_{ij}}=min\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\}$ , $\overline{r_{ij}}=max\left\{ a_{ik}a_{kj}\mid k=1,\ldots,n\right\}$ and $n$ is the dimension of the tested matrix $A$. A numerical example was presented in \cite{Brunelli2015}. Based on the resulting matrix $R$, the authors proposed the following inconsistency index:
+ where $\underline{r_{ij}}=min\left\{ m_{ik}m_{kj}\mid k=1,\ldots,n\right\}$ , $\overline{r_{ij}}=max\left\{ m_{ik}m_{kj}\mid k=1,\ldots,n\right\}$ and $n$ is the dimension of the tested matrix $M$. A numerical example was presented in \cite{Brunelli2015}. Based on the resulting matrix $R$, the authors proposed the following inconsistency index:
  	\begin{equation} 
 		CM=\frac{2}{n(n-1)}\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\frac{\overline{r}_{ij}-\underline{r}_{ij}}{\left(1+\overline{r}_{ij}\right)\left(1+\underline{r}_{ij}\right)}.
 	 \end{equation}
@@ -172,19 +173,19 @@ The index proposed by Salo and Hamalainen \cite{SALO1995} uses the definition of
 The authors Cavallo and D'Apuzzo based their index on triads but they conducted studies on a new path, generalizing them for linear, ordered abelian groups (\cite{Cavallo2009}, \cite{Cavallo2010}). Thanks to this, the index can be used also with other relations \cite{Brunelli2013}. Index for relation $max$ can be presented in the form of a formula:
 	\begin{equation} 
 		\label{eq:CavDAp}
-		I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{a_{ik}}{a_{ij}a_{jk}},\frac{a_{ij}a_{jk}}{a_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}.
+		I_{CD}=\prod_{i=1}^{n-2}\prod_{j=i+1}^{n-2}\prod_{k=j+1}^{n}\left(max\left\{ \frac{m_{ik}}{m_{ij}m_{jk}},\frac{m_{ij}m_{jk}}{m_{ik}}\right\} \right){}^{\frac{1}{\binom{n}{3}}}.
 	 \end{equation}
  
 
 \subsection{Relative error ($RE$)}
 
-This index, proposed by Barzaili \cite{Jonathan1998}, requires calculation of the weight vector using the arithmetic mean method for each row and creation of two additional matrices. Thus, the weight vector is $$w_{i}=\frac{1}{n}\sum_{j=1}^{n}a_{ij},$$ where $n$ is the dimension of the matrix. The two auxiliary matrices are calculated according to the formulas:
+This index, proposed by Barzaili \cite{Jonathan1998}, requires calculation of the weight vector using the arithmetic mean method for each row and creation of two additional matrices. Thus, the weight vector is $$w_{i}=\frac{1}{n}\sum_{j=1}^{n}m_{ij},$$ where $n$ is the dimension of the matrix. The two auxiliary matrices are calculated according to the formulas:
 $$C=\left(c_{ij}\right)=\left(w_{i}-w_{j}\right)$$
-$$E=\left(e_{ij}\right)=\left(a_{ij}-c_{ij}\right)$$
+$$E=\left(e_{ij}\right)=\left(m_{ij}-c_{ij}\right)$$
 
 Ultimately, the formula for the Relative error is the following:
 	\begin{equation} 
-		RE(A)=\frac{\sum_{ij}e_{ij}^{2}}{\sum_{ij}a_{ij}^{2}}.
+		RE(M)=\frac{\sum_{ij}e_{ij}^{2}}{\sum_{ij}m_{ij}^{2}}.
 	 \end{equation}
 
 
