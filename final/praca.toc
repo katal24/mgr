@@ -1,34 +1,34 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {polish}{}
+\babel@toc {english}{}
 \contentsline {chapter}{\numberline {1}Introduction}{7}
 \contentsline {section}{\numberline {1.1}Pairwise Comparisons method}{7}
 \contentsline {section}{\numberline {1.2}The aim of the work}{8}
-\contentsline {section}{\numberline {1.3}Contents of the work}{8}
+\contentsline {section}{\numberline {1.3}Content of the work}{8}
 \contentsline {chapter}{\numberline {2}Pairwise Comparisons method}{9}
 \contentsline {section}{\numberline {2.1}PC matrix}{9}
 \contentsline {section}{\numberline {2.2}Weight vector}{9}
 \contentsline {section}{\numberline {2.3}Inconsistency}{10}
 \contentsline {chapter}{\numberline {3}Inconsistency indexes}{11}
 \contentsline {section}{\numberline {3.1}Inconsistency indexes for complete matrices}{11}
-\contentsline {subsection}{\numberline {3.1.1}Saaty index}{11}
-\contentsline {subsection}{\numberline {3.1.2}Geometric consistency index}{11}
-\contentsline {subsection}{\numberline {3.1.3}Koczkodaj index}{12}
-\contentsline {subsection}{\numberline {3.1.4}Kazibudzki indexes}{12}
-\contentsline {subsection}{\numberline {3.1.5}Index of determinants}{13}
-\contentsline {subsection}{\numberline {3.1.6}Ku\IeC {\l }akowski and Szybowski indexes}{13}
-\contentsline {subsection}{\numberline {3.1.7}Harmonic consistency index}{14}
-\contentsline {subsection}{\numberline {3.1.8}Golden and Wang index}{14}
-\contentsline {subsection}{\numberline {3.1.9}Salo and Hamalainen index}{15}
-\contentsline {subsection}{\numberline {3.1.10}Cavallo and D\IeC {\textquoteright }Apuzzo index}{15}
-\contentsline {subsection}{\numberline {3.1.11}Relative error}{15}
+\contentsline {subsection}{\numberline {3.1.1}Saaty index ($CI$)}{11}
+\contentsline {subsection}{\numberline {3.1.2}Geometric consistency index ($GCI$)}{11}
+\contentsline {subsection}{\numberline {3.1.3}Koczkodaj index ($K$)}{12}
+\contentsline {subsection}{\numberline {3.1.4}Kazibudzki indexes ($MLTI, MLTI^{*}, CMLTI*$)}{12}
+\contentsline {subsection}{\numberline {3.1.5}Index of determinants ($PL$)}{13}
+\contentsline {subsection}{\numberline {3.1.6}Ku\IeC {\l }akowski and Szybowski indexes ($I_1, I_2, I_{\alpha }, I_{\alpha ,\beta }$ ) }{13}
+\contentsline {subsection}{\numberline {3.1.7}Harmonic consistency index ($HCI$)}{14}
+\contentsline {subsection}{\numberline {3.1.8}Golden and Wang index ($GW$)}{14}
+\contentsline {subsection}{\numberline {3.1.9}Salo and Hamalainen index ($CM$)}{15}
+\contentsline {subsection}{\numberline {3.1.10}Cavallo and D\IeC {\textquoteright }Apuzzo index ($I_{CD}$)}{15}
+\contentsline {subsection}{\numberline {3.1.11}Relative error ($RE$)}{15}
 \contentsline {section}{\numberline {3.2}Inconsistency indexes for incomplete matrices}{16}
-\contentsline {chapter}{\numberline {4}Studies of inconsistency indexes for incomplete matrices}{19}
+\contentsline {chapter}{\numberline {4}Studies of the inconsistency indexes for incomplete matrices}{19}
 \contentsline {section}{\numberline {4.1}Algorithm}{19}
-\contentsline {subsection}{\numberline {4.1.1}Steps of the algorithm}{19}
+\contentsline {subsection}{\numberline {4.1.1}Procedure steps:}{19}
 \contentsline {subsection}{\numberline {4.1.2}Details of the algorithm}{20}
 \contentsline {section}{\numberline {4.2}Implementation}{20}
 \contentsline {subsection}{\numberline {4.2.1}Development environment}{20}
-\contentsline {subsection}{\numberline {4.2.2}Implementation of tests of the inconsistency indexes}{20}
+\contentsline {subsection}{\numberline {4.2.2}Implementation of the tests of the inconsistency indexes}{20}
 \contentsline {subsubsection}{\numberline {4.2.2.1}Implementation of the inconsistency indexes}{21}
 \contentsline {subsubsection}{\numberline {4.2.2.2}Implementation of tests}{21}
 \contentsline {subsection}{\numberline {4.2.3}Documentation}{22}

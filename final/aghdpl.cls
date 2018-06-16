@@ -65,7 +65,7 @@
 \begin{tabular}{p{45mm}l}
 Author: & {\itshape \@author}\\[-1mm]
 % Kierunek studi\'{o}w: & {\itshape \@degreeprogramme}\\[-1mm]
-Fielf od study: & {\itshape \@degreeprogramme}\\[-1mm]
+Field of study: & {\itshape \@degreeprogramme}\\[-1mm]
 Thesis supervisor: & {\itshape \@supervisor}\\
 \end{tabular}
 }

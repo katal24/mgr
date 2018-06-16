@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  14 JUN 2018 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  16 JUN 2018 15:44
 entering extended mode
 **/home/dawid/Pulpit/magisterka/final/praca.tex
 (/home/dawid/Pulpit/magisterka/final/praca.tex
@@ -603,24 +603,8 @@ File: babel.def 2018/05/02 3.20 Babel common definitions
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
-)
-(/home/dawid/.miktex/texmfs/install/tex/latex/babel-polish/polish.ldf
-Language: polish 2005/03/31 v1.2l Polish support from the babel system
-
-
-Package babel Warning: No hyphenation patterns were preloaded for
-(babel)                the language `Polish' into the format.
-(babel)                Please, configure your TeX system to add them and
-(babel)                rebuild the format. Now I will use the patterns
-(babel)                preloaded for \language=0 instead on input line 52.
-
-\l@polish = a dialect from \language0
-Package babel Info: Making " an active character on input line 83.
-\pl@left=\dimen174
-\pl@down=\dimen175
-\pl@right=\dimen176
-\pl@temp=\dimen177
-)) (/home/dawid/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
 \inpenc@prehook=\toks21
 \inpenc@posthook=\toks22
@@ -632,8 +616,8 @@ Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count273
 \calc@Bcount=\count274
-\calc@Adimen=\dimen178
-\calc@Bdimen=\dimen179
+\calc@Adimen=\dimen174
+\calc@Bdimen=\dimen175
 \calc@Askip=\skip103
 \calc@Bskip=\skip104
 LaTeX Info: Redefining \setlength on input line 80.
@@ -651,7 +635,7 @@ Package: amsmath 2017/09/02 v2.17a AMS math features
 For additional information on amsmath, use the `?' option.
 (/home/dawid/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen180
+\pmbraise@=\dimen176
 )
 (/home/dawid/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
@@ -668,7 +652,7 @@ LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
 \Mathstrutbox@=\box52
 \strutbox@=\box53
-\big@size=\dimen181
+\big@size=\dimen177
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \macc@depth=\count281
@@ -681,12 +665,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \column@=\count286
 \maxfields@=\count287
 \andhelp@=\toks24
-\eqnshift@=\dimen182
-\alignsep@=\dimen183
-\tagshift@=\dimen184
-\tagwidth@=\dimen185
-\totwidth@=\dimen186
-\lineht@=\dimen187
+\eqnshift@=\dimen178
+\alignsep@=\dimen179
+\tagshift@=\dimen180
+\tagwidth@=\dimen181
+\totwidth@=\dimen182
+\lineht@=\dimen183
 \@envbody=\toks25
 \multlinegap=\skip107
 \multlinetaggap=\skip108
@@ -699,14 +683,14 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count288
-\l_MT_multwidth_dim=\dimen188
+\l_MT_multwidth_dim=\dimen184
 \origjot=\skip109
-\l_MT_shortvdotswithinadjustabove_dim=\dimen189
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen190
-\l_MT_above_intertext_sep=\dimen191
-\l_MT_below_intertext_sep=\dimen192
-\l_MT_above_shortintertext_sep=\dimen193
-\l_MT_below_shortintertext_sep=\dimen194
+\l_MT_shortvdotswithinadjustabove_dim=\dimen185
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen186
+\l_MT_above_intertext_sep=\dimen187
+\l_MT_below_intertext_sep=\dimen188
+\l_MT_above_shortintertext_sep=\dimen189
+\l_MT_below_shortintertext_sep=\dimen190
 )
 (/home/dawid/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
@@ -742,9 +726,9 @@ Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
 File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 )
 \pIIe@GRAPH=\toks33
-\@arclen=\dimen195
-\@arcrad=\dimen196
-\@tempdimd=\dimen197
+\@arclen=\dimen191
+\@arcrad=\dimen192
+\@tempdimd=\dimen193
 )
 \c@treecount=\count289
 \c@branchcount=\count290
@@ -857,8 +841,8 @@ File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.te
 x
 \pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen198
-\pgfutil@tempdimb=\dimen199
+\pgfutil@tempdima=\dimen194
+\pgfutil@tempdimb=\dimen195
 
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
@@ -883,14 +867,14 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 ode.tex
 \pgfkeys@tmptoks=\toks39
 ))
-\pgf@x=\dimen256
-\pgf@y=\dimen257
-\pgf@xa=\dimen258
-\pgf@ya=\dimen259
-\pgf@xb=\dimen260
-\pgf@yb=\dimen261
-\pgf@xc=\dimen262
-\pgf@yc=\dimen263
+\pgf@x=\dimen196
+\pgf@y=\dimen197
+\pgf@xa=\dimen198
+\pgf@ya=\dimen199
+\pgf@xb=\dimen256
+\pgf@yb=\dimen257
+\pgf@xc=\dimen258
+\pgf@yc=\dimen259
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count294
@@ -947,7 +931,7 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen264
+\pgfmath@dimen=\dimen260
 \pgfmath@count=\count300
 \pgfmath@box=\box78
 \pgfmath@toks=\toks43
@@ -978,32 +962,32 @@ erarithmetics.code.tex)))
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen265
-\pgf@picmaxx=\dimen266
-\pgf@picminy=\dimen267
-\pgf@picmaxy=\dimen268
-\pgf@pathminx=\dimen269
-\pgf@pathmaxx=\dimen270
-\pgf@pathminy=\dimen271
-\pgf@pathmaxy=\dimen272
-\pgf@xx=\dimen273
-\pgf@xy=\dimen274
-\pgf@yx=\dimen275
-\pgf@yy=\dimen276
-\pgf@zx=\dimen277
-\pgf@zy=\dimen278
+\pgf@picminx=\dimen261
+\pgf@picmaxx=\dimen262
+\pgf@picminy=\dimen263
+\pgf@picmaxy=\dimen264
+\pgf@pathminx=\dimen265
+\pgf@pathmaxx=\dimen266
+\pgf@pathminy=\dimen267
+\pgf@pathmaxy=\dimen268
+\pgf@xx=\dimen269
+\pgf@xy=\dimen270
+\pgf@yx=\dimen271
+\pgf@yy=\dimen272
+\pgf@zx=\dimen273
+\pgf@zy=\dimen274
 )
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen279
-\pgf@path@lasty=\dimen280
+\pgf@path@lastx=\dimen275
+\pgf@path@lasty=\dimen276
 )
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen281
-\pgf@shorten@start@additional=\dimen282
+\pgf@shorten@end@additional=\dimen277
+\pgf@shorten@start@additional=\dimen278
 )
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
@@ -1016,14 +1000,14 @@ File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen283
+\pgflinewidth=\dimen279
 )
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen284
-\pgf@pt@y=\dimen285
-\pgf@pt@temp=\dimen286
+\pgf@pt@x=\dimen280
+\pgf@pt@y=\dimen281
+\pgf@pt@temp=\dimen282
 )
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -1040,12 +1024,12 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen287
+\pgfarrowsep=\dimen283
 )
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen288
+\pgf@max=\dimen284
 \pgf@sys@shading@range@num=\count303
 )
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.cod
@@ -1081,8 +1065,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/home/dawid/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen289
-\pgf@nodesepend=\dimen290
+\pgf@nodesepstart=\dimen285
+\pgf@nodesepend=\dimen286
 )
 (/home/dawid/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -1097,8 +1081,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen291
-\pgffor@skip=\dimen292
+\pgffor@iter=\dimen287
+\pgffor@skip=\dimen288
 \pgffor@stack=\toks46
 \pgffor@toks=\toks47
 ))
@@ -1110,14 +1094,14 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count304
-\pgfplotmarksize=\dimen293
+\pgfplotmarksize=\dimen289
 )
-\tikz@lastx=\dimen294
-\tikz@lasty=\dimen295
-\tikz@lastxsaved=\dimen296
-\tikz@lastysaved=\dimen297
-\tikzleveldistance=\dimen298
-\tikzsiblingdistance=\dimen299
+\tikz@lastx=\dimen290
+\tikz@lasty=\dimen291
+\tikz@lastxsaved=\dimen292
+\tikz@lastysaved=\dimen293
+\tikzleveldistance=\dimen294
+\tikzsiblingdistance=\dimen295
 \tikz@figbox=\box84
 \tikz@figbox@bg=\box85
 \tikz@tempbox=\box86
@@ -1144,33 +1128,33 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 (/home/dawid/.miktex/texmfs/install/tex/latex/tikz-qtree/pgftree.sty
 (/home/dawid/.miktex/texmfs/install/tex/latex/tikz-qtree/pgfsubpic.sty
 (/home/dawid/.miktex/texmfs/install/tex/generic/tikz-qtree/pgfsubpic.tex
-\pgf@subpicminx=\dimen300
-\pgf@subpicminy=\dimen301
-\pgf@subpicmaxx=\dimen302
-\pgf@subpicmaxy=\dimen303
+\pgf@subpicminx=\dimen296
+\pgf@subpicminy=\dimen297
+\pgf@subpicmaxx=\dimen298
+\pgf@subpicmaxy=\dimen299
 ))
 (/home/dawid/.miktex/texmfs/install/tex/generic/tikz-qtree/pgftree.tex
-\levelsep=\dimen304
-\subtreesep=\dimen305
-\smuggle@levelsep=\dimen306
-\smuggle@subtreesep=\dimen307
-\this@levelsep=\dimen308
-\this@subtreesep=\dimen309
-\pgftree@childx=\dimen310
-\pgftree@savechildx=\dimen311
-\pgftree@childy=\dimen312
-\pgftree@savechildy=\dimen313
+\levelsep=\dimen300
+\subtreesep=\dimen301
+\smuggle@levelsep=\dimen302
+\smuggle@subtreesep=\dimen303
+\this@levelsep=\dimen304
+\this@subtreesep=\dimen305
+\pgftree@childx=\dimen306
+\pgftree@savechildx=\dimen307
+\pgftree@childy=\dimen308
+\pgftree@savechildy=\dimen309
 \pgftree@childi=\count313
 \pgftree@savechildi=\count314
 \pgftree@level=\count315
-\pgftree@depth=\dimen314
+\pgftree@depth=\dimen310
 \pgf@subpic@hbox@children=\box88
-\pgf@subpic@minx@children=\dimen315
-\pgf@subpic@miny@children=\dimen316
-\pgf@subpic@maxx@children=\dimen317
-\pgf@subpic@maxy@children=\dimen318
-\pgftree@lastchildx=\dimen319
-\pgftree@lastchildy=\dimen320
+\pgf@subpic@minx@children=\dimen311
+\pgf@subpic@miny@children=\dimen312
+\pgf@subpic@maxx@children=\dimen313
+\pgf@subpic@maxy@children=\dimen314
+\pgftree@lastchildx=\dimen315
+\pgftree@lastchildy=\dimen316
 ))
 (/home/dawid/.miktex/texmfs/install/tex/generic/tikz-qtree/tikz-qtree.tex
 \@result=\toks48
@@ -1460,14 +1444,14 @@ Package: courier 2005/04/12 PSNFSS-v9.2a (WaS)
 \lst@gtempboxa=\box89
 \lst@token=\toks52
 \lst@length=\count446
-\lst@currlwidth=\dimen321
+\lst@currlwidth=\dimen317
 \lst@column=\count447
 \lst@pos=\count448
-\lst@lostspace=\dimen322
-\lst@width=\dimen323
+\lst@lostspace=\dimen318
+\lst@width=\dimen319
 \lst@newlines=\count449
 \lst@lineno=\count450
-\lst@maxwidth=\dimen324
+\lst@maxwidth=\dimen320
 
 (/home/dawid/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
@@ -1491,11 +1475,11 @@ File: lstlang3.sty 2015/06/04 1.6 listings language file
 )
 (/home/dawid/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
-\TX@col@width=\dimen325
-\TX@old@table=\dimen326
-\TX@old@col=\dimen327
-\TX@target=\dimen328
-\TX@delta=\dimen329
+\TX@col@width=\dimen321
+\TX@old@table=\dimen322
+\TX@old@col=\dimen323
+\TX@target=\dimen324
+\TX@delta=\dimen325
 \TX@cols=\count453
 \TX@ftn=\toks53
 )
@@ -1504,31 +1488,31 @@ Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip265
 \multirow@cntb=\count454
 \multirow@dima=\skip266
-\bigstrutjot=\dimen330
+\bigstrutjot=\dimen326
 )
 (/home/dawid/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen331
-\lightrulewidth=\dimen332
-\cmidrulewidth=\dimen333
-\belowrulesep=\dimen334
-\belowbottomsep=\dimen335
-\aboverulesep=\dimen336
-\abovetopsep=\dimen337
-\cmidrulesep=\dimen338
-\cmidrulekern=\dimen339
-\defaultaddspace=\dimen340
+\heavyrulewidth=\dimen327
+\lightrulewidth=\dimen328
+\cmidrulewidth=\dimen329
+\belowrulesep=\dimen330
+\belowbottomsep=\dimen331
+\aboverulesep=\dimen332
+\abovetopsep=\dimen333
+\cmidrulesep=\dimen334
+\cmidrulekern=\dimen335
+\defaultaddspace=\dimen336
 \@cmidla=\count455
 \@cmidlb=\count456
-\@aboverulesep=\dimen341
-\@belowrulesep=\dimen342
+\@aboverulesep=\dimen337
+\@belowrulesep=\dimen338
 \@thisruleclass=\count457
 \@lastruleclass=\count458
-\@thisrulewidth=\dimen343
+\@thisrulewidth=\dimen339
 )
 (/home/dawid/.miktex/texmfs/install/tex/latex/makecell/makecell.sty
 Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
-\rotheadsize=\dimen344
+\rotheadsize=\dimen340
 \c@nlinenum=\count459
 \TeXr@lab=\toks54
 )
@@ -1536,21 +1520,15 @@ Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
 Package: threeparttable 2003/06/13  v 3.0
 \@tempboxb=\box91
 )
-Package biblatex Info: Trying to load language 'polish'...
-Package biblatex Info: ... file 'polish.lbx' found.
- (/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/lbx/polish.lbx
-File: polish.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
-)
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
-(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+ (/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
-Package csquotes Info: Redefining alias 'default' -> 'polish'.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
 
 
 LaTeX Warning: Unused global option(s):
@@ -1578,13 +1556,13 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 (/home/dawid/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count460
-\scratchdimen=\dimen345
+\scratchdimen=\dimen341
 \scratchbox=\box92
 \nofMPsegments=\count461
 \nofMParguments=\count462
 \everyMPshowfont=\toks55
 \MPscratchCnt=\count463
-\MPscratchDim=\dimen346
+\MPscratchDim=\dimen342
 \MPnumerator=\count464
 \makeMPintoPDFobject=\count465
 \everyMPtoPDFconversion=\toks56
@@ -1819,26 +1797,29 @@ No file praca.toc.
 
 
 ]
-Rozdzia\l  1.
+Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 
-LaTeX Warning: Citation 'Colomer2013' on page 7 undefined on input line 7.
+LaTeX Warning: Citation 'Colomer2013' on page 7 undefined on input line 6.
 
 
-LaTeX Warning: Citation 'Kulakowski2016' on page 7 undefined on input line 7.
+LaTeX Warning: Citation 'Kulakowski2016' on page 7 undefined on input line 6.
 
 
-LaTeX Warning: Citation 'Arrow' on page 7 undefined on input line 7.
+LaTeX Warning: Citation 'Arrow' on page 7 undefined on input line 6.
 
 
-LaTeX Warning: Citation 'Sen' on page 7 undefined on input line 7.
+LaTeX Warning: Citation 'Sen' on page 7 undefined on input line 6.
 
 
-LaTeX Warning: Citation 'Thurstone1994' on page 7 undefined on input line 7.
+LaTeX Warning: Citation 'Fechner1966' on page 7 undefined on input line 6.
 
 
-LaTeX Warning: Citation 'Saaty2008' on page 7 undefined on input line 7.
+LaTeX Warning: Citation 'Thurstone1994' on page 7 undefined on input line 6.
+
+
+LaTeX Warning: Citation 'Saaty2008' on page 7 undefined on input line 6.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1848,14 +1829,29 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 \openout2 = `rozdzial2.aux'.
 
  (rozdzial2.tex
-Rozdzia\l  2.
+Chapter 2.
+
+LaTeX Warning: Reference `fig:fig1' on page 9 undefined on input line 28.
+
 <fig1.png, id=38, 175.857pt x 39.5076pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 31.
+Package pdftex.def Info: fig1.png  used on input line 32.
 (pdftex.def)             Requested size: 439.64142pt x 98.76872pt.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 32.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 33.
+
+LaTeX Warning: Citation 'Kulakowski2014' on page 9 undefined on input line 33.
+
+
+LaTeX Warning: Citation 'Kulakowski2014' on page 9 undefined on input line 33.
+
+
+Underfull \hbox (badness 5133) in paragraph at lines 33--33
+[]\T1/ptm/b/n/10 Fig. 2.1. |\T1/ptm/m/n/10 Diagram of calculating \T1/ptm/m/it/
+10 the weight vector \T1/ptm/m/n/10 based on the article
+ []
+
 
 LaTeX Warning: Citation 'SAATY1998' on page 9 undefined on input line 36.
 
@@ -1866,12 +1862,20 @@ Underfull \vbox (badness 1092) has occurred while \output is active []
 
 
 
-])
-[10 <./fig1.png>]
+]
+
+LaTeX Warning: Reference `eq:consistent' on page 10 undefined on input line 52.
+
+
+
+LaTeX Warning: Reference `eq:consistent' on page 10 undefined on input line 52.
+
+
+) [10 <./fig1.png>]
 \openout2 = `rozdzial3.aux'.
 
  (rozdzial3.tex
-Rozdzia\l  3.
+Chapter 3.
 
 LaTeX Warning: Citation 'Brunelli2013' on page 11 undefined on input line 5.
 
@@ -1881,20 +1885,25 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 LaTeX Warning: Citation 'SAATY1977' on page 11 undefined on input line 10.
 
 
+LaTeX Warning: Reference `eq:consistent2' on page 11 undefined on input line 21
+.
+
+
 LaTeX Warning: Citation 'CRAWFORD1985' on page 11 undefined on input line 21.
 
 
 LaTeX Warning: Citation 'AGUARON2003' on page 11 undefined on input line 21.
 
 
-Underfull \hbox (badness 2951) in paragraph at lines 21--22
-[]\T1/ptm/m/n/10.95 This index on the assumption ([eq:consistent2]) was propose
-d by \T1/ptm/m/it/10.95 Craford \T1/ptm/m/n/10.95 and \T1/ptm/m/it/10.95 Willia
-ms
- []
+LaTeX Warning: Reference `eq:consistent' on page 11 undefined on input line 21.
 
 
-LaTeX Warning: Citation 'KOCZKODAJ1993' on page 11 undefined on input line 33.
+
+LaTeX Warning: Citation 'KOCZKODAJ1993' on page 11 undefined on input line 34.
+
+
+LaTeX Warning: Reference `eq:consistent' on page 11 undefined on input line 34.
+
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1905,114 +1914,139 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ]
 
-LaTeX Warning: Citation 'DUSZAK1994' on page 12 undefined on input line 38.
+LaTeX Warning: Citation 'DUSZAK1994' on page 12 undefined on input line 40.
 
 
-LaTeX Warning: Citation 'DUSZAK1994' on page 12 undefined on input line 42.
+LaTeX Warning: Citation 'DUSZAK1994' on page 12 undefined on input line 44.
 
 
-LaTeX Warning: Citation 'Kazibudzki2016' on page 12 undefined on input line 51.
-
-
-
-LaTeX Warning: Citation 'Kazibudzki2017' on page 12 undefined on input line 67.
+LaTeX Warning: Citation 'Kazibudzki2016' on page 12 undefined on input line 53.
 
 
 
-LaTeX Warning: Citation 'PELAEZ2003' on page 12 undefined on input line 75.
+LaTeX Warning: Citation 'Kazibudzki2017' on page 12 undefined on input line 70.
+
+
+
+LaTeX Warning: Reference `eq:lti*' on page 12 undefined on input line 70.
+
+
+LaTeX Warning: Citation 'PELAEZ2003' on page 12 undefined on input line 78.
 
 [12]
 
-LaTeX Warning: Citation 'KULAKOWSKI20141' on page 13 undefined on input line 97
-.
+LaTeX Warning: Citation 'KULAKOWSKI20141' on page 13 undefined on input line 10
+0.
+
+
+LaTeX Warning: Reference `eq:K' on page 13 undefined on input line 118.
+
+
+LaTeX Warning: Reference `eq:I1' on page 13 undefined on input line 118.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 
-LaTeX Warning: Citation 'STEIN2007' on page 14 undefined on input line 126.
+LaTeX Warning: Reference `eq:I2' on page 14 undefined on input line 124.
 
 
-LaTeX Warning: Citation 'Golden1989' on page 14 undefined on input line 142.
+LaTeX Warning: Citation 'STEIN2007' on page 14 undefined on input line 132.
 
 
-LaTeX Warning: Citation 'SALO1995' on page 14 undefined on input line 150.
+LaTeX Warning: Citation 'Golden1989' on page 14 undefined on input line 148.
+
+
+LaTeX Warning: Citation 'SALO1995' on page 14 undefined on input line 156.
+
+
+LaTeX Warning: Reference `eq:consistent' on page 14 undefined on input line 156
+.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14]
 
-LaTeX Warning: Citation 'Brunelli2015' on page 15 undefined on input line 158.
+LaTeX Warning: Citation 'Brunelli2015' on page 15 undefined on input line 164.
 
 
-LaTeX Warning: Citation 'Cavallo2009' on page 15 undefined on input line 166.
+LaTeX Warning: Citation 'Cavallo2009' on page 15 undefined on input line 172.
 
 
-LaTeX Warning: Citation 'Cavallo2010' on page 15 undefined on input line 166.
+LaTeX Warning: Citation 'Cavallo2010' on page 15 undefined on input line 172.
 
 
-LaTeX Warning: Citation 'Brunelli2013' on page 15 undefined on input line 166.
+LaTeX Warning: Citation 'Brunelli2013' on page 15 undefined on input line 172.
 
 
-LaTeX Warning: Citation 'Jonathan1998' on page 15 undefined on input line 174.
+LaTeX Warning: Citation 'Jonathan1998' on page 15 undefined on input line 181.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15]
-Overfull \hbox (31.89679pt too wide) in paragraph at lines 191--191
+Overfull \hbox (31.89679pt too wide) in paragraph at lines 198--198
  [][] \T1/ptm/b/n/10.95 Saaty index
  []
 
 
-LaTeX Warning: Citation 'HARKER1987' on page 16 undefined on input line 192.
+LaTeX Warning: Citation 'HARKER1987' on page 16 undefined on input line 199.
 
 
-Overfull \hbox (109.99092pt too wide) in paragraph at lines 194--194
+Overfull \hbox (109.99092pt too wide) in paragraph at lines 201--201
  [][] \T1/ptm/b/n/10.95 Geometric consistency index
  []
 
 
-Underfull \hbox (badness 1297) in paragraph at lines 194--196
+LaTeX Warning: Reference `eq:GCI' on page 16 undefined on input line 202.
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 201--203
 \T1/ptm/m/n/10.95 During calculating the weight vector by the geometric mean, e
 mpty values are omitted.
  []
 
 
-Overfull \hbox (261.8658pt too wide) in paragraph at lines 197--197
+Overfull \hbox (261.8658pt too wide) in paragraph at lines 204--204
  [][] \T1/ptm/b/n/10.95 Koczkodaj index, Kazibudzki indexes, Index of determina
 nts:
  []
 
 
-Overfull \hbox (141.39545pt too wide) in paragraph at lines 200--200
+Overfull \hbox (141.39545pt too wide) in paragraph at lines 207--207
  [][] \T1/ptm/b/n/10.95 Kuªakowski and Szybowski indexes
  []
 
 
-Overfull \hbox (111.83058pt too wide) in paragraph at lines 203--203
+LaTeX Warning: Reference `eq:nPo3' on page 16 undefined on input line 208.
+
+
+Overfull \hbox (111.83058pt too wide) in paragraph at lines 210--210
  [][] \T1/ptm/b/n/10.95 Harmonic consistency index:
  []
 
 
-Overfull \hbox (92.54831pt too wide) in paragraph at lines 206--206
+Overfull \hbox (92.54831pt too wide) in paragraph at lines 213--213
  [][] \T1/ptm/b/n/10.95 Golden and Wang index:
  []
 
 
-Overfull \hbox (80.83179pt too wide) in paragraph at lines 209--209
+Overfull \hbox (80.83179pt too wide) in paragraph at lines 216--216
  [][] \T1/ptm/b/n/10.95 Salo and Hamalainen:
  []
 
 
-Overfull \hbox (86.85437pt too wide) in paragraph at lines 212--212
+Overfull \hbox (86.85437pt too wide) in paragraph at lines 219--219
  [][] \T1/ptm/b/n/10.95 Cavallo and D'Appuzo:
  []
 
+
+LaTeX Warning: Reference `eq:CavDAp' on page 16 undefined on input line 220.
+
 [16]
-Overfull \hbox (47.4783pt too wide) in paragraph at lines 215--215
+Overfull \hbox (47.4783pt too wide) in paragraph at lines 222--222
  [][] \T1/ptm/b/n/10.95 Relative index:
  []
 
@@ -2024,19 +2058,14 @@ Overfull \hbox (47.4783pt too wide) in paragraph at lines 215--215
 
 
 ]
-Rozdzia\l  4.
+Chapter 4.
 
 LaTeX Warning: Citation 'Kazibudzki2017' on page 19 undefined on input line 4.
 
 [19]
+Underfull \hbox (badness 10000) in paragraph at lines 35--42
 
-rozdzial4.tex:40: LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+ []
 
 
 LaTeX Warning: Citation 'projectR' on page 20 undefined on input line 52.
@@ -2051,13 +2080,10 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Citation 'studioR' on page 20 undefined on input line 52.
 
-rozdzial4.tex:52: Undefined control sequence
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 52.
+(/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
 rozdzial4.tex:52: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2075,7 +2101,7 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Citation 'installR' on page 20 undefined on input line 52.
 
-<images/rstudio.png, id=85, 1122.1925pt x 711.65875pt>
+<images/rstudio.png, id=87, 1122.1925pt x 711.65875pt>
 File: images/rstudio.png Graphic file (type png)
 <use images/rstudio.png>
 Package pdftex.def Info: images/rstudio.png  used on input line 57.
@@ -2091,7 +2117,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [20]
-<images/kod1.png, id=89, 515.9275pt x 222.8325pt>
+<images/kod1.png, id=92, 515.9275pt x 222.8325pt>
 File: images/kod1.png Graphic file (type png)
 <use images/kod1.png>
 Package pdftex.def Info: images/kod1.png  used on input line 73.
@@ -2100,7 +2126,7 @@ Package pdftex.def Info: images/kod1.png  used on input line 73.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod2.png, id=90, 517.935pt x 159.59625pt>
+<images/kod2.png, id=93, 517.935pt x 159.59625pt>
 File: images/kod2.png Graphic file (type png)
 <use images/kod2.png>
 Package pdftex.def Info: images/kod2.png  used on input line 79.
@@ -2108,7 +2134,7 @@ Package pdftex.def Info: images/kod2.png  used on input line 79.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod3.png, id=91, 516.93124pt x 154.5775pt>
+<images/kod3.png, id=94, 516.93124pt x 154.5775pt>
 File: images/kod3.png Graphic file (type png)
 <use images/kod3.png>
 Package pdftex.def Info: images/kod3.png  used on input line 85.
@@ -2116,7 +2142,7 @@ Package pdftex.def Info: images/kod3.png  used on input line 85.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod4.png, id=92, 517.935pt x 519.9425pt>
+<images/kod4.png, id=95, 517.935pt x 519.9425pt>
 File: images/kod4.png Graphic file (type png)
 <use images/kod4.png>
 Package pdftex.def Info: images/kod4.png  used on input line 91.
@@ -2124,15 +2150,21 @@ Package pdftex.def Info: images/kod4.png  used on input line 91.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod5.png, id=93, 612.2875pt x 205.76875pt>
+<images/kod5.png, id=96, 612.2875pt x 205.76875pt>
 File: images/kod5.png Graphic file (type png)
 <use images/kod5.png>
 Package pdftex.def Info: images/kod5.png  used on input line 98.
 (pdftex.def)             Requested size: 459.21451pt x 154.32617pt.
 
+Underfull \hbox (badness 1057) in paragraph at lines 99--99
+[]\T1/ptm/b/n/10 Fig. 4.6. |\T1/ptm/m/n/10 The implementation of method \T1/pcr
+/m/n/10 countIndexesForTriads\T1/ptm/m/n/10 , which
+ []
+
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod11.png, id=94, 467.7475pt x 123.46124pt>
+<images/kod11.png, id=97, 467.7475pt x 123.46124pt>
 File: images/kod11.png Graphic file (type png)
 <use images/kod11.png>
 Package pdftex.def Info: images/kod11.png  used on input line 108.
@@ -2140,7 +2172,7 @@ Package pdftex.def Info: images/kod11.png  used on input line 108.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod12.png, id=95, 515.9275pt x 280.04625pt>
+<images/kod12.png, id=98, 515.9275pt x 280.04625pt>
 File: images/kod12.png Graphic file (type png)
 <use images/kod12.png>
 Package pdftex.def Info: images/kod12.png  used on input line 114.
@@ -2148,7 +2180,7 @@ Package pdftex.def Info: images/kod12.png  used on input line 114.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod13.png, id=96, 624.3325pt x 382.42876pt>
+<images/kod13.png, id=99, 624.3325pt x 382.42876pt>
 File: images/kod13.png Graphic file (type png)
 <use images/kod13.png>
 Package pdftex.def Info: images/kod13.png  used on input line 120.
@@ -2160,21 +2192,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21 <./images/rstudio.png>]
-<images/kod21.png, id=100, 786.94pt x 730.73pt>
+<images/kod21.png, id=103, 786.94pt x 730.73pt>
 File: images/kod21.png Graphic file (type png)
 <use images/kod21.png>
 Package pdftex.def Info: images/kod21.png  used on input line 128.
 (pdftex.def)             Requested size: 456.42552pt x 423.8237pt.
 
-Underfull \hbox (badness 3000) in paragraph at lines 129--129
-[]\T1/ptm/b/n/10 Fig. 4.10. |\T1/ptm/m/n/10 The implementation of function \T1/
-ptm/m/it/10 exploreMatrix \T1/ptm/m/n/10 which tests given
- []
-
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod22.png, id=101, 766.865pt x 440.64626pt>
+<images/kod22.png, id=104, 766.865pt x 440.64626pt>
 File: images/kod22.png Graphic file (type png)
 <use images/kod22.png>
 Package pdftex.def Info: images/kod22.png  used on input line 136.
@@ -2182,7 +2209,7 @@ Package pdftex.def Info: images/kod22.png  used on input line 136.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod31.png, id=102, 670.505pt x 862.22125pt>
+<images/kod31.png, id=105, 670.505pt x 862.22125pt>
 File: images/kod31.png Graphic file (type png)
 <use images/kod31.png>
 Package pdftex.def Info: images/kod31.png  used on input line 146.
@@ -2190,7 +2217,7 @@ Package pdftex.def Info: images/kod31.png  used on input line 146.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod32.png, id=103, 495.8525pt x 418.56375pt>
+<images/kod32.png, id=106, 495.8525pt x 418.56375pt>
 File: images/kod32.png Graphic file (type png)
 <use images/kod32.png>
 Package pdftex.def Info: images/kod32.png  used on input line 152.
@@ -2198,7 +2225,7 @@ Package pdftex.def Info: images/kod32.png  used on input line 152.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod33.png, id=104, 525.965pt x 634.37pt>
+<images/kod33.png, id=107, 525.965pt x 634.37pt>
 File: images/kod33.png Graphic file (type png)
 <use images/kod33.png>
 Package pdftex.def Info: images/kod33.png  used on input line 158.
@@ -2218,7 +2245,7 @@ s/kod4.png>] [24 <./images/kod5.png> <./images/kod11.png> <./images/kod12.png>]
 
 
 ]
-Rozdzia\l  5.
+Chapter 5.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -2245,7 +2272,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Rozdzia\l  6.
+Chapter 6.
 ) [37]
 
 LaTeX Warning: Empty bibliography on input line 147.
@@ -2268,32 +2295,35 @@ Package logreq Info: Writing requests to 'praca.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 37248 strings out of 494894
- 717811 string characters out of 3178733
- 972576 words of memory out of 3000000
- 40262 multiletter control sequences out of 15000+200000
- 607844 words of font info for 107 fonts, out of 3000000 for 9000
+ 37158 strings out of 494894
+ 716402 string characters out of 3178733
+ 956419 words of memory out of 3000000
+ 40168 multiletter control sequences out of 15000+200000
+ 611107 words of font info for 119 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 55i,12n,65p,1991b,1950s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,65p,1947b,1919s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/dawid/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/dawid/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/dawid/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/dawid/.m
-iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/dawid/.mik
-tex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/dawid/.mikte
-x/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/dawid/.miktex/
-texmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/dawid/.miktex/tex
-mfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/dawid/.miktex/texmfs
-/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/dawid/.miktex/texmfs/
-install/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/dawid/.miktex/texmfs/in
-stall/fonts/type1/urw/helvetic/uhvb8a.pfb></home/dawid/.miktex/texmfs/install/f
-onts/type1/urw/helvetic/uhvr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/ty
-pe1/urw/helvetic/uhvro8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/ur
-w/times/utmb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/ut
-mr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb><
-/home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on praca.pdf (37 pages, 1223210 bytes).
+iktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi12.pfb></home/dawid/.mi
+ktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi6.pfb></home/dawid/.mikt
+ex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi8.pfb></home/dawid/.miktex
+/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/dawid/.miktex/t
+exmfs/install/fonts/type1/public/amsfonts/cm/cmr6.pfb></home/dawid/.miktex/texm
+fs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/dawid/.miktex/texmfs/
+install/fonts/type1/public/amsfonts/cm/cmsy10.pfb></home/dawid/.miktex/texmfs/i
+nstall/fonts/type1/public/amsfonts/cm/cmsy8.pfb></home/dawid/.miktex/texmfs/ins
+tall/fonts/type1/public/amsfonts/symbols/msbm10.pfb></home/dawid/.miktex/texmfs
+/install/fonts/type1/urw/courier/ucrr8a.pfb></home/dawid/.miktex/texmfs/install
+/fonts/type1/urw/helvetic/uhvb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/
+type1/urw/helvetic/uhvr8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/u
+rw/helvetic/uhvro8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/tim
+es/utmb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.
+pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home
+/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
+Output written on praca.pdf (37 pages, 1248850 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
+ 221 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  93 words of extra memory for PDF output out of 10000 (max. 10000000)
 

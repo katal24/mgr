@@ -1,13 +1,13 @@
-\chapter{Studies of inconsistency indexes for incomplete matrices}
+\chapter{Studies of the inconsistency indexes for incomplete matrices}
 \label{sec:studiesOfInconsistencyIndexesForIncompleteMatrices}
 
-The presented inconsistency indexes were tested utilizing the Monte Carlo method. Their goal was to select those indexes which will give reliable results for incomplete matrices. Therefore, it was decided that the measure of the indexes' quality would be the \textit{relative error} (expressed as  percentage), which took into account the value of the index for a full, inconsistent matrix and the value of the index for the same matrix after partial decomposition. To be sure that the results were fair, all indexes were tested on the same set of matrices. The different sizes of the matrices, the levels of incompleteness and the levels of inconsistency were taken into account. Then, in order to compare the indexes easily and to select the best ones, the results were averaged using the arithmetic mean. The article \cite{Kazibudzki2017} was used while building the algorithm to solve the problem.
+The presented inconsistency indexes were tested utilizing the Monte Carlo method. Their goal was to select those indexes which would give reliable results for incomplete matrices. Therefore, it was decided that the measure of the indexes' quality would be the \textit{relative error} (expressed as  percentage), which took into account the value of the index for a full, inconsistent matrix and the value of the index for the same matrix after partial decomposition. To be sure that the results were fair, all indexes were tested on the same set of matrices. The different sizes of the matrices, the levels of incompleteness and the levels of inconsistency were taken into account. Then, in order to compare the indexes easily and to select the best ones, the results were averaged using the arithmetic mean. The article \cite{Kazibudzki2017} was used while building the algorithm to solve the problem.
 
 
 \section{Algorithm}
 \subsection{Procedure steps:}
 \begin{enumerate}
-\item Randomly generate a vector $w=[w_{1},...,w_{n}]$ and a consistent \textit{PCM matrix} associated with it $PCM=\left(m_{ij}\right)$, where $m_{ij}=\frac{w_{i}}{w_{j}}$.
+\item Randomly generate a vector $w=[w_{1},...,w_{n}]$ and a consistent PC matrix associated with it $PCM=\left(m_{ij}\right)$, where $m_{ij}=\frac{w_{i}}{w_{j}}$.
 \item Disrupt the matrix by multiplying its elements (excluding the diagonal) by the value of $d$, randomly selected from the range $\left(\frac{1}{x},x\right)$.
 
 \item Replace the values $m_{ij}$, where $i<j$ by the values $m_{ji}$.
@@ -22,7 +22,7 @@ The presented inconsistency indexes were tested utilizing the Monte Carlo method
 
 \item Repeat steps 1 to 7 $X_{1}$ times.
 
-\item Calculate the average relative error for each inconsistency index for the \textit{PCM matrix}.
+\item Calculate the average relative error for each inconsistency index for the PC matrix.
 
 \item Repeat steps 1 to 9 $X_{2}$ times.
 
@@ -35,7 +35,7 @@ The presented inconsistency indexes were tested utilizing the Monte Carlo method
 The above algorithm was carried out for values $X_{1}=100$, $X_{2}=100$. Tests were started for values $d$ in range $\left(1.1,1.2,...,4\right)$ and then the results were averaged. It means that the average relative error of one index was calculated on the basis of 4000 matrices, each of which decomposed randomly 100 times. It gave together 400000 tests on how good the index was. 
 \\
 In addition, tests were carried out for various sizes of matrices.
-
+\\
 \\
 \textbf{The results are divided into two parts:}
 \begin{enumerate}
@@ -49,7 +49,7 @@ The aim of a such division is to pay attention to how the inconsistency indexes 
 \section{Implementation}
 
 \subsection{Development environment}
-Tests of indexes were developed in R language which is appropriate for numerical calculations (see \cite{projectR}). It contains dozens of functions which support operations on matrices and vectors. Integrated development environment (IDE) called \testit{RStudio} (see \cite{studioR}) was used during the implementation. This tool allows to create own packages which contain not only code but also documentation and information about licence and author. Package named \textit{indexesForIncomplete} was created. The most important part of this package is the file \textit{indexes.R} which performs calculations necessary to test the indexes. \testit{RStudio} supports programmer's work by syntax highlighting, built-in console, easy documentation searching and many others. The program is available on common operating systems. Before using \testit{RStudio} one has to install \textIt{R} programming language (see \cite{installR}).  
+Tests of indexes were developed in R language which is appropriate for numerical calculations (see \cite{projectR}). It contains sizteen of functions which support operations on matrices and vectors. Integrated development environment (IDE), named \testit{RStudio}, (see \cite{studioR}) was used during the implementation. This tool allows to create own packages which contain not only code but also documentation and information about licence and author. Using \textit{RStudio} package \texttt{indexesForIncomplete} was created. The most important part of this package is the file \texttt{indexes.R} which performs calculations necessary to test the indexes. \testit{RStudio} supports programmer's work by syntax highlighting, built-in console, easy documentation searching and many others. The program is available on common operating systems. Before using \testit{RStudio} one has to install \textit{R} programming language (see \cite{installR}).  
 
 
 
@@ -59,25 +59,25 @@ Tests of indexes were developed in R language which is appropriate for numerical
 \label{fig:rstudio}
 \end{figure}
 
-\subsection{Implementation of the tests of inconsistency indexes}
-Implementation of the tests of inconsistency indexes consists of two steps:
+\subsection{Implementation of the tests of the inconsistency indexes}
+The implementation consists of two steps:
 \begin{enumerate}
   \item Implementation of functions which calculate inconsistency indexes for a given matrix (full or incomplete).
   \item Implementation of functions which study indexes for different matrices and collect all the results of these tests. 
 \end{enumerate}
 
 \subsubsection{Implementation of the inconsistency indexes}
-Sixteen functions which calculate inconsistency indexes using methods described in chapter 3. The functions were written in such a way that allows handling both full and incomplete matrices. One has not taking into account the wrong matrices (it means nonreciprocal or inconsistent PC matrices). Each of these function has only one parameter - \textif{PC matrix}. Exceptions are the two methods implementing Kulakowski and Szybowski index which additionally takes parameters $\alpha$ and $\beta$. The result of each function is value of the inconsistency index. The functions were extended by comments which inform about the name of the index related to given function, parameters and returned value. It allows to easily read and modify the code. Several examples of the functions are presented below.
+Sixteen functions which calculate the inconsistency indexes using methods are described in chapter 3. The functions were written in such a way that allows handling both full and incomplete matrices. The wrong matrices (it means nonreciprocal or inconsistent PC matrices) were not taken into account. Each of these function has only one parameter - \textif{PC matrix}. Exceptions are the two methods implementing Kulakowski and Szybowski index which additionally takes parameters $\alpha$ and $\beta$. The result of each function is a value of the inconsistency index. The functions were extended by comments which inform about the name of the index related to given function, parameters and returned value. It allows to read and modify the code easily. Several examples of the functions are presented below.
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod1.png}}
-\caption{The implementation of \textit{Saaty} index}
+\caption{The implementation of Saaty} index
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod2.png}}
-\caption{The implementation of \textit{Koczkodaj} index}
+\caption{The implementation of Koczkodaj} index
 \label{fig:rstudio}
 \end{figure}
 
@@ -89,14 +89,14 @@ Sixteen functions which calculate inconsistency indexes using methods described 
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod4.png}}
-\caption{The implementation of \textit{Salo and Hamalainen} index}
+\caption{The implementation of Salo and Hamalainen index}
 \label{fig:rstudio}
 \end{figure}
-It is worth drawing attention to function which is called within the functions intended for indexes based on triads. This function generates triads from a matrix and next returns inconsistency for each o them. However, the way to calculate inconsistency for one triad depends on first function parameter. It informs about function name that calculates inconsistency of a triad specified method.
+It is worth drawing attention to a function which is called within the functions intended for indexes based on triads. This function generates triads from a matrix and next returns inconsistency for each o them. However, the way to calculate inconsistency for one triad depends on first function parameter. It informs about function name that calculates inconsistency of a triad specified method.
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod5.png}}
-\caption{The implementation of method \textit{countIndexesForTriads}, which calculates inconsistency for each triad of a specified matrix}
+\caption{The implementation of method \texttt{countIndexesForTriads}, which calculates inconsistency for each triad of a specified matrix}
 \label{fig:rstudio}
 \end{figure}
 
@@ -106,27 +106,27 @@ In the second step, functions calculating the quality of the indexes for incompl
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod11.png}}
-\caption{The implementation of function \textit{generatePCMatrix} which generates the PC matrix depending on matrix size}
+\caption{The implementation of function \texttt{generatePCMatrix} which generates the PC matrix depending on matrix size}
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.75]{images/kod12.png}}
-\caption{The implementation of function \textit{disturbPCMatrix} which disturbs the PC matrix regarding inconsistency depending on given level of inconsistency}
+\caption{The implementation of function \texttt{disturbPCMatrix} which disturbs the PC matrix regarding inconsistency depending on given level of inconsistency}
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.73]{images/kod13.png}}
-\caption{The implementation of function \textit{breakPCMatrix} which breaks up the PC matrix regarding incompleteness depending on given degree of incompleteness}
+\caption{The implementation of function \texttt{breakPCMatrix} which breaks up the PC matrix regarding incompleteness depending on given degree of incompleteness}
 \label{fig:rstudio}
 \end{figure}
 
-The last part of the functions relates to testing how big relative error occurs for inconsistency indexes after deleting some of the values. To begin with functions, which test one index. They consider matrix size, the level of inconsistency, the degree of incompleteness and the number of attempts which are performed for a given matrix.
+The last part of the functions relates to testing how big relative error occurs for inconsistency indexes after deleting some of the values. To begin with functions which test one index. They consider matrix size, the level of inconsistency, the degree of incompleteness and the number of attempts which are performed for a given matrix.
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod21.png}}
-\caption{The implementation of function \textit{exploreMatrix} which tests given inconsistency index}
+\caption{The implementation of function \texttt{exploreMatrix} which tests given inconsistency index}
 \label{fig:rstudio}
 \end{figure}
 
@@ -134,13 +134,13 @@ Then functions, which perform tests for each index, were implemented based on th
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod22.png}}
-\caption{The implementation of function \textit{test} which tests all indexes regarding given matrix size and the degree of incompleteness}
+\caption{The implementation of function \texttt{test} which tests all indexes regarding given matrix size and the degree of incompleteness}
 \label{fig:rstudio}
 \end{figure}
 
 
 \subsection{Documentation}
-Comments in code were used to generate the documentation. The package \textit{roxygen2} were made for this purpose. \\ Exemplary portions of the documentation are presented below.
+Comments in code were used to generate the documentation. The package \texttt{roxygen2} were made for this purpose. \\ Exemplary portions of the documentation are presented below.
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod31.png}}
@@ -150,12 +150,12 @@ Comments in code were used to generate the documentation. The package \textit{ro
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod32.png}}
-\caption{The portion of the documentation: function \textit{saaty}}
+\caption{The portion of the documentation: function \texttt{saaty}}
 \label{fig:rstudio}
 \end{figure}
 
 \begin{figure}[h]
 \centerline{\includegraphics[scale=0.58]{images/kod33.png}}
-\caption{The portion of the documentation: function \textit{exploreMatrix}}
+\caption{The portion of the documentation: function \texttt{exploreMatrix}}
 \label{fig:rstudio}
 \end{figure}
