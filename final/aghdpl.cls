@@ -58,15 +58,14 @@
 
 
 \def\thesisheaders{
-\fancyfoot[LE,RO]{\small \@shortauthor\quad\textit{\@shorttitleEN}}
+\fancyfoot[LE,RO]{\small \@shortauthor\quad\textit{\@shorttitlePL}}
 }
 
 \def\thesistable{
 \begin{tabular}{p{45mm}l}
-Author: & {\itshape \@author}\\[-1mm]
-% Kierunek studi\'{o}w: & {\itshape \@degreeprogramme}\\[-1mm]
-Field of study: & {\itshape \@degreeprogramme}\\[-1mm]
-Thesis supervisor: & {\itshape \@supervisor}\\
+Autor: & {\itshape \@author}\\[-1mm]
+Kierunek studi\'{o}w: & {\itshape \@degreeprogramme}\\[-1mm]
+Opiekun pracy: & {\itshape \@supervisor}\\
 \end{tabular}
 }
 
@@ -93,15 +92,11 @@ Supervisor: & {\itshape \@supervisor}\\
 \begin{center}
 \vspace*{1.5cm}
 
-\includegraphics[scale=0.6]{agh}
+\includegraphics[scale=0.6]{agh.jpg}
 
 \vspace*{2mm}
 
-% {\sffamily{\large{\bfseries{\scshape Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
-
-{\sffamily{\large{\bfseries{\scshape AGH University
-of Science and Technology}}}
-
+{\sffamily{\large{\bfseries{\scshape Akademia G\'{o}rniczo-Hutnicza im. Stanis\l{}awa Staszica w Krakowie}}}
 
 \vspace*{1mm}
 
@@ -142,7 +137,7 @@ of Science and Technology}}}
 
 \vspace*{15cm} \vfill
 \begin{flushright} 
-\begin{minipage}[!ht]{10cm}
+\begin{minipage}[!h]{10cm}
 {\Large\itshape \@acknowledgements}
 \end{minipage}
 \end{flushright}
@@ -259,7 +254,7 @@ of Science and Technology}}}
 \setlength{\descriptiondashgap}{0.5em}
 
 % Element na liście symboli matematycznych użytych w równaniu (symbol wyrównany do prawej, oddzielony półpauzą od definicji)
-\renewcommand*\descriptionlabel[1]{\hspace \labelsep \normalfont \bfseries #1 \mdseries\hspace{\descriptiondashgap}\hspace{\descriptiondashgap}}
+\renewcommand*\descriptionlabel[1]{\hspace \labelsep \normalfont \bfseries #1 \mdseries\hspace{\descriptiondashgap}--\hspace{\descriptiondashgap}}
 
 % Odległość półpauzy od lewego marginesu.
 \newlength{\eqwheremargin}

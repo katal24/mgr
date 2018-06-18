@@ -1,4 +1,4 @@
-\documentclass[11pt]{aghdpl}
+\documentclass[en,11pt]{aghdpl}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 
@@ -42,10 +42,10 @@ backend=bibtex
 ]{biblatex}
 
 \usepackage{csquotes}
-\newtheorem{example}{Przyklad}[section]
 % Ponieważ `csquotes` nie posiada polskiego stylu, można skorzystać z mocno zbliżonego stylu chorwackiego.
 \DeclareQuoteAlias{croatian}{polish}
 
+\addbibresource{bibliografia.bib}
 
 
 % Użyj czcionki kroju Courier.
@@ -104,7 +104,7 @@ backend=bibtex
 \shorttitleEN{Inconsistency of incomplete pairwise comparisons matrices}
 
 \thesistype{Master of Science Thesis}
-\supervisor{Konrad Kułakowski PhD}
+\supervisor{Konrad Kułakowski, PhD hab.}
 
 \degreeprogramme{Computer Science}
 \date{2018}
@@ -123,7 +123,6 @@ Dziękuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i studiować 
 \setcounter{secnumdepth}{4}
 \brokenpenalty=10000\relax
 
-\addbibresource{bibliografia.bib}
 
 \begin{document}
 
@@ -137,6 +136,10 @@ Dziękuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i studiować 
 }
 
 % \pagestyle{empty}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
 \setcounter{tocdepth}{2}
 \tableofcontents
 \clearpage
@@ -147,8 +150,23 @@ Dziękuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i studiować 
 \include{rozdzial4}
 \include{rozdzial5}
 \include{rozdzial6}
+\include{appendix}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{clear}
+% \include{rozdzial5}
+
 
 \printbibliography
-
-\include{appendix}
 \end{document}
