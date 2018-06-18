@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  16 JUN 2018 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  16 JUN 2018 21:30
 entering extended mode
-**./praca.tex
-(praca.tex
+**/home/dawid/Pulpit/magisterka/final/praca.tex
+(/home/dawid/Pulpit/magisterka/final/praca.tex
 LaTeX2e <2018-04-01> patch level 4
 Babel <3.20> and hyphenation patterns for 0 language(s) loaded.
 (aghdpl.cls *** [aghdpl.cls] --- (MSz, GJN, PK) v3.1.0 <16.02.2016> ***
@@ -1579,54 +1579,7 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Warning: Unused global option(s):
     [11pt].
 
-(praca.aux (rozdzial1.aux) (rozdzial2.aux) (rozdzial3.aux) (rozdzial4.aux
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-
-LaTeX Warning: Label `fig:rstudio' multiply defined.
-
-) (rozdzial5.aux
-
-LaTeX Warning: Label `tab:results1' multiply defined.
-
-
-LaTeX Warning: Label `tab:results1' multiply defined.
-
-) (rozdzial6.aux) (appendix.aux))
+(praca.aux)
 \openout1 = `praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
@@ -1642,8 +1595,7 @@ LaTeX Font Info:    ... okay on input line 128.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
 LaTeX Font Info:    ... okay on input line 128.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 128.
-
-(/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
+ (/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 (/home/dawid/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
@@ -1857,15 +1809,12 @@ n¡ albo przed s¡dem
 
 ]
 
-! Package inputenc Error: Unicode character Ì¨ (U+328)
+/home/dawid/Pulpit/magisterka/final/praca.tex:130: Package inputenc Error: Unic
+ode character Ì¨ (U+328)
 (inputenc)                not set up for use with LaTeX.
 
 See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.130 \titlepages
-                 
+Type  H <return>  for immediate help
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1878,16 +1827,21 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 141.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 141.
- (praca.toc [5
 
-])
+No file praca.toc.
 \tf@toc=\write6
 \openout6 = `praca.toc'.
 
- [6]
+[5
+
+]
 \openout2 = `rozdzial1.aux'.
 
- (rozdzial1.tex
+ (rozdzial1.tex [6
+
+
+
+]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
@@ -1915,24 +1869,16 @@ LaTeX Warning: Citation 'Saaty2008' on page 7 undefined on input line 6.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7
-
-
-
-])
+ [7])
 [8]
 \openout2 = `rozdzial2.aux'.
 
  (rozdzial2.tex
 Chapter 2.
 
-Package caption Warning: \label without proper reference on input line 31.
-See the caption package documentation for explanation.
-
-
 LaTeX Warning: Reference `fig:fig1' on page 9 undefined on input line 28.
 
-<fig1.png, id=43, 175.857pt x 39.5076pt>
+<fig1.png, id=38, 175.857pt x 39.5076pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
 Package pdftex.def Info: fig1.png  used on input line 32.
@@ -1961,8 +1907,16 @@ Underfull \vbox (badness 1092) has occurred while \output is active []
 
 
 
-])
-[10 <./fig1.png>]
+]
+
+LaTeX Warning: Reference `eq:consistent' on page 10 undefined on input line 52.
+
+
+
+LaTeX Warning: Reference `eq:consistent' on page 10 undefined on input line 52.
+
+
+) [10 <./fig1.png>]
 \openout2 = `rozdzial3.aux'.
 
  (rozdzial3.tex
@@ -1976,13 +1930,25 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 LaTeX Warning: Citation 'SAATY1977' on page 11 undefined on input line 10.
 
 
+LaTeX Warning: Reference `eq:consistent2' on page 11 undefined on input line 21
+.
+
+
 LaTeX Warning: Citation 'CRAWFORD1985' on page 11 undefined on input line 21.
 
 
 LaTeX Warning: Citation 'AGUARON2003' on page 11 undefined on input line 21.
 
 
+LaTeX Warning: Reference `eq:consistent' on page 11 undefined on input line 21.
+
+
+
 LaTeX Warning: Citation 'KOCZKODAJ1993' on page 11 undefined on input line 34.
+
+
+LaTeX Warning: Reference `eq:consistent' on page 11 undefined on input line 34.
+
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2007,6 +1973,9 @@ LaTeX Warning: Citation 'Kazibudzki2017' on page 12 undefined on input line 70.
 
 
 
+LaTeX Warning: Reference `eq:lti*' on page 12 undefined on input line 70.
+
+
 LaTeX Warning: Citation 'PELAEZ2003' on page 12 undefined on input line 78.
 
 [12]
@@ -2015,17 +1984,37 @@ LaTeX Warning: Citation 'KULAKOWSKI20141' on page 13 undefined on input line 10
 0.
 
 
+LaTeX Warning: Reference `eq:K' on page 13 undefined on input line 118.
+
+
+LaTeX Warning: Reference `eq:I1' on page 13 undefined on input line 118.
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13]
 
+LaTeX Warning: Reference `eq:I2' on page 14 undefined on input line 124.
+
+
 LaTeX Warning: Citation 'STEIN2007' on page 14 undefined on input line 132.
+
+
+LaTeX Warning: Reference `eq:hm1' on page 14 undefined on input line 141.
 
 
 LaTeX Warning: Citation 'Golden1989' on page 14 undefined on input line 149.
 
 
 LaTeX Warning: Citation 'SALO1995' on page 14 undefined on input line 157.
+
+
+LaTeX Warning: Reference `eq:consistent' on page 14 undefined on input line 157
+.
+
+
+LaTeX Warning: Reference `eq:consistent' on page 14 undefined on input line 157
+.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2063,6 +2052,9 @@ Overfull \hbox (109.99092pt too wide) in paragraph at lines 202--202
  []
 
 
+LaTeX Warning: Reference `eq:GCI' on page 16 undefined on input line 203.
+
+
 Underfull \hbox (badness 1297) in paragraph at lines 202--204
 \T1/ptm/m/n/10.95 During calculating the weight vector by the geometric mean, e
 mpty values are omitted.
@@ -2078,6 +2070,9 @@ nts:
 Overfull \hbox (141.39545pt too wide) in paragraph at lines 208--208
  [][] \T1/ptm/b/n/10.95 Kuªakowski and Szybowski indexes
  []
+
+
+LaTeX Warning: Reference `eq:nPo3' on page 16 undefined on input line 209.
 
 
 Overfull \hbox (111.83058pt too wide) in paragraph at lines 211--211
@@ -2098,6 +2093,9 @@ Overfull \hbox (80.83179pt too wide) in paragraph at lines 217--217
 Overfull \hbox (86.85437pt too wide) in paragraph at lines 220--220
  [][] \T1/ptm/b/n/10.95 Cavallo and D'Appuzo:
  []
+
+
+LaTeX Warning: Reference `eq:CavDAp' on page 16 undefined on input line 221.
 
 [16]
 Overfull \hbox (47.4783pt too wide) in paragraph at lines 223--223
@@ -2124,9 +2122,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--43
 
 LaTeX Warning: Citation 'projectR' on page 20 undefined on input line 53.
 
-! Undefined control sequence.
-l.53 ...velopment environment (IDE), named \testit
-                                                  {RStudio}, (see \cite{stud...
+rozdzial4.tex:53: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2140,18 +2136,14 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 53.
 (/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
-! Undefined control sequence.
-l.53 ...ons necessary to test the indexes. \testit
-                                                  {RStudio} supports program...
+rozdzial4.tex:53: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-! Undefined control sequence.
-l.53 ...on operating systems. Before using \testit
-                                                  {RStudio} one has to insta...
+rozdzial4.tex:53: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2161,17 +2153,16 @@ and I'll forget about whatever was undefined.
 
 LaTeX Warning: Citation 'installR' on page 20 undefined on input line 53.
 
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 57.
+
 <images/rstudio.png, id=87, 1122.1925pt x 711.65875pt>
 File: images/rstudio.png Graphic file (type png)
 <use images/rstudio.png>
 Package pdftex.def Info: images/rstudio.png  used on input line 58.
 (pdftex.def)             Requested size: 455.24411pt x 288.69801pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-! Undefined control sequence.
-l.71 ... function has only one parameter - \textif
-                                                  {PC matrix}. Exceptions ar...
+rozdzial4.tex:71: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -2179,14 +2170,18 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 [20]
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 73.
+
 <images/kod1.png, id=92, 515.9275pt x 222.8325pt>
 File: images/kod1.png Graphic file (type png)
 <use images/kod1.png>
 Package pdftex.def Info: images/kod1.png  used on input line 74.
 (pdftex.def)             Requested size: 386.94467pt x 167.12396pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 79.
 
 <images/kod2.png, id=93, 517.935pt x 159.59625pt>
 File: images/kod2.png Graphic file (type png)
@@ -2194,7 +2189,8 @@ File: images/kod2.png Graphic file (type png)
 Package pdftex.def Info: images/kod2.png  used on input line 80.
 (pdftex.def)             Requested size: 388.45029pt x 119.69687pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 85.
 
 <images/kod3.png, id=94, 516.93124pt x 154.5775pt>
 File: images/kod3.png Graphic file (type png)
@@ -2202,7 +2198,8 @@ File: images/kod3.png Graphic file (type png)
 Package pdftex.def Info: images/kod3.png  used on input line 86.
 (pdftex.def)             Requested size: 387.69748pt x 115.93282pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 91.
 
 <images/kod4.png, id=95, 517.935pt x 519.9425pt>
 File: images/kod4.png Graphic file (type png)
@@ -2210,84 +2207,82 @@ File: images/kod4.png Graphic file (type png)
 Package pdftex.def Info: images/kod4.png  used on input line 92.
 (pdftex.def)             Requested size: 388.45029pt x 389.95592pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 98.
 
 <images/kod5.png, id=96, 612.2875pt x 205.76875pt>
 File: images/kod5.png Graphic file (type png)
 <use images/kod5.png>
 Package pdftex.def Info: images/kod5.png  used on input line 99.
 (pdftex.def)             Requested size: 459.21451pt x 154.32617pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/kod11.png, id=97, 467.7475pt x 123.46124pt>
+[21 <./images/rstudio.png>] [22 <./images/kod1.png> <./images/kod2.png> <./imag
+es/kod3.png>] [23 <./images/kod4.png> <./images/kod5.png>]
+<images/kod11.png, id=107, 467.7475pt x 123.46124pt>
 File: images/kod11.png Graphic file (type png)
 <use images/kod11.png>
 Package pdftex.def Info: images/kod11.png  used on input line 109.
 (pdftex.def)             Requested size: 350.80975pt x 92.59569pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/kod12.png, id=98, 515.9275pt x 280.04625pt>
-File: images/kod12.png Graphic file (type png)
-<use images/kod12.png>
-Package pdftex.def Info: images/kod12.png  used on input line 115.
-(pdftex.def)             Requested size: 386.94467pt x 210.03415pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<images/kod13.png, id=99, 624.3325pt x 382.42876pt>
+<images/kod13.png, id=108, 624.3325pt x 382.42876pt>
 File: images/kod13.png Graphic file (type png)
 <use images/kod13.png>
-Package pdftex.def Info: images/kod13.png  used on input line 121.
+Package pdftex.def Info: images/kod13.png  used on input line 115.
 (pdftex.def)             Requested size: 455.75894pt x 279.17065pt.
+<images/kod12.png, id=109, 515.9275pt x 280.04625pt>
+File: images/kod12.png Graphic file (type png)
+<use images/kod12.png>
+Package pdftex.def Info: images/kod12.png  used on input line 122.
+(pdftex.def)             Requested size: 386.94467pt x 210.03415pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/kod21.png, id=100, 786.94pt x 730.73pt>
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 130.
+
+<images/kod21.png, id=110, 786.94pt x 730.73pt>
 File: images/kod21.png Graphic file (type png)
 <use images/kod21.png>
-Package pdftex.def Info: images/kod21.png  used on input line 129.
+Package pdftex.def Info: images/kod21.png  used on input line 131.
 (pdftex.def)             Requested size: 456.42552pt x 423.8237pt.
-[21 <./images/rstudio.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 138.
 
-<images/kod22.png, id=104, 766.865pt x 440.64626pt>
+<images/kod22.png, id=111, 766.865pt x 440.64626pt>
 File: images/kod22.png Graphic file (type png)
 <use images/kod22.png>
-Package pdftex.def Info: images/kod22.png  used on input line 137.
+Package pdftex.def Info: images/kod22.png  used on input line 139.
 (pdftex.def)             Requested size: 444.78201pt x 255.575pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 148.
 
-<images/kod31.png, id=105, 670.505pt x 862.22125pt>
+<images/kod31.png, id=112, 670.505pt x 862.22125pt>
 File: images/kod31.png Graphic file (type png)
 <use images/kod31.png>
-Package pdftex.def Info: images/kod31.png  used on input line 147.
+Package pdftex.def Info: images/kod31.png  used on input line 149.
 (pdftex.def)             Requested size: 388.89317pt x 500.08867pt.
+[24 <./images/kod11.png> <./images/kod13.png>]
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 154.
 
-<images/kod32.png, id=106, 495.8525pt x 418.56375pt>
+<images/kod32.png, id=116, 495.8525pt x 418.56375pt>
 File: images/kod32.png Graphic file (type png)
 <use images/kod32.png>
-Package pdftex.def Info: images/kod32.png  used on input line 153.
+Package pdftex.def Info: images/kod32.png  used on input line 155.
 (pdftex.def)             Requested size: 287.59465pt x 242.76714pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `!tbp') on input line 160.
 
-<images/kod33.png, id=107, 525.965pt x 634.37pt>
+<images/kod33.png, id=117, 525.965pt x 634.37pt>
 File: images/kod33.png Graphic file (type png)
 <use images/kod33.png>
-Package pdftex.def Info: images/kod33.png  used on input line 159.
+Package pdftex.def Info: images/kod33.png  used on input line 161.
 (pdftex.def)             Requested size: 305.0599pt x 367.93484pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [22 <./images/kod1.png> <./images/kod2.png>] [23 <./images/kod3.png> <./image
-s/kod4.png>] [24 <./images/kod5.png> <./images/kod11.png> <./images/kod12.png>]
-[25 <./images/kod13.png>] [26 <./images/kod21.png>] [27 <./images/kod22.png>]
+) [25 <./images/kod12.png>] [26 <./images/kod21.png>] [27 <./images/kod22.png>]
 [28 <./images/kod31.png>] [29 <./images/kod32.png> <./images/kod33.png>]
 \openout2 = `rozdzial5.aux'.
 
@@ -2312,8 +2307,11 @@ Underfull \vbox (badness 1769) has occurred while \output is active []
 [32] [33]
 Underfull \vbox (badness 5519) has occurred while \output is active []
 
- [34])
-[35]
+ [34]
+
+LaTeX Warning: Reference `eq:K' on page 35 undefined on input line 134.
+
+) [35]
 \openout2 = `rozdzial6.aux'.
 
  (rozdzial6.tex [36
@@ -2334,71 +2332,53 @@ LaTeX Warning: Empty bibliography on input line 151.
 
 ]
 Chapter 7.
+
+LaTeX Warning: Reference `sec:details' on page 39 undefined on input line 2.
+
+
+LaTeX Warning: Reference `sec:details' on page 39 undefined on input line 2.
+
 [39]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:13: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13   \begin{center}
-                     
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:13: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13   \begin{center}
-                     
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:13: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.13   \begin{center}
-                     
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:50: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{center}
-                 
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.50 \end{center}
-                 
+appendix.tex:50: Missing \endgroup inserted
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.50 \end{center}
-                 
+appendix.tex:50: Missing } inserted
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -2406,36 +2386,25 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{adjustbox} on input line 11 ended by \end{center}.
+appendix.tex:50: LaTeX Error: \begin{adjustbox} on input line 11 ended by \end{
+center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.50 \end{center}
-                 
+Type  H <return>  for immediate help
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{document} ended by \end{adjustbox}.
+appendix.tex:51: LaTeX Error: \begin{document} ended by \end{adjustbox}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 \end{adjustbox}
-                    
+Type  H <return>  for immediate help
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.51 \end{adjustbox}
-                    
+appendix.tex:51: Extra \endgroup
 Things are pretty mixed up, but I think the worst is over.
 
 
@@ -2443,74 +2412,50 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:61: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61   \begin{center}
-                     
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:61: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61   \begin{center}
-                     
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:61: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.61   \begin{center}
-                     
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:97: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \end{center}
-                 
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:97: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \end{center}
-                 
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:97: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97 \end{center}
-                 
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -2520,580 +2465,388 @@ Overfull \vbox (12.28033pt too high) has occurred while \output is active []
 
 [41]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:108: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:108: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:108: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:144: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:144: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:144: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [42]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:155: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:191: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:191: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:191: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [43]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:202: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:202: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:202: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:238: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:238: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:238: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.238 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [44]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:250: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.250   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:250: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.250   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:250: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.250   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:286: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.286 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:286: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.286 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:286: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.286 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [45]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:298: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.298   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:298: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.298   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:298: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.298   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:334: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.334 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:334: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.334 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:334: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.334 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [46]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:346: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.346   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:346: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.346   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:346: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.346   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:382: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.382 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:382: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.382 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:382: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.382 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [47]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:394: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.394   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:394: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.394   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:394: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.394   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:430: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.430 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:430: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.430 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:430: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.430 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 [48]
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:442: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.442   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:442: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.442   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:442: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.442   \begin{center}
-                      
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
+appendix.tex:480: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.480 \end{center}
-                  
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.480 \end{center}
-                  
+appendix.tex:480: Missing \endgroup inserted
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.480 \end{center}
-                  
+appendix.tex:480: Missing } inserted
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -3101,36 +2854,25 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-! LaTeX Error: \begin{adjustbox} on input line 440 ended by \end{center}.
+appendix.tex:480: LaTeX Error: \begin{adjustbox} on input line 440 ended by \en
+d{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.480 \end{center}
-                  
+Type  H <return>  for immediate help
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-! LaTeX Error: \begin{document} ended by \end{adjustbox}.
+appendix.tex:481: LaTeX Error: \begin{document} ended by \end{adjustbox}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.481 \end{adjustbox}
-                     
+Type  H <return>  for immediate help
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.481 \end{adjustbox}
-                     
+appendix.tex:481: Extra \endgroup
 Things are pretty mixed up, but I think the worst is over.
 
 )
@@ -3143,7 +2885,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
@@ -3155,13 +2897,13 @@ Package logreq Info: Writing requests to 'praca.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 38116 strings out of 494894
- 732456 string characters out of 3178733
+ 38093 strings out of 494894
+ 731923 string characters out of 3178733
  1146050 words of memory out of 3000000
- 41071 multiletter control sequences out of 15000+200000
+ 41064 multiletter control sequences out of 15000+200000
  611107 words of font info for 119 fonts, out of 3000000 for 9000
  0 hyphenation exceptions out of 8191
- 55i,12n,79p,1912b,1918s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,12n,79p,1946b,1921s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/home/dawid/.miktex/texmfs/install/fonts/enc/dvips/base/8r.enc}</home/dawid/
 .miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmex10.pfb></home/dawid/.
 miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmmi10.pfb></home/dawid/.m
@@ -3183,7 +2925,7 @@ lvetic/uhvro8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/ut
 mb8a.pfb></home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb><
 /home/dawid/.miktex/texmfs/install/fonts/type1/urw/times/utmr8a.pfb></home/dawi
 d/.miktex/texmfs/install/fonts/type1/urw/times/utmri8a.pfb>
-Output written on praca.pdf (49 pages, 1303909 bytes).
+Output written on praca.pdf (49 pages, 1302477 bytes).
 PDF statistics:
  267 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
