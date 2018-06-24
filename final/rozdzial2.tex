@@ -7,7 +7,7 @@
 $$
 M = 
 \left(
-\begin{array}{lllll}
+\begin{array}{cccc}
 	1 & m_{12} & \dots & m_{1n}\\
 	m_{21} & 1 & \dots & m_{2n}\\
 	\vdots & \vdots & \ddots & \vdots\\
@@ -18,19 +18,37 @@ $$
 
 	It is worth noting that the values $m_{ij}$ and $m_{ji}$ represent the same pair. Therefore, one should expect that $m_{ji}=\frac{1}{m_{ij}}$. If
 	\begin{equation} 
-		\forall _{i,j\in\left\{ 1,\ldots,n\right\}} :m_{ij}=\frac{1}{m_{ji}},
+		\forall _{i,j\in\left\{ 1,\ldots,n\right\}} ~m_{ij}=\frac{1}{m_{ji}},
 	\end{equation}
 		the matrix is called a \textit{reciprocal}.
+	
+	Calculations on PC matrices are usually performed when the matrix contains all elements. For the matrix with dimension $n$ by $n$ there are $n(n-1)$ values. Such matrix is called \textit{complete}. If one or more values are missing, the matrix is called \textit{incomplete}.
+
+		% Calculations on PC matrices are usually performed when the matrix contains all elements. For the matrix with dimension n by n there are n(n-1) values. Such matrix is called complete. If one or more values are missing, the matrix is called incomplete.
 
   \section{Weight vector}
 	\label{subsec:wektorWag}
-	
-	The PC matrix is the basis for calculating the method. It is used in a function $\mu:C\rightarrow \mathbb{R}$ that assigns a positive real number to each alternative in the set $C$. The vector $$\mu=\left[\mu\left(c_{1}\right),\ldots,\mu\left(c_{n}\right)\right]$$ formed in this way is called \textit{the weight vector} or \textit{the priority vector} (see Fig.2.1). It informs which alternative won.
-
+The PC matrix provides data allowing the method for calculating the ranking vector $\mju$. This vector defines the preferential values assigned by the function $\mu:C\rightarrow \mathbb{R}$ to each alternative $c_i$ in $C$. The vector $$\mu=\left[\mu\left(c_{1}\right), \ldots, \mu\left(c_{n}\right)\right]$$ formed in this way is called \textit{the weight vector} or \textit{the priority vector} (see Fig.2.1). By choosing the alternative with the highest preferential value in $\mu$ one can easily find which alternative win the ranking. 
+\begin{center}
 \begin{figure}[ht]
-\centerline{\includegraphics[scale=2.5]{fig1.png}}
+\begin{tabular}{cm{0.4\linewidth}c}
+$ ~~~~~~\left(\begin{array}{cccc}
+	1 & m_{12} & \dots & m_{1n}\\
+	m_{21} & 1 & \dots & m_{2n}\\
+	\vdots & \vdots & \ddots & \vdots\\
+	m_{n1} & m_{n2} & \dots & ~~1\\ 	
+\end{array}\right)$ & \includegraphics[scale=1.9]{fig3.png} & ~~~~$\left(
+\begin{array}{c}
+	\mu\left(c_1\right)\\
+	\mu\left(c_2\right)\\	
+	\vdots \\
+	\mu\left(c_n\right)\\	
+\end{array}
+\right)$ \\
+\end{tabular}
 \caption{Diagram of calculating \textit{the weight vector} based on the article \cite{Kulakowski2014}}
 \end{figure}
+\end{center}
 
 There are many ways to calculate the vector $\mu$. Among the popular ones are the method using the matrix's eigenvalues or the method based on geometric means \cite{SAATY1998}.
 
@@ -39,7 +57,7 @@ There are many ways to calculate the vector $\mu$. Among the popular ones are th
 The second important parameter describing the PC matrix is \textit{consistency}. The matrix is consistent if 
 	\begin{equation}
 		\label{eq:consistent}
-		\forall _{i,j,k \in\left\{ 1,\ldots,n\right\}} :m_{ik}=m_{ij}m_{jk}.
+		\forall _{i,j,k \in\left\{ 1,\ldots,n\right\}}~  m_{ik}=m_{ij}m_{jk}.
 	\end{equation}
 Three numbers that should meet this assumption are called a \textit{triad}.
 
@@ -48,4 +66,4 @@ If the matrix is consistent and the weight vector $\mu$ is computed, then for ea
 		\label{eq:consistent2}		
 		m_{ij}=\frac{\mu_{i}}{\mu_{j}}.
  	\end{equation}
-In practice, it is very rare for a matrix $M$ to be completely consistent. In the long history of the PC method, many methods were developed to calculate inconsistencies. Many of them are based directly on the definition of consistency~\ref{eq:consistent}, some methods use the eigenvalues of the matrix, others are based on the assumption that each fully consistent matrix fulfills the condition~\ref{eq:consistent}.
+In practice, it is very rare for a matrix $M$ to be completely consistent. In the long history of the PC method, many methods were developed to calculate inconsistencies. Many of them are based directly on the definition of consistency~(\ref{eq:consistent}), some methods use the eigenvalues of the matrix, others are based on the assumption that each fully consistent matrix fulfills the condition~(\ref{eq:consistent}).

@@ -137,7 +137,7 @@ Supervisor: & {\itshape \@supervisor}\\
 
 \vspace*{15cm} \vfill
 \begin{flushright} 
-\begin{minipage}[!ht]{10cm}
+\begin{minipage}[!h]{10cm}
 {\Large\itshape \@acknowledgements}
 \end{minipage}
 \end{flushright}
@@ -254,7 +254,7 @@ Supervisor: & {\itshape \@supervisor}\\
 \setlength{\descriptiondashgap}{0.5em}
 
 % Element na liście symboli matematycznych użytych w równaniu (symbol wyrównany do prawej, oddzielony półpauzą od definicji)
-\renewcommand*\descriptionlabel[1]{\hspace \labelsep \normalfont \bfseries #1 \mdseries\hspace{\descriptiondashgap}\hspace{\descriptiondashgap}}
+\renewcommand*\descriptionlabel[1]{\hspace \labelsep \normalfont \bfseries #1 \mdseries\hspace{\descriptiondashgap}--\hspace{\descriptiondashgap}}
 
 % Odległość półpauzy od lewego marginesu.
 \newlength{\eqwheremargin}

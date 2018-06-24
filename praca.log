@@ -1,0 +1,2205 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6700) (preloaded format=pdflatex 2018.6.2)  18 JUN 2018 14:28
+entering extended mode
+**./final/praca.tex
+(final/praca.tex
+LaTeX2e <2018-04-01> patch level 4
+Babel <3.20> and hyphenation patterns for 0 language(s) loaded.
+
+! LaTeX Error: File `aghdpl.cls' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: cls)
+
+Enter file name: 
+(/home/dawid/.miktex/texmfs/install/tex/generic/babel/babel.sty
+Package: babel 2018/05/02 3.20 The Babel package
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/babel/switch.def
+File: switch.def 2018/05/02 3.20 Babel switching mechanism
+)
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/dawid/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/babel/babel.def
+File: babel.def 2018/05/02 3.20 Babel common definitions
+\babel@savecnt=\count80
+\U@D=\dimen102
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+\bbl@dirlevel=\count81
+)
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
+\l@american = a dialect from \language\l@english 
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count82
+\calc@Bcount=\count83
+\calc@Adimen=\dimen103
+\calc@Bdimen=\dimen104
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count84
+\calc@Cskip=\skip43
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(/home/dawid/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks17
+\ex@=\dimen105
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen106
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count85
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count86
+\leftroot@=\count87
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count88
+\DOTSCASE@=\count89
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count90
+\c@MaxMatrixCols=\count91
+\dotsspace@=\muskip10
+\c@parentequation=\count92
+\dspbrk@lvl=\count93
+\tag@help=\toks18
+\row@=\count94
+\column@=\count95
+\maxfields@=\count96
+\andhelp@=\toks19
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks20
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count97
+\l_MT_multwidth_dim=\dimen114
+\origjot=\skip47
+\l_MT_shortvdotswithinadjustabove_dim=\dimen115
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen116
+\l_MT_above_intertext_sep=\dimen117
+\l_MT_below_intertext_sep=\dimen118
+\l_MT_above_shortintertext_sep=\dimen119
+\l_MT_below_shortintertext_sep=\dimen120
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/amscls/amsthm.sty
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks22
+\thm@bodyfont=\toks23
+\thm@headfont=\toks24
+\thm@notefont=\toks25
+\thm@headpunct=\toks26
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks27
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/qtree/qtree.sty
+Package: 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+Package: qtree 2008/12/12 v.3.1bQtree: tree-drawing for linguistics
+(/home/dawid/.miktex/texmfs/install/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 119.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 121.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+\pIIe@GRAPH=\toks28
+\@arclen=\dimen121
+\@arcrad=\dimen122
+\@tempdimd=\dimen123
+)
+\c@treecount=\count98
+\c@branchcount=\count99
+\parentbox=\box28
+\treebox=\box29
+\treeboxone=\box30
+\treeboxtwo=\box31
+\treeboxthree=\box32
+\treeboxfour=\box33
+\treeboxfive=\box34
+\treeboxsix=\box35
+\treeboxseven=\box36
+\treeboxeight=\box37
+\treeboxnine=\box38
+\treeboxten=\box39
+\treeboxeleven=\box40
+\treeboxtwelve=\box41
+\treeboxthirteen=\box42
+\treeboxfourteen=\box43
+\treeboxfifteen=\box44
+\treeboxsixteen=\box45
+\treeboxseventeen=\box46
+\treeboxeighteen=\box47
+\treeboxnineteen=\box48
+\treeboxtwenty=\box49
+\treeoffsetone=\skip51
+\treeoffsettwo=\skip52
+\treeoffsetthree=\skip53
+\treeoffsetfour=\skip54
+\treeoffsetfive=\skip55
+\treeoffsetsix=\skip56
+\treeoffsetseven=\skip57
+\treeoffseteight=\skip58
+\treeoffsetnine=\skip59
+\treeoffsetten=\skip60
+\treeoffseteleven=\skip61
+\treeoffsettwelve=\skip62
+\treeoffsetthirteen=\skip63
+\treeoffsetfourteen=\skip64
+\treeoffsetfifteen=\skip65
+\treeoffsetsixteen=\skip66
+\treeoffsetseventeen=\skip67
+\treeoffseteighteen=\skip68
+\treeoffsetnineteen=\skip69
+\treeoffsettwenty=\skip70
+\treeshiftone=\skip71
+\treeshifttwo=\skip72
+\treeshiftthree=\skip73
+\treeshiftfour=\skip74
+\treeshiftfive=\skip75
+\treeshiftsix=\skip76
+\treeshiftseven=\skip77
+\treeshifteight=\skip78
+\treeshiftnine=\skip79
+\treeshiftten=\skip80
+\treeshifteleven=\skip81
+\treeshifttwelve=\skip82
+\treeshiftthirteen=\skip83
+\treeshiftfourteen=\skip84
+\treeshiftfifteen=\skip85
+\treeshiftsixteen=\skip86
+\treeshiftseventeen=\skip87
+\treeshifteighteen=\skip88
+\treeshiftnineteen=\skip89
+\treeshifttwenty=\skip90
+\treewidthone=\skip91
+\treewidthtwo=\skip92
+\treewidththree=\skip93
+\treewidthfour=\skip94
+\treewidthfive=\skip95
+\treewidthsix=\skip96
+\treewidthseven=\skip97
+\treewidtheight=\skip98
+\treewidthnine=\skip99
+\treewidthten=\skip100
+\treewidtheleven=\skip101
+\treewidthtwelve=\skip102
+\treewidththirteen=\skip103
+\treewidthfourteen=\skip104
+\treewidthfifteen=\skip105
+\treewidthsixteen=\skip106
+\treewidthseventeen=\skip107
+\treewidtheighteen=\skip108
+\treewidthnineteen=\skip109
+\treewidthtwenty=\skip110
+\daughteroffsetone=\skip111
+\daughteroffsettwo=\skip112
+\daughteroffsetthree=\skip113
+\daughteroffsetfour=\skip114
+\branchwidthone=\skip115
+\branchwidthtwo=\skip116
+\branchwidththree=\skip117
+\branchwidthfour=\skip118
+\parentoffset=\skip119
+\treeoffset=\skip120
+\daughteroffset=\skip121
+\branchwidth=\skip122
+\parentwidth=\skip123
+\treewidth=\skip124
+\qta=\toks29
+\qtb=\toks30
+\nbranches=\count100
+\qroofx=\count101
+\qroofy=\count102
+\@qrscratchbox=\box50
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen124
+\pgfutil@tempdimb=\dimen125
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box51
+(/home/dawid/.miktex/texmfs/install/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/dawid/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen126
+\Gin@req@width=\dimen127
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks34
+))
+\pgf@x=\dimen128
+\pgf@y=\dimen129
+\pgf@xa=\dimen130
+\pgf@ya=\dimen131
+\pgf@xb=\dimen132
+\pgf@yb=\dimen133
+\pgf@xc=\dimen134
+\pgf@yc=\dimen135
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count103
+\c@pgf@countb=\count104
+\c@pgf@countc=\count105
+\c@pgf@countd=\count106
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-pdftex.def
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.d
+ef
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count107
+\pgfsyssoftpath@bigbuffer@items=\count108
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/home/dawid/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen136
+\pgfmath@count=\count109
+\pgfmath@box=\box52
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count110
+))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen137
+\pgf@picmaxx=\dimen138
+\pgf@picminy=\dimen139
+\pgf@picmaxy=\dimen140
+\pgf@pathminx=\dimen141
+\pgf@pathmaxx=\dimen142
+\pgf@pathminy=\dimen143
+\pgf@pathmaxy=\dimen144
+\pgf@xx=\dimen145
+\pgf@xy=\dimen146
+\pgf@yx=\dimen147
+\pgf@yy=\dimen148
+\pgf@zx=\dimen149
+\pgf@zy=\dimen150
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen151
+\pgf@path@lasty=\dimen152
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen153
+\pgf@shorten@start@additional=\dimen154
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box53
+\pgf@hbox=\box54
+\pgf@layerbox@main=\box55
+\pgf@picture@serial@count=\count111
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen155
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen156
+\pgf@pt@y=\dimen157
+\pgf@pt@temp=\dimen158
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen159
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen160
+\pgf@sys@shading@range@num=\count112
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box56
+))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box57
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen161
+\pgf@nodesepend=\dimen162
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/dawid/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/home/dawid/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen163
+\pgffor@skip=\dimen164
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
+))
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count113
+\pgfplotmarksize=\dimen165
+)
+\tikz@lastx=\dimen166
+\tikz@lasty=\dimen167
+\tikz@lastxsaved=\dimen168
+\tikz@lastysaved=\dimen169
+\tikzleveldistance=\dimen170
+\tikzsiblingdistance=\dimen171
+\tikz@figbox=\box58
+\tikz@figbox@bg=\box59
+\tikz@tempbox=\box60
+\tikz@tempbox@bg=\box61
+\tikztreelevel=\count114
+\tikznumberofchildren=\count115
+\tikznumberofcurrentchild=\count116
+\tikz@fig@count=\count117
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count118
+\pgfmatrixcurrentcolumn=\count119
+\pgf@matrix@numberofcolumns=\count120
+)
+\tikz@expandcount=\count121
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+(/home/dawid/.miktex/texmfs/install/tex/latex/tikz-qtree/tikz-qtree.sty
+(/home/dawid/.miktex/texmfs/install/tex/latex/tikz-qtree/pgftree.sty
+(/home/dawid/.miktex/texmfs/install/tex/latex/tikz-qtree/pgfsubpic.sty
+(/home/dawid/.miktex/texmfs/install/tex/generic/tikz-qtree/pgfsubpic.tex
+\pgf@subpicminx=\dimen172
+\pgf@subpicminy=\dimen173
+\pgf@subpicmaxx=\dimen174
+\pgf@subpicmaxy=\dimen175
+))
+(/home/dawid/.miktex/texmfs/install/tex/generic/tikz-qtree/pgftree.tex
+\levelsep=\dimen176
+\subtreesep=\dimen177
+\smuggle@levelsep=\dimen178
+\smuggle@subtreesep=\dimen179
+\this@levelsep=\dimen180
+\this@subtreesep=\dimen181
+\pgftree@childx=\dimen182
+\pgftree@savechildx=\dimen183
+\pgftree@childy=\dimen184
+\pgftree@savechildy=\dimen185
+\pgftree@childi=\count122
+\pgftree@savechildi=\count123
+\pgftree@level=\count124
+\pgftree@depth=\dimen186
+\pgf@subpic@hbox@children=\box62
+\pgf@subpic@minx@children=\dimen187
+\pgf@subpic@miny@children=\dimen188
+\pgf@subpic@maxx@children=\dimen189
+\pgf@subpic@maxy@children=\dimen190
+\pgftree@lastchildx=\dimen191
+\pgftree@lastchildy=\dimen192
+))
+(/home/dawid/.miktex/texmfs/install/tex/generic/tikz-qtree/tikz-qtree.tex
+\@result=\toks43
+\child@list=\toks44
+\root@node=\toks45
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count125
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks46
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip125
+\enit@outerparindent=\dimen193
+\enit@toks=\toks47
+\enit@inbox=\box63
+\enitdp@description=\count126
+
+
+! LaTeX Error: Environment description undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1587 \renewenvironment{description}
+                                     [1][]
+? 
+) (/home/dawid/.miktex/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2018/04/08 v1.1 Adjusting TeX boxes (trim, clip, ...)
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/xkeyval/xkeyval.tex
+(/home/dawid/.miktex/texmfs/install/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks48
+\XKV@tempa@toks=\toks49
+)
+\XKV@depth=\count127
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)
+
+! Package xkeyval Error: xkeyval loaded before \documentclass.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 ...yval loaded before \protect\documentclass}
+                                                  %
+? 
+) (/home/dawid/.miktex/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box64
+)
+\tc@llx=\dimen194
+\tc@lly=\dimen195
+\tc@urx=\dimen196
+\tc@ury=\dimen197
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2018/04/08 v2.1 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen198
+\adjbox@Height=\dimen199
+\adjbox@Depth=\dimen256
+\adjbox@Totalheight=\dimen257
+\adjbox@pwidth=\dimen258
+\adjbox@pheight=\dimen259
+\adjbox@pdepth=\dimen260
+\adjbox@ptotalheight=\dimen261
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count128
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count129
+\@vwid@loff=\dimen262
+\@vwid@roff=\dimen263
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2018/03/04 v3.11 programmable bibliographies (PK/MW)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/home/dawid/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count130
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/xstring/xstring.sty
+(/home/dawid/.miktex/texmfs/install/tex/generic/xstring/xstring.tex
+\@xs@message=\write4
+\integerpart=\count131
+\decimalpart=\count132
+)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
+)
+\c@tabx@nest=\count133
+\c@listtotal=\count134
+\c@listcount=\count135
+\c@liststart=\count136
+\c@liststop=\count137
+\c@citecount=\count138
+\c@citetotal=\count139
+\c@multicitecount=\count140
+\c@multicitetotal=\count141
+\c@instcount=\count142
+\c@maxnames=\count143
+\c@minnames=\count144
+\c@maxitems=\count145
+\c@minitems=\count146
+\c@citecounter=\count147
+\c@savedcitecounter=\count148
+\c@uniquelist=\count149
+\c@uniquename=\count150
+\c@refsection=\count151
+\c@refsegment=\count152
+\c@maxextratitle=\count153
+\c@maxextratitleyear=\count154
+\c@maxextradate=\count155
+\c@maxextraalpha=\count156
+\c@abbrvpenalty=\count157
+\c@highnamepenalty=\count158
+\c@lownamepenalty=\count159
+\c@maxparens=\count160
+\c@parenlevel=\count161
+\blx@tempcnta=\count162
+\blx@tempcntb=\count163
+\blx@tempcntc=\count164
+\blx@maxsection=\count165
+\blx@maxsegment@0=\count166
+\blx@notetype=\count167
+\blx@parenlevel@text=\count168
+\blx@parenlevel@foot=\count169
+\blx@sectionciteorder@0=\count170
+\labelnumberwidth=\skip126
+\labelalphawidth=\skip127
+\biblabelsep=\skip128
+\bibitemsep=\skip129
+\bibnamesep=\skip130
+\bibinitsep=\skip131
+\bibparsep=\skip132
+\bibhang=\skip133
+\blx@bcfin=\read2
+\blx@bcfout=\write5
+\c@mincomprange=\count171
+\c@maxcomprange=\count172
+\c@mincompwidth=\count173
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2018/03/04 v3.11 biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count174
+\c@savedafterword=\count175
+\c@annotator=\count176
+\c@savedannotator=\count177
+\c@author=\count178
+\c@savedauthor=\count179
+\c@bookauthor=\count180
+\c@savedbookauthor=\count181
+\c@commentator=\count182
+\c@savedcommentator=\count183
+\c@editor=\count184
+\c@savededitor=\count185
+\c@editora=\count186
+\c@savededitora=\count187
+\c@editorb=\count188
+\c@savededitorb=\count189
+\c@editorc=\count190
+\c@savededitorc=\count191
+\c@foreword=\count192
+\c@savedforeword=\count193
+\c@holder=\count194
+\c@savedholder=\count195
+\c@introduction=\count196
+\c@savedintroduction=\count197
+\c@namea=\count198
+\c@savednamea=\count199
+\c@nameb=\count266
+\c@savednameb=\count267
+\c@namec=\count268
+\c@savednamec=\count269
+\c@translator=\count270
+\c@savedtranslator=\count271
+\c@shortauthor=\count272
+\c@savedshortauthor=\count273
+\c@shorteditor=\count274
+\c@savedshorteditor=\count275
+\c@labelname=\count276
+\c@savedlabelname=\count277
+\c@institution=\count278
+\c@savedinstitution=\count279
+\c@lista=\count280
+\c@savedlista=\count281
+\c@listb=\count282
+\c@savedlistb=\count283
+\c@listc=\count284
+\c@savedlistc=\count285
+\c@listd=\count286
+\c@savedlistd=\count287
+\c@liste=\count288
+\c@savedliste=\count289
+\c@listf=\count290
+\c@savedlistf=\count291
+\c@location=\count292
+\c@savedlocation=\count293
+\c@organization=\count294
+\c@savedorganization=\count295
+\c@origlocation=\count296
+\c@savedoriglocation=\count297
+\c@origpublisher=\count298
+\c@savedorigpublisher=\count299
+\c@publisher=\count300
+\c@savedpublisher=\count301
+\c@language=\count302
+\c@savedlanguage=\count303
+\c@origlanguage=\count304
+\c@savedoriglanguage=\count305
+\c@pageref=\count306
+\c@savedpageref=\count307
+\shorthandwidth=\skip134
+\shortjournalwidth=\skip135
+\shortserieswidth=\skip136
+\shorttitlewidth=\skip137
+\shortauthorwidth=\skip138
+\shorteditorwidth=\skip139
+\locallabelnumberwidth=\skip140
+\locallabelalphawidth=\skip141
+\localshorthandwidth=\skip142
+\localshortjournalwidth=\skip143
+\localshortserieswidth=\skip144
+\localshorttitlewidth=\skip145
+\localshortauthorwidth=\skip146
+\localshorteditorwidth=\skip147
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/blx-bibtex.def
+File: blx-bibtex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2018/03/04 v3.11 biblatex compatibility (PK/MW)
+\c@textcitecount=\count308
+\c@textcitetotal=\count309
+\c@textcitemaxnames=\count310
+\c@biburlnumpenalty=\count311
+\c@biburlucpenalty=\count312
+\c@biburllcpenalty=\count313
+\c@smartand=\count314
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2018/03/04 v3.11 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count315
+\c@bbx:relatedtotal=\count316
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2018/03/04 v3.11 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+))
+(/home/dawid/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2018/04/13 v5.2d context-sensitive quotations (JAW)
+\csq@reset=\count317
+\csq@gtype=\count318
+\csq@glevel=\count319
+\csq@qlevel=\count320
+\csq@maxlvl=\count321
+\csq@tshold=\count322
+\csq@ltx@everypar=\toks50
+Package csquotes Info: The 'quote' environment appears to be undefined.
+(csquotes)             I'm defining a typical 'quote' environment now.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2018/04/13 v5.2d csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+\c@example=\count323
+
+
+! LaTeX Error: No counter 'section' defined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \newtheorem{example}{Przyklad}[section]
+                                            
+? 
+Package csquotes Info: Redefining alias 'polish' -> 'croatian'.
+(/home/dawid/.miktex/texmfs/install/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/listings/listings.sty
+\lst@mode=\count324
+\lst@gtempboxa=\box66
+\lst@token=\toks51
+\lst@length=\count325
+\lst@currlwidth=\dimen264
+\lst@column=\count326
+\lst@pos=\count327
+\lst@lostspace=\dimen265
+\lst@width=\dimen266
+\lst@newlines=\count328
+\lst@lineno=\count329
+\abovecaptionskip=\skip148
+\belowcaptionskip=\skip149
+\lst@maxwidth=\dimen267
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count330
+\lst@skipnumbers=\count331
+\lst@framebox=\box67
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/listings/lstlang3.sty
+File: lstlang3.sty 2015/06/04 1.6 listings language file
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/tools/array.sty
+Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+\col@sep=\dimen268
+\ar@mcellbox=\box68
+\extrarowheight=\dimen269
+\NC@list=\toks52
+\extratabsurround=\skip150
+\backup@length=\skip151
+\ar@cellbox=\box69
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen270
+\TX@old@table=\dimen271
+\TX@old@col=\dimen272
+\TX@target=\dimen273
+\TX@delta=\dimen274
+\TX@cols=\count332
+\TX@ftn=\toks53
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip152
+\multirow@cntb=\count333
+\multirow@dima=\skip153
+\bigstrutjot=\dimen275
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen276
+\lightrulewidth=\dimen277
+\cmidrulewidth=\dimen278
+\belowrulesep=\dimen279
+\belowbottomsep=\dimen280
+\aboverulesep=\dimen281
+\abovetopsep=\dimen282
+\cmidrulesep=\dimen283
+\cmidrulekern=\dimen284
+\defaultaddspace=\dimen285
+\@cmidla=\count334
+\@cmidlb=\count335
+\@aboverulesep=\dimen286
+\@belowrulesep=\dimen287
+\@thisruleclass=\count336
+\@lastruleclass=\count337
+\@thisrulewidth=\dimen288
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen289
+\c@nlinenum=\count338
+\TeXr@lab=\toks54
+)
+(/home/dawid/.miktex/texmfs/install/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box70
+)
+! Undefined control sequence.
+l.98 \shortauthor
+                 {D. Talaga}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \shortauthor{D
+                   . Talaga}
+? 
+Missing character: There is no D in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no a in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 98--99
+[]
+ []
+
+! Undefined control sequence.
+l.100 \titlePL
+              {Niespójności niekompletnych macierzy porównań parami}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 \titlePL{N
+                iespójności niekompletnych macierzy porównań parami}
+? 
+Missing character: There is no N in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+LaTeX Font Info:    Try loading font information for +cmr on input line 100.
+LaTeX Font Info:    No file cmr.fd. on input line 100.
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `/cmr/m/n' instead on input line 100.
+
+! Corrupted NFSS tables.
+wrong@fontshape ...message {Corrupted NFSS tables}
+                                                  error@fontshape else let f...
+l.100 \titlePL{Niespó
+                      jności niekompletnych macierzy porównań parami}
+? 
+
+LaTeX Font Warning: Font shape `/cmr/m/n' undefined
+(Font)              using `OT1/cmr/m/n' instead on input line 100.
+
+Missing character: There is no j in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+! Undefined control sequence.
+l.101 \titleEN
+              {Inconsistency of incomplete pairwise comparisons matrices}
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (33.94447pt too wide) in paragraph at lines 100--102
+[]\/cmr/m/n/10 os
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 100--102
+\/cmr/m/n/10 on
+ []
+
+! Undefined control sequence.
+l.103 \shorttitlePL
+                   {Niespójności niekompletnych macierzy porównań parami}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.103 \shorttitlePL{N
+                     iespójności niekompletnych macierzy porównań parami}
+? 
+Missing character: There is no N in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+! Undefined control sequence.
+l.104 \shorttitleEN
+                   {Inconsistency of incomplete pairwise comparisons matrices}
+? 
+Missing character: There is no I in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+
+Overfull \hbox (28.94446pt too wide) in paragraph at lines 103--105
+[]\/cmr/m/n/10 os
+ []
+
+
+Overfull \hbox (10.55559pt too wide) in paragraph at lines 103--105
+\/cmr/m/n/10 on
+ []
+
+! Undefined control sequence.
+l.106 \thesistype
+                 {Master of Science Thesis}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 \thesistype{M
+                   aster of Science Thesis}
+? 
+Missing character: There is no M in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+! Undefined control sequence.
+l.107 \supervisor
+                 {Konrad Kułakowski PhD}
+? 
+Missing character: There is no K in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no D in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 106--108
+[]
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 106--108
+\/cmr/m/n/10  l
+ []
+
+! Undefined control sequence.
+l.109 \degreeprogramme
+                      {Computer Science}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109 \degreeprogramme{C
+                        omputer Science}
+? 
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+! Undefined control sequence.
+l.111 \department
+                 {Department of Applied Computer Science}
+? 
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 109--112
+[]
+ []
+
+! Undefined control sequence.
+l.113 \faculty
+              {Faculty of Electrical Engineering, Automatics,\protect\\[-1mm...
+
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 \faculty{F
+                aculty of Electrical Engineering, Automatics,\protect\\[-1mm...
+
+? 
+Missing character: There is no F in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 113--114
+[]
+ []
+
+! Undefined control sequence.
+l.115 \acknowledgements
+                       {Serdecznie dziękuję Promotorowi Panu dr. hab. Konr...
+
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \acknowledgements{S
+                         erdecznie dziękuję Promotorowi Panu dr. hab. Konr...
+
+? 
+Missing character: There is no S in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Command \k unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \acknowledgements{Serdecznie dzię
+                                        kuję Promotorowi Panu dr. hab. Konr...
+
+? 
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no j in font nullfont!
+
+! LaTeX Error: Command \k unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \acknowledgements{Serdecznie dziękuję
+                                              Promotorowi Panu dr. hab. Konr...
+
+? 
+Missing character: There is no e in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no K in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no P in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Command \k unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 Dzię
+           kuj̨ę moim Rodzicom, dzięki którym mogłem rozwijać się i s...
+
+? 
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no j in font nullfont!
+
+! Package inputenc Error: Unicode character ̨ (U+328)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 Dziękuj̨
+                ę moim Rodzicom, dzięki którym mogłem rozwijać się i s...
+
+? 
+
+! LaTeX Error: Command \k unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 Dziękuj̨ę
+                   moim Rodzicom, dzięki którym mogłem rozwijać się i s...
+
+? 
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Command \k unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 Dziękuj̨ę moim Rodzicom, dzię
+                                       ki którym mogłem rozwijać się i s...
+
+? 
+Missing character: There is no e in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+
+! LaTeX Error: Command \k unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.116 ...m, dzięki którym mogłem rozwijać się
+                                                   i studiować oraz bliskim...
+
+? 
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no z in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no j in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no . in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 115--117
+[]
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10  l
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10 _z 
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10 o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10  l
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10 c
+ []
+
+
+Overfull \hbox (4.44444pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10 c
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10 o
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10  l
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 115--117
+\/cmr/m/n/10  l 
+ []
+
+! Undefined control sequence.
+<argument> \cftsecnumwidth 
+                           
+l.118 \setlength{\cftsecnumwidth}{10mm}
+                                       
+? 
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   =
+l.119 \brokenpenalty=
+                     10000\relax
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \brokenpenalty=
+                     10000\relax
+? 
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 119--120
+[] 
+ []
+
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+(/home/dawid/.miktex/texmfs/install/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2018/03/04 v3.11 biblatex localization (PK/MW)
+)
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'english'.
+
+(praca.aux (rozdzial1.aux))
+\openout1 = `praca.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 128.
+LaTeX Font Info:    ... okay on input line 128.
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \begin{document}
+                      
+? 
+(/home/dawid/.miktex/texmfs/install/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count339
+\scratchdimen=\dimen290
+\scratchbox=\box71
+\nofMPsegments=\count340
+\nofMParguments=\count341
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count342
+\MPscratchDim=\dimen291
+\MPnumerator=\count343
+\makeMPintoPDFobject=\count344
+\everyMPtoPDFconversion=\toks56
+) (/home/dawid/.miktex/texmfs/install/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/home/dawid/.miktex/texmfs/install/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/home/dawid/.miktex/texmfs/install/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+ABD: EveryShipout initializing macros
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout5 = `praca-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'praca.bbl' not found.
+
+No file praca.bbl.
+Package biblatex Info: Reference section=0 on input line 128.
+Package biblatex Info: Reference segment=0 on input line 128.
+\c@lstlisting=\count345
+! Undefined control sequence.
+l.132 \fancypagestyle
+                     {plain}
+? 
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.134 	\fancyhf
+               {}
+? 
+
+! LaTeX Error: \headrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 	\renewcommand{\headrulewidth}
+                                    {0pt}
+? 
+
+! LaTeX Error: \footrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 	\renewcommand{\footrulewidth}
+                                    {0pt}
+? 
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 \clearpage
+                
+? 
+[1{/home/dawid/.miktex/texmfs/data/pdftex/config/pdftex.map}]
+\openout2 = `rozdzial1.aux'.
+
+
+No file rozdzial1.tex.
+
+LaTeX Warning: Empty bibliography on input line 151.
+
+(praca.aux (rozdzial1.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package logreq Info: Writing requests to 'praca.run.xml'.
+\openout1 = `praca.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 23531 strings out of 494894
+ 438847 string characters out of 3178733
+ 859331 words of memory out of 3000000
+ 26715 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 0 hyphenation exceptions out of 8191
+ 55i,5n,57p,1138b,1600s stack positions out of 5000i,500n,10000p,200000b,50000s
+</home/dawid/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on praca.pdf (1 page, 12480 bytes).
+PDF statistics:
+ 13 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+
