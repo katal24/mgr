@@ -50,7 +50,7 @@ The aim of a such division is to pay attention to how the inconsistency indexes 
 \section{Implementation}
 
 \subsection{Development environment}
-Tests of indexes were developed in R language which is appropriate for numerical calculations (see \cite{projectR}). It contains sixteen of functions which support operations on matrices and vectors. Integrated development environment (IDE), named \textit{RStudio}, (see \cite{studioR}) was used during the implementation. This tool allows to create own packages which contain not only code but also documentation and information about licence and author. Using \textit{RStudio} package \texttt{indexesForIncomplete} was created. The most important part of this package is the file \texttt{indexes.R} which performs calculations necessary to test the indexes. \textit{RStudio} supports programmer's work by syntax highlighting, built-in console, easy documentation searching and many others. The program is available on common operating systems. Before using \textit{RStudio} one has to install \textit{R} programming language (see \cite{installR}).  
+Tests of indexes were developed in R language which is appropriate for numerical calculations (see~\cite{projectR}). It contains sixteen of functions which support operations on matrices and vectors. Integrated development environment (IDE), named \textit{RStudio}, (see \cite{studioR}) was used during the implementation. This tool allows to create own packages which contain not only code but also documentation and information about licence and author. Using \textit{RStudio} package \texttt{indexesForIncomplete} was created. The most important part of this package is the file \texttt{indexes.R} which performs calculations necessary to test the indexes. \textit{RStudio} supports programmer's work by syntax highlighting, built-in console, easy documentation searching and many others. The program is available on common operating systems. Before using \textit{RStudio} one has to install \textit{R} programming language (see \cite{installR}).  
 
 
 
@@ -68,7 +68,7 @@ The implementation consists of two steps:
 \end{enumerate}
 
 \subsubsection{Implementation of the inconsistency indexes}
-Sixteen functions which calculate the inconsistency indexes using methods are described in chapter 3. The functions were written in such a way that allows handling both full and incomplete matrices. The wrong matrices (it means nonreciprocal or inconsistent PC matrices) were not taken into account. Each of these function has only one parameter - \textit{PC matrix}. Exceptions are the two methods implementing Kulakowski and Szybowski index which additionally takes parameters $\alpha$ and $\beta$. The result of each function is a value of the inconsistency index. The functions were extended by comments which inform about the name of the index related to given function, parameters and returned value. It allows to read and modify the code easily. Several examples of the functions are presented below.
+Sixteen functions which calculate the inconsistency indexes using methods are described in chapter~3. The functions were written in such a way that allows handling both full and incomplete matrices. The wrong matrices (it means nonreciprocal or inconsistent PC matrices) were not taken into account. Each of these function has only one parameter - \textit{PC matrix}. Exceptions are the two methods implementing Kulakowski and Szybowski index which additionally takes parameters $\alpha$ and $\beta$. The result of each function is a value of the inconsistency index. The functions were extended by comments which inform about the name of the index related to given function, parameters and returned value. It allows to read and modify the code easily. Several examples of the functions are presented below.
 
 \begin{figure}[!]
 \centerline{\includegraphics[scale=0.75]{images/kod1.png}}
@@ -87,7 +87,7 @@ Sixteen functions which calculate the inconsistency indexes using methods are de
 
 \begin{figure}[!]
 \centerline{\includegraphics[scale=0.75]{images/kod4.png}}
-\caption{The implementation of Salo and Hamalainen index}
+\caption{The implementation of Salo and Hämäläinen index}
 \end{figure}
 It is worth drawing attention to a function which is called within the functions intended for indexes based on triads. This function generates triads from a matrix and next returns inconsistency for each of them. The way to calculate inconsistency for one triad depends on a function passed as a parameter.
 
