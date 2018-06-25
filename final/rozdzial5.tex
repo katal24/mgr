@@ -105,12 +105,10 @@ Mean & \textbf{2.13} & 6.61 & 4.88 & 3.08 & 2.81 & 4.45 \\ \hline
 \end{center}
 \end{table}
 
-
 \section{Discussion}
-The task of this work was not only to analyze the inconsistency indexes for incomplete matrixes but also to try to assess these indexes in this respect. Conclusions were divided into sections corresponding to the tests carried out and described in the previous section. Analyzing the above tables, one can draw a conclusion that the matrix size and the level of incompleteness have a significant impact on the results. The detailed results (included in Appendix) allow to conclude that the degree of incompleteness is also crucial.
+The task of this work was not only to analyze the inconsistency indexes for incomplete matrixes but also to try to assess these indexes in this respect. Conclusions were divided into sections corresponding to the tests carried out and described in the previous section. Analyzing the above tables, one can draw a~conclusion that the matrix size and the level of incompleteness have a significant impact on the results. The detailed results (included in Appendix) allow to conclude that the degree of incompleteness is also crucial.
 
-% The task of this work was not only to analyze the inconsistency indexes for incomplete matrixes but also to try to assess these indexes in this respect. Conclusions were divided into sections corresponding to the tests carried out and described in the previous section. Analyzing the above tables, one can draw a conclusion that the matrix size and the level of incompleteness have a significant impact on the results. The detailed results (included in Appendix) allow to conclude that the degree of incompleteness is also crucial.
-
+\newpage
 \subsection{Tests taking into account different matrix sizes}
 Along with growth of the matrix size, examined relative error decreases. Considering the best indexes, the relative error is between 13 and 17 percent for small matrices (size 4) so it is relatively big. However, it decreases rapidly when the size of PC matrix increases (see Fig. 5.1). For the matrix of size 6 there are indexes which give the results in range $3 - 5 \%$, what is an acceptable score. For PC matrices with a significant size (over 10 concepts), the relative error is just about $1 - 2 \%$, what is a really good score.
 
@@ -127,7 +125,7 @@ Along with growth of the matrix size, examined relative error decreases. Conside
 % \draw [dotted, gray] (3,0) grid (16,15);
 % \end{tikzpicture}
 
-\begin{figure}[]
+\begin{figure}[!h]
   \begin{center}
 \caption{Relative error of the index $K$ for incomplete matrices with constant degree of incompleteness g = 15\%}
 \begin{tikzpicture}
@@ -142,7 +140,7 @@ Along with growth of the matrix size, examined relative error decreases. Conside
         xtick={4,6,...,16},
         ytick={2,4,...,16},      
         xmin=3,
-        xmax=16,
+        xmax=15.8,
         ymin=0,
         ymax=15,
         x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
@@ -156,15 +154,14 @@ Along with growth of the matrix size, examined relative error decreases. Conside
 \end{center}
 \end{figure}
 
-
 Definitely, the best index found out is out the index proposed by Koczkodaj ($K$). It wins in each test regardless of the matrix size. It gives really satisfying results for matrices of size 6 and more. Good results are obtained also through the indexes $I_{\alpha,\beta}$, $I_{\alpha}$ and $I_{CD}$. It seems that these indexes are stable with respect to incompleteness. Based on the evidence one should reject the indexes $\textit{RE}$, $\textit{HCI}$, $\textit{CM}$, $\textit{GCI}$ and $\textit{GW}$ for incomplete matrices. Results obtained through these methods show that the score of examined inconsistency for incomplete matrices can differ significantly from the right values.
 
 It is worth noticing that the presented results involve matrices with the degree of incompleteness equal to $15\%$. It means that 7 comparisons are missing for matrices with size $n = 10$. The results will be different from presented in Table 5.1 for other degrees of incompleteness. The impact of the degree of incompleteness on tested relative error is shown in consecutive experiments.
 
 \subsection{Tests taking into account different degrees of incompleteness}
-Along with growth of the degree of incompleteness, examined relative error grows. Considering the best indexes, the relative error amount to just about $1 - 2\%$ percent for degree of incompleteness (size 4) so it is really satisfying. However, it increases slowly, when the degree of incompleteness decreases (see Fig. 5.2). For the degree of incompleteness $g=14\%$ indexes which give the results about $2 - 3 \%$ exist, what is a good score. The relative error is between 12 and 18 percent for significant matrices ($g=50\%$).
+% Along with growth of the degree of incompleteness, examined relative error grows. Considering the best indexes, the relative error amount to just about $1 - 2\%$ percent for degree of incompleteness (size 4) so it is really satisfying. However, it increases slowly, when the degree of incompleteness decreases (see Fig. 5.2). For the degree of incompleteness $g=14\%$ indexes which give the results about $2 - 3 \%$ exist, what is a good score. The relative error is between 12 and 18 percent for significant matrices ($g=50\%$).
 
-\begin{figure}[]
+\begin{figure}[h]
   \begin{center}
 \caption{Relative error of the index $K$ for incomplete matrices with constant matrix size n = 8}
 \begin{tikzpicture}

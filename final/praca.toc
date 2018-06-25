@@ -15,7 +15,7 @@
 \contentsline {subsection}{\numberline {3.1.3}Koczkodaj index ($\textit {K}$)}{12}
 \contentsline {subsection}{\numberline {3.1.4}Kazibudzki indexes ($\textit {MLTI}, \textit {MLTI*}, \textit {CMLTI*}$)}{12}
 \contentsline {subsection}{\numberline {3.1.5}Index of determinants ($\textit {PL}$)}{13}
-\contentsline {subsection}{\numberline {3.1.6}Ku\IeC {\l }akowski and Szybowski indexes ($I_1, I_2, I_{\alpha }, I_{\alpha ,\beta }$ ) }{13}
+\contentsline {subsection}{\numberline {3.1.6}Ku\IeC {\l }akowski and Szybowski indexes ($\textit {I}_1, \textit {I}_2, \textit {I}_{\alpha }, \textit {I}_{\alpha ,\beta }$ ) }{13}
 \contentsline {subsection}{\numberline {3.1.7}Harmonic consistency index ($\textit {HCI}$)}{14}
 \contentsline {subsection}{\numberline {3.1.8}Golden and Wang index ($\textit {GW}$)}{14}
 \contentsline {subsection}{\numberline {3.1.9}Salo and Hamalainen index ($\textit {CM}$)}{15}
@@ -38,9 +38,9 @@
 \contentsline {subsection}{\numberline {5.1.2}Tests taking into account different degrees of incompleteness}{29}
 \contentsline {subsection}{\numberline {5.1.3}Tests taking into account different levels of inconsistency}{30}
 \contentsline {section}{\numberline {5.2}Discussion}{30}
-\contentsline {subsection}{\numberline {5.2.1}Tests taking into account different matrix sizes}{30}
+\contentsline {subsection}{\numberline {5.2.1}Tests taking into account different matrix sizes}{31}
 \contentsline {subsection}{\numberline {5.2.2}Tests taking into account different degrees of incompleteness}{32}
-\contentsline {subsection}{\numberline {5.2.3}Tests taking into account different levels of inconsistency}{32}
+\contentsline {subsection}{\numberline {5.2.3}Tests taking into account different levels of inconsistency}{33}
 \contentsline {subsection}{\numberline {5.2.4}General discussion}{33}
 \contentsline {chapter}{\numberline {6}Summary}{35}
 \contentsline {chapter}{\numberline {7}Appendix}{37}

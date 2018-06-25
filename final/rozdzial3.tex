@@ -17,7 +17,7 @@ This is one of the most important and popular indexes. It was introduced by Saat
 
 \subsection{Geometric consistency index ($\textit{GCI}$)}
 
-Based on the principle~(\ref{eq:consistent2}) Craford and Williams defined geometric consistency index (	\textit{GCI}) \cite{CRAWFORD1985}. The index was refined by Aguaròn and Moreno-Jimènez \cite{AGUARON2003}. The authors assumed that in such a case a priority vector should be calculated using the geometric mean method.  Consider~\ref{eq:consistent} one can create a matrix:
+Based on the principle~(\ref{eq:consistent2}) Craford and Williams defined geometric consistency index (	\textit{GCI}) \cite{CRAWFORD1985}. The index was refined by Aguaròn and Moreno-Jimènez \cite{AGUARON2003}. The authors assumed that in such a case a priority vector should be calculated using the geometric mean method. Consider~(\ref{eq:consistent}) one can create a matrix:
 	\begin{equation} 
 		E=\left[e_{ij}\mid e_{ij}=m_{ij}\frac{w_{j}}{w_{i}}\right],\,\,\,\,\,\,i,j=1,...,n.
 	 \end{equation}
@@ -29,7 +29,7 @@ Based on the principle~(\ref{eq:consistent2}) Craford and Williams defined geome
 
 \subsection{Koczkodaj index ($\textit{K}$)}
 
-One of the most popular inconsistency indexes was proposed by Koczkodaj \cite{KOCZKODAJ1993}. It is based directly on the definition of consistency~\ref{eq:consistent}. The value of the inconsistency index for one triad of alternatives $(c_i, c_j, c_k)$ was defined as:
+One of the most popular inconsistency indexes was proposed by Koczkodaj \cite{KOCZKODAJ1993}. It is based directly on the definition of consistency~(\ref{eq:consistent}). The value of the inconsistency index for one triad of alternatives $(c_i, c_j, c_k)$ was defined as:
 	\begin{equation} 
 		\label{eq:K}
 		K_{i,j,k}=min\{\frac{1}{m_{ij}}\mid m_{ij}-\frac{m_{ik}}{m_{jk}}\mid,\frac{1}{m_{ij}}\mid m_{ik}-m_{ij}m_{jk}\mid,\frac{1}{m_{jk}}\mid m_{jk}-\frac{m_{ik}}{m_{ij}}\mid\}.
@@ -50,24 +50,24 @@ One of the most popular inconsistency indexes was proposed by Koczkodaj \cite{KO
 
 Based on the Koczkodaj inconsistency index and observation that $ln(\frac{\alpha\gamma}{\beta})=-ln(\frac{\beta}{\alpha\gamma})$, Kazibudzki proposed several additional inconsistency indexes \cite{Kazibudzki2016}. Instead of the formula for inconsistency of the triad [eq:k-abg], he introduced two new formulas:
 	\begin{equation} 
-		LTI(\alpha,\beta,\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
+		\textit{LTI}(\alpha,\beta,\gamma)=\mid ln(\frac{\alpha\gamma}{\beta})\mid,
 	 \end{equation}
 	\begin{equation}
 		\label{eq:lti*} 
-		LTI*(\alpha,\beta,\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).
+		\textit{LTI*}(\alpha,\beta,\gamma)=ln^{2}(\frac{\alpha\gamma}{\beta}).
 	 \end{equation}
 Based on the above equations, Kazibudzki proposed new indexes. The simplest ones use the geometric mean of the triads. Thus, new indexes could be written in the form:
 	\begin{equation} 
-	\textit{MLTI(LTI)}=\frac{1}{n}\sum_{i=1}^{n}\left[LTI_{i}(\alpha,\beta\gamma)\right],
+	\textit{MLTI}(\textit{LTI})=\frac{1}{n}\sum_{i=1}^{n}\left[\textit{LTI}_{i}(\alpha,\beta,\gamma)\right],
 	 \end{equation}
  	\begin{equation} 
-		\textit{MLTI(LTI*)}=\frac{1}{n}\sum_{i=1}^{n}\left[LTI*_{i}(\alpha,\beta\gamma)\right].
+		\textit{MLTI}(\textit{LTI*})=\frac{1}{n}\sum_{i=1}^{n}\left[\textit{LTI*}_{i}(\alpha,\beta,\gamma)\right].
 			 \end{equation}
  
 
-After further research Kazibudzki introduces another inconsistency index \cite{Kazibudzki2017}, again based on~\ref{eq:lti*}. It was defined as $CM(LTI*)=\frac{MEAN[LTI*(\alpha,\beta,\gamma)]}{1+MAX[LTI*(\alpha,\beta,\gamma)]}$. Hence,
+After further research Kazibudzki introduces another inconsistency index \cite{Kazibudzki2017}, again based on~\ref{eq:lti*}. It was defined as $\textit{CM}(\textit{LTI*})=\frac{\textit{MEAN}[\textit{LTI*}(\alpha,\beta,\gamma)]}{1+\textit{MAX}[\textit{LTI*}(\alpha,\beta,\gamma)]}$. Hence,
 	\begin{equation} 
-		\textit{CM(LTI*)}=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{LTI*_{i}(\alpha,\beta,\gamma)\}}.
+		\textit{CM}(\textit{LTI*})}=\frac{\frac{1}{n}\sum_{i=1}^{n}[LTI*_{i}(\alpha,\beta,\gamma)]}{1+max\{\textit{LTI*}_{i}(\alpha,\beta,\gamma)\}}.
 	 \end{equation}
  
 
@@ -81,19 +81,20 @@ For every triad $(m_{ik},m_{ij},m_{jk})$ one can build a matrix in the form:
 			1 & m_{ij} & m_{ik}\\
 			\frac{1}{m_{ij}} & 1 & m_{jk}\\
 			\frac{1}{m_{ik}} & \frac{1}{m_{jk}} & 1
-		\end{array}\right),\,\,\,\,\,\,where\,i<j<k.
+		\end{array}\right),
 	\end{equation}
+	where $i<j<k$.
  The determinant of this matrix is:
 	\begin{equation} 
 		det(M)=\frac{m_{ik}}{m_{ij}m_{jk}}+\frac{m_{ij}m_{jk}}{m_{ik}}-2.
 	 \end{equation}
  If the matrix is fully consistent, then $det(M)=0$, else $det(M)>0$. Based on the above considerations, the authors introduced the new inconsistency index:
  	\begin{equation} 
-		CI*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{m_{ik}}{m_{ij}m_{jk}}+\frac{m_{ij}m_{jk}}{m_{ik}}-2\right).
+		\textit{CI}*=\frac{1}{n}\sum_{i=1}^{n}\left(\frac{m_{ik}}{m_{ij}m_{jk}}+\frac{m_{ij}m_{jk}}{m_{ik}}-2\right).
 	 \end{equation}
  
 
-\subsection{Kułakowski and Szybowski indexes ($I_1, I_2, I_{\alpha}, I_{\alpha,\beta}$ ) }
+\subsection{Kułakowski and Szybowski indexes ($\textit{I}_1, \textit{I}_2, \textit{I}_{\alpha}, \textit{I}_{\alpha,\beta}$ ) }
 
 Kułakowski and Szybowski proposed two further inconsistency indexes \cite{KULAKOWSKI20141}, which are also based on triads. They use the fact that the number of triads that can be found in a PC matrix is:
 	\begin{equation} 
@@ -127,7 +128,7 @@ The second index expands the first one by~(\ref{eq:I2}):
 
 \subsection{Harmonic consistency index ($\textit{HCI}$)}
 
-This index was introduced by Stein and Mizzi and it presents a completely new method of inconsistency computing \cite{STEIN2007}. At the beginning it requires the creation of an auxiliary vector $s=(s_{1},...,s_{n})^{T}$, where $n$ is the dimension of the matrix $M$, for which the index will be calculated. Each element of the vector $s$ is the sum of values in one column of the matrix $M$. Hence, 
+This index was introduced by Stein and Mizzi and it presents a completely new method of inconsistency computing \cite{STEIN2007}. At the beginning it requires the creation of an auxiliary vector $s=(s_{1},...,s_{n})^{T}$, where $n$ by $n$ is the dimension of the matrix $M$, for which the index will be calculated. Each element of the vector $s$ is the sum of values in one column of the matrix $M$. Hence, 
 	\begin{equation} 
 		s_{j}=\sum_{i=1}^{n}m_{ji}\,\,\,\,\,\,\forall j.
 	 \end{equation}
@@ -136,9 +137,9 @@ This index was introduced by Stein and Mizzi and it presents a completely new me
 		\label{eq:hm1}
 		\textit{HM}=\frac{n}{\sum_{j=1}^{n}\frac{1}{s_{j}}}.
 	 \end{equation}
- The final formula for the inconsistency index was obtained by normalizing the above equation~\ref{eq:hm1}:
+ The final formula for the inconsistency index was obtained by normalizing the above equation~(\ref{eq:hm1}):
  	\begin{equation} 
-		\textit{HCI}=\frac{\left(HM(s)-n\right)\left(n+1\right)}{n(n-1)}.
+		\textit{HCI}=\frac{\left(\extit{HM}(s)-n\right)\left(n+1\right)}{n(n-1)}.
 	 \end{equation}
  
 
@@ -160,7 +161,7 @@ The index proposed by Salo and Hamalainen \cite{SALO1995} uses the definition of
 			[\underline{r}_{n1},\overline{r}_{n1}] & \ldots & [\underline{r}_{nn},\overline{r}_{nn}]
 		\end{array}\right),
 	\end{equation}
- where $\underline{r_{ij}}=min\left\{ m_{ik}m_{kj}\mid k=1,\ldots,n\right\}$ , $\overline{r_{ij}}=max\left\{ m_{ik}m_{kj}\mid k=1,\ldots,n\right\}$ and $n$ is the dimension of the tested matrix $M$. A numerical example was presented in \cite{Brunelli2015}. Based on the resulting matrix $R$, the authors proposed the following inconsistency index:
+ where $\underline{r_{ij}}=min\left\{ m_{ik}m_{kj}\mid k=1,\ldots,n\right\}$ , $\overline{r_{ij}}=max\left\{ m_{ik}m_{kj}\mid k=1,\ldots,n\right\}$ and $n$ by $n$ is the dimension of the tested matrix $M$. A numerical example was presented in \cite{Brunelli2015}. Based on the resulting matrix $R$, the authors proposed the following inconsistency index:
  	\begin{equation} 
 		\textit{CM}=\frac{2}{n(n-1)}\sum_{i=1}^{n-1}\sum_{j=i+1}^{n}\frac{\overline{r}_{ij}-\underline{r}_{ij}}{\left(1+\overline{r}_{ij}\right)\left(1+\underline{r}_{ij}\right)}.
 	 \end{equation}
@@ -177,7 +178,7 @@ The authors Cavallo and D'Apuzzo based their index on triads but they conducted 
 
 \subsection{Relative error ($\textit{RE}$)}
 
-This index, proposed by Barzaili \cite{Jonathan1998}, requires calculation of the weight vector using the arithmetic mean method for each row and creation of two additional matrices. Thus, the weight vector is $$w_{i}=\frac{1}{n}\sum_{j=1}^{n}m_{ij},$$ where $n$ is the dimension of the matrix. The two auxiliary matrices are calculated according to the formulas:
+This index, proposed by Barzaili \cite{Jonathan1998}, requires calculation of the weight vector using the arithmetic mean method for each row and creation of two additional matrices. Thus, the weight vector is $$w_{i}=\frac{1}{n}\sum_{j=1}^{n}m_{ij},$$ where $n$  by $n$ is the dimension of the matrix. The two auxiliary matrices are calculated according to the formulas:
 $$C=\left(c_{ij}\right)=\left(w_{i}-w_{j}\right)$$
 $$E=\left(e_{ij}\right)=\left(m_{ij}-c_{ij}\right)$$
 

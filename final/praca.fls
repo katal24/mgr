@@ -541,6 +541,8 @@ INPUT /home/dawid/.miktex/texmfs/install/fonts/vf/adobe/times/ptmb8t.vf
 INPUT /home/dawid/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmb8r.tfm
 INPUT /home/dawid/.miktex/texmfs/install/fonts/vf/adobe/times/ptmbi8t.vf
 INPUT /home/dawid/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmbi8r.tfm
+INPUT /home/dawid/.miktex/texmfs/install/fonts/vf/adobe/times/ptmri8t.vf
+INPUT /home/dawid/.miktex/texmfs/install/fonts/tfm/adobe/times/ptmri8r.tfm
 OUTPUT rozdzial4.aux
 INPUT rozdzial4.tex
 INPUT rozdzial4.tex
